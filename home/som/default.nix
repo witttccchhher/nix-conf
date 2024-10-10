@@ -1,0 +1,22 @@
+{
+  imports = [
+    ./ags
+    ./alacritty
+    ./anyrun
+    ./btop
+    ./fish
+    ./foot
+    ./git
+    ./gocheat
+    ./lsd
+    ./micro
+    ./ncmpcpp
+    ./neofetch
+    ./neovim
+    ./packages
+    ./stylix
+    ./sway
+    ./waybar
+    ./yazi
+  ];
+}
