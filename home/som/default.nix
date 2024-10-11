@@ -9,6 +9,7 @@
     ./fzf
     ./git
     ./gocheat
+    ./gtklock
     ./lazygit
     ./lsd
     ./micro

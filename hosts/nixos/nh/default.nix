@@ -1,7 +1,6 @@
 {
   programs.nh = {
     enable = true;
-    flake = /home/som/nix;
     clean = {
       enable = true;
       dates = "weekly";

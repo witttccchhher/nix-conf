@@ -30,6 +30,7 @@
 
       startup = [
         { command = "ags"; always = true; }
+        { command = "autotiling"; always = true; }
       ];
 
       workspaceLayout = "default";
@@ -107,6 +108,8 @@
         "${mod}+Shift+5" = "move container to workspace number 5";
         "${mod}+Shift+6" = "move container to workspace number 6";
         "${mod}+Shift+7" = "move container to workspace number 7";
+
+        "${mod}+l" = "exec ${pkgs.gtklock}/bin/gtklock";
 
         "${mod}+f" = "fullscreen";
         "${mod}+t" = "floating toggle";

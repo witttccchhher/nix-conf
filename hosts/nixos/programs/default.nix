@@ -2,8 +2,10 @@
   programs = {
     sway = {
       enable = true;
-      extraPackages = with pkgs; [ foot gtklock ];
+      extraPackages = with pkgs; [ foot gtklock sov autotiling ];
     };
     fish.enable = true;
   };
+
+  security.pam.services.gtklock.text = pkgs.lib.readFile "${pkgs.gtklock}/etc/pam.d/gtklock";
 }
