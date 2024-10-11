@@ -14,26 +14,21 @@
       '';
     };
     shellAliases = {
-      "sudo" = "echo 'Please, dont use sudo, use doas' #";
-
       "x" = "exit";
       "c" = "clear";
 
       "ls" = "lsd -a";
       "ll" = "lsd -a -l";
 
-      "nixrs" = "doas nixos-rebuild switch --flake ~/nix/";
       "ns" = "nix-shell --run fish";
-      "hms" = "home-manager switch --flake ~/nix/";
       "flakeu" = "nix flake update ~/nix/";
+      "nixgitu" = "cd ~/nix/ && ";
 
       "e" = "nvim";
-      "se" = "doas nvim";
+      "fe" = "nvim $(fzf)";
 
       "y" = "yazi";
       "fetch" = "nitch";
-      "nfetch" = "neofetch";
-      "music" = "ncmpcpp";
     };
   };
 
