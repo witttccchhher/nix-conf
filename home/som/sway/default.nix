@@ -1,4 +1,4 @@
-{ pkgs, config, ... }: {
+{ pkgs, config, inputs, ... }: {
   wayland.windowManager.sway = {
     enable = true;
     package = pkgs.sway;
@@ -22,7 +22,7 @@
 
       output = {
         HDMI-A-1 = {
-          bg = "${/home/som/Pictures/Wallpapers/chocolate/samurai.png} fill";
+          bg = "${inputs.wallpapers}/chocolate/samurai.png fill";
           resolution = "1920x1080";
           position = "0,0";
         };

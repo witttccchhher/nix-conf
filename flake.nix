@@ -21,7 +21,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     wallpapers = {
-      url = "https://codeberg.org/somokill/wallpapers";
+      url = "git+https://codeberg.org/somokill/wallpapers?ref=main";
       flake = false;
     };
   };
