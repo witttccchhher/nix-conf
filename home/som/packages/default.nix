@@ -52,6 +52,12 @@
       btop
       lazygit
       lutgen
+      bat
+      duf
+      fd
+      ripgrep
+      fzf
+      gping
 
       # Internet
       ungoogled-chromium

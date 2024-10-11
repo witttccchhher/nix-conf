@@ -6,6 +6,7 @@
     ./btop
     ./fish
     ./foot
+    ./fzf
     ./git
     ./gocheat
     ./lsd
