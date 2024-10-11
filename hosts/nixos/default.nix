@@ -3,6 +3,7 @@
     ./boot
     ./doas
     ./hardware
+    ./nh
     ./network
     ./nixpkgs
     ./packages

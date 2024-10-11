@@ -9,6 +9,7 @@
     ./fzf
     ./git
     ./gocheat
+    ./lazygit
     ./lsd
     ./micro
     ./ncmpcpp

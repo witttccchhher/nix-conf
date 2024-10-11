@@ -36,7 +36,6 @@
       firefox.enable = true;
       gtk.enable = true;
       lazygit.enable = true;
-      swaylock = { enable = true; useImage = true; };
       xresources.enable = true;
       zathura.enable = true;
     };

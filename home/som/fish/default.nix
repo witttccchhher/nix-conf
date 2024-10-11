@@ -22,7 +22,7 @@
 
       "ns" = "nix-shell --run fish";
       "flakeu" = "nix flake update ~/nix/";
-      "nixgitu" = "cd ~/nix/ && ";
+      "nixgitu" = "cd ~/nix/ && git add * && git commit -m 'Some changes' && cd";
 
       "e" = "nvim";
       "fe" = "nvim $(fzf)";
