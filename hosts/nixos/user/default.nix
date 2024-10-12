@@ -2,13 +2,13 @@
   time.timeZone = "Asia/Yekaterinburg";
   i18n.defaultLocale = "en_US.UTF-8";
   users = {
-    defaultUserShell = pkgs.fish;
+    defaultUserShell = pkgs.zsh;
     users.som = {
       isNormalUser = true;
       extraGroups = [ "wheel" "input" "networkmanager" "video" "audio" ];
       packages = [];
       useDefaultShell = true;
-      shell = pkgs.fish;
+      shell = pkgs.zsh;
     };
   };
 
