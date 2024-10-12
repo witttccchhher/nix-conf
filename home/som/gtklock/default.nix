@@ -1,9 +1,5 @@
 {
   xdg.configFile = {
-    "gtklock/config.ini".text = ''
-      [main]
-      style = ${/home/som/.config/gtklock/style.css}
-    '';
     "gtklock/style.css".text = ''
       * {
         font-family: scientifica;
@@ -21,6 +17,10 @@
         font-size: 20px;
         font-weight: normal;
       }
+    '';
+    "gtklock/config.ini".text = ''
+      [main]
+      style = ${/home/som/.config/gtklock/style.css}
     '';
   };
 }

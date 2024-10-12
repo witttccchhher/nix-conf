@@ -4,10 +4,10 @@
     package = pkgs.foot;
     settings = {
       main = {
-        font = "scientifica:size=17, JetBrainsMono Nerd Font:size=14";
-        font-bold = "scientifica:size=17, JetBrainsMono Nerd Font:size=14";
-        font-italic = "scientifica:size=17:style=Italic, JetBrainsMono Nerd Font:size=14:style=Italic";
-        font-bold-italic = "scientifica:size=17:style=BoldItalic, JetBrainsMono Nerd Font:size=14:style=Italic";
+        font = "JetBrainsMono Nerd Font:size=13";
+        font-bold = "JetBrainsMono Nerd Font:size=13:style=Bold";
+        font-italic = "JetBrainsMono Nerd Font:size=13:style=Italic";
+        font-bold-italic = "JetBrainsMono Nerd Font:size=13:style=BoldItalic";
         pad = "7x7";
         initial-window-mode = "maximized";
       };

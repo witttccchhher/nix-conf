@@ -58,6 +58,8 @@
       ripgrep
       fzf
       gping
+      typioca
+      thokr
 
       # Internet
       ungoogled-chromium

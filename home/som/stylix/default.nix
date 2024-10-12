@@ -15,8 +15,8 @@
 
     fonts = {
 			monospace = {
-				name = "Open Sans";
-				package = pkgs.google-fonts.override { fonts = [ "OpenSans" ]; };
+				name = "JetBrainsMono Nerd Font";
+				package = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; };
 			};
 
 			serif = config.stylix.fonts.monospace;
@@ -24,10 +24,10 @@
 			emoji = config.stylix.fonts.monospace;
 
 			sizes = {
-				desktop = 12;
-				popups = 12;
-				applications = 12;
-				terminal = 12;
+				desktop = 13;
+				popups = 13;
+				applications = 13;
+				terminal = 13;
 			};
 		};
 
