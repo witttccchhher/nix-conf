@@ -22,7 +22,7 @@
 
       output = {
         HDMI-A-1 = {
-          bg = "${inputs.wallpapers}/chocolate/samurai.png fill";
+          bg = "${inputs.wallpapers}/chocolate/solid/solid1.png fill";
           resolution = "1920x1080";
           position = "0,0";
         };

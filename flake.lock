@@ -44,11 +44,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1721135360,
-        "narHash": "sha256-ZhSA0e45UxiOAjEVqkym/aULh0Dt+KHJLNda7bjx9UI=",
+        "lastModified": 1728684316,
+        "narHash": "sha256-fQ4LkmZeW4eGowbVfvct1hLFD0hNkZiX5SzRlWqhgxc=",
         "owner": "anyrun-org",
         "repo": "anyrun",
-        "rev": "c6101a31a80b51e32e96f6a77616b609770172e0",
+        "rev": "6c974bc5f3f82f505278befa4b24d96ba8eb06f1",
         "type": "github"
       },
       "original": {
@@ -147,11 +147,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1717285511,
-        "narHash": "sha256-iKzJcpdXih14qYVcZ9QC9XuZYnPc6T8YImb6dX166kw=",
+        "lastModified": 1727826117,
+        "narHash": "sha256-K5ZLCyfO/Zj9mPFldf3iwS6oZStJcU4tSpiXTMYaaL0=",
         "owner": "hercules-ci",
         "repo": "flake-parts",
-        "rev": "2a55567fcf15b1b1c7ed712a2c6fadaec7412ea8",
+        "rev": "3d04084d54bedc3d6b8b736c70ef449225c361b1",
         "type": "github"
       },
       "original": {
@@ -309,11 +309,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1728598744,
-        "narHash": "sha256-sSfvyO5xH3HObHHmh6lp/hcvo7tMjFKd/HXpxyrRnoE=",
+        "lastModified": 1728726232,
+        "narHash": "sha256-8ZWr1HpciQsrFjvPMvZl0W+b0dilZOqXPoKa2Ux36bc=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "342a1d682386d3a1d74f9555cb327f2f311dda6e",
+        "rev": "d57112db877f07387ce7104b5ac346ede556d2d7",
         "type": "github"
       },
       "original": {
@@ -349,11 +349,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1728561170,
-        "narHash": "sha256-RAyMs5VhpPvJ17uAOKvrGIhFoO74zbRihhl6KAuLUvY=",
+        "lastModified": 1728655018,
+        "narHash": "sha256-Be/WDkhwSRvhO+Cnh/jehaNpEdy/V41pXfNg0QcXDe8=",
         "owner": "linkfrg",
         "repo": "ignis",
-        "rev": "70aafb13b3722afba89c27fc8166d088cd53b117",
+        "rev": "fd4e5200b369603c0a53cb853a8954d15503b459",
         "type": "github"
       },
       "original": {
@@ -500,6 +500,7 @@
         "nix-flatpak": "nix-flatpak",
         "nixpkgs": "nixpkgs_5",
         "stylix": "stylix",
+        "thokr-ru": "thokr-ru",
         "wallpapers": "wallpapers",
         "yetris": "yetris"
       }
@@ -639,6 +640,23 @@
         "type": "github"
       }
     },
+    "thokr-ru": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1728730972,
+        "narHash": "sha256-Fq76hw8yybk4KFgsdjtuKhkZdPw+lLbZmGgzk3yf60k=",
+        "ref": "main",
+        "rev": "3c025486a13bf1c7101cae65780a556a6f2eb852",
+        "revCount": 1,
+        "type": "git",
+        "url": "https://codeberg.org/somokill/thokr-russian"
+      },
+      "original": {
+        "ref": "main",
+        "type": "git",
+        "url": "https://codeberg.org/somokill/thokr-russian"
+      }
+    },
     "tinted-foot": {
       "flake": false,
       "locked": {
@@ -691,11 +709,11 @@
     "wallpapers": {
       "flake": false,
       "locked": {
-        "lastModified": 1728569652,
-        "narHash": "sha256-gy5WLbEeCASOTZBGEXhlgpot3mb5XupWXXN5rrtma8U=",
+        "lastModified": 1728738276,
+        "narHash": "sha256-N7kjDRG+dZAeV1ZQqMbCvWXq+p11pWQJx3jSGmTEb9E=",
         "ref": "main",
-        "rev": "f985175379ecf80558f7fd8de0a143c5a29eb964",
-        "revCount": 1,
+        "rev": "36b6df21b3290640d9a594873ffb164d71050afc",
+        "revCount": 4,
         "type": "git",
         "url": "https://codeberg.org/somokill/wallpapers"
       },

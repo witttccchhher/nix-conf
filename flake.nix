@@ -24,6 +24,10 @@
       url = "git+https://codeberg.org/somokill/wallpapers?ref=main";
       flake = false;
     };
+    thokr-ru = {
+      url = "git+https://codeberg.org/somokill/thokr-russian?ref=main";
+      flake = false;
+    };
   };
 
   outputs = { nixpkgs, home-manager, stylix, nix-flatpak, ... }@inputs: 
