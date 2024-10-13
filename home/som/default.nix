@@ -5,6 +5,7 @@
     ./anyrun
     ./btop
     ./fish
+    ./floorp
     ./foot
     ./fzf
     ./git

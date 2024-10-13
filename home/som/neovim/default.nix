@@ -54,6 +54,7 @@ o.expandtab = true
 o.autoindent = true
 o.termguicolors = true
 o.clipboard = "unnamedplus"
+o.undofile = true
 vim.g.mapleader = " "
     '';
     "nvim/lua/configs/mappings.lua".text = ''

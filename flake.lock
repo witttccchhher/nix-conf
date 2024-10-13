@@ -123,6 +123,29 @@
         "type": "github"
       }
     },
+    "firefox-addons": {
+      "inputs": {
+        "flake-utils": "flake-utils_2",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "pkgs/firefox-addons",
+        "lastModified": 1728809910,
+        "narHash": "sha256-hG4klxVOUGM567YN3jhq5UjHqpfMPHfVTYWuitdq9qY=",
+        "owner": "rycee",
+        "repo": "nur-expressions",
+        "rev": "894c1045607011c9d05cd2228d55d6cede3f2090",
+        "type": "gitlab"
+      },
+      "original": {
+        "dir": "pkgs/firefox-addons",
+        "owner": "rycee",
+        "repo": "nur-expressions",
+        "type": "gitlab"
+      }
+    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -179,6 +202,21 @@
       }
     },
     "flake-utils_2": {
+      "locked": {
+        "lastModified": 1629284811,
+        "narHash": "sha256-JHgasjPR0/J1J3DRm4KxM4zTyAj4IOJY8vIl75v/kPI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "c5d161cc0af116a2e17f54316f0bf43f0819785c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flake-utils_3": {
       "inputs": {
         "systems": "systems_4"
       },
@@ -196,7 +234,7 @@
         "type": "github"
       }
     },
-    "flake-utils_3": {
+    "flake-utils_4": {
       "inputs": {
         "systems": "systems_5"
       },
@@ -214,7 +252,7 @@
         "type": "github"
       }
     },
-    "flake-utils_4": {
+    "flake-utils_5": {
       "inputs": {
         "systems": [
           "stylix",
@@ -235,7 +273,7 @@
         "type": "github"
       }
     },
-    "flake-utils_5": {
+    "flake-utils_6": {
       "inputs": {
         "systems": "systems_7"
       },
@@ -304,7 +342,7 @@
     },
     "gocheat": {
       "inputs": {
-        "flake-utils": "flake-utils_2",
+        "flake-utils": "flake-utils_3",
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
@@ -325,11 +363,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1728726232,
-        "narHash": "sha256-8ZWr1HpciQsrFjvPMvZl0W+b0dilZOqXPoKa2Ux36bc=",
+        "lastModified": 1728791962,
+        "narHash": "sha256-nr5QiXwQcZmf6/auC1UpX8iAtINMtdi2mH+OkqJQVmU=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "d57112db877f07387ce7104b5ac346ede556d2d7",
+        "rev": "64c6325b28ebd708653dd41d88f306023f296184",
         "type": "github"
       },
       "original": {
@@ -361,7 +399,7 @@
     },
     "ignis": {
       "inputs": {
-        "flake-utils": "flake-utils_3",
+        "flake-utils": "flake-utils_4",
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
@@ -510,6 +548,7 @@
         "ags": "ags",
         "ani-cli-ru": "ani-cli-ru",
         "anyrun": "anyrun",
+        "firefox-addons": "firefox-addons",
         "fzf-tab": "fzf-tab",
         "gocheat": "gocheat",
         "home-manager": "home-manager",
@@ -532,7 +571,7 @@
         "base16-helix": "base16-helix",
         "base16-vim": "base16-vim",
         "flake-compat": "flake-compat",
-        "flake-utils": "flake-utils_4",
+        "flake-utils": "flake-utils_5",
         "gnome-shell": "gnome-shell",
         "home-manager": "home-manager_2",
         "nixpkgs": "nixpkgs_6",
@@ -729,11 +768,11 @@
     "wallpapers": {
       "flake": false,
       "locked": {
-        "lastModified": 1728738276,
-        "narHash": "sha256-N7kjDRG+dZAeV1ZQqMbCvWXq+p11pWQJx3jSGmTEb9E=",
+        "lastModified": 1728829431,
+        "narHash": "sha256-qiMUkcb2TTKnPV6SC8eeBOBoQBFC11R5c9YkdWQw28Y=",
         "ref": "main",
-        "rev": "36b6df21b3290640d9a594873ffb164d71050afc",
-        "revCount": 4,
+        "rev": "e954cdddbaf6c4bad11a3e5e20cd97d4d4c1521c",
+        "revCount": 5,
         "type": "git",
         "url": "https://codeberg.org/somokill/wallpapers"
       },
@@ -745,7 +784,7 @@
     },
     "yetris": {
       "inputs": {
-        "flake-utils": "flake-utils_5",
+        "flake-utils": "flake-utils_6",
         "nixpkgs": "nixpkgs_7"
       },
       "locked": {

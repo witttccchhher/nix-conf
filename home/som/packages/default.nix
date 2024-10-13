@@ -33,6 +33,7 @@
       grim slurp
       pavucontrol
       eog
+      imagemagick
 
       # Code
       micro helix
@@ -68,6 +69,7 @@
       materialgram
       fractal
       revolt-desktop
+      floorp
 
       # Other
       adwaita-qt

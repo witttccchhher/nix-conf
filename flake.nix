@@ -28,6 +28,10 @@
       url = "git+https://codeberg.org/somokill/thokr-russian?ref=main";
       flake = false;
     };
+    firefox-addons = {
+			url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
 
     zsh-autopair = {
       url = "github:hlissner/zsh-autopair";
