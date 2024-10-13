@@ -28,6 +28,7 @@
       background_update = false;
       mem_graphs = false;
       show_swap = true;
+      swap_disk = false;
       show_disk = false;
       show_disks = false;
       only_physical = true;

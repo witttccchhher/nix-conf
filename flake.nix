@@ -28,6 +28,23 @@
       url = "git+https://codeberg.org/somokill/thokr-russian?ref=main";
       flake = false;
     };
+
+    zsh-autopair = {
+      url = "github:hlissner/zsh-autopair";
+      flake = false;
+    };
+    fzf-tab = {
+      url = "github:Aloxaf/fzf-tab";
+      flake = false;
+    };
+    zsh-autosuggestions = {
+      url = "github:zsh-users/zsh-autosuggestions";
+      flake = false;
+    };
+    zsh-auto-notify = {
+      url = "github:MichaelAquilina/zsh-auto-notify";
+      flake = false;
+    };
   };
 
   outputs = { nixpkgs, home-manager, stylix, nix-flatpak, ... }@inputs: 

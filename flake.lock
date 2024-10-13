@@ -269,6 +269,22 @@
         "type": "github"
       }
     },
+    "fzf-tab": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1728610694,
+        "narHash": "sha256-4A7zpaO1rNPvS0rrmmxg56rJGpZHnw/g+x5FJd0EshI=",
+        "owner": "Aloxaf",
+        "repo": "fzf-tab",
+        "rev": "b6e1b22458a131f835c6fe65bdb88eb45093d2d2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Aloxaf",
+        "repo": "fzf-tab",
+        "type": "github"
+      }
+    },
     "gnome-shell": {
       "flake": false,
       "locked": {
@@ -494,6 +510,7 @@
         "ags": "ags",
         "ani-cli-ru": "ani-cli-ru",
         "anyrun": "anyrun",
+        "fzf-tab": "fzf-tab",
         "gocheat": "gocheat",
         "home-manager": "home-manager",
         "ignis": "ignis",
@@ -502,7 +519,10 @@
         "stylix": "stylix",
         "thokr-ru": "thokr-ru",
         "wallpapers": "wallpapers",
-        "yetris": "yetris"
+        "yetris": "yetris",
+        "zsh-auto-notify": "zsh-auto-notify",
+        "zsh-autopair": "zsh-autopair",
+        "zsh-autosuggestions": "zsh-autosuggestions"
       }
     },
     "stylix": {
@@ -737,6 +757,54 @@
       "original": {
         "path": "home/som/packages/derivations/yetris",
         "type": "path"
+      }
+    },
+    "zsh-auto-notify": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1720453411,
+        "narHash": "sha256-ScBwky33leI8mFMpAz3Ng2Z0Gbou4EWMOAhkcMZAWIc=",
+        "owner": "MichaelAquilina",
+        "repo": "zsh-auto-notify",
+        "rev": "27c07dddb42f05b199319a9b66473c8de7935856",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MichaelAquilina",
+        "repo": "zsh-auto-notify",
+        "type": "github"
+      }
+    },
+    "zsh-autopair": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1720984677,
+        "narHash": "sha256-3zvOgIi+q7+sTXrT+r/4v98qjeiEL4Wh64rxBYnwJvQ=",
+        "owner": "hlissner",
+        "repo": "zsh-autopair",
+        "rev": "449a7c3d095bc8f3d78cf37b9549f8bb4c383f3d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hlissner",
+        "repo": "zsh-autopair",
+        "type": "github"
+      }
+    },
+    "zsh-autosuggestions": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1694098728,
+        "narHash": "sha256-B+Kz3B7d97CM/3ztpQyVkE6EfMipVF8Y4HJNfSRXHtU=",
+        "owner": "zsh-users",
+        "repo": "zsh-autosuggestions",
+        "rev": "c3d4e576c9c86eac62884bd47c01f6faed043fc5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zsh-users",
+        "repo": "zsh-autosuggestions",
+        "type": "github"
       }
     }
   },
