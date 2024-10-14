@@ -69,7 +69,6 @@
       materialgram
       fractal
       revolt-desktop
-      floorp
 
       # Other
       adwaita-qt

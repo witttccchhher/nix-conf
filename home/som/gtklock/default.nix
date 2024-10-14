@@ -2,19 +2,19 @@
   xdg.configFile = {
     "gtklock/style.css".text = ''
       * {
-        font-family: scientifica;
-        border-radius: 0;
+        font-family: JetBrainsMono Nerd Font;
+        border-radius: 2;
       }
 
       #clock-label {
-        font-size: 100px;
+        font-size: 50px;
       }
 
       #input-label,
       #error-label,
       button,
       #window-box {
-        font-size: 20px;
+        font-size: 14px;
         font-weight: normal;
       }
     '';

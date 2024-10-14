@@ -1,17 +1,19 @@
-{ inputs, ... }: {
-  import = [ ./settings.nix ./search.nix ];
+{ pkgs, inputs, ... }: {
+  imports = [ ./settings.nix ./search.nix ./user ];
   programs.floorp = {
     enable = true;
+    package = pkgs.floorp;
     languagePacks = [ "en" "ru" ];
     profiles.som = {
       id = 0;
       name = "som";
       isDefault = true;
-      extensions = with inputs.firefox-addons.packages."${system}"; [
+      extensions = with inputs.firefox-addons.packages."${pkgs.system}"; [
         translate-web-pages
       ];
     };
     policies = {
+      AllowFileSelectionDialogs = true;
       CaptivePortal = false;
 			DisableFirefoxStudies = true;
 			DisablePocket = true;
