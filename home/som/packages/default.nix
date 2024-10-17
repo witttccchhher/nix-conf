@@ -26,7 +26,7 @@
       inputs.yetris.packages.${system}.yetris
 
       # Fonts
-      (google-fonts.override { fonts = [ "OpenSans" ]; })
+      (google-fonts.override { fonts = [ "OpenSans" "Poppins" ]; })
 
       # Media
       mpv
@@ -34,6 +34,7 @@
       pavucontrol
       eog
       imagemagick
+      wf-recorder
 
       # Code
       micro helix
@@ -61,6 +62,8 @@
       gping
       typioca
       thokr
+      bun
+      upower
 
       # Internet
       ungoogled-chromium

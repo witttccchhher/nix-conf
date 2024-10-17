@@ -44,11 +44,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1728684316,
-        "narHash": "sha256-fQ4LkmZeW4eGowbVfvct1hLFD0hNkZiX5SzRlWqhgxc=",
+        "lastModified": 1728852607,
+        "narHash": "sha256-PhJdr8b4nZVHts5KMEsf7vCDXVpFIFCa7VlCt+oYpL4=",
         "owner": "anyrun-org",
         "repo": "anyrun",
-        "rev": "6c974bc5f3f82f505278befa4b24d96ba8eb06f1",
+        "rev": "6e0385f6945d701545edc5bccfc5f544e1e12663",
         "type": "github"
       },
       "original": {
@@ -132,11 +132,11 @@
       },
       "locked": {
         "dir": "pkgs/firefox-addons",
-        "lastModified": 1728809910,
-        "narHash": "sha256-hG4klxVOUGM567YN3jhq5UjHqpfMPHfVTYWuitdq9qY=",
+        "lastModified": 1728878599,
+        "narHash": "sha256-+h/cfPCUZn08vs+TAII3Is9M/bIMo1K89ZrBhEOu9dE=",
         "owner": "rycee",
         "repo": "nur-expressions",
-        "rev": "894c1045607011c9d05cd2228d55d6cede3f2090",
+        "rev": "a864309f53a22a8df2e0822daa61a9ee5584782a",
         "type": "gitlab"
       },
       "original": {
@@ -403,11 +403,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1728655018,
-        "narHash": "sha256-Be/WDkhwSRvhO+Cnh/jehaNpEdy/V41pXfNg0QcXDe8=",
+        "lastModified": 1728842861,
+        "narHash": "sha256-exvbgm/qYOdT8UE3OxwQXPVtIdqc6m+SVBsNuxy5P0Q=",
         "owner": "linkfrg",
         "repo": "ignis",
-        "rev": "fd4e5200b369603c0a53cb853a8954d15503b459",
+        "rev": "424689830e89844abb0d95991e098ad0480a55ae",
         "type": "github"
       },
       "original": {
@@ -768,11 +768,11 @@
     "wallpapers": {
       "flake": false,
       "locked": {
-        "lastModified": 1728829431,
-        "narHash": "sha256-qiMUkcb2TTKnPV6SC8eeBOBoQBFC11R5c9YkdWQw28Y=",
+        "lastModified": 1728898728,
+        "narHash": "sha256-EMZu7t1Hx1Y8MGMx4aAhWTArlBMQKDoa3yFBYva+JFY=",
         "ref": "main",
-        "rev": "e954cdddbaf6c4bad11a3e5e20cd97d4d4c1521c",
-        "revCount": 5,
+        "rev": "162c92a941357e372c9c11af6d33feb05b014eee",
+        "revCount": 6,
         "type": "git",
         "url": "https://codeberg.org/somokill/wallpapers"
       },

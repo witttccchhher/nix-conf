@@ -20,7 +20,7 @@
     ./packages
     ./stylix
     ./sway
-    ./waybar
+    # ./waybar
     ./yazi
     ./zsh
   ];

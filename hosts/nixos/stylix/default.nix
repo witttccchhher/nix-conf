@@ -1,10 +1,10 @@
-{ inputs, ... }: {
+{ inputs, config, ... }: {
   imports = [ ./themes/chocolate ];
   stylix = {
 		enable = true;
 		autoEnable = false;
 
-    image = "${inputs.wallpapers}/chocolate/solid/solid1.png";
+    image = "${config.stylix.image}";
     polarity = "dark";
 
 		targets = {

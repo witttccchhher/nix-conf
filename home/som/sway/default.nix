@@ -1,7 +1,8 @@
 { pkgs, config, inputs, ... }: {
   wayland.windowManager.sway = {
     enable = true;
-    package = pkgs.sway;
+    package = pkgs.swayfx;
+    checkConfig = false;
     xwayland = true;
 
     extraConfig = ''
@@ -11,35 +12,51 @@
     extraConfigEarly = ''
       output LVDS-1 disable
 
+      blur disable
+      corner_radius 15
+      shadows enable
+      shadow_blur_radius 15
+      shadow_color #252221ff
+      layer_effects "waybar" shadows disable; corner_radius 0; blur disable
+
       set $raise_vol amixer sset Master 1%+
       set $lower_vol amixer sset Master 1%-
       set $mute amixer sset Master toggle
     '';
 
     config = {
-      terminal = "foot";
+      terminal = "footclient";
       menu = "anyrun";
 
       output = {
         HDMI-A-1 = {
-          bg = "${inputs.wallpapers}/chocolate/solid/solid1.png fill";
+          bg = "${config.stylix.image} fill";
           resolution = "1920x1080";
           position = "0,0";
         };
       };
 
       startup = [
-        { command = "ags"; always = true; }
+        # { command = "ags"; always = true; }
         { command = "autotiling"; always = true; }
+        { command = "foot --server"; }
       ];
 
       workspaceLayout = "default";
       defaultWorkspace = "workspace number 1";
       focus.followMouse = true;
-      bars = [ { command = "${pkgs.waybar}/bin/waybar"; } ];
-      gaps.inner = 20;
+      bars = [ 
+        { command = "${pkgs.waybar}/bin/waybar"; }
+      ];
+      gaps = {
+        inner = 20;
+        outer = 70;
+      };
 
-      floating.border = 0;
+      floating = {
+        border = 0;
+        titlebar = false;
+      };
       window = {
         commands = [
           {
