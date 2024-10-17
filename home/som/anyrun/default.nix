@@ -6,7 +6,6 @@
     config = {
       plugins = [
         inputs.anyrun.packages.${pkgs.system}.applications
-        inputs.anyrun.packages.${pkgs.system}.translate
       ];
       x = { fraction = 0.5; };
       y = { fraction = 0.5; };
@@ -19,19 +18,11 @@
       maxEntries = null;
     };
 
-    extraConfigFiles."translate.ron".text = ''
-      Config(
-        prefix: ":",
-        language_delimiter: ">",
-        max_entries: 3
-      )
-    '';
-
     extraCss = with config.lib.stylix.colors; ''
       * {
         all: unset;
-        font-family: scientifica;
-        font-size: 20px;
+        font-family: JetBrainsMono Nerd Font;
+        font-size: 15px;
         color: #${base05};
       }
 

@@ -6,8 +6,8 @@
     owner = "Banh-Canh";
     repo = "${pname}";
     rev = "87df5d69323bbabd02e591f947adf345e9c3567e";
-    hash = "";
+    hash = "sha256-SmLJqtvfoJqjLtR7uDTbEt/n0cES8KWOBKhO/Ein1Mw=";
   };
 
-  vendorHash = "";
+  vendorHash = "sha256-SmLJqtvfoJqjLtR7uDTbEt/n0cES8KWOBKhO/Ein1Mw=";
 }

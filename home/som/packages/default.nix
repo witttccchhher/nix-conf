@@ -24,6 +24,7 @@
       inputs.ani-cli-ru.packages.${system}.ani-cli-ru
       inputs.gocheat.packages.${system}.gocheat
       inputs.yetris.packages.${system}.yetris
+      inputs.ytui.packages.${system}.ytui
 
       # Fonts
       (google-fonts.override { fonts = [ "OpenSans" "Poppins" ]; })
@@ -69,7 +70,6 @@
       ungoogled-chromium
       firefox
       telegram-desktop
-      materialgram
       fractal
       revolt-desktop
 
