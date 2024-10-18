@@ -27,11 +27,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-JBsr49J7HT9DRa9Z4cv/4KFh7NSS3LOHMU/H9AHHsN8=",
-        "path": "home/som/packages/derivations/ani-cli",
+        "path": "home/wtchr/packages/derivations/ani-cli",
         "type": "path"
       },
       "original": {
-        "path": "home/som/packages/derivations/ani-cli",
+        "path": "home/wtchr/packages/derivations/ani-cli",
         "type": "path"
       }
     },
@@ -132,11 +132,11 @@
       },
       "locked": {
         "dir": "pkgs/firefox-addons",
-        "lastModified": 1729198744,
-        "narHash": "sha256-sJXRhptdX5y77360VgcW2fYlZoazg/lOh4upx8nUiVo=",
+        "lastModified": 1729258576,
+        "narHash": "sha256-SnKiFkmGCK8ybwZquoyFGfSDaxSbcjSGl/8NIyjJvqE=",
         "owner": "rycee",
         "repo": "nur-expressions",
-        "rev": "fb7273920513b4c1ef70a79a83f87292b54ae91a",
+        "rev": "8d276c7e8714872e64b908896ad11f685a8b077b",
         "type": "gitlab"
       },
       "original": {
@@ -366,11 +366,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-zBHG36Spi5TG6GTLGSM0SjRUrtepBcRuKpZg4SVhwSU=",
-        "path": "home/som/packages/derivations/gocheat",
+        "path": "home/wtchr/packages/derivations/gocheat",
         "type": "path"
       },
       "original": {
-        "path": "home/som/packages/derivations/gocheat",
+        "path": "home/wtchr/packages/derivations/gocheat",
         "type": "path"
       }
     },
@@ -381,11 +381,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1729174520,
-        "narHash": "sha256-QxCAdgQdeIOaCiE0Sr23s9lD0+T1b/wuz5pSiGwNrCQ=",
+        "lastModified": 1729258007,
+        "narHash": "sha256-48B9JVEhQ4zHxE0ak50QDnkC6C+R74Bm/md397tXhXM=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "e78cbb20276f09c1802e62d2f77fc93ec32da268",
+        "rev": "cb93ab1c990c5719ec199e8c397e688de06cb46d",
         "type": "github"
       },
       "original": {
@@ -840,11 +840,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-cZWWdET1ZXbIrtnS1da9AcqfbodrYivourmLyYx/rfE=",
-        "path": "home/som/packages/derivations/yetris",
+        "path": "home/wtchr/packages/derivations/yetris",
         "type": "path"
       },
       "original": {
-        "path": "home/som/packages/derivations/yetris",
+        "path": "home/wtchr/packages/derivations/yetris",
         "type": "path"
       }
     },
@@ -856,11 +856,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-XIjBVEshE7UrIYeRSXY5DGfKgLHC50SwKRVnEhJfFhc=",
-        "path": "home/som/packages/derivations/ytui",
+        "path": "home/wtchr/packages/derivations/ytui",
         "type": "path"
       },
       "original": {
-        "path": "home/som/packages/derivations/ytui",
+        "path": "home/wtchr/packages/derivations/ytui",
         "type": "path"
       }
     },

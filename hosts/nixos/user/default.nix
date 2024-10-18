@@ -3,7 +3,7 @@
   i18n.defaultLocale = "en_US.UTF-8";
   users = {
     defaultUserShell = pkgs.fish;
-    users.wtchr = {
+    users.som = {
       isNormalUser = true;
       extraGroups = [ "wheel" "input" "networkmanager" "video" "audio" ];
       packages = [];
@@ -12,7 +12,7 @@
     };
   };
 
-  services.getty.autologinUser = "wtchr";
+  services.getty.autologinUser = "som";
   environment.loginShellInit = ''
     [[ "$(tty)" == /dev/tty1 ]] && sway
   '';

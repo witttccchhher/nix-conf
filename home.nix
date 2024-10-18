@@ -1,8 +1,8 @@
 {
-  imports = [ ./home/wtchr ];
+  imports = [ ./home/som ];
   
   home = {
-    username = "wtchr";
+    username = "som";
     homeDirectory = "/home/som";
     stateVersion = "24.05";
   };
