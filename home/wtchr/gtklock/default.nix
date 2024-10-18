@@ -20,7 +20,7 @@
     '';
     "gtklock/config.ini".text = ''
       [main]
-      style = ${/home/som/.config/gtklock/style.css}
+      style = ./style.css
     '';
   };
 }

@@ -5,7 +5,7 @@
     wheelNeedsPassword = true;
     extraRules = [
       {
-        users = [ "som" ];
+        users = [ "wtchr" ];
         keepEnv = true;
         persist = false;
       }

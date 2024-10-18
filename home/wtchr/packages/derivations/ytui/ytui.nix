@@ -9,5 +9,5 @@
     hash = "sha256-SmLJqtvfoJqjLtR7uDTbEt/n0cES8KWOBKhO/Ein1Mw=";
   };
 
-  vendorHash = "sha256-SmLJqtvfoJqjLtR7uDTbEt/n0cES8KWOBKhO/Ein1Mw=";
+  vendorHash = "sha256-ipB19Jszwpe26hKE1D/2UT87ZjCnfpuoa7yeVOQAr8I=";
 }
