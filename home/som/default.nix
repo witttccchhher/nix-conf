@@ -4,6 +4,7 @@
     ./alacritty
     ./anyrun
     ./btop
+    ./emacs
     ./fish
     ./floorp
     ./foot
@@ -20,7 +21,7 @@
     ./packages
     ./stylix
     ./sway
-    # ./waybar
+    ./waybar
     ./yazi
     ./zsh
   ];
