@@ -38,7 +38,7 @@
       wf-recorder
 
       # Code
-      micro helix
+      micro helix emacs30
       git
 
       # Utilites
@@ -65,6 +65,7 @@
       thokr
       bun
       upower
+      ventoy
 
       # Internet
       ungoogled-chromium
