@@ -577,6 +577,22 @@
         "type": "github"
       }
     },
+    "nixpkgs_9": {
+      "locked": {
+        "lastModified": 1729256560,
+        "narHash": "sha256-/uilDXvCIEs3C9l73JTACm4quuHUsIHcns1c+cHUJwA=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "4c2fcb090b1f3e5b47eaa7bd33913b574a11e0a0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "ags": "ags",
@@ -594,6 +610,7 @@
         "wallpapers": "wallpapers",
         "yetris": "yetris",
         "ytui": "ytui",
+        "zen-browser": "zen-browser",
         "zsh-auto-notify": "zsh-auto-notify",
         "zsh-autopair": "zsh-autopair",
         "zsh-autosuggestions": "zsh-autosuggestions"
@@ -862,6 +879,24 @@
       "original": {
         "path": "home/som/packages/derivations/ytui",
         "type": "path"
+      }
+    },
+    "zen-browser": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_9"
+      },
+      "locked": {
+        "lastModified": 1729379852,
+        "narHash": "sha256-QM0JYrrilWjbg66F8ypx/SNko+Km0Bds1k9ZeKjl5OE=",
+        "owner": "0xc000022070",
+        "repo": "zen-browser-flake",
+        "rev": "9f97fb1c01fc76da9834a09443806166d346a7d6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "0xc000022070",
+        "repo": "zen-browser-flake",
+        "type": "github"
       }
     },
     "zsh-auto-notify": {

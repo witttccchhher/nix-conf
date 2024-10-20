@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @-moz-document url(chrome://browser/content/browser.xhtml){
-  
+
 .scrollbox-clip,
 .customization-target,
 #PanelUI-button,
@@ -59,17 +59,18 @@ html {
 body {
   --toolbar-field-focus-border-color: #413c3a !important;
 }
-  
-  menuitem, arrowscrollbox {
-    background-color: #252221 !important;
-    color: #c8baa4 !important;
-  }
-  
-  menuitem:hover {
-    background-color: #413c3a !important;
-  }
-  
-  .toolbarbutton-1 {
-    fill: #998396 !important;
-  }
+
+menuitem,
+arrowscrollbox {
+  background-color: #252221 !important;
+  color: #c8baa4 !important;
+}
+
+menuitem:hover {
+  background-color: #413c3a !important;
+}
+
+.toolbarbutton-1 {
+  fill: #998396 !important;
+}
 }

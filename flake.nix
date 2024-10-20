@@ -7,6 +7,7 @@
     ags.url = "github:Aylur/ags";
     ignis.url = "github:linkfrg/ignis";
     nix-flatpak.url = "github:gmodena/nix-flatpak";
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
     ani-cli-ru.url = "path:home/som/packages/derivations/ani-cli";
     gocheat.url = "path:home/som/packages/derivations/gocheat";

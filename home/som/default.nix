@@ -18,6 +18,7 @@
     ./ncmpcpp
     ./neofetch
     ./neovim
+    ./nixpkgs
     ./packages
     ./stylix
     ./sway

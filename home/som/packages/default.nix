@@ -25,6 +25,7 @@
       inputs.gocheat.packages.${system}.gocheat
       inputs.yetris.packages.${system}.yetris
       inputs.ytui.packages.${system}.ytui
+      inputs.zen-browser.packages."${system}".generic
 
       # Fonts
       (google-fonts.override { fonts = [ "OpenSans" "Poppins" ]; })
@@ -38,7 +39,7 @@
       wf-recorder
 
       # Code
-      micro helix
+      micro helix vim
       git
 
       # Utilites
@@ -66,6 +67,7 @@
       bun
       upower
       ventoy
+      jq
 
       # Internet
       ungoogled-chromium
@@ -73,6 +75,7 @@
       telegram-desktop
       fractal
       revolt-desktop
+      obsidian
 
       # Other
       adwaita-qt
