@@ -12,6 +12,8 @@
         translate-web-pages
         stylus
       ];
+      userChrome = builtins.readFile ./userChrome.css;
+      userContent = builtins.readFile ./userContent.css;
     };
   };
 }
