@@ -38,7 +38,7 @@
       wf-recorder
 
       # Code
-      micro helix emacs30
+      micro helix
       git
 
       # Utilites
