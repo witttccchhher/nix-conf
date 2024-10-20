@@ -19,6 +19,7 @@
     ./neofetch
     ./neovim
     ./nixpkgs
+    ./obsidian
     ./packages
     ./stylix
     ./sway
