@@ -25,6 +25,7 @@
     ./sway
     ./waybar
     ./yazi
+    ./zathura
     ./zsh
   ];
 }
