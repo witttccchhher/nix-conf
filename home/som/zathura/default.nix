@@ -1,7 +1,8 @@
 {
   programs.zathura = {
-    options = {
-      font = "JetBrainsMono Nerd Font";
-    };
+    enable = true;
+    extraConfig = ''
+      set font "JetBrainsMono Nerd Font 12"
+    '';
   };
 }

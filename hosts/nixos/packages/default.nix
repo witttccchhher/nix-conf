@@ -40,5 +40,9 @@
     # Other
     home-manager
     python3
+    adwaita-qt
+    adwaita-qt6
+    qadwaitadecorations
+    qadwaitadecorations-qt6
   ];
 }

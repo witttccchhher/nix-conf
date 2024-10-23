@@ -17,7 +17,7 @@
     ./micro
     ./ncmpcpp
     ./neofetch
-    ./neovim
+    # ./neovim
     ./nixpkgs
     ./obsidian
     ./packages

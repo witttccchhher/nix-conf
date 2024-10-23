@@ -21,10 +21,10 @@
       # Flakes
       inputs.anyrun.packages.${system}.anyrun
       inputs.ignis.packages.${system}.ignis
-      inputs.ani-cli-ru.packages.${system}.ani-cli-ru
-      inputs.gocheat.packages.${system}.gocheat
-      inputs.yetris.packages.${system}.yetris
-      inputs.ytui.packages.${system}.ytui
+      # inputs.ani-cli-ru.packages.${system}.ani-cli-ru
+      # inputs.gocheat.packages.${system}.gocheat
+      # inputs.yetris.packages.${system}.yetris
+      # inputs.ytui.packages.${system}.ytui
       inputs.zen-browser.packages."${system}".generic
 
       # Fonts
@@ -37,10 +37,19 @@
       eog
       imagemagick
       wf-recorder
+      mopidy
 
       # Code
       micro helix vim
       git
+
+      neovim
+      lua-language-server
+      stylua
+      nixd
+      basedpyright
+      vscode-langservers-extracted
+      typescript-language-server
 
       # Utilites
       neofetch
@@ -68,6 +77,7 @@
       upower
       ventoy
       jq
+      xdg-user-dirs
 
       # Internet
       ungoogled-chromium
@@ -78,6 +88,7 @@
       obsidian
 
       # Other
+      gtk4
       adwaita-qt
       adwaita-qt6
       qadwaitadecorations
@@ -91,6 +102,7 @@
       transmission_4-gtk
       zathura
       nautilus
+      komikku
     ];
   };
 }

@@ -9,10 +9,10 @@
     nix-flatpak.url = "github:gmodena/nix-flatpak";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
-    ani-cli-ru.url = "path:home/som/packages/derivations/ani-cli";
-    gocheat.url = "path:home/som/packages/derivations/gocheat";
-    yetris.url = "path:home/som/packages/derivations/yetris";
-    ytui.url = "path:home/som/packages/derivations/ytui";
+    # ani-cli-ru.url = "path:home/som/packages/derivations/ani-cli";
+    # gocheat.url = "path:home/som/packages/derivations/gocheat";
+    # yetris.url = "path:home/som/packages/derivations/yetris";
+    # ytui.url = "path:home/som/packages/derivations/ytui";
 
     home-manager = {
       url = "github:nix-community/home-manager";

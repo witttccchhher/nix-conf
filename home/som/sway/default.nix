@@ -38,6 +38,7 @@
 
       startup = [
         # { command = "ags"; always = true; }
+        { command = "ignis init"; always = true; } { command = "ignis toggle screenshot_tool"; }
         { command = "autotiling"; always = true; }
         { command = "foot --server"; }
       ];
@@ -50,7 +51,7 @@
       ];
       gaps = {
         inner = 20;
-        outer = 70;
+        outer = 40;
       };
 
       floating = {
@@ -84,17 +85,18 @@
       bindkeysToCode = true;
       keybindings = let
         mod = config.wayland.windowManager.sway.config.modifier;
-        takescreenshot = pkgs.writeShellScriptBin "takescreenshot" ''
-          ${pkgs.grim}/bin/grim -g "$(${pkgs.slurp}/bin/slurp)" - | wl-copy
-          ags -r "Utils.notify({ summary: 'Screenhot takes', body: 'Copied to clipboard' })"
-        '';
+        # takescreenshot = pkgs.writeShellScriptBin "takescreenshot" ''
+          # ${pkgs.grim}/bin/grim -g "$(${pkgs.slurp}/bin/slurp)" - | wl-copy
+          # ags -r "Utils.notify({ summary: 'Screenhot takes', body: 'Copied to clipboard' })"
+        # '';
       in {
         "XF86AudioRaiseVolume" = "exec $raise_vol";
         "XF86AudioLowerVolume" = "exec $lower_vol";
         "XF86AudioMute" = "exec $mute";
 
         "${mod}+Return" = "exec ${config.wayland.windowManager.sway.config.terminal}";
-        "Print" = "exec ${pkgs.lib.getExe takescreenshot}";
+        # "Print" = "exec ${pkgs.lib.getExe takescreenshot}";
+        "Print" = "exec 'ignis toggle screenshot_tool'";
         "${mod}+w" = "kill";
         "${mod}+space" = "exec ${config.wayland.windowManager.sway.config.menu}";
         "${mod}+Shift+r" = "reload";

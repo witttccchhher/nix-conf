@@ -1,0 +1,11 @@
+{ pkgs, ... }: pkgs.stdenv.mkDerivation rec {
+  pname = "canvas";
+  version = "3.0";
+
+  src = pkgs.fetchFromGitHub {
+    owner = "adi1090x";
+    repo = "${pname}";
+    rev = "b4b1e3456d86db98052bd7735ae3c0a8799b1061";
+    hash = "";
+  };
+}
