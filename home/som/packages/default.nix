@@ -25,6 +25,7 @@
       # inputs.gocheat.packages.${system}.gocheat
       # inputs.yetris.packages.${system}.yetris
       # inputs.ytui.packages.${system}.ytui
+      inputs.canvas.packages.${system}.canvas
       inputs.zen-browser.packages."${system}".generic
 
       # Fonts

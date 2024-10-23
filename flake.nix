@@ -13,6 +13,7 @@
     # gocheat.url = "path:home/som/packages/derivations/gocheat";
     # yetris.url = "path:home/som/packages/derivations/yetris";
     # ytui.url = "path:home/som/packages/derivations/ytui";
+    canvas.url = "path:/home/som/nix/home/som/packages/derivations/canvas";
 
     home-manager = {
       url = "github:nix-community/home-manager";

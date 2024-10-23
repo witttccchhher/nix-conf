@@ -6,6 +6,6 @@
     owner = "adi1090x";
     repo = "${pname}";
     rev = "b4b1e3456d86db98052bd7735ae3c0a8799b1061";
-    hash = "";
+    hash = "sha256-yyZjwU3n1UJfVQ05if3oKBNKfjURmvfHFe2zC91Zu8g=";
   };
 }
