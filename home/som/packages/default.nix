@@ -25,7 +25,8 @@
       # inputs.gocheat.packages.${system}.gocheat
       # inputs.yetris.packages.${system}.yetris
       # inputs.ytui.packages.${system}.ytui
-      inputs.canvas.packages.${system}.canvas
+      # inputs.canvas.packages.${system}.canvas
+      inputs.fabric.packages.${system}.fabric
       inputs.zen-browser.packages."${system}".generic
 
       # Fonts
@@ -104,6 +105,7 @@
       zathura
       nautilus
       komikku
+      cool-retro-term
     ];
   };
 }
