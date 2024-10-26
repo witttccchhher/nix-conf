@@ -7,7 +7,7 @@
     owner = "Fabric-Development";
     repo = "${pname}";
     rev = "b40263bd15db9a7ad7fe7c764dd409aaa615622b";
-    hash = "";
+    hash = "sha256-8HrzieeOj9dmRNXXV1AA6jV7COVYPnD7dK9npPxtER4=";
   };
 
   build-system = [ pkgs.python3Packages.setuptools ];
