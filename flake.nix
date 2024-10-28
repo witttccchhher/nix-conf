@@ -5,7 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     stylix.url = "github:danth/stylix";
     ags.url = "github:Aylur/ags";
-    ignis.url = "github:linkfrg/ignis";
+    # ignis.url = "git+https://github.com/ratson/ignis?submodules=1&ref=main&rev=7c4fac8b622d2d488012c2633d7ad76a71bdef57";
     nix-flatpak.url = "github:gmodena/nix-flatpak";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
@@ -13,8 +13,8 @@
     # gocheat.url = "path:home/som/packages/derivations/gocheat";
     # yetris.url = "path:home/som/packages/derivations/yetris";
     # ytui.url = "path:home/som/packages/derivations/ytui";
-    canvas.url = "path:home/som/packages/derivations/canvas";
-    fabric.url = "path:home/som/packages/derivations/fabric";
+    # canvas.url = "path:home/som/packages/derivations/canvas";
+    fabric-python.url = "github:Fabric-Development/fabric?ref=rewrite";
 
     home-manager = {
       url = "github:nix-community/home-manager";

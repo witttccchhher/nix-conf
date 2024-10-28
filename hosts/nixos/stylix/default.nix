@@ -1,5 +1,5 @@
 { inputs, config, ... }: {
-  imports = [ ./themes/chocolate ];
+  imports = [ ./themes/witcher ];
   stylix = {
 		enable = true;
 		autoEnable = false;

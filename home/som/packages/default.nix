@@ -20,13 +20,13 @@
 
       # Flakes
       inputs.anyrun.packages.${system}.anyrun
-      inputs.ignis.packages.${system}.ignis
+      # inputs.ignis.packages.${system}.default
       # inputs.ani-cli-ru.packages.${system}.ani-cli-ru
       # inputs.gocheat.packages.${system}.gocheat
       # inputs.yetris.packages.${system}.yetris
       # inputs.ytui.packages.${system}.ytui
       # inputs.canvas.packages.${system}.canvas
-      inputs.fabric.packages.${system}.fabric
+      inputs.fabric-python.packages.${system}.default
       inputs.zen-browser.packages."${system}".generic
 
       # Fonts
@@ -75,6 +75,7 @@
       gping
       typioca
       thokr
+      ngrrram
       bun
       upower
       ventoy
@@ -95,8 +96,8 @@
       adwaita-qt6
       qadwaitadecorations
       qadwaitadecorations-qt6
-      qt5ct
-      qt6ct
+      libsForQt5.qt5ct
+      kdePackages.qt6ct
 
       # GUI
       waybar
