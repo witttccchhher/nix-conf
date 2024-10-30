@@ -10,6 +10,7 @@
   };
 
   buildInputs = with pkgs; [ imagemagick feh xcolor xorg.xrandr ];
+  nativeBuildInputs = with pkgs; [ imagemagick feh xcolor xorg.xrandr ];
 
   phases = [ "installPhase" ];
   installPhase = ''
