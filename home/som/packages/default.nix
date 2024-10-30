@@ -20,12 +20,11 @@
 
       # Flakes
       inputs.anyrun.packages.${system}.anyrun
-      # inputs.ignis.packages.${system}.default
       # inputs.ani-cli-ru.packages.${system}.ani-cli-ru
       # inputs.gocheat.packages.${system}.gocheat
       # inputs.yetris.packages.${system}.yetris
       # inputs.ytui.packages.${system}.ytui
-      # inputs.canvas.packages.${system}.canvas
+      inputs.canvas.packages.${system}.canvas
       inputs.fabric-python.packages.${system}.default
       inputs.zen-browser.packages."${system}".generic
 
@@ -43,6 +42,7 @@
 
       # Code
       micro helix vim
+      pulsar
       git
 
       neovim

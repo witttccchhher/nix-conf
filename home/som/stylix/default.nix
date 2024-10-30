@@ -38,6 +38,9 @@
       lazygit.enable = true;
       xresources.enable = true;
       zathura.enable = true;
+      neovim = {
+        enable = true;
+      };
     };
   };
 }

@@ -1,4 +1,4 @@
-{ config, extraColors, ... }: {
+{ config, ... }: {
   programs.alacritty = {
     enable = true;
     settings = {
@@ -36,7 +36,7 @@
           yellow = "#${base0A}";
           blue = "#${base0D}";
           magenta = "#${base0C}";
-          cyan = "#${extraColors.base0G}";
+          cyan = "#${base0D}";
           white = "#${base05}";
         };
       };

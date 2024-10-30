@@ -1,4 +1,4 @@
-{ pkgs, config, extraColors, ... }: {
+{ pkgs, config, ... }: {
   programs.micro = {
   	enable = true;
   	package = pkgs.micro;
@@ -44,12 +44,12 @@
 
   xdg.configFile."micro/colorschemes/chocolate-tc.micro".text = with config.lib.stylix.colors; ''
 color-link default "#${base05},#${base00}"
-color-link comment "italic #${extraColors.base0H},#${base00}"
+color-link comment "italic #${base04},#${base00}"
 color-link symbol "#${base0A},#${base00}"
 color-link constant "#${base0C},#${base00}"
 color-link constant.string "#${base0B},#${base00}"
 color-link constant.string.char "#${base0B},#${base00}"
-color-link identifier "#${extraColors.base0G},#${base00}"
+color-link identifier "#${base0D},#${base00}"
 color-link statement "#${base08},#${base00}"
 color-link preproc "#${base08},235"
 color-link type "#${base08},#${base00}"

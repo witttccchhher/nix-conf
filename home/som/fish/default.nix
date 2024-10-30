@@ -5,11 +5,11 @@
     functions = {
       fish_prompt = with config.lib.stylix.colors; ''
         if test -n "$IN_NIX_SHELL"
-          printf "%s" (set_color -o ${base04}) "
-        " (set_color normal) (set_color -o ${base0C}) (set_color -b ${base04}) (pwd) (set_color normal) (set_color -o ${base04}) "" (set_color normal) (set_color -o ${base0C}) " 󱄅  "
+          printf "%s" (set_color -o ${base03}) "
+        " (set_color normal) (set_color -o ${base0C}) (set_color -b ${base03}) (pwd) (set_color normal) (set_color -o ${base03}) "" (set_color normal) (set_color -o ${base0C}) " 󱄅  "
         else  
-          printf "%s" (set_color -o ${base04}) "
-        " (set_color normal) (set_color -o ${base05}) (set_color -b ${base04}) (pwd) (set_color normal) (set_color -o ${base04}) "" (set_color normal) (set_color -o ${base05}) " 󱄅  "
+          printf "%s" (set_color -o ${base03}) "
+        " (set_color normal) (set_color -o ${base05}) (set_color -b ${base03}) (pwd) (set_color normal) (set_color -o ${base03}) "" (set_color normal) (set_color -o ${base05}) " 󱄅  "
         end
       '';
     };

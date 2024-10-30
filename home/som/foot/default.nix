@@ -1,4 +1,4 @@
-{ pkgs, config, extraColors, ... }: {
+{ pkgs, config, ... }: {
   programs.foot = {
     enable = true;
     package = pkgs.foot;
@@ -20,7 +20,7 @@
         regular3="${base0A}";
         regular4="${base0D}";
         regular5="${base0C}";
-        regular6="${extraColors.base0G}";
+        regular6="${base0D}";
         regular7="${base05}";
       };
       csd = {
