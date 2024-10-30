@@ -9,6 +9,8 @@
     hash = "sha256-yyZjwU3n1UJfVQ05if3oKBNKfjURmvfHFe2zC91Zu8g=";
   };
 
+  nativeBuildInputs = with pkgs; [ imagemagick feh xcolor xorg.xrandr ];
+
   phases = [ "installPhase" ];
   installPhase = ''
     mkdir -p $out/bin
