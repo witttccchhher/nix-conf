@@ -25,7 +25,7 @@
       # inputs.yetris.packages.${system}.yetris
       # inputs.ytui.packages.${system}.ytui
       inputs.canvas.packages.${system}.canvas
-      inputs.fabric-python.packages.${system}.default
+      # inputs.fabric-python.packages.${system}.default
       inputs.zen-browser.packages."${system}".generic
 
       # Fonts
@@ -38,20 +38,20 @@
       eog
       imagemagick
       wf-recorder
-      mopidy
 
       # Code
-      micro helix vim
-      pulsar
       git
 
       neovim
+
       lua-language-server
       stylua
       nixd
       basedpyright
       vscode-langservers-extracted
       typescript-language-server
+
+      nixfmt-rfc-style
 
       # Utilites
       neofetch
@@ -83,12 +83,9 @@
       xdg-user-dirs
 
       # Internet
-      ungoogled-chromium
-      firefox
+      chromium
       telegram-desktop
-      fractal
-      revolt-desktop
-      obsidian
+      affine
 
       # Other
       gtk4
@@ -106,7 +103,6 @@
       zathura
       nautilus
       komikku
-      cool-retro-term
     ];
   };
 }
