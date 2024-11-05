@@ -22,6 +22,17 @@
         open = [ { run = "xdg-open $0"; block = true; } ];
       };
     };
+    keymap = {
+      manager = {
+        prepend_keymap = [
+          {
+            desc = "Go to nix/";
+            on = [ "g" "n" ];
+            run = "cd ~/nix";
+          }
+        ];
+      };
+    };
     theme = with config.lib.stylix.colors; {
       manager = {
         cwd = { fg = "#${base0C}"; bg = "reset"; bold = true; };

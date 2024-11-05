@@ -66,6 +66,7 @@
       # yazi
       yad
       nix-index
+      nix-init
       btop
       lazygit
       lutgen

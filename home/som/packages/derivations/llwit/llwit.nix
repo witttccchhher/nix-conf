@@ -3,12 +3,11 @@
   version = "0.1.0";
   pyproject = true;
 
-  src = ./src;
-  # src = builtins.fetchGit {
-    # name = "llwit";
-    # url = "https://codeberg.org/somokill/llwit.git";
-    # ref = "master";
-  # };
+  src = builtins.fetchGit {
+    name = "llwit";
+    url = "https://codeberg.org/somokill/llwit.git";
+    ref = "master";
+  };
 
   build-system = with python3Packages; [ poetry-core ];
   dependencies = with pkgs; [
