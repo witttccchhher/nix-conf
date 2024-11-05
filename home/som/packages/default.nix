@@ -24,9 +24,11 @@
       # inputs.gocheat.packages.${system}.gocheat
       # inputs.yetris.packages.${system}.yetris
       # inputs.ytui.packages.${system}.ytui
-      inputs.canvas.packages.${system}.canvas
+      # inputs.canvas.packages.${system}.canvas
       # inputs.fabric-python.packages.${system}.default
       inputs.zen-browser.packages."${system}".generic
+      # inputs.yazi.packages.${system}.default
+      inputs.llwit.packages.${system}.llwit
 
       # Fonts
       (google-fonts.override { fonts = [ "OpenSans" "Poppins" ]; })
@@ -37,10 +39,10 @@
       pavucontrol
       eog
       imagemagick
-      wf-recorder
 
       # Code
       git
+      poetry
 
       neovim
 
@@ -61,7 +63,7 @@
       lsd
       nh
       smassh
-      yazi
+      # yazi
       yad
       nix-index
       btop

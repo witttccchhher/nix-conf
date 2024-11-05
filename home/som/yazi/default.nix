@@ -1,13 +1,7 @@
-{ config, ... }: {
+{ pkgs, config, ... }: {
   programs.yazi = {
     enable = true;
-    # initLua = ''
-      # require("git").setup()
-    # '';
-    plugins = {
-      # full-border = ./plugins/full-border.lua;
-      git = ./plugins/git.yazi;
-    };
+    package = pkgs.callPackage ./yazi.nix { };
     settings = {
       manager = {
         sort_by = "alphabetical";

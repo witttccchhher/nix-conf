@@ -2,6 +2,7 @@
   programs.fish = {
     enable = true;
     package = pkgs.fish;
+    generateCompletions = false;
     functions = {
       fish_prompt = with config.lib.stylix.colors; ''
         if test -n "$IN_NIX_SHELL"
