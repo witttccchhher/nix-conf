@@ -7,7 +7,7 @@
     };
   };
 
-  outputs = { self, flake-parts, ... }@inputs: flake-parts.lib.mkFlake { inherit inputs; } {
+  outputs = { flake-parts, ... }@inputs: flake-parts.lib.mkFlake { inherit inputs; } {
     imports = [ flake-parts.flakeModules.easyOverlay ];
     systems = [ "x86_64-linux" ];
 

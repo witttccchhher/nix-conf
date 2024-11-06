@@ -22,11 +22,12 @@
       "ll" = "lsd -a -l";
 
       "ns" = "nix-shell --run fish";
-      "flakeu" = "nix flake update ~/nix/";
+      "flakeu" = "nix flake update --flake 'path:/home/som/nix/'";
       "nixgitu" = "cd ~/nix/ && git add * && git commit -m 'Some changes' && cd";
 
       "e" = "nvim";
       "fe" = "nvim $(fzf)";
+      "pe" = "nvim ~/nix/home/som/packages/default.nix";
 
       "y" = "yazi";
       "fetch" = "nitch";

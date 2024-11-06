@@ -4,17 +4,15 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs =
-    { self, nixpkgs, flake-utils }: {
-      overlays.default = import ./overlay.nix;
+  outputs = { self, nixpkgs, flake-utils }: {
+    overlays.default = import ./overlay.nix;
+  } // flake-utils.lib.eachDefaultSystem ( system: let 
+    pkgs = import nixpkgs {
+      inherit system;
+      overlays = [ self.overlays.default ];
+    };
+    in {
+      packages = { inherit (pkgs) canvas; };
     }
-    // flake-utils.lib.eachDefaultSystem (
-      system:
-      let 
-        pkgs = import nixpkgs {
-          inherit system;
-          overlays = [ self.overlays.default ];
-        };
-      in { packages = { inherit (pkgs) canvas; }; }
-    );
+  );
 }

@@ -26,9 +26,9 @@
       # inputs.ytui.packages.${system}.ytui
       # inputs.canvas.packages.${system}.canvas
       # inputs.fabric-python.packages.${system}.default
-      inputs.zen-browser.packages."${system}".generic
-      # inputs.yazi.packages.${system}.default
-      inputs.llwit.packages.${system}.llwit
+      inputs.zen-browser.packages.${system}.generic
+      inputs.llwit.packages.${system}.default
+      inputs.optinix.packages.${system}.default
 
       # Fonts
       (google-fonts.override { fonts = [ "OpenSans" "Poppins" ]; })
@@ -84,6 +84,7 @@
       ventoy
       jq
       xdg-user-dirs
+      charm-freeze
 
       # Internet
       chromium

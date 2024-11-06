@@ -13,9 +13,9 @@
     # yetris.url = "path:home/som/packages/derivations/yetris";
     # ytui.url = "path:home/som/packages/derivations/ytui";
     # canvas.url = "path:home/som/packages/derivations/canvas";
-    fabric-python.url = "github:Fabric-Development/fabric?ref=rewrite";
-    llwit.url = "path:home/som/packages/derivations/llwit";
-    # yazi.url = "github:sxyazi/yazi?rev=987b1d5c49f5d11ab9e6a9cdea21974b440ae463";
+    # fabric-python.url = "github:Fabric-Development/fabric?ref=rewrite";
+    llwit.url = "git+https://codeberg.org/somokill/llwit";
+    optinix.url = "gitlab:hmajid2301/optinix";
 
     home-manager = {
       url = "github:nix-community/home-manager";

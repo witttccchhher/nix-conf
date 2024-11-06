@@ -11,6 +11,8 @@
       prompt = "#${base0C}";
       gutter = "#${base00}";
       pointer = "#${base00}";
+      hl = "#${base08}";
+      selected-hl = "#${base08}";
     };
   };
 }

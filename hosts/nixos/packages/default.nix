@@ -39,7 +39,7 @@
 
     # Other
     home-manager
-    python3
+    python313
     adwaita-qt
     adwaita-qt6
     qadwaitadecorations
