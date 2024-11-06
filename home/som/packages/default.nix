@@ -43,17 +43,7 @@
       # Code
       git
       poetry
-
       neovim
-
-      lua-language-server
-      stylua
-      nixd
-      basedpyright
-      vscode-langservers-extracted
-      typescript-language-server
-
-      nixfmt-rfc-style
 
       # Utilites
       neofetch
@@ -107,6 +97,9 @@
       zathura
       nautilus
       komikku
+      sqlite
+      sqlitestudio
+      sqlitebrowser
     ];
   };
 }
