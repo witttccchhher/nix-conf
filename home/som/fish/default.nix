@@ -3,15 +3,71 @@
     enable = true;
     package = pkgs.fish;
     generateCompletions = false;
+    shellInitLast = ''
+      fish_vi_key_bindings
+    '';
     functions = {
       fish_prompt = with config.lib.stylix.colors; ''
         if test -n "$IN_NIX_SHELL"
-          printf "%s" (set_color -o ${base03}) "
-        " (set_color normal) (set_color -o ${base0C}) (set_color -b ${base03}) (pwd) (set_color normal) (set_color -o ${base03}) "" (set_color normal) (set_color -o ${base0C}) " 󱄅  "
+          printf "%s" (set_color -o ${base03}) "" (set_color normal) (set_color -o ${base0C}) (set_color -b ${base03}) (pwd) (set_color normal) (set_color -o ${base03}) "" (set_color normal) (set_color -o ${base0C}) " 󱄅  "
         else  
-          printf "%s" (set_color -o ${base03}) "
-        " (set_color normal) (set_color -o ${base05}) (set_color -b ${base03}) (pwd) (set_color normal) (set_color -o ${base03}) "" (set_color normal) (set_color -o ${base05}) " 󱄅  "
+          printf "%s" (set_color -o ${base03}) "" (set_color normal) (set_color -o ${base05}) (set_color -b ${base03}) (pwd) (set_color normal) (set_color -o ${base03}) "" (set_color normal) (set_color -o ${base05}) " 󱄅  "
         end
+      '';
+      fish_mode_prompt = with config.lib.stylix.colors; ''
+        switch $fish_bind_mode
+          case default
+            set_color -o ${base03}
+            echo -e \n""
+            set_color normal
+            set_color -o ${base0C}
+            set_color -b ${base03}
+            echo -e "NORMAL"
+            set_color normal
+            set_color -o ${base03}
+            echo -e " "
+          case insert
+            set_color -o ${base03}
+            echo -e \n""
+            set_color normal
+            set_color -o ${base0B}
+            set_color -b ${base03}
+            echo -e "INSERT"
+            set_color normal
+            set_color -o ${base03}
+            echo -e " "
+          case replace
+            set_color -o ${base03}
+            echo -e \n""
+            set_color normal
+            set_color -o ${base08}
+            set_color -b ${base03}
+            echo -e "REPLACE"
+            set_color normal
+            set_color -o ${base03}
+            echo -e " "
+          case replace_one
+            set_color -o ${base03}
+            echo -e \n""
+            set_color normal
+            set_color -o ${base08}
+            set_color -b ${base03}
+            echo -e "REPLACE"
+            set_color normal
+            set_color -o ${base03}
+            echo -e " "
+          case visual
+            set_color -o ${base03}
+            echo -e \n""
+            set_color normal
+            set_color -o ${base09}
+            set_color -b ${base03}
+            echo -e "VISUAL"
+            set_color normal
+            set_color -o ${base03}
+            echo -e " "
+        end
+        set_color normal
       '';
     };
     shellAliases = {

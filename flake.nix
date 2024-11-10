@@ -56,7 +56,7 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, stylix, nix-flatpak, ... }@inputs: 
+  outputs = { self, nixpkgs, home-manager, stylix, nix-flatpak, ... }@inputs: 
     let
       system = "x86_64-linux";
     in {

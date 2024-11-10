@@ -1,10 +1,14 @@
 {
-  imports = [ ./zapret.nix ];
-
   services = {
     openssh.enable = false;
     printing.enable = true;
     libinput.enable = true;
+    pptpd.enable = true;
+    openvpn = {
+      servers = {
+        homeVPN = { config = '' config /home/som/Documents/VPN/Turkey_freeopenvpn_udp.ovpn ''; };
+      };
+    };
     flatpak = {
       enable = true;
       packages = [

@@ -44,5 +44,6 @@
     adwaita-qt6
     qadwaitadecorations
     qadwaitadecorations-qt6
+    networkmanager-l2tp
   ];
 }

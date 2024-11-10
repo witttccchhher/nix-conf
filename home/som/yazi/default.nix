@@ -2,6 +2,7 @@
   programs.yazi = {
     enable = true;
     package = pkgs.callPackage ./yazi.nix { };
+    enableFishIntegration = true;
     settings = {
       manager = {
         sort_by = "alphabetical";

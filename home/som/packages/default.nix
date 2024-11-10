@@ -43,7 +43,7 @@
       # Code
       git
       poetry
-      neovim
+      neovim-remote
 
       # Utilites
       neofetch
@@ -100,6 +100,8 @@
       sqlite
       sqlitestudio
       sqlitebrowser
+      networkmanagerapplet
+      networkmanager-l2tp
     ];
   };
 }
