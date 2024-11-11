@@ -1,10 +1,10 @@
 {
   imports = [
-    ./ags
     ./alacritty
     ./anyrun
     ./btop
     ./emacs
+    ./fastfetch
     ./fish
     ./floorp
     ./foot

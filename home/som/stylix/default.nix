@@ -4,7 +4,7 @@
     enable = true;
     autoEnable = false;
 
-    image = "${inputs.wallpapers}/chocolate/girl/girl1.jpeg";
+    image = "${inputs.wallpapers}/chocolate/girl/girl6.png";
     polarity = "dark";
     
     cursor = {

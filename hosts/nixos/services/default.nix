@@ -1,6 +1,6 @@
 {
   services = {
-    openssh.enable = false;
+    openssh.enable = true;
     printing.enable = true;
     libinput.enable = true;
     pptpd.enable = true;

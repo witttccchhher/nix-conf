@@ -100,15 +100,15 @@
         "${mod}+Shift+r" = "reload";
         "${mod}+Shift+q" = "exec 'swaymsg exit'";
 
-        "${mod}+Left" = "focus left";
-        "${mod}+Right" = "focus right";
-        "${mod}+Up" = "focus up";
-        "${mod}+Down" = "focus down";
+        "${mod}+h" = "focus left";
+        "${mod}+l" = "focus right";
+        "${mod}+k" = "focus up";
+        "${mod}+j" = "focus down";
 
-        "${mod}+Shift+Left" = "move left";
-        "${mod}+Shift+Right" = "move right";
-        "${mod}+Shift+Up" = "move up";
-        "${mod}+Shift+Down" = "move down";
+        "${mod}+Shift+h" = "move left";
+        "${mod}+Shift+l" = "move right";
+        "${mod}+Shift+k" = "move up";
+        "${mod}+Shift+j" = "move down";
 
         "${mod}+1" = "workspace number 1";
         "${mod}+2" = "workspace number 2";
@@ -126,7 +126,7 @@
         "${mod}+Shift+6" = "move container to workspace number 6";
         "${mod}+Shift+7" = "move container to workspace number 7";
 
-        "${mod}+l" = "exec ${pkgs.gtklock}/bin/gtklock";
+        "${mod}+b" = "exec ${pkgs.gtklock}/bin/gtklock";
 
         "${mod}+f" = "fullscreen";
         "${mod}+t" = "floating toggle";

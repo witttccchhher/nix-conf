@@ -3,16 +3,38 @@
     enable = true;
     
     defaultCommand = "fd . --hidden";
-    defaultOptions = [ "-e" "-i" "--info=hidden" ];
+    defaultOptions = [
+      "-e"
+      "-i"
+      "--algo=v1"
+      "--no-mouse"
+      "-m"
+      "--height=20"
+      "--reverse"
+      "--border=rounded"
+      "--no-scrollbar"
+      "--prompt='󰱼 '"
+      "--pointer=''"
+      "--preview='preview.sh {}'"
+    ];
 
-    colors = with config.lib.stylix.colors; {
-      "fg+" = "#${base00}";
-      "bg+" = "#${base0C}";
-      prompt = "#${base0C}";
-      gutter = "#${base00}";
-      pointer = "#${base00}";
-      hl = "#${base08}";
-      selected-hl = "#${base08}";
+    colors = with config.lib.stylix.colors.withHashtag; {
+      fg = "${base07}";
+      bg = "${base00}";
+      preview-fg = "${base07}";
+      preview-bg = "${base00}";
+      hl = "${base08}";
+      "fg+" = "${base00}";
+      "bg+" = "${base0D}";
+      gutter = "${base03}";
+      "hl+" = "${base00}";
+      info = "${base0C}";
+      border = "${base04}";
+      prompt = "${base0C}";
+      pointer = "${base00}";
+      marker = "${base0E}";
+      spinner = "${base0C}";
+      header = "${base0C}";
     };
   };
 }

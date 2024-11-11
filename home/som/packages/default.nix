@@ -28,7 +28,6 @@
       # inputs.fabric-python.packages.${system}.default
       inputs.zen-browser.packages.${system}.generic
       inputs.llwit.packages.${system}.default
-      inputs.optinix.packages.${system}.default
 
       # Fonts
       (google-fonts.override { fonts = [ "OpenSans" "Poppins" ]; })
@@ -42,6 +41,7 @@
 
       # Code
       git
+      hut
       poetry
       neovim-remote
 
@@ -64,6 +64,7 @@
       duf
       fd
       ripgrep
+      file
       fzf
       gping
       typioca

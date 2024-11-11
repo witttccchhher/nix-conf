@@ -2,54 +2,59 @@
   programs.zsh = {
     enable = true;
     shellAliases = {
+      "x" = "exit";
+      "c" = "clear";
+
+      ";q" = "exit";
+      ";wq" = "exit";
+
       "ls" = "lsd -a";
       "ll" = "lsd -a -l";
+      "tree" = "lsd -a --tree";
+
+       ".." = "cd ..";
+       "..." = "cd ../../";
 
       "ns" = "nix-shell --run zsh";
-      "flakeu" = "nix flake update ~/nix/";
+      "flakeu" = "nix flake update --flake 'path:/home/som/nix/'";
+      "nixgitu" = "cd ~/nix/ && git add * && git commit -m 'Some changes' && cd";
 
       "e" = "nvim";
       "fe" = "nvim $(fzf)";
+      "pe" = "nvim ~/nix/home/som/packages/default.nix";
 
       "y" = "yazi";
-      "fetch" = "nitch";
     };
     syntaxHighlighting = {
       enable = true;
-      highlighters = [ "main" "brackets" "cursor" ];
-      styles = {
-        command = "fg=magenta,bold";
-        unknown-token = "fg=red,bold";
-        reserved-word = "fg=magenta,bold";
-        alias = "fg=magenta,bold";
-        builtin = "fg=magenta,bold";
-        function = "fg=magenta,bold";
-        commandseparator = "fg=blue,bold";
-        path = "fg=none,bold";
-        path_pathseparator = "fg=blue,bold";
-        globbing = "fg=blue,bold";
-        command-substitution = "fg=#d08b65,bold";
-        single-hyphen-option = "fg=none,bold";
-        double-hyphen-option = "fg=none,bold";
-        back-quoted-argument = "fg=yellow,bold";
-        single-quoted-argument = "fg=yellow,bold";
-        double-quoted-argument = "fg=yellow,bold";
-        redirection = "fg=#d08b65,bold";
-        arg0 = "fg=none,bold";
-        default = "fg=none,bold";
+      highlighters = [ "main" "brackets" "pattern" "regexp" "root" "line" ];
+      styles = with config.lib.stylix.colors; {
+        command = "fg=#${base07},bold";
+        unknown-token = "fg=#${base08},bold";
+        reserved-word = "fg=#${base07},bold";
+        alias = "fg=#${base07},bold";
+        builtin = "fg=#${base07},bold";
+        function = "fg=#${base07},bold";
+        commandseparator = "fg=#${base0C},bold";
+        path = "fg=#${base0C},bold";
+        path_pathseparator = "fg=#${base0D},bold";
+        globbing = "fg=#${base0C},bold";
+        command-substitution = "fg=#${base0A},bold";
+        single-hyphen-option = "fg=#${base0F},bold";
+        double-hyphen-option = "fg=#${base0F},bold";
+        back-quoted-argument = "fg=#${base09},bold";
+        single-quoted-argument = "fg=#${base09},bold";
+        double-quoted-argument = "fg=#${base09},bold";
+        redirection = "fg=#${base0A},bold";
+        comment = "fg=#${base04},bold";
+        arg0 = "fg=#${base07},bold";
+        default = "fg=#${base07},bold";
+      };
+      patterns = with config.lib.stylix.colors; {
+        "sudo" = "fg=${base00},bold,bg=${base08}";
       };
     };
     plugins = with inputs; [
-      {
-        name = "zsh-autopair";
-        file = "autopair.zsh";
-        src = zsh-autopair;
-      }
-      {
-        name = "zsh-autosuggestions";
-        file = "zsh-autosuggestions.plugin.zsh";
-        src = zsh-autosuggestions;
-      }
       {
         name = "fzf-tab";
         file = "fzf-tab.plugin.zsh";
@@ -61,12 +66,42 @@
         src = zsh-auto-notify;
       }
     ];
-    initExtra = with config.lib.stylix.colors; ''
+    autosuggestion = {
+      enable = true;
+      highlight = "fg=#${config.lib.stylix.colors.base04},bold";
+    };
+    history.size = 10000;
+    initExtra = with config.lib.stylix.colors.withHashtag; ''
+      # ZSH AUTO NOTIFY
       export AUTO_NOTIFY_THRESHOLD=60
       export AUTO_NOTIFY_TITLE="Hey! "%command" has just finished"
 
-      export user_symbol="%F{#${base05}}󱄅  %f"
-      export dir_path="%F{#${base03}}%K{#${base03}}%F{#${base05}}%d%{%k%}%F{#${base03}}%f"
+      # FZF TAB
+      zstyle ":completion:*" menu no
+      zstyle ":fzf-tab:*" fzf-flags \
+        -e \
+        -i \
+        --algo=v1 \
+        --no-mouse \
+        -m \
+        --height=20 \
+        --reverse \
+        --border=rounded \
+        --no-scrollbar \
+        --prompt="󰱼 " \
+        --pointer="" \
+        --preview="preview.sh {}" \
+        --color=fg:"${base07}",bg:"${base00}",preview-fg:"${base07}",preview-bg:"${base00}",hl:"${base08}",fg+:"${base00}",bg+:"${base0D}",gutter:"${base03}",hl+:"${base00}",info:"${base0C}",border:"${base04}",prompt:"${base0C}",pointer:"${base00}",marker:"${base0E}",spinner:"${base0C}",header:"${base0C}"
+      zstyle ":fzf-tab:*" fzf-bindings "space:accept"
+      zstyle ":fzf-tab:*" accept-line enter
+
+      # OPTIONS
+      setopt automenu
+      setopt nobeep
+
+      # PROMPT
+      export user_symbol="%F{${base0C}}󱄅  %f"
+      export dir_path="%F{${base03}}%K{${base03}}%F{${base07}}%d%{%k%}%F{${base03}}%f"
       export PROMPT="
       %B$dir_path $user_symbol%b"
     '';

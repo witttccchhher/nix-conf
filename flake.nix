@@ -4,18 +4,13 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     stylix.url = "github:danth/stylix";
-    ags.url = "github:Aylur/ags";
     nix-flatpak.url = "github:gmodena/nix-flatpak";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
     # ani-cli-ru.url = "path:home/som/packages/derivations/ani-cli";
     # gocheat.url = "path:home/som/packages/derivations/gocheat";
     # yetris.url = "path:home/som/packages/derivations/yetris";
-    # ytui.url = "path:home/som/packages/derivations/ytui";
-    # canvas.url = "path:home/som/packages/derivations/canvas";
-    # fabric-python.url = "github:Fabric-Development/fabric?ref=rewrite";
     llwit.url = "git+https://codeberg.org/somokill/llwit";
-    optinix.url = "gitlab:hmajid2301/optinix";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -29,19 +24,11 @@
       url = "git+https://codeberg.org/somokill/wallpapers?ref=main";
       flake = false;
     };
-    thokr-ru = {
-      url = "git+https://codeberg.org/somokill/thokr-russian?ref=main";
-      flake = false;
-    };
     firefox-addons = {
 			url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
-    zsh-autopair = {
-      url = "github:hlissner/zsh-autopair";
-      flake = false;
-    };
     fzf-tab = {
       url = "github:Aloxaf/fzf-tab";
       flake = false;
