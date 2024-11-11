@@ -103,6 +103,8 @@
       sqlitebrowser
       networkmanagerapplet
       networkmanager-l2tp
+      gthumb
+      pinta
     ];
   };
 }

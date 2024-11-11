@@ -4,7 +4,7 @@
     settings = {
       logo = {
         type = "sixel";
-        source = ./nixlogo.png;
+        source = ./nixlogo.jpg;
         printRemaining = true;
       };
     };
