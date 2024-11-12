@@ -84,12 +84,14 @@
 
       # Other
       gtk4
+      gtk3
       adwaita-qt
       adwaita-qt6
       qadwaitadecorations
       qadwaitadecorations-qt6
       libsForQt5.qt5ct
       kdePackages.qt6ct
+      hicolor-icon-theme
 
       # GUI
       waybar

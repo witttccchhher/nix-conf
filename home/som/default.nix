@@ -14,6 +14,7 @@
     ./gtklock
     ./lazygit
     ./lsd
+    ./mako
     ./micro
     ./ncmpcpp
     ./neofetch
