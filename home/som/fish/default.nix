@@ -1,6 +1,6 @@
 { pkgs, config, ... }: {
   programs.fish = {
-    enable = true;
+    enable = false;
     package = pkgs.fish;
     generateCompletions = false;
     shellInitLast = ''

@@ -37,7 +37,6 @@
       };
 
       startup = [
-        # { command = "ags"; always = true; }
         { command = "autotiling"; always = true; }
         { command = "foot --server"; }
       ];
@@ -117,7 +116,7 @@
         "${mod}+5" = "workspace number 5";
         "${mod}+6" = "workspace number 6";
         "${mod}+7" = "workspace number 7";
-        
+
         "${mod}+Shift+1" = "move container to workspace number 1";
         "${mod}+Shift+2" = "move container to workspace number 2";
         "${mod}+Shift+3" = "move container to workspace number 3";

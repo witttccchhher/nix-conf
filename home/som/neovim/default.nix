@@ -6,6 +6,7 @@
       nodejs_20
       git
       luajitPackages.luarocks-nix
+      silicon
 
       lua-language-server
       nixd

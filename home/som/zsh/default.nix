@@ -65,6 +65,11 @@
         file = "auto-notify.plugin.zsh";
         src = zsh-auto-notify;
       }
+      {
+        name = "zsh-nix-shell";
+        file = "nix-shell.plugin.zsh";
+        src = zsh-nix-shell;
+      }
     ];
     autosuggestion = {
       enable = true;
@@ -100,10 +105,11 @@
       setopt nobeep
 
       # PROMPT
-      export user_symbol="%F{${base0C}}󱄅  %f"
-      export dir_path="%F{${base03}}%K{${base03}}%F{${base07}}%d%{%k%}%F{${base03}}%f"
+      export nix_shell="%F{${base0D}}$name%f"
+      export user_symbol="%F{${base0D}}󱄅  %f"
+      export dir_path="%F{#2c2c2c}%K{#2c2c2c}%F{${base07}}%d%{%k%}%F{#2c2c2c}%f"
       export PROMPT="
-      %B$dir_path $user_symbol%b"
+      %B$dir_path $nix_shell $user_symbol%b"
     '';
   };
 }

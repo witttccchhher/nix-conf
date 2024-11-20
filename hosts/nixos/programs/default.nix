@@ -4,7 +4,7 @@
       enable = true;
       extraPackages = with pkgs; [ foot gtklock sov autotiling ];
     };
-    fish.enable = true;
+    fish.enable = false;
     zsh.enable = true;
     nix-ld.enable = true;
   };

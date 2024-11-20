@@ -1,14 +1,9 @@
 {
   services = {
-    openssh.enable = true;
-    printing.enable = true;
+    openssh.enable = false;
+    printing.enable = false;
     libinput.enable = true;
-    pptpd.enable = true;
-    openvpn = {
-      servers = {
-        homeVPN = { config = '' config /home/som/Documents/VPN/Turkey_freeopenvpn_udp.ovpn ''; };
-      };
-    };
+    pptpd.enable = false;
     flatpak = {
       enable = true;
       packages = [

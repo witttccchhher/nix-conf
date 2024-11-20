@@ -20,14 +20,10 @@
 
       # Flakes
       inputs.anyrun.packages.${system}.anyrun
-      # inputs.ani-cli-ru.packages.${system}.ani-cli-ru
-      # inputs.gocheat.packages.${system}.gocheat
-      # inputs.yetris.packages.${system}.yetris
-      # inputs.ytui.packages.${system}.ytui
-      # inputs.canvas.packages.${system}.canvas
-      # inputs.fabric-python.packages.${system}.default
+      inputs.ani-cli-ru.packages.${system}.ani-cli-ru
       inputs.zen-browser.packages.${system}.generic
-      inputs.llwit.packages.${system}.default
+      inputs.matui.packages.${system}.matui
+      inputs.tgt.packages.${system}.default
 
       # Fonts
       (google-fonts.override { fonts = [ "OpenSans" "Poppins" ]; })
@@ -43,10 +39,7 @@
       git
       hut
       poetry
-      neovim-remote
-
-      # Utilites
-      neofetch
+      neovim-remote # Utilites neofetch
       fastfetch
       font-manager
       wl-clipboard
@@ -80,7 +73,7 @@
       # Internet
       chromium
       telegram-desktop
-      affine
+      pidgin
 
       # Other
       gtk4
@@ -92,6 +85,7 @@
       libsForQt5.qt5ct
       kdePackages.qt6ct
       hicolor-icon-theme
+      dejavu_fonts
 
       # GUI
       waybar

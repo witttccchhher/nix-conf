@@ -6,11 +6,9 @@
     stylix.url = "github:danth/stylix";
     nix-flatpak.url = "github:gmodena/nix-flatpak";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
-
-    # ani-cli-ru.url = "path:home/som/packages/derivations/ani-cli";
-    # gocheat.url = "path:home/som/packages/derivations/gocheat";
-    # yetris.url = "path:home/som/packages/derivations/yetris";
-    llwit.url = "git+https://codeberg.org/somokill/llwit";
+    ani-cli-ru.url = "path:home/som/packages/derivations/ani-cli";
+    matui.url = "github:pkulak/matui";
+    tgt.url = "github:FedericoBruzzone/tgt";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -41,13 +39,16 @@
       url = "github:MichaelAquilina/zsh-auto-notify";
       flake = false;
     };
+    zsh-nix-shell = {
+      url = "github:chisui/zsh-nix-shell";
+      flake = false;
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, stylix, nix-flatpak, ... }@inputs: 
     let
       system = "x86_64-linux";
     in {
-
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs system; };
       modules = [

@@ -3,6 +3,7 @@
     ./alacritty
     ./anyrun
     ./btop
+    ./dconf
     ./emacs
     ./fastfetch
     ./fish
@@ -16,6 +17,7 @@
     ./lsd
     ./mako
     ./micro
+    ./mpv
     ./ncmpcpp
     ./neofetch
     ./neovim

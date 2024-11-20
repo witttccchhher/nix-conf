@@ -1,11 +1,12 @@
 { pkgs, config, inputs, ... }: {
-  imports = [ ./themes/witcher ];
+  # imports = [ ./themes/witcher ];
   stylix = {
     enable = true;
     autoEnable = false;
 
     image = "${inputs.wallpapers}/chocolate/girl/girl6.png";
     polarity = "dark";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/mountain.yaml";
     
     cursor = {
 			name = "GoogleDot-Black";
