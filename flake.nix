@@ -9,6 +9,7 @@
     ani-cli-ru.url = "path:home/som/packages/derivations/ani-cli";
     matui.url = "github:pkulak/matui";
     tgt.url = "github:FedericoBruzzone/tgt";
+    ayugram-desktop.url = "github:/ayugram-port/ayugram-desktop/release?submodules=1";
 
     home-manager = {
       url = "github:nix-community/home-manager";

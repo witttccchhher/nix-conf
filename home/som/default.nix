@@ -21,9 +21,11 @@
     ./ncmpcpp
     ./neofetch
     ./neovim
+    ./nix
     ./nixpkgs
     ./obsidian
     ./packages
+    ./pidgin
     ./stylix
     ./sway
     ./waybar

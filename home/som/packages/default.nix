@@ -24,6 +24,7 @@
       inputs.zen-browser.packages.${system}.generic
       inputs.matui.packages.${system}.matui
       inputs.tgt.packages.${system}.default
+      inputs.ayugram-desktop.packages.${pkgs.system}.ayugram-desktop
 
       # Fonts
       (google-fonts.override { fonts = [ "OpenSans" "Poppins" ]; })
@@ -72,8 +73,9 @@
 
       # Internet
       chromium
-      telegram-desktop
-      pidgin
+      # telegram-desktop
+      paper-plane
+      _64gram
 
       # Other
       gtk4

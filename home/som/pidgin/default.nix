@@ -1,8 +1,8 @@
-{ pkgs }: {
+{ pkgs, ... }: {
   programs.pidgin = {
     enable = true;
-    plugins = with pkgs; [
-      tdlib-purple
+    package = pkgs.pidgin;
+    plugins = with pkgs.pidginPackages; [
       purple-matrix
       purple-discord
     ];
