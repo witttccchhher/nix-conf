@@ -2,7 +2,7 @@
   programs = {
     sway = {
       enable = true;
-      extraPackages = with pkgs; [ foot gtklock sov autotiling ];
+      extraPackages = with pkgs; [ foot gtklock autotiling ];
     };
     fish.enable = false;
     zsh.enable = true;

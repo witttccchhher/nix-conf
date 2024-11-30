@@ -1,6 +1,6 @@
 { lib, pkgs, ... }: {
   boot = {
-    loader.timeout = 0;
+    # loader.timeout = 0;
     kernelPackages = pkgs.linuxPackages_zen;
     loader.grub = {
       enable = true;

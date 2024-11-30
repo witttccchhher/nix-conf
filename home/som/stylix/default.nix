@@ -4,7 +4,7 @@
     enable = true;
     autoEnable = false;
 
-    image = "${inputs.wallpapers}/chocolate/girl/girl6.png";
+    image = "${inputs.wallpapers}/chocolate/girl/girl7.png";
     polarity = "dark";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/mountain.yaml";
     
@@ -36,6 +36,7 @@
       btop.enable = true;
       firefox.enable = true;
       gtk.enable = true;
+      gnome.enable = true;
       lazygit.enable = true;
       xresources.enable = true;
       zathura.enable = true;

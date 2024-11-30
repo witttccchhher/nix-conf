@@ -23,7 +23,7 @@
         all: unset;
         font-family: JetBrainsMono Nerd Font;
         font-size: 15px;
-        color: #${base05};
+        color: #${base07};
       }
 
       window {
@@ -39,12 +39,12 @@
       }
 
       #entry {
-        background-color: #${base04};
+        background-color: #${base03};
         padding: 10px;
       }
 
       box#main {
-        background-color: #${base04};
+        background-color: #${base03};
       }
     '';
   };

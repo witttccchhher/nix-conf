@@ -9,7 +9,7 @@
       };
       display = {
         separator = "  ";
-        color = "green";
+        color = "blue";
         key = {
           type = "string";
         };

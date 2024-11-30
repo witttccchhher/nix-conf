@@ -4,28 +4,22 @@
     ./anyrun
     ./btop
     ./dconf
-    ./emacs
     ./fastfetch
     ./fish
-    ./floorp
     ./foot
     ./fzf
     ./git
-    ./gocheat
+    ./gnome
     ./gtklock
     ./lazygit
     ./lsd
     ./mako
-    ./micro
     ./mpv
     ./ncmpcpp
-    ./neofetch
     ./neovim
     ./nix
     ./nixpkgs
-    ./obsidian
     ./packages
-    ./pidgin
     ./stylix
     ./sway
     ./waybar

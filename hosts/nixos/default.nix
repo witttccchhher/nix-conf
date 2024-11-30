@@ -3,6 +3,7 @@
     ./boot
     ./doas
     ./hardware
+    ./gnome
     ./nh
     ./network
     ./nixpkgs

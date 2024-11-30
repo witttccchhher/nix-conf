@@ -22,9 +22,7 @@
       inputs.anyrun.packages.${system}.anyrun
       inputs.ani-cli-ru.packages.${system}.ani-cli-ru
       inputs.zen-browser.packages.${system}.generic
-      inputs.matui.packages.${system}.matui
-      inputs.tgt.packages.${system}.default
-      inputs.ayugram-desktop.packages.${pkgs.system}.ayugram-desktop
+      (callPackage ./derivations/ani-cli/ani-cli-ru.nix { })
 
       # Fonts
       (google-fonts.override { fonts = [ "OpenSans" "Poppins" ]; })
@@ -88,6 +86,7 @@
       kdePackages.qt6ct
       hicolor-icon-theme
       dejavu_fonts
+      gnome-menus
 
       # GUI
       waybar

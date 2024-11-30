@@ -49,7 +49,7 @@
       ];
       gaps = {
         inner = 20;
-        outer = 40;
+        outer = 20;
       };
 
       floating = {

@@ -12,6 +12,7 @@
       chromium.enable = true;
       console.enable = true;
       grub.enable = true;
+      gnome.enable = true;
       nixos-icons.enable = true;
 		};
 	};

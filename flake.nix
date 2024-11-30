@@ -3,13 +3,10 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    flake-parts.url = "github:hercules-ci/flake-parts";
     stylix.url = "github:danth/stylix";
     nix-flatpak.url = "github:gmodena/nix-flatpak";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
-    ani-cli-ru.url = "path:home/som/packages/derivations/ani-cli";
-    matui.url = "github:pkulak/matui";
-    tgt.url = "github:FedericoBruzzone/tgt";
-    ayugram-desktop.url = "github:/ayugram-port/ayugram-desktop/release?submodules=1";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -23,10 +20,6 @@
       url = "git+https://codeberg.org/somokill/wallpapers?ref=main";
       flake = false;
     };
-    firefox-addons = {
-			url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
-			inputs.nixpkgs.follows = "nixpkgs";
-		};
 
     fzf-tab = {
       url = "github:Aloxaf/fzf-tab";
@@ -46,26 +39,27 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, nix-flatpak, ... }@inputs: 
-    let
-      system = "x86_64-linux";
-    in {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit inputs system; };
-      modules = [
-        stylix.nixosModules.stylix
-        nix-flatpak.nixosModules.nix-flatpak
-        ./configuration.nix
-      ];
-    };
+  outputs = { self, nixpkgs, flake-parts, home-manager, stylix, nix-flatpak, ... }@inputs: flake-parts.lib.mkFlake { inherit inputs; } {
+    flake = {
+      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
+        modules = [
+          stylix.nixosModules.stylix
+          nix-flatpak.nixosModules.nix-flatpak
+          ./configuration.nix
+        ];
+      };
 
-    homeConfigurations.som = home-manager.lib.homeManagerConfiguration {
-      pkgs = import nixpkgs { inherit system; };
-      extraSpecialArgs = { inherit inputs; };
-      modules = [
-        stylix.homeManagerModules.stylix
-        ./home.nix
-      ];
+      homeConfigurations.som = home-manager.lib.homeManagerConfiguration {
+        pkgs = import nixpkgs { };
+        extraSpecialArgs = { inherit inputs; };
+        modules = [
+          stylix.homeManagerModules.stylix
+          ./home.nix
+        ];
+      };
     };
+    systems = [ "x86_64-linux" ];
+    perSystem = { config, ... }: {};
   };
 }
