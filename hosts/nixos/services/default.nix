@@ -1,5 +1,6 @@
 {
   services = {
+    resolved.enable = true;
     openssh.enable = false;
     printing.enable = true;
     libinput = {

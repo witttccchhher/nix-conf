@@ -20,6 +20,7 @@
 
     # Code
     gcc
+    clang
     gnumake
     nodejs_22
     cargo
@@ -35,6 +36,8 @@
     libnotify
     linux-firmware
     linuxHeaders
+    python312Packages.launchpadlib
+    gnupg
     lshw
 
     # Other

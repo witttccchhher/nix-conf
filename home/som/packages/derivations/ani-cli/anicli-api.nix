@@ -1,12 +1,12 @@
 { lib, fetchPypi, python3Packages, python3 }: python3Packages.buildPythonApplication rec {
   pname = "anicli_api";
-  version = "0.6.5";
+  version = "0.6.12";
   pyproject = true;
 
   src = fetchPypi {
     pname = "anicli_api";
     inherit version;
-    hash = "sha256-8lFvX9tbPjwY7MYsdS4/Z4zGr7MUzTxyOEB+WbtvM1I=";
+    hash = "sha256-2lWvDH74qU21rVLfsIwohfcS9LfQdDHcMAc3KzYWWds=";
   };
 
   build-system = with python3Packages; [

@@ -10,18 +10,20 @@
       COLORTERM = "truecolor";
       MICRO_TRUECOLOR = 1;
       FLAKE = "/home/som/nix";
+      GOPATH = "$HOME/go";
     };
     sessionPath = [
       "$HOME/.local/bin"
       "$HOME/.cargo/bin"
+      "$GOPATH/bin"
     ];
     packages = with pkgs; [
       # Custom packages
 
       # Flakes
       inputs.anyrun.packages.${system}.anyrun
-      inputs.ani-cli-ru.packages.${system}.ani-cli-ru
       inputs.zen-browser.packages.${system}.generic
+      inputs.toru.defaultPackage.${system}
       (callPackage ./derivations/ani-cli/ani-cli-ru.nix { })
 
       # Fonts
@@ -36,13 +38,18 @@
 
       # Code
       git
+      go
       hut
       poetry
       neovim-remote # Utilites neofetch
       fastfetch
       font-manager
       wl-clipboard
+      vhs
+      vim
+      leetgo
       lsd
+      tree
       nh
       smassh
       # yazi
@@ -55,6 +62,7 @@
       bat
       duf
       fd
+      skate
       ripgrep
       file
       fzf
@@ -71,9 +79,13 @@
 
       # Internet
       chromium
+      qutebrowser
       # telegram-desktop
       paper-plane
       _64gram
+      wireguard-tools
+      amneziawg-go
+      amneziawg-tools
 
       # Other
       gtk4
@@ -102,6 +114,7 @@
       networkmanager-l2tp
       gthumb
       pinta
+      siyuan
     ];
   };
 }

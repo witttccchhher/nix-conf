@@ -24,6 +24,8 @@
       "pe" = "nvim ~/nix/home/som/packages/default.nix";
 
       "y" = "yazi";
+      "tte" = "trans ru:en -no-auto -no-theme";
+      "ttr" = "trans en:ru -no-auto -no-theme";
     };
     syntaxHighlighting = {
       enable = true;
@@ -103,6 +105,7 @@
       # OPTIONS
       setopt automenu
       setopt nobeep
+      source ${./autosrc.zsh}
 
       # PROMPT
       export nix_shell="%F{${base0D}}$name%f"

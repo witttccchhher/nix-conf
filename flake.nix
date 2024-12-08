@@ -7,6 +7,7 @@
     stylix.url = "github:danth/stylix";
     nix-flatpak.url = "github:gmodena/nix-flatpak";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    toru.url = "github:sweetbbak/toru";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -40,9 +41,11 @@
   };
 
   outputs = { self, nixpkgs, flake-parts, home-manager, stylix, nix-flatpak, ... }@inputs: flake-parts.lib.mkFlake { inherit inputs; } {
-    flake = {
+    flake = let
+      system = "x86_64-linux";
+    in {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; };
+        specialArgs = { inherit inputs system; };
         modules = [
           stylix.nixosModules.stylix
           nix-flatpak.nixosModules.nix-flatpak
@@ -51,7 +54,7 @@
       };
 
       homeConfigurations.som = home-manager.lib.homeManagerConfiguration {
-        pkgs = import nixpkgs { };
+        pkgs = nixpkgs.legacyPackages.${system};
         extraSpecialArgs = { inherit inputs; };
         modules = [
           stylix.homeManagerModules.stylix

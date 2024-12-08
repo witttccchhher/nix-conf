@@ -1,12 +1,12 @@
 { lib, pkgs, fetchPypi, python3Packages }: python3Packages.buildPythonApplication rec {
   pname = "chompjs";
-  version = "1.2.4";
+  version = "1.3.0";
   pyproject = true;
 
   src = fetchPypi {
     pname = "chompjs";
     inherit version;
-    hash = "sha256-4FRQe7sy0K6P7YtSkDl3FlYhY6QobvFV24d9D2ujDJs=";
+    hash = "sha256-isCzF1XpOTSPsq8cwBw1fbUMhU+j1QbOeSGPwV8FaGg=";
   };
 
   build-system = with python3Packages; [

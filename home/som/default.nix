@@ -22,6 +22,7 @@
     ./packages
     ./stylix
     ./sway
+    ./translate-shell
     ./waybar
     ./yazi
     ./zathura

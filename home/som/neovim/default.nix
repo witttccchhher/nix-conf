@@ -10,6 +10,7 @@
 
       lua-language-server
       nixd
+      gopls
       basedpyright
       vscode-langservers-extracted
       typescript-language-server
