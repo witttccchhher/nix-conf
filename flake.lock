@@ -523,18 +523,18 @@
     "wallpapers": {
       "flake": false,
       "locked": {
-        "lastModified": 1732641004,
-        "narHash": "sha256-axaoDtcEkear6hUVcjk0vaio5ONLMJTkO5IU5XNGPTo=",
+        "lastModified": 1733651792,
+        "narHash": "sha256-DiVKTfCpYnpCYUE9N74iHSk8U5K91HGjpgBJ5nYIhcc=",
         "ref": "main",
-        "rev": "c99d6b6f3f6e7f2c09abbbbb4ae7ae5270c72ad9",
-        "revCount": 8,
+        "rev": "93b602ee18a69afcbda16264f37aafbc8ebdc319",
+        "revCount": 10,
         "type": "git",
-        "url": "https://codeberg.org/somokill/wallpapers"
+        "url": "https://git.sr.ht/~witttccchhher/wallpapers"
       },
       "original": {
         "ref": "main",
         "type": "git",
-        "url": "https://codeberg.org/somokill/wallpapers"
+        "url": "https://git.sr.ht/~witttccchhher/wallpapers"
       }
     },
     "zen-browser": {

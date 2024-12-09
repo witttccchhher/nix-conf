@@ -1,7 +1,8 @@
 { pkgs, config, ... }: {
   programs.yazi = {
     enable = true;
-    package = pkgs.callPackage ./yazi.nix { };
+    # package = pkgs.callPackage ./yazi.nix { };
+    package = pkgs.yazi;
     settings = {
       manager = {
         sort_by = "alphabetical";

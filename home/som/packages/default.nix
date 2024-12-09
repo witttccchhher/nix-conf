@@ -69,6 +69,7 @@
       gping
       typioca
       thokr
+      swww
       ngrrram
       bun
       upower
