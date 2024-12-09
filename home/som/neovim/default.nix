@@ -14,6 +14,7 @@
       basedpyright
       vscode-langservers-extracted
       typescript-language-server
+      bash-language-server
 
       nixfmt-rfc-style
     ];
