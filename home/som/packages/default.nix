@@ -115,7 +115,8 @@
       networkmanager-l2tp
       gthumb
       pinta
-      siyuan
+      gimp
+      obsidian
     ];
   };
 }

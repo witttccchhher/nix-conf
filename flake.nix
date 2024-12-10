@@ -3,16 +3,21 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    flake-parts.url = "github:hercules-ci/flake-parts";
-    stylix.url = "github:danth/stylix";
-    nix-flatpak.url = "github:gmodena/nix-flatpak";
-    zen-browser.url = "github:0xc000022070/zen-browser-flake";
-    toru.url = "github:sweetbbak/toru";
-
+    nixpkgs-stable.url = "github:nixos/nixpkgs/release-24.11";
+    nixpkgs-master.url = "github:nixos/nixpkgs/master";
+    nur.url = "github:nix-community/NUR";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    flake-parts.url = "github:hercules-ci/flake-parts";
+
+    stylix.url = "github:danth/stylix";
+    nix-flatpak.url = "github:gmodena/nix-flatpak";
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    toru.url = "github:sweetbbak/toru";
+    pomotroid.url = "flake:home/som/packages/derivations/pomotroid/flake.nix";
     anyrun = {
       url = "github:anyrun-org/anyrun";
       inputs.nixpkgs.follows = "nixpkgs";
