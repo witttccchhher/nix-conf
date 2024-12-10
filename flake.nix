@@ -17,7 +17,7 @@
     nix-flatpak.url = "github:gmodena/nix-flatpak";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     toru.url = "github:sweetbbak/toru";
-    pomotroid.url = "flake:home/som/packages/derivations/pomotroid/flake.nix";
+    pomotroid.url = "path:home/som/packages/derivations/pomotroid/flake.nix";
     anyrun = {
       url = "github:anyrun-org/anyrun";
       inputs.nixpkgs.follows = "nixpkgs";
