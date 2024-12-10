@@ -24,6 +24,7 @@
       inputs.anyrun.packages.${system}.anyrun
       inputs.zen-browser.packages.${system}.generic
       inputs.toru.defaultPackage.${system}
+      inputs.pomotroid.packages.${system}.default
       (callPackage ./derivations/ani-cli/ani-cli-ru.nix { })
 
       # Fonts
