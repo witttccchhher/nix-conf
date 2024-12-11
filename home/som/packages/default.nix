@@ -42,8 +42,11 @@
       go
       hut
       poetry
-      neovim-remote # Utilites neofetch
+      neovim-remote
+      
+      # Utilites
       fastfetch
+      dwt1-shell-color-scripts
       font-manager
       wl-clipboard
       vhs
