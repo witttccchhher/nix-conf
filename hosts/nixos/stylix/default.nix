@@ -6,7 +6,7 @@
 
     image = "${config.stylix.image}";
     polarity = "${config.stylix.polarity}";
-    base16Scheme = "${config.stylix.base16Scheme}";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/solarized-light.yaml";
 
 		targets = {
       console.enable = true;
