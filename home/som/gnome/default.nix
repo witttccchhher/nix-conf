@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   programs.gnome-shell = {
-    enable = true;
+    enable = false;
     extensions = [
 
     ];

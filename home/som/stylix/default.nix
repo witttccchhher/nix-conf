@@ -33,7 +33,7 @@
         }
       '';
     polarity = "light";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/solarized-light.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine-dawn.yaml";
     
     cursor = {
 			name = "GoogleDot-Black";
@@ -61,9 +61,9 @@
 
     targets = {
       btop.enable = true;
-      firefox.enable = true;
+      # firefox.enable = true;
       gtk.enable = true;
-      gnome.enable = true;
+      # gnome.enable = true;
       lazygit.enable = true;
       xresources.enable = true;
       zathura.enable = true;

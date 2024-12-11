@@ -13,7 +13,7 @@
   };
 
   services.getty.autologinUser = "som";
-  # environment.loginShellInit = ''
-  #   [[ "$(tty)" == /dev/tty1 ]] && sway
-  # '';
+  environment.loginShellInit = ''
+    [[ "$(tty)" == /dev/tty1 ]] && sway
+  '';
 }

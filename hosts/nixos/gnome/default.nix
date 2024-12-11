@@ -1,17 +1,17 @@
 { pkgs, ... }: {
   services = {
     xserver = {
-      enable = true;
+      enable = false;
       desktopManager.gnome = {
-        enable = true;
+        enable = false;
       };
     };
     gnome = {
-      sushi.enable = true;
-      gnome-settings-daemon.enable = true;
-      gnome-keyring.enable = true;
-      core-shell.enable = true;
-      core-os-services.enable = true;
+      sushi.enable = false;
+      gnome-settings-daemon.enable = false;
+      gnome-keyring.enable = false;
+      core-shell.enable = false;
+      core-os-services.enable = false;
     };
   };
 }
