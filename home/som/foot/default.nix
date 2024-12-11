@@ -13,7 +13,7 @@
       };
       colors = with config.lib.stylix.colors; {
         background="${base00}";
-        foreground="${base05}";
+        foreground="${base07}";
         regular0="${base02}";
         regular1="${base08}";
         regular2="${base0B}";

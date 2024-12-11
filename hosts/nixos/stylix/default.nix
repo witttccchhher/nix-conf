@@ -9,7 +9,6 @@
     base16Scheme = "${config.stylix.base16Scheme}";
 
 		targets = {
-      chromium.enable = true;
       console.enable = true;
       grub.enable = true;
       gnome.enable = true;
