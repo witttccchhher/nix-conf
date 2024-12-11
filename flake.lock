@@ -699,11 +699,11 @@
     "wallpapers": {
       "flake": false,
       "locked": {
-        "lastModified": 1733651792,
-        "narHash": "sha256-DiVKTfCpYnpCYUE9N74iHSk8U5K91HGjpgBJ5nYIhcc=",
+        "lastModified": 1733921185,
+        "narHash": "sha256-7/za6mubW4zbIh96ChBHQascWfkeUtcaL/rS3XS5hxw=",
         "ref": "main",
-        "rev": "93b602ee18a69afcbda16264f37aafbc8ebdc319",
-        "revCount": 10,
+        "rev": "0b7c5fe2a63f84864c7ab7399fe1caacb0238030",
+        "revCount": 11,
         "type": "git",
         "url": "https://git.sr.ht/~witttccchhher/wallpapers"
       },

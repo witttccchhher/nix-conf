@@ -111,7 +111,7 @@
       export PROMPT="
       %B$dir_path $nix_shell $user_symbol%b"
 
-      colorscript -e crunchbang
+      colorscript -e crunchbang-mini
     '';
   };
 }
