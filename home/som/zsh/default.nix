@@ -107,7 +107,7 @@
       # PROMPT
       export nix_shell="%F{${base0D}}$name%f"
       export user_symbol="%F{${base0B}}󱄅  %f"
-      export dir_path="%F{#${base02}}%K{#${base02}}%F{${base06}}%d%{%k%}%F{#${base02}}%f"
+      export dir_path="%F{${base02}}%K{${base02}}%F{${base06}}%d%{%k%}%F{${base02}}%f"
       export PROMPT="
       %B$dir_path $nix_shell $user_symbol%b"
 
