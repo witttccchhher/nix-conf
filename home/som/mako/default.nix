@@ -4,12 +4,12 @@
     package = pkgs.mako;
 
     font = "JetBrainsMono Nerd Font 13";
-    backgroundColor = "${base01}";
-    textColor = "${base07}";
+    backgroundColor = "${base00}";
+    textColor = "${base06}";
     borderSize = 3;
-    borderColor = "${base03}";
+    borderColor = "${base0B}";
     borderRadius = 15;
-    progressColor = "${base0D}";
+    progressColor = "${base0C}";
     defaultTimeout = 20000;
     ignoreTimeout = true;
     anchor = "top-right";

@@ -502,11 +502,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-7oZ9KDn7Js221qYhO268EHmY/L9/r/kCr5ih3nNeptk=",
-        "path": "./home/som/packages/derivations/pomotroid",
+        "path": "home/som/packages/derivations/pomotroid",
         "type": "path"
       },
       "original": {
-        "path": "./home/som/packages/derivations/pomotroid",
+        "path": "home/som/packages/derivations/pomotroid",
         "type": "path"
       }
     },
