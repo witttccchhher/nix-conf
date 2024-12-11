@@ -71,7 +71,6 @@
       file
       fzf
       gping
-      typioca
       thokr
       swww
       ngrrram

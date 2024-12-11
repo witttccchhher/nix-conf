@@ -112,6 +112,9 @@
       %B$dir_path $nix_shell $user_symbol%b"
 
       colorscript -e crunchbang-mini
+
+      source ${./rose-pine-man.zsh}
+      colorize_man rose-pine-dawn
     '';
   };
 }
