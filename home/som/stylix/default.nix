@@ -32,8 +32,8 @@
           ])
         }
       '';
-    polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/mountain.yaml";
+    polarity = "light";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/solarized-light.yaml";
     
     cursor = {
 			name = "GoogleDot-Black";
