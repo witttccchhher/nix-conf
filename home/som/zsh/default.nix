@@ -110,6 +110,8 @@
       export dir_path="%F{#${base02}}%K{#${base02}}%F{${base06}}%d%{%k%}%F{#${base02}}%f"
       export PROMPT="
       %B$dir_path $nix_shell $user_symbol%b"
+
+      colorscript -e crunchbang
     '';
   };
 }
