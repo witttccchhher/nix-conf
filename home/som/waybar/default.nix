@@ -168,7 +168,7 @@
             "eog" = "Eye of Gnome";
             "org.gnome.Nautilus" = "Files";
             "org.gnome.Solanum" = "Pomodoro";
-          }
+          };
         };
         "custom/files" = {
           format = "Files";
