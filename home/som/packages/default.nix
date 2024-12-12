@@ -65,6 +65,7 @@
       nix-init
       btop
       lazygit
+      tomato-c
       lutgen
       bat
       duf
