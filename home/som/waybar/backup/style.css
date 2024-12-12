@@ -1,0 +1,85 @@
+* {
+  all: unset;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  color: #d8d8d8;
+}
+
+window#waybar {
+  background-color: #0f0f0f;
+}
+
+#window {
+  padding-left: 10px;
+}
+
+#window.appid label {
+  color: #535353;
+  padding-top: 5px;
+}
+
+#window.name label {
+  margin-top: -8px;
+  padding-bottom: 5px;
+}
+
+#workspaces {
+  background-color: #222222;
+  border-radius: 999px;
+  margin: 7px;
+}
+
+#workspaces button label {
+  margin: 0 10px 0 10px;
+}
+
+#workspaces button.focused label {
+  color: #0f0f0f;
+  background-color: #d8d8d8;
+  margin: 8px;
+  min-width: 22px;
+  border-radius: 999px;
+}
+
+#image.network {
+  background-color: #222222;
+  margin: 7px 0 7px 0;
+  padding-left: 15px;
+  padding-right: 10px;
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+}
+
+#network {
+  background-color: #222222;
+  margin: 7px 0 7px 0;
+  padding-right: 15px;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+}
+
+#image.alsa {
+  background-color: #222222;
+  margin: 7px 0 7px 0;
+  padding-left: 15px;
+  padding-right: 10px;
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+}
+
+#custom-alsa {
+  background-color: #222222;
+  margin: 7px 0 7px 0;
+  padding-right: 15px;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+}
+
+#clock {
+  background-color: #222222;
+  margin: 7px 7px 7px 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 999px;
+}
