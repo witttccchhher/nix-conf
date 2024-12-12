@@ -1,4 +1,4 @@
-{
+{ pkgs }: {
   programs.mpv = {
     enable = true;
     config = {
@@ -7,8 +7,8 @@
       border = "no";
     };
   };
-  xdg.configFile."mpv/scripts/modernx.lua".text = builtins.fetchurl {
+  xdg.configFile."mpv/scripts/modernx.lua".text = pkgs.fetchurl {
     url = "https://github.com/cyl0/ModernX/blob/main/modernx.lua";
-    hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    hash = pkgs.lib.fakeSha256;
   };
 }
