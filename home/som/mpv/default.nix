@@ -9,6 +9,6 @@
   };
   xdg.configFile."mpv/scripts/modernx.lua".text = builtins.readFile(pkgs.fetchurl {
     url = "https://raw.githubusercontent.com/cyl0/ModernX/refs/heads/main/modernx.lua";
-    hash = pkgs.lib.fakeSha256;
+    hash = "";
   });
 }
