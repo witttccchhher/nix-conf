@@ -85,7 +85,8 @@
         mod = config.wayland.windowManager.sway.config.modifier;
         takescreenshot = pkgs.writeShellScriptBin "takescreenshot" ''
           ${pkgs.grim}/bin/grim -g "$(${pkgs.slurp}/bin/slurp)" - | wl-copy
-          ags -r "Utils.notify({ summary: 'Screenhot takes', body: 'Copied to clipboard' })"
+          ${pkgs.libnotify}/bin/notify-send 'Screenshot taken' 'Copied to clipboard' -i ${./screenshot.svg}
+          # ags -r "Utils.notify({ summary: 'Screenhot takes', body: 'Copied to clipboard' })"
         '';
       in {
         "XF86AudioRaiseVolume" = "exec $raise_vol";
