@@ -15,9 +15,9 @@
       blur disable
       corner_radius 15
       shadows enable
-      shadow_blur_radius 5
+      shadow_blur_radius 10
       shadow_color #${config.lib.stylix.colors.base00}ff
-      layer_effects "waybar" shadows disable; corner_radius 0; blur disable
+      layer_effects "waybar" shadows enable; corner_radius 0; blur disable
 
       set $raise_vol amixer sset Master 1%+
       set $lower_vol amixer sset Master 1%-

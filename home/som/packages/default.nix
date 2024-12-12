@@ -125,6 +125,7 @@
       pinta
       gimp
       obsidian
+      gnome-solanum
     ];
   };
 }
