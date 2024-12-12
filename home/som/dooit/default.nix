@@ -3,7 +3,7 @@
     inputs.dooit.homeManagerModules.default
   ];
 
-  nixpkgs.overlays = [ inputs.dooit-extras.overlay ];
+  # nixpkgs.overlays = [ inputs.dooit-extras.overlay ];
 
   programs.dooit = {
     enable = true;
