@@ -7,5 +7,8 @@
       border = "no";
     };
   };
-  xdg.configFile."mpv/scripts/modernx.lua".text = builtins.readFile ./modernx.lua;
+  xdg.configFile."mpv/scripts/modernx.lua".text = builtins.fetchurl {
+    url = "https://github.com/cyl0/ModernX/blob/main/modernx.lua";
+    hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+  };
 }
