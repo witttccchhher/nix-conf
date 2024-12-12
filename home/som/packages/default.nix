@@ -1,6 +1,7 @@
 { pkgs, inputs, ... }: {
   imports = [ ./overlays.nix ];
 
+
   home = {
     sessionVariables = {
       EDITOR = "nvim";
@@ -28,7 +29,7 @@
       (callPackage ./derivations/ani-cli/ani-cli-ru.nix { })
 
       # Fonts
-      (google-fonts.override { fonts = [ "OpenSans" "Poppins" ]; })
+      (google-fonts.override { fonts = [ "OpenSans" "Poppins" "Inter" ]; })
 
       # Media
       mpv
