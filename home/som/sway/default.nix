@@ -54,7 +54,7 @@
 
       floating = {
         border = 0;
-        titlebar = false;
+        titlebar = true;
       };
       window = {
         commands = [
@@ -64,11 +64,11 @@
           }
           {
             command = "floating enable";
-            criteria = { class = "main.py"; };
+            criteria = { class = "org.gnome.Solanum"; };
           }
         ];
         border = 0;
-        titlebar = false;
+        titlebar = true;
       };
 
       input = {
