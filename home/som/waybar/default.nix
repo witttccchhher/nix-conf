@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, config, ... }: {
   programs.waybar = {
     enable = true;
     package = pkgs.waybar;
@@ -226,6 +226,34 @@
         };
       };
     };
-    style = builtins.readFile ./style.css;
+    style = with config.lib.stylix.colors.withHashtag; ''
+      * {
+        all: unset;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 700;
+        color: ${base06};
+      }
+
+      #image.nixos {
+        margin-left: 20px;
+      }
+
+      window#waybar {
+        background-color: ${base00};
+      }
+
+      #custom-files, #custom-edit, #custom-view, #custom-term, #custom-chat, #custom-help {
+        font-weight: 400;
+      }
+
+      #image.toggles {
+        margin-right: 7px;
+      }
+
+      #clock {
+        margin-right: 20px;
+      }
+    '';
   };
 }
