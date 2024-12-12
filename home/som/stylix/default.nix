@@ -32,7 +32,7 @@
     #       ])
     #     }
     #   '';
-    image = "${inputs.wallpapers}/girl/girl9.jpg";
+    image = "${inputs.wallpapers}/solid/solid14_custom.jpg";
     polarity = "light";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine-dawn.yaml";
     
