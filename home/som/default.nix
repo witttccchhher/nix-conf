@@ -4,6 +4,7 @@
     ./anyrun
     ./btop
     ./dconf
+    ./dooit
     ./fastfetch
     ./fish
     ./foot

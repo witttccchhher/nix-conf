@@ -55,7 +55,6 @@
       vhs
       vim
       leetgo
-      dooit
       lsd
       tree
       nh
