@@ -49,6 +49,7 @@
       dwt1-shell-color-scripts
       font-manager
       wl-clipboard
+      wirelesstools
       killall
       vhs
       vim
