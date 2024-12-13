@@ -28,7 +28,7 @@
       }
 
       window {
-        background-color: #${base01};
+        background-color: transparent;
       }
 
       #match:selected {
@@ -37,6 +37,7 @@
 
       #match:selected #match-title {
         color: #${base00};
+        padding: 10px;
       }
 
       #entry {
