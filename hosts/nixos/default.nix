@@ -2,7 +2,7 @@
   imports = [
     ./boot
     ./doas
-    ./dooit
+    # ./dooit
     ./hardware
     ./gnome
     ./nh
