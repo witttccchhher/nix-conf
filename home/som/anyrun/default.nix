@@ -7,11 +7,10 @@
       plugins = [
         inputs.anyrun.packages.${pkgs.system}.applications
       ];
-      x = { absolute = 960; };
-      y = { absolute = 540; };
+      x = { fraction = 0.5; };
+      y = { fraction = 0.5; };
       width = { absolute = 800; };
-      height = { absolute = 500; };
-      showResultsImmediately = true;
+      showResultsImmediately = false;
       closeOnClick = false;
       hidePluginInfo = true;
       hideIcons = true;
@@ -47,6 +46,7 @@
 
       box#main {
         background-color: #${base02};
+        padding: 10px;
       }
     '';
   };
