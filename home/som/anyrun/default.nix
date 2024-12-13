@@ -7,31 +7,33 @@
       plugins = [
         inputs.anyrun.packages.${pkgs.system}.applications
       ];
-      x = { fraction = 0.5; };
-      y = { fraction = 0.5; };
-      width = { fraction = 0.5; };
+      x = { absolute = 960; };
+      y = { absolute = 540; };
+      width = { absolute = 800; };
+      height = { absolute = 500; };
       showResultsImmediately = true;
-      closeOnClick = true;
+      closeOnClick = false;
       hidePluginInfo = true;
-      hideIcons = false;
-      layer = "overlay";
+      hideIcons = true;
+      layer = "top";
       maxEntries = null;
     };
 
     extraCss = with config.lib.stylix.colors; ''
       * {
         all: unset;
-        font-family: JetBrainsMono Nerd Font;
-        font-size: 15px;
-        color: #${base07};
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        color: #${base06};
       }
 
       window {
-        background-color: #${base00};
+        background-color: #${base01};
       }
 
       #match:selected {
-        background-color: #${base0C};
+        background-color: #${base0B};
       }
 
       #match:selected #match-title {
@@ -39,12 +41,12 @@
       }
 
       #entry {
-        background-color: #${base03};
+        background-color: #${base02};
         padding: 10px;
       }
 
       box#main {
-        background-color: #${base03};
+        background-color: #${base02};
       }
     '';
   };
