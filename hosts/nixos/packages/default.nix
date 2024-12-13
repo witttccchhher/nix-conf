@@ -37,6 +37,7 @@
     linux-firmware
     linuxHeaders
     python312Packages.launchpadlib
+    python311Packages.tkinter
     gnupg
     lshw
 

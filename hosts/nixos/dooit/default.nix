@@ -2,7 +2,6 @@
   mydooit = pkgs.dooit.override {
     extraPackages = [
       pkgs.dooit-extras
-      pkgs.python311Packages.tkinter
     ];
   };
 in {
