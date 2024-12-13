@@ -1,11 +1,11 @@
-{ inputs, pkgs, ... }: {
-  imports = [
-    inputs.dooit.homeManagerModules.default
-  ];
-
-  nixpkgs.overlays = [ inputs.dooit-extras.overlay ];
-  programs.dooit = {
-    enable = true;
-    extraPackages = [ pkgs.dooit-extras ];
+{ inputs, pkgs, ... }: let
+  mydooit = inputs.dooit.packages.${pkgs.system}.default.override {
+    extraPackages = [
+      inputs.dooit-extras.packages.${pkgs.system}.default
+    ];
   };
+in {
+  home.packages = [
+    mydooit
+  ];
 }
