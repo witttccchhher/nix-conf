@@ -175,12 +175,12 @@
         };
         "custom/files" = {
           format = "Files";
-          on-click = "footclient -e yazi";
+          on-click = "foot -e yazi";
           tooltip = false;
         };
         "custom/edit" = {
           format = "Edit";
-          on-click = "footclient -e nvim";
+          on-click = "foot -e nvim";
           tooltip = false;
         };
         "custom/view" = {
@@ -205,14 +205,14 @@
         };
         "image#battery" = {
           exec = "${pkgs.lib.getExe batteryBin}";
-          on-click = "footclient -e btop";
+          on-click = "foot -e btop";
           interval = 300;
           size = 24;
           tooltip = false;
         };
         "image#network" = {
           exec = "${pkgs.lib.getExe wifiBin}";
-          on-click = "footclient -e nmtui";
+          on-click = "foot -e nmtui";
           interval = 15;
           size = 20;
           tooltip = false;
@@ -224,7 +224,7 @@
         };
         "clock" = {
           interval = 60;
-          on-click = "solanum";
+          on-click = "foot -e dooit";
           tooltip = false;
         };
       };
