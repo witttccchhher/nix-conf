@@ -38,7 +38,7 @@
 
       startup = [
         { command = "autotiling"; always = true; }
-        { command = "foot --server"; }
+        # { command = "foot --server"; }
       ];
 
       workspaceLayout = "default";

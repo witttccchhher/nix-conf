@@ -168,6 +168,9 @@
             "eog" = "Eye of Gnome";
             "org.gnome.Nautilus" = "Files";
             "org.gnome.Solanum" = "Pomodoro";
+            "chromium-browser" = "Chromium";
+            "obsidian" = "Obsidian";
+            "org.qutebrowser.qutebrowser" = "Qutebrowser";
           };
         };
         "custom/files" = {
