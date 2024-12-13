@@ -3,6 +3,7 @@
     resolved.enable = true;
     openssh.enable = false;
     printing.enable = true;
+    upower.enable = true;
     libinput = {
       enable = true;
       touchpad = {
