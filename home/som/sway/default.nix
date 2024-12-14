@@ -26,7 +26,7 @@
 
     config = {
       terminal = "footclient";
-      menu = "anyrun";
+      menu = "nwg-drawer";
 
       output = {
         HDMI-A-1 = {
@@ -38,7 +38,8 @@
 
       startup = [
         { command = "autotiling"; always = true; }
-        # { command = "foot --server"; }
+        { command = "foot --server"; }
+        { command = "nwg-drawer -c=7 -nocats -fm=nautilus -r"; always = true; }
       ];
 
       workspaceLayout = "default";

@@ -126,7 +126,7 @@
       gimp
       obsidian
       gnome-solanum
-      nwg-drawer6
+      nwg-drawer
     ];
   };
 }

@@ -2,7 +2,6 @@
   programs.foot = {
     enable = true;
     package = pkgs.foot;
-    server.enable = true;
     settings = {
       main = {
         font = "JetBrainsMono Nerd Font:size=13";
@@ -61,7 +60,7 @@
         scrollback-indicator = "${base00} ${base0D}";
       };
       csd = {
-        preferred = "server";
+        preferred = "none";
       };
       scrollback = {
         lines = 10000;
