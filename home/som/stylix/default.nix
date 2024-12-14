@@ -36,9 +36,13 @@
     polarity = "light";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine-dawn.yaml";
     
-    cursor = {
-			name = "GoogleDot-Black";
-			package = pkgs.google-cursor;
+    cursor = with inputs.nix-cursors; {
+			name = "Apple-Custom";
+			package = with config.lib.stylix.colors.withHashtag; packages.${pkgs.system}.apple-cursor.override {
+        background_color = base00;
+        outline_color = base06;
+        accent_color = base0B;
+      };
 			size = 21;
 		};
 
