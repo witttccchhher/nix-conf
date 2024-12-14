@@ -175,6 +175,36 @@
         };
         "custom/files" = {
           format = "Files";
+          on-click = "footclient -e yazi";
+          tooltip = false;
+        };
+        "custom/edit" = {
+          format = "Edit";
+          on-click = "footclient -e nvim";
+          tooltip = false;
+        };
+        "custom/view" = {
+          format = "View";
+          on-click = "zen";
+          tooltip = false;
+        };
+        "custom/term" = {
+          format = "Term";
+          on-click = "footclient";
+          tooltip = false;
+        };
+        "custom/chat" = {
+          format = "Chat";
+          on-click = "telegram-desktop";
+          tooltip = false;
+        };
+        "custom/help" = {
+          format = "Help";
+          on-click = "xdg-open 'https://nixos.wiki'";
+          tooltip = false;
+        };
+        "image#battery" = {
+          exec = "${pkgs.lib.getExe batteryBin}";
           on-click = "footclient -e btop";
           interval = 300;
           size = 24;
@@ -182,7 +212,7 @@
         };
         "image#network" = {
           exec = "${pkgs.lib.getExe wifiBin}";
-          on-click = "footclient -e nmtui";
+          on-click = "footlient -e nmtui";
           interval = 15;
           size = 20;
           tooltip = false;
