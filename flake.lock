@@ -653,8 +653,7 @@
         "wallpapers": "wallpapers",
         "zen-browser": "zen-browser",
         "zsh-auto-notify": "zsh-auto-notify",
-        "zsh-autosuggestions": "zsh-autosuggestions",
-        "zsh-nix-shell": "zsh-nix-shell"
+        "zsh-autosuggestions": "zsh-autosuggestions"
       }
     },
     "stylix": {
@@ -886,22 +885,6 @@
       "original": {
         "owner": "zsh-users",
         "repo": "zsh-autosuggestions",
-        "type": "github"
-      }
-    },
-    "zsh-nix-shell": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1704028593,
-        "narHash": "sha256-Rtg8kWVLhXRuD2/Ctbtgz9MQCtKZOLpAIdommZhXKdE=",
-        "owner": "chisui",
-        "repo": "zsh-nix-shell",
-        "rev": "82ca15e638cc208e6d8368e34a1625ed75e08f90",
-        "type": "github"
-      },
-      "original": {
-        "owner": "chisui",
-        "repo": "zsh-nix-shell",
         "type": "github"
       }
     }
