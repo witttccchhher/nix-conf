@@ -102,6 +102,7 @@
       obsidian
       nwg-drawer
       font-manager
+      geekbench
     ];
   };
 }
