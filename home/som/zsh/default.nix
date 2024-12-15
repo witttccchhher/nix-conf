@@ -104,7 +104,7 @@
 
       # PROMPT
       export nix_shell="%F{${base0D}}$name%f"
-      export user_symbol="%F{${base0B}}󱄅 %f"
+      export user_symbol="%F{${base0B}} 󱄅  %f"
       export dir_path="%F{${base02}}%K{${base02}}%F{${base06}}%~%{%k%}%F{${base02}}%f"
       if [[ -n "$IN_NIX_SHELL" ]]; then
         export PROMPT="
