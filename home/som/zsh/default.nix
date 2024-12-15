@@ -104,11 +104,22 @@
 
       # PROMPT
       export nix_shell="%F{${base0D}}$name%f"
-      export poetry_shell="%F{${base02}}%K{${base02}}%F{${base06}} $VIRTUAL_ENV_PROMPT%F{${base02}}%f"
+      export poetry_shell="%F{${base02}}%K{${base02}}%F{${base06}} $VIRTUAL_ENV_PROMPT%{%k%}%F{${base02}}%f"
       export user_symbol="%F{${base0B}}󱄅  %f"
       export dir_path="%F{${base02}}%K{${base02}}%F{${base06}}%~%{%k%}%F{${base02}}%f"
-      export PROMPT="
-      %B$dir_path $poetry_shell $nix_shell $user_symbol%b"
+      if [[ -n "$IN_NIX_SHELL" && -n "$POETRY_ACTIVE" ]]; then
+        export PROMPT="
+        %B$dir_path $poetry_shell $nix_shell $user_symbol%b"
+      elif [[ -n "$IN_NIX_SHELL" && -z "$POETRY_ACTIVE" ]]; then
+        export PROMPT="
+        %B$dir_path $nix_shell $user_symbol%b"
+      elif [[ -z "$IN_NIX_SHELL" && -n "$POETRY_ACTIVE" ]]; then
+        export PROMPT="
+        %B$dir_path $poetry_shell $user_symbol%b"
+      else
+        export PROMPT="
+        %B$dir_path $user_symbol%b"
+      fi
 
       source ${./rose-pine-man.zsh}
       colorize_man rose-pine-dawn
