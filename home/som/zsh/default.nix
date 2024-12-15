@@ -26,6 +26,8 @@
       "y" = "yazi";
       "tte" = "trans ru:en -no-auto -no-theme";
       "ttr" = "trans en:ru -no-auto -no-theme";
+
+      "npshell" = "nix develop --command zsh -c 'poetry shell'";
     };
     syntaxHighlighting = {
       enable = true;
@@ -64,11 +66,6 @@
         file = "auto-notify.plugin.zsh";
         src = zsh-auto-notify;
       }
-      {
-        name = "zsh-nix-shell";
-        file = "nix-shell.plugin.zsh";
-        src = zsh-nix-shell;
-      }
     ];
     autosuggestion = {
       enable = true;
@@ -76,6 +73,8 @@
     };
     history.size = 10000;
     initExtra = with config.lib.stylix.colors.withHashtag; ''
+      colorscript -e crunchbang-mini
+
       # ZSH AUTO NOTIFY
       export AUTO_NOTIFY_THRESHOLD=60
       export AUTO_NOTIFY_TITLE="Hey! "%command" has just finished"
@@ -102,7 +101,6 @@
       # OPTIONS
       setopt automenu
       setopt nobeep
-      source ${./autosrc.zsh}
 
       # PROMPT
       export nix_shell="%F{${base0D}}$name%f"
@@ -110,8 +108,6 @@
       export dir_path="%F{${base02}}%K{${base02}}%F{${base06}}%d%{%k%}%F{${base02}}%f"
       export PROMPT="
       %B$dir_path $nix_shell $user_symbol%b"
-
-      colorscript -e crunchbang-mini
 
       source ${./rose-pine-man.zsh}
       colorize_man rose-pine-dawn

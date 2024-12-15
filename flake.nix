@@ -45,10 +45,6 @@
       url = "github:MichaelAquilina/zsh-auto-notify";
       flake = false;
     };
-    zsh-nix-shell = {
-      url = "github:chisui/zsh-nix-shell";
-      flake = false;
-    };
   };
 
   outputs = { self, nixpkgs, flake-parts, home-manager, stylix, nix-flatpak, ... }@inputs: flake-parts.lib.mkFlake { inherit inputs; } {
