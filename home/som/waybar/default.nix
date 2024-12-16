@@ -113,7 +113,7 @@
           elif (( "$percentage" >= 75 && "$percentage" < 88 )); then
             echo ${./assets/battery6.png}
           elif (( "$percentage" >= 88 && "$percentage" <= 100 )); then
-            echo ${./assets/battery6.png}
+            echo ${./assets/battery7.png}
           fi
         '';
         wifiBin = pkgs.writeShellScriptBin "wifi" ''
@@ -137,7 +137,7 @@
           elif (( "$quality" >= 60 && "$quality" < 80 )); then
             echo ${./assets/wifi3.png}
           elif (( "$quality" >= 80 && "$quality" <= 100 )); then
-            echo ${./assets/wifi3.png}
+            echo ${./assets/wifi4.png}
           fi
         '';
       in {
@@ -235,7 +235,7 @@
         font-family: Inter;
         font-size: 16px;
         font-weight: 700;
-        color: ${base06};
+        color: ${base07};
       }
 
       #image.nixos {
