@@ -5,9 +5,9 @@
 
     font = "JetBrainsMono Nerd Font 13";
     backgroundColor = "${base00}";
-    textColor = "${base06}";
+    textColor = "${base07}";
     borderSize = 3;
-    borderColor = "${base0B}";
+    borderColor = "${base0C}";
     borderRadius = 15;
     progressColor = "${base0C}";
     defaultTimeout = 20000;

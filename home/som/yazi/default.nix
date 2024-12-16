@@ -41,10 +41,10 @@
         hovered = { fg = "#${base00}"; bg = "#${base0E}"; bold = true; };
         preview_hovered = { fg = "#${base0D}"; bg = "reset"; };
 
-        find_keyword = { fg = "#${base0F}"; underline = true; };
+        find_keyword = { fg = "#${base00}"; underline = true; bold = true; };
 
         tab_active = { fg = "#${base00}"; bg = "#${base0C}"; };
-        tab_inactive = { fg = "#${base00}"; bg = "#${base0D}"; };
+        tab_inactive = { fg = "#${base00}"; bg = "#${base04}"; };
 
         border_style = { fg = "#${base00}"; };
       };
@@ -53,19 +53,19 @@
         separator_open = " ";
         separator_close = " ";
 
-        mode_normal = { fg = "#${base00}"; bg = "#${base0D}"; bold = true; };
-        mode_select = { fg = "#${base00}"; bg = "#${base09}"; bold = true; };
-        mode_unset = { fg = "#${base00}"; bg = "#${base0E}"; bold = true; };
+        mode_normal = { fg = "#${base00}"; bg = "#${base0C}"; bold = true; };
+        mode_select = { fg = "#${base00}"; bg = "#${base0A}"; bold = true; };
+        mode_unset = { fg = "#${base00}"; bg = "#${base09}"; bold = true; };
 
-        Progress_label = { fg = "#${base00}"; bg = "#${base0D}"; bold = true; };
-        Progress_normal = { fg = "#${base00}"; bg = "#${base0D}"; bold = true; };
-        Progress_error = { fg = "#${base00}"; bg = "#${base04}"; bold = true; };
+        Progress_label = { fg = "#${base00}"; bg = "#${base0C}"; bold = true; };
+        Progress_normal = { fg = "#${base00}"; bg = "#${base0C}"; bold = true; };
+        Progress_error = { fg = "#${base00}"; bg = "#${base08}"; bold = true; };
       };
 
       filetype = {
         rules = [
           { mime = "*"; is = "exec"; fg = "#${base0D}"; }
-          { mime = "*"; fg = "#${base06}"; }
+          { mime = "*"; fg = "#${base07}"; }
         ];
       };
     };
