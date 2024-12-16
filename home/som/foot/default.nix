@@ -4,10 +4,10 @@
     package = pkgs.foot;
     settings = {
       main = {
-        font = "JetBrainsMono Nerd Font:size=13";
-        font-bold = "JetBrainsMono Nerd Font:size=13:style=Bold";
-        font-italic = "JetBrainsMono Nerd Font:size=13:style=Italic";
-        font-bold-italic = "JetBrainsMono Nerd Font:size=13:style=BoldItalic";
+        font = "CaskaydiaMono Nerd Font:size=13";
+        font-bold = "CaskaydiaMono Nerd Font:size=13:style=Bold";
+        font-italic = "CaskaydiaMono Nerd Font:size=13:style=Italic";
+        font-bold-italic = "CaskaydiaMono Nerd Font:size=13:style=BoldItalic";
         pad = "7x7";
         initial-window-mode = "maximized";
         box-drawings-uses-font-glyphs = "no";

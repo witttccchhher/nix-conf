@@ -35,34 +35,34 @@
     # image = "${inputs.wallpapers}/solid/solid14_custom.jpg";
     polarity = "light";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine-dawn.yaml";
-    
+
     cursor = with inputs.nix-cursors; {
-			name = "Apple-Custom";
-			package = with config.lib.stylix.colors.withHashtag; packages.${pkgs.system}.apple-cursor.override {
+      name = "Apple-Custom";
+      package = with config.lib.stylix.colors.withHashtag; packages.${pkgs.system}.apple-cursor.override {
         background_color = base00;
         outline_color = base06;
         accent_color = base0B;
       };
-			size = 21;
-		};
+      size = 21;
+    };
 
     fonts = {
-			monospace = {
-				name = "JetBrainsMono Nerd Font";
-				package = pkgs.nerd-fonts.jetbrains-mono;
-			};
+      monospace = {
+        name = "CaskaydiaMono Nerd Font";
+        package = pkgs.nerd-fonts.caskaydia-mono;
+      };
 
-			serif = config.stylix.fonts.monospace;
+      serif = config.stylix.fonts.monospace;
       sansSerif = config.stylix.fonts.monospace;
-			emoji = config.stylix.fonts.monospace;
+      emoji = config.stylix.fonts.monospace;
 
-			sizes = {
-				desktop = 13;
-				popups = 13;
-				applications = 13;
-				terminal = 13;
-			};
-		};
+      sizes = {
+        desktop = 13;
+        popups = 13;
+        applications = 13;
+        terminal = 13;
+      };
+    };
 
     targets = {
       btop.enable = true;
