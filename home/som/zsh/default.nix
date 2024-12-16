@@ -33,26 +33,26 @@
       enable = true;
       highlighters = [ "main" "brackets" "pattern" "regexp" "root" "line" ];
       styles = with config.lib.stylix.colors; {
-        command = "fg=#${base06},bold";
+        command = "fg=#${base07},bold";
         unknown-token = "fg=#${base08},bold";
-        reserved-word = "fg=#${base06},bold";
-        alias = "fg=#${base06},bold";
-        builtin = "fg=#${base06},bold";
-        function = "fg=#${base06},bold";
-        commandseparator = "fg=#${base0B},bold";
-        path = "fg=#${base0B},bold";
-        path_pathseparator = "fg=#${base0B},bold";
-        globbing = "fg=#${base0B},bold";
-        command-substitution = "fg=#${base0A},bold";
-        single-hyphen-option = "fg=#${base0A},bold";
-        double-hyphen-option = "fg=#${base0A},bold";
+        reserved-word = "fg=#${base07},bold";
+        alias = "fg=#${base07},bold";
+        builtin = "fg=#${base07},bold";
+        function = "fg=#${base07},bold";
+        commandseparator = "fg=#${base0C},bold";
+        path = "fg=#${base0C},bold";
+        path_pathseparator = "fg=#${base0C},bold";
+        globbing = "fg=#${base0C},bold";
+        command-substitution = "fg=#${base0C},bold";
+        single-hyphen-option = "fg=#${base0C},bold";
+        double-hyphen-option = "fg=#${base0C},bold";
         back-quoted-argument = "fg=#${base09},bold";
         single-quoted-argument = "fg=#${base09},bold";
         double-quoted-argument = "fg=#${base09},bold";
-        redirection = "fg=#${base0A},bold";
-        comment = "fg=#${base03},bold";
-        arg0 = "fg=#${base06},bold";
-        default = "fg=#${base06},bold";
+        redirection = "fg=#${base0C},bold";
+        comment = "fg=#${base04},bold";
+        arg0 = "fg=#${base07},bold";
+        default = "fg=#${base07},bold";
       };
     };
     plugins = with inputs; [
@@ -69,7 +69,7 @@
     ];
     autosuggestion = {
       enable = true;
-      highlight = "fg=#${config.lib.stylix.colors.base03},bold";
+      highlight = "fg=#${config.lib.stylix.colors.base04},bold";
     };
     history.size = 10000;
     initExtra = with config.lib.stylix.colors.withHashtag; ''
@@ -104,8 +104,8 @@
 
       # PROMPT
       export nix_shell="%F{${base0D}}$name%f"
-      export user_symbol="%F{${base0B}} 󱄅  %f"
-      export dir_path="%F{${base02}}%K{${base02}}%F{${base06}}%~%{%k%}%F{${base02}}%f"
+      export user_symbol="%F{${base0C}} 󱄅  %f"
+      export dir_path="%F{${base01}}%K{${base01}}%F{${base07}}%~%{%k%}%F{${base01}}%f"
       if [[ -n "$IN_NIX_SHELL" ]]; then
         export PROMPT="
       %B$dir_path $nix_shell $user_symbol%b"
@@ -113,9 +113,6 @@
         export PROMPT="
       %B$dir_path $user_symbol%b"
       fi
-
-      source ${./rose-pine-man.zsh}
-      colorize_man rose-pine-dawn
     '';
   };
 }
