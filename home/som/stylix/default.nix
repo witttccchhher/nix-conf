@@ -7,7 +7,7 @@
     image = let
       input = "${inputs.wallpapers}/solid/solid4.png";
       level = 10;
-      lum = 1.0;
+      lum = 0.5;
       preserve = false;
     in
       pkgs.runCommand "output.png" { } ''
