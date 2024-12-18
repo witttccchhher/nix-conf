@@ -75,7 +75,7 @@
     initExtra = with config.lib.stylix.colors.withHashtag; ''
       source ${pkgs.fetchurl {
         url = "https://raw.githubusercontent.com/romkatv/zsh-defer/refs/heads/master/zsh-defer.plugin.zsh";
-        hash = "";
+        hash = "sha256-9JqOI8UAwPJ0QALLlXNFUmxt50fSsSuiUpwzf87uM6U=";
       }}
 
       # ZSH AUTO NOTIFY
