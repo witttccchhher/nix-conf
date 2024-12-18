@@ -67,7 +67,7 @@
       }}
       source ${pkgs.fetchurl {
         url = "https://raw.githubusercontent.com/MichaelAquilina/zsh-auto-notify/refs/heads/master/auto-notify.plugin.zsh";
-        hash = "";
+        hash = "sha256-zCc0AWcQE0MVy58461IEomojVxQbq/Fpz5ZEDUGmO8Y=";
       }}
       source ${pkgs.fetchurl {
         url = "https://raw.githubusercontent.com/Aloxaf/fzf-tab/refs/heads/master/fzf-tab.zsh";
