@@ -55,6 +55,18 @@
         default = "fg=#${base07},bold";
       };
     };
+    plugins = with inputs; [
+      {
+        name = "fzf-tab";
+        file = "fzf-tab.plugin.zsh";
+        src = fzf-tab;
+      }
+      {
+        name = "zsh-auto-notify";
+        file = "auto-notify.plugin.zsh";
+        src = zsh-auto-notify;
+      }
+    ];
     autosuggestion = {
       enable = true;
       highlight = "fg=#${config.lib.stylix.colors.base04},bold";
@@ -63,15 +75,7 @@
     initExtra = with config.lib.stylix.colors.withHashtag; ''
       source ${pkgs.fetchurl {
         url = "https://raw.githubusercontent.com/romkatv/zsh-defer/refs/heads/master/zsh-defer.plugin.zsh";
-        hash = "sha256-9JqOI8UAwPJ0QALLlXNFUmxt50fSsSuiUpwzf87uM6U=";
-      }}
-      source ${pkgs.fetchurl {
-        url = "https://raw.githubusercontent.com/MichaelAquilina/zsh-auto-notify/refs/heads/master/auto-notify.plugin.zsh";
-        hash = "sha256-zCc0AWcQE0MVy58461IEomojVxQbq/Fpz5ZEDUGmO8Y=";
-      }}
-      source ${pkgs.fetchurl {
-        url = "https://raw.githubusercontent.com/Aloxaf/fzf-tab/refs/heads/master/fzf-tab.zsh";
-        hash = "sha256-uF2vWQA27fOOZsRW5gQChRkP/jENNJO5fAYCraR1SSY=";
+        hash = "";
       }}
 
       # ZSH AUTO NOTIFY
