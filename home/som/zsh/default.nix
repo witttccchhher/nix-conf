@@ -1,4 +1,4 @@
-{ inputs, config, ... }: {
+{ inputs, config, pkgs, ... }: {
   programs.zsh = {
     enable = true;
     shellAliases = {
@@ -55,34 +55,33 @@
         default = "fg=#${base07},bold";
       };
     };
-    plugins = with inputs; [
-      {
-        name = "fzf-tab";
-        file = "fzf-tab.plugin.zsh";
-        src = fzf-tab;
-      }
-      {
-        name = "zsh-auto-notify";
-        file = "auto-notify.plugin.zsh";
-        src = zsh-auto-notify;
-      }
-      {
-        name = "zsh-defer";
-        file = "zsh-defer.plugin.zsh";
-        src = zsh-defer;
-      }
-    ];
     autosuggestion = {
       enable = true;
       highlight = "fg=#${config.lib.stylix.colors.base04},bold";
     };
     history.size = 10000;
     initExtra = with config.lib.stylix.colors.withHashtag; ''
-      colorscript -e crunchbang-mini
+      source ${pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/romkatv/zsh-defer/refs/heads/master/zsh-defer.plugin.zsh";
+        hash = "";
+      }}
+      source ${pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/MichaelAquilina/zsh-auto-notify/refs/heads/master/auto-notify.plugin.zsh";
+        hash = "";
+      }}
+      source ${pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/Aloxaf/fzf-tab/refs/heads/master/fzf-tab.zsh";
+        hash = "";
+      }}
 
       # ZSH AUTO NOTIFY
-      export AUTO_NOTIFY_THRESHOLD=60
-      export AUTO_NOTIFY_TITLE="Hey! "%command" has just finished"
+      export AUTO_NOTIFY_THRESHOLD=90
+      export AUTO_NOTIFY_TITLE=""%command" has just finished"
+      export AUTO_NOTIFY_BODY="With exit code "%exit_code""
+      export AUTO_NOTIFY_EXPIRE_TIME=3000
+      export AUTO_NOTIFY_IGNORE=("y" "man" "sleep")
+      export AUTO_NOTIFY_ICON_SUCCESS=${./assets/new_releases_64dp_99AD6A_FILL1_wght400_GRAD0_opsz48.png}
+      export AUTO_NOTIFY_ICON_FAILURE=${./assets/warning_64dp_CF6A4C_FILL1_wght400_GRAD0_opsz48.png}
 
       # FZF TAB
       zstyle ":completion:*" menu no
