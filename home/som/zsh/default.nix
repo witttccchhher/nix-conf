@@ -79,17 +79,17 @@
       }}
 
       # ZSH AUTO NOTIFY
-      zsh-defer export AUTO_NOTIFY_THRESHOLD=90
-      zsh-defer export AUTO_NOTIFY_TITLE=""%command" has just finished"
-      zsh-defer export AUTO_NOTIFY_BODY="With exit code "%exit_code""
-      zsh-defer export AUTO_NOTIFY_EXPIRE_TIME=3000
-      zsh-defer export AUTO_NOTIFY_IGNORE=("y" "man" "sleep")
-      zsh-defer export AUTO_NOTIFY_ICON_SUCCESS=${./assets/new_releases_64dp_99AD6A_FILL1_wght400_GRAD0_opsz48.png}
-      zsh-defer export AUTO_NOTIFY_ICON_FAILURE=${./assets/warning_64dp_CF6A4C_FILL1_wght400_GRAD0_opsz48.png}
+      export AUTO_NOTIFY_THRESHOLD=90
+      export AUTO_NOTIFY_TITLE=""%command" has just finished"
+      export AUTO_NOTIFY_BODY="With exit code "%exit_code""
+      export AUTO_NOTIFY_EXPIRE_TIME=3000
+      export AUTO_NOTIFY_IGNORE=("y" "man" "sleep")
+      export AUTO_NOTIFY_ICON_SUCCESS=${./assets/new_releases_64dp_99AD6A_FILL1_wght400_GRAD0_opsz48.png}
+      export AUTO_NOTIFY_ICON_FAILURE=${./assets/warning_64dp_CF6A4C_FILL1_wght400_GRAD0_opsz48.png}
 
       # FZF TAB
-      zsh-defer zstyle ":completion:*" menu no
-      zsh-defer zstyle ":fzf-tab:*" fzf-flags \
+      zstyle ":completion:*" menu no
+      zstyle ":fzf-tab:*" fzf-flags \
         -e \
         -i \
         --algo=v1 \
@@ -103,22 +103,22 @@
         --pointer="" \
         --preview="preview.sh {}" \
         --color=fg:"${base06}",bg:"${base00}",preview-fg:"${base06}",preview-bg:"${base00}",hl:"${base08}",fg+:"${base00}",bg+:"${base0B}",gutter:"${base0B}",hl+:"${base00}",info:"${base0C}",border:"${base03}",prompt:"${base0C}",pointer:"${base00}",marker:"${base0E}",spinner:"${base0C}",header:"${base0C}"
-      zsh-defer zstyle ":fzf-tab:*" fzf-bindings "space:accept"
-      zsh-defer zstyle ":fzf-tab:*" accept-line enter
+      zstyle ":fzf-tab:*" fzf-bindings "space:accept"
+      zstyle ":fzf-tab:*" accept-line enter
 
       # OPTIONS
-      zsh-defer setopt automenu
-      zsh-defer setopt nobeep
+      setopt automenu
+      setopt nobeep
 
       # PROMPT
-      zsh-defer export nix_shell="%F{${base0D}}$name%f"
-      zsh-defer export user_symbol="%F{${base0C}} 󱄅  %f"
-      zsh-defer export dir_path="%F{${base01}}%K{${base01}}%F{${base07}}%~%{%k%}%F{${base01}}%f"
+      export nix_shell="%F{${base0D}}$name%f"
+      export user_symbol="%F{${base0C}} 󱄅  %f"
+      export dir_path="%F{${base01}}%K{${base01}}%F{${base07}}%~%{%k%}%F{${base01}}%f"
       if [[ -n "$IN_NIX_SHELL" ]]; then
-        zsh-defer export PROMPT="
+        export PROMPT="
       %B$dir_path $nix_shell $user_symbol%b"
       else
-        zsh-defer export PROMPT="
+        export PROMPT="
       %B$dir_path $user_symbol%b"
       fi
     '';
