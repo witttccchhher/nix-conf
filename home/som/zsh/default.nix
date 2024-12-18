@@ -71,7 +71,7 @@
       }}
       source ${pkgs.fetchurl {
         url = "https://raw.githubusercontent.com/Aloxaf/fzf-tab/refs/heads/master/fzf-tab.zsh";
-        hash = "";
+        hash = "sha256-uF2vWQA27fOOZsRW5gQChRkP/jENNJO5fAYCraR1SSY=";
       }}
 
       # ZSH AUTO NOTIFY
