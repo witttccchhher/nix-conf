@@ -44,6 +44,10 @@
       url = "github:MichaelAquilina/zsh-auto-notify";
       flake = false;
     };
+    zsh-defer = {
+      url = "github:romkatv/zsh-defer";
+      flake = false;
+    };
   };
 
   outputs = { self, nixpkgs, flake-parts, home-manager, stylix, nix-flatpak, ... }@inputs: flake-parts.lib.mkFlake { inherit inputs; } {

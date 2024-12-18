@@ -653,7 +653,8 @@
         "wallpapers": "wallpapers",
         "zen-browser": "zen-browser",
         "zsh-auto-notify": "zsh-auto-notify",
-        "zsh-autosuggestions": "zsh-autosuggestions"
+        "zsh-autosuggestions": "zsh-autosuggestions",
+        "zsh-defer": "zsh-defer"
       }
     },
     "stylix": {
@@ -885,6 +886,22 @@
       "original": {
         "owner": "zsh-users",
         "repo": "zsh-autosuggestions",
+        "type": "github"
+      }
+    },
+    "zsh-defer": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1707546634,
+        "narHash": "sha256-MFlvAnPCknSgkW3RFA8pfxMZZS/JbyF3aMsJj9uHHVU=",
+        "owner": "romkatv",
+        "repo": "zsh-defer",
+        "rev": "53a26e287fbbe2dcebb3aa1801546c6de32416fa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "romkatv",
+        "repo": "zsh-defer",
         "type": "github"
       }
     }

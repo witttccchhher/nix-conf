@@ -66,6 +66,11 @@
         file = "auto-notify.plugin.zsh";
         src = zsh-auto-notify;
       }
+      {
+        name = "zsh-defer";
+        file = "zsh-defer.plugin.zsh";
+        src = zsh-defer;
+      }
     ];
     autosuggestion = {
       enable = true;

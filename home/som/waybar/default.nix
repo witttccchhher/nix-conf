@@ -87,11 +87,11 @@
       #     interval = 1;
       #     tooltip = false;
       #   };
-      #   "clock" = {
-      #     interval = 1;
-      #     format = "{:%H:%M  %A, %d/%m}";
-      #     tooltip = false;
-      #   };
+      #  "clock" = {
+      #    interval = 1;
+      #    format = "{:%H:%M  %A, %d/%m}";
+      #    tooltip = false;
+      #  };
       # };
       mac = let
         batteryBin = pkgs.writeShellScriptBin "battery" ''
