@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
   phases = [ "installPhase" ];
   installPhase = ''
     mkdir -p $out/bin
-    cp $src/curd $out/bin/curd
+    cp $src $out/bin/curd
     chmod +x $out/bin/curd
   '';
 
