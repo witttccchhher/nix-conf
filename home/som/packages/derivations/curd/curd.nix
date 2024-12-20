@@ -1,7 +1,7 @@
 {
   lib,
   stdenv,
-  fetchFromGitHub,
+  fetchurl,
   mpv,
   rofi,
   ueberzugpp,
@@ -12,11 +12,9 @@ stdenv.mkDerivation rec {
   pname = "curd";
   version = "1.0.4";
 
-  src = fetchFromGitHub {
-    owner = "Wraient";
-    repo = "curd";
-    rev = "v${version}";
-    hash = "sha256-08ZALLar/VW8j1KQ4qFD4vbEVn0nfdvGHqL+wLeX6dk=";
+  src = fetchurl {
+    url = "https://github.com/Wraient/curd/releases/download/v${version}/curd";
+    hash = "";
   };
 
   nativeBuildInputs = [
