@@ -14,7 +14,7 @@ stdenv.mkDerivation rec {
 
   src = fetchurl {
     url = "https://github.com/Wraient/curd/releases/download/v${version}/curd";
-    hash = "";
+    hash = "sha256-dg9CSMj2vEpmPAE1y0koZUmZw107Anw4JDH6niSGNz4=";
   };
 
   nativeBuildInputs = [
