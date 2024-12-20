@@ -23,6 +23,7 @@
       inputs.zen-browser.packages.${system}.generic
       inputs.toru.defaultPackage.${system}
       (callPackage ./derivations/ani-cli/ani-cli-ru.nix { })
+      (callPackage ./derivations/curd/curd.nix { })
 
       # Fonts
       (google-fonts.override { fonts = [ "Poppins" "Inter" ]; })
