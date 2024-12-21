@@ -60,6 +60,7 @@
       bat
       duf
       fd
+      tg
       skate
       ripgrep
       file
