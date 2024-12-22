@@ -31,6 +31,10 @@
       url = "git+https://git.sr.ht/~witttccchhher/wallpapers?ref=main";
       flake = false;
     };
+    nypkgs = {
+      url = "github:yunfachi/nypkgs";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     fzf-tab = {
       url = "github:Aloxaf/fzf-tab";

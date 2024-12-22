@@ -1,32 +1,10 @@
-{
-  imports = [
-    ./alacritty
-    ./anyrun
-    ./btop
-    ./dconf
-    ./dooit
-    ./fastfetch
-    ./fish
-    ./foot
-    ./fzf
-    ./git
-    ./gnome
-    ./gtklock
-    ./lazygit
-    ./lsd
-    ./mako
-    ./mpv
-    ./ncmpcpp
-    ./neovim
-    ./nix
-    ./nixpkgs
-    ./packages
-    ./stylix
-    ./sway
-    ./translate-shell
-    ./waybar
-    ./yazi
-    ./zathura
-    ./zsh
-  ];
+{ inputs, pkgs, ... }: {
+  imports = inputs.nypkgs.legacyPackages.${pkgs.system}.lib.umport {
+    path = ./.;
+
+    include = [];
+    exclude = [
+      ./default.nix
+    ];
+  };
 }
