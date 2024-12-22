@@ -6,7 +6,7 @@
   src = fetchPypi {
     pname = "anicli_api";
     inherit version;
-    hash = "sha256-2lWvDH74qU21rVLfsIwohfcS9LfQdDHcMAc3KzYWWds=";
+    hash = "sha256-pHseojH4KLzC3K8ChotAX3C7ITjlxuOtCvfScAn4Ryw=";
   };
 
   build-system = with python3Packages; [

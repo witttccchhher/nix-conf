@@ -17,6 +17,7 @@
       "$HOME/.local/bin"
       "$HOME/.cargo/bin"
       "$GOPATH/bin"
+      "$HOME/.config/emacs/bin"
     ];
     packages = with pkgs; [
       # Flakes
