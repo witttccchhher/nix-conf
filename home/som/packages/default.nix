@@ -67,6 +67,11 @@
       ripgrep
       file
       fzf
+      gperf
+      cmake
+      pkg-config
+      libappindicator
+      libwebp
       gping
       bun
       upower
