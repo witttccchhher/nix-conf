@@ -5,6 +5,7 @@
     ./btop
     ./dconf
     ./dooit
+    ./emacs
     ./fastfetch
     ./fish
     ./foot
