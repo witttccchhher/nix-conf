@@ -50,6 +50,7 @@
       wl-clipboard
       wirelesstools
       killall
+      tdlib
       lsd
       tree
       nh
