@@ -1,6 +1,6 @@
 { lib, fetchPypi, python3Packages, python3 }: python3Packages.buildPythonApplication rec {
   pname = "anicli_api";
-  version = "0.6.12";
+  version = "0.6.13";
   pyproject = true;
 
   src = fetchPypi {
