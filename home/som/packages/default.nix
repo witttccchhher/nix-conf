@@ -41,6 +41,7 @@
       hut
       poetry
       neovim-remote
+      emacs
       
       # Utilites
       fastfetch
