@@ -1,5 +1,5 @@
-{ inputs, pkgs, ... }: {
-  imports = inputs.nypkgs.legacyPackages.${pkgs.system}.lib.umport {
+{ inputs, ... }: {
+  imports = inputs.nypkgs.legacyPackages."x86_64-linux".lib.umport {
     path = ./.;
 
     include = [
