@@ -62,6 +62,7 @@
       tgpt
       lutgen
       bat
+      openvpn
       duf
       fd
       tg
