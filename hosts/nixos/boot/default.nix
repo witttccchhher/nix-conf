@@ -2,9 +2,10 @@
   boot = {
     # loader.timeout = 0;
     kernelPackages = pkgs.linuxPackages_zen;
+    kernelModules = [ "btusb" ];
     extraModulePackages = with config.boot.kernelPackages; [
       amneziawg
-      (pkgs.callPackage ./bletooth.nix { })
+      broadcom_sta
     ];
     loader.grub = {
       enable = true;

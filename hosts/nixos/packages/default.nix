@@ -28,6 +28,10 @@
 
     # Utilites
     dhcpcd
+    bluez
+    bluez-tools
+    bluez-alsa
+    broadcom-bt-firmware
     usbutils
     unzip
     unrar
