@@ -59,6 +59,7 @@
       nix-init
       btop
       lazygit
+      tgpt
       lutgen
       bat
       duf
