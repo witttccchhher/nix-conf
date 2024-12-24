@@ -114,6 +114,7 @@
       obsidian
       nwg-drawer
       font-manager
+      blueman
     ];
   };
 }
