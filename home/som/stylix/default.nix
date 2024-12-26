@@ -5,7 +5,7 @@
     autoEnable = false;
 
     image = let
-      input = "${inputs.wallpapers}/solid/solid4.png";
+      input = "${inputs.wallpapers}/isometric/isometric1.png";
       level = 10;
       lum = 0.5;
       preserve = false;

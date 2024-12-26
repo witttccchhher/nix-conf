@@ -846,11 +846,11 @@
     "wallpapers": {
       "flake": false,
       "locked": {
-        "lastModified": 1733997544,
-        "narHash": "sha256-SSnIm+wAe/a7MduSZJJApdx6kh1MsvdaRSpsNT5yY7U=",
+        "lastModified": 1735209726,
+        "narHash": "sha256-8wVrpvIFErwbHPw/ngD4y1wpj4qWrYqh59JMQ8CxVoE=",
         "ref": "main",
-        "rev": "fab72b7347c46a43da432820be81ee430a32ee3e",
-        "revCount": 12,
+        "rev": "167fe48390b970e9e7012ee5ddc171efce947918",
+        "revCount": 13,
         "type": "git",
         "url": "https://git.sr.ht/~witttccchhher/wallpapers"
       },
