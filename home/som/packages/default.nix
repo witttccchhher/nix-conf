@@ -26,7 +26,7 @@
       (callPackage ./derivations/curd/curd.nix { })
 
       # Fonts
-      (google-fonts.override { fonts = [ "Poppins" "Inter" ]; })
+      (google-fonts.override { fonts = [ "Poppins" "Inter" "Roboto Mono" ]; })
 
       # Media
       mpv
