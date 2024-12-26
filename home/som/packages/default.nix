@@ -22,7 +22,6 @@
     packages = with pkgs; [
       # Flakes
       inputs.zen-browser.packages.${system}.generic
-      inputs.toru.defaultPackage.${system}.defaultPackage
       (callPackage ./derivations/ani-cli/ani-cli-ru.nix { })
       (callPackage ./derivations/curd/curd.nix { })
 

@@ -15,7 +15,6 @@
     stylix.url = "github:danth/stylix";
     nix-flatpak.url = "github:gmodena/nix-flatpak";
     zen-browser.url = "github:MarceColl/zen-browser-flake";
-    toru.url = "github:sweetbbak/toru";
     pomotroid.url = "path:home/som/packages/derivations/pomotroid";
     dooit.url = "github:dooit-org/dooit";
     dooit-extras.url = "github:dooit-org/dooit-extras";
