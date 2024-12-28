@@ -3,9 +3,9 @@
     enable = true;
     settings = {
       logo = {
-        type = "sixel";
-        source = ./nixlogo.jpg;
-        printRemaining = true;
+        type = "builtin";
+        # source = ./nixlogo.jpg;
+        # printRemaining = true;
       };
       display = {
         separator = "  ";
