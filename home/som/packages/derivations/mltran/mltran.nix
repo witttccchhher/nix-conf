@@ -5,7 +5,7 @@
   ...
 }:
 
-python3Packages.buildPythonApplication rec {
+python3Packages.buildPythonApplication {
   pname = "mltran";
   version = "unstable-2020-06-14";
   pyproject = false;
@@ -17,7 +17,15 @@ python3Packages.buildPythonApplication rec {
     hash = "sha256-fbp+Qvo+7pynJhRcfEg/Z6msfeYM+QAODwhmN+Dbgl0=";
   };
 
+  build-system = with python3Packages; [
+    setuptools
+    setuptools-scm
+  ];
+
   dependencies = with python3Packages; [
+    attrs
+    py
+    setuptools
     certifi
     chardet
     idna
@@ -30,7 +38,7 @@ python3Packages.buildPythonApplication rec {
     description = "Command line interface to multitran.ru dictionary";
     homepage = "https://github.com/bondarevts/mltran";
     license = lib.licenses.mit;
-    maintainers = with lib.maintainers; [ "witcher" ];
+    maintainers = [ "witcher" ];
     mainProgram = "mltran";
     platforms = lib.platforms.all;
   };
