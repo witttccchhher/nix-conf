@@ -48,6 +48,7 @@
       dwt1-shell-color-scripts
       wl-clipboard
       wirelesstools
+      glow
       killall
       tdlib
       lsd
