@@ -4,6 +4,7 @@
     settings = {
       logo = {
         type = "builtin";
+        color-1 = "magenta";
         # source = ./nixlogo.jpg;
         # printRemaining = true;
       };
@@ -15,6 +16,8 @@
         };
       };
       modules = [
+        "break"
+        "break"
         "break"
         "break"
         "break"
