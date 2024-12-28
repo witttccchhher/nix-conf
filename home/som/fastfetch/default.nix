@@ -4,7 +4,7 @@
     settings = {
       logo = {
         type = "builtin";
-        color-1 = "magenta";
+        color = { "1" = "magenta"; };
         # source = ./nixlogo.jpg;
         # printRemaining = true;
       };
