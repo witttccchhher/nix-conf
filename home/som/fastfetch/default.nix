@@ -4,9 +4,6 @@
     settings = {
       logo = {
         type = "builtin";
-        preserve-aspect-ratio = true;
-        color-1 = "blue";
-        color-2 = "magenta";
         # source = ./nixlogo.jpg;
         # printRemaining = true;
       };
