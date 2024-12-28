@@ -8,7 +8,7 @@
         font-bold = "CaskaydiaMono Nerd Font:size=12:style=Bold";
         font-italic = "CaskaydiaMono Nerd Font:size=12:style=Italic";
         font-bold-italic = "CaskaydiaMono Nerd Font:size=12:style=BoldItalic";
-        pad = "0x0";
+        pad = "7x7";
         initial-window-mode = "maximized";
         box-drawings-uses-font-glyphs = "no";
         resize-by-cells = "no";

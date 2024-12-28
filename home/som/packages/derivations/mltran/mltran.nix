@@ -19,12 +19,9 @@ python3Packages.buildPythonApplication {
 
   build-system = with python3Packages; [
     setuptools
-    setuptools-scm
   ];
 
   dependencies = with python3Packages; [
-    attrs
-    py
     setuptools
     certifi
     chardet
