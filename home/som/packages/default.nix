@@ -24,6 +24,7 @@
       inputs.zen-browser.packages.${system}.generic
       (callPackage ./derivations/ani-cli/ani-cli-ru.nix { })
       (callPackage ./derivations/curd/curd.nix { })
+      (callPackage ./derivations/mltran/mltran.nix { })
 
       # Fonts
       (google-fonts.override { fonts = [ "Poppins" "Inter" "Roboto Mono" ]; })
