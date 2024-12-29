@@ -4,6 +4,11 @@
       enable = true;
       extraPackages = with pkgs; [ foot gtklock autotiling ];
     };
+    river = {
+      enable = true;
+      extraPackages = with pkgs; [ foot ];
+      xwayland.enable = true;
+    };
     fish.enable = false;
     zsh.enable = true;
     nix-ld.enable = true;
