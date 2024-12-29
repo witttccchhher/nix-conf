@@ -52,6 +52,8 @@
       killall
       tdlib
       lsd
+      xclip
+      xsel
       tree
       nh
       smassh
