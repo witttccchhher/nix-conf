@@ -1,17 +1,13 @@
 { pkgs, ... }: {
   services = {
     xserver = {
-      enable = false;
-      desktopManager.gnome = {
-        enable = false;
+      enable = true;
+      desktopManager.awesome = {
+        enable = true;
       };
     };
-    gnome = {
-      sushi.enable = false;
-      gnome-settings-daemon.enable = false;
-      gnome-keyring.enable = false;
-      core-shell.enable = false;
-      core-os-services.enable = false;
+    displayManager.ly = {
+      enable = true;
     };
   };
 }
