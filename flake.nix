@@ -18,6 +18,14 @@
     pomotroid.url = "path:home/som/packages/derivations/pomotroid";
     dooit.url = "github:dooit-org/dooit";
     dooit-extras.url = "github:dooit-org/dooit-extras";
+    astal = {
+      url = "github:aylur/astal";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    ags = {
+      url = "github:aylur/ags";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nix-cursors = {
       url = "github:LilleAila/nix-cursors";
       inputs.nixpkgs.follows = "nixpkgs";
