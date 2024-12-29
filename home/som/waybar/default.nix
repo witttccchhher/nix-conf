@@ -137,7 +137,7 @@
         };
         "clock" = {
           interval = 60;
-          format = "{:%d %b, %H:%M}";
+          format = "{:%d %b,  %H:%M}";
           on-click = "footclient -e dooit";
           tooltip = false;
         };
