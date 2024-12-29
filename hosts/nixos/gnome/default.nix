@@ -2,7 +2,7 @@
   services = {
     xserver = {
       enable = true;
-      desktopManager.awesome = {
+      windowManager.awesome = {
         enable = true;
       };
     };
