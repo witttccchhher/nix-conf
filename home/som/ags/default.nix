@@ -3,7 +3,7 @@
 
   programs.ags = {
     enable = true;
-    configDir = /home/som/agscher;
+    configDir = ../../../../agscher;
     extraPackages = with inputs.ags.packages.${pkgs.system}; [
       notifd
     ];
