@@ -1,6 +1,6 @@
 { pkgs, config, ... }: with config.lib.stylix.colors.withHashtag; {
   services.mako = {
-    enable = true;
+    enable = false;
     package = pkgs.mako;
 
     font = "JetBrainsMono Nerd Font 13";
