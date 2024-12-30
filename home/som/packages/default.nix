@@ -27,6 +27,7 @@
 
       # Fonts
       (google-fonts.override { fonts = [ "Poppins" "Inter" "Roboto Mono" ]; })
+      dejavu_fonts
 
       # Media
       mpv
