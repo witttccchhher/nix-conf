@@ -64,6 +64,7 @@
       btop
       lazygit
       tgpt
+      tofi
       lutgen
       bat
       openvpn
