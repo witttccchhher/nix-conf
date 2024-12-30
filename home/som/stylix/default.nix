@@ -5,7 +5,7 @@
     autoEnable = false;
 
     image = let
-      input = "${inputs.wallpapers}/isometric/isometric1.png";
+      input = "${inputs.wallpapers}/other/other6.jpg";
       level = 10;
       lum = 0.5;
       preserve = false;
@@ -33,7 +33,7 @@
         }
       '';
     # image = "${inputs.wallpapers}/solid/solid14_custom.jpg";
-    polarity = "light";
+    polarity = "dark";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine-dawn.yaml";
 
     cursor = with inputs.nix-cursors; {

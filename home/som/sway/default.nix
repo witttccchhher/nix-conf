@@ -40,6 +40,7 @@
         { command = "autotiling"; always = true; }
         { command = "foot --server"; }
         { command = "nwg-drawer -c=7 -nocats -fm=nautilus -r"; always = true; }
+        { command = "ags run"; }
       ];
 
       workspaceLayout = "default";
