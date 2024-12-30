@@ -10,6 +10,7 @@
       ./packages
       ./stylix/themes
       ./yazi/yazi.nix
+      ./ags/agscher
     ];
   };
 }
