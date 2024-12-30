@@ -845,18 +845,17 @@
     "wallpapers": {
       "flake": false,
       "locked": {
-        "lastModified": 1735209726,
-        "narHash": "sha256-8wVrpvIFErwbHPw/ngD4y1wpj4qWrYqh59JMQ8CxVoE=",
-        "ref": "main",
-        "rev": "167fe48390b970e9e7012ee5ddc171efce947918",
-        "revCount": 13,
-        "type": "git",
-        "url": "https://git.sr.ht/~witttccchhher/wallpapers"
+        "lastModified": 1735549316,
+        "narHash": "sha256-PfMB+dgpctwAzjxSU5LiRCuwRsmp5IsMVtTyKaIavQk=",
+        "owner": "witttccchhher",
+        "repo": "wallpapers",
+        "rev": "44777cd35ba77c0056a71c7d589a025b12e1182b",
+        "type": "github"
       },
       "original": {
-        "ref": "main",
-        "type": "git",
-        "url": "https://git.sr.ht/~witttccchhher/wallpapers"
+        "owner": "witttccchhher",
+        "repo": "wallpapers",
+        "type": "github"
       }
     },
     "zen-browser": {

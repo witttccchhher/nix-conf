@@ -35,7 +35,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     wallpapers = {
-      url = "git+https://git.sr.ht/~witttccchhher/wallpapers?ref=main";
+      url = "github:witttccchhher/wallpapers";
       flake = false;
     };
     nypkgs = {
