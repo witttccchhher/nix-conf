@@ -7,8 +7,8 @@
     image = let
       input = "${inputs.wallpapers}/other/other6.jpg";
       level = 10;
-      lum = 0.5;
-      preserve = false;
+      lum = 1.0;
+      preserve = true;
     in
       pkgs.runCommand "output.png" { } ''
         ${pkgs.lutgen}/bin/lutgen apply ${input} -l ${builtins.toString level} -L ${builtins.toString lum} ${if preserve == true then "-P" else ""} -o $out -- ${
