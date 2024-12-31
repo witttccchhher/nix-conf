@@ -845,11 +845,11 @@
     "wallpapers": {
       "flake": false,
       "locked": {
-        "lastModified": 1735549316,
-        "narHash": "sha256-PfMB+dgpctwAzjxSU5LiRCuwRsmp5IsMVtTyKaIavQk=",
+        "lastModified": 1735616938,
+        "narHash": "sha256-VsDxWTCq5Dg3XjsiFFNDtQqMi7c1IvQc+67iby1HlN4=",
         "owner": "witttccchhher",
         "repo": "wallpapers",
-        "rev": "44777cd35ba77c0056a71c7d589a025b12e1182b",
+        "rev": "d2ef0cda92ece30d3846a048b73aa166d88322a3",
         "type": "github"
       },
       "original": {
