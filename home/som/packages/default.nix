@@ -37,6 +37,9 @@
       eog
       imagemagick
 
+      # Playwright
+      playwright
+
       # Code
       git
       go
