@@ -5,10 +5,10 @@
     autoEnable = false;
 
     image = let
-      input = "${inputs.wallpapers}/other/other6.jpg";
+      input = "${inputs.wallpapers}/other/other7.jpg";
       level = 10;
       lum = 1.0;
-      preserve = true;
+      preserve = false;
     in
       pkgs.runCommand "output.png" { } ''
         ${pkgs.lutgen}/bin/lutgen apply ${input} -l ${builtins.toString level} -L ${builtins.toString lum} ${if preserve == true then "-P" else ""} -o $out -- ${
