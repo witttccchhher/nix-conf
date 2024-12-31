@@ -6,6 +6,7 @@
     configDir = ./agscher;
     extraPackages = with inputs.ags.packages.${pkgs.system}; [
       notifd
+      apps
     ];
   };
 }

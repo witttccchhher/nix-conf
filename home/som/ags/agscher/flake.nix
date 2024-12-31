@@ -44,6 +44,7 @@
         astal3
         io
         notifd
+        apps
       ];
 
       installPhase = ''
