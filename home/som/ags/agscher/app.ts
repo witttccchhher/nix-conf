@@ -8,5 +8,6 @@ App.start({
     css: style,
     main() {
       App.get_monitors().map(NotificationPopups)
+      Applauncher
     }
 })
