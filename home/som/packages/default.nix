@@ -39,6 +39,28 @@
 
       # Playwright
       playwright
+      stdenv.cc.cc.lib
+      xorg.libxcb
+      xorg.libX11
+      xorg.libXext
+      xorg.libXrandr
+      xorg.libXcomposite
+      xorg.libXcursor
+      xorg.libXdamage
+      xorg.libXfixes
+      xorg.libXi
+      xorg.libXrender
+      gtk3
+      pango
+      cairo
+      at-spi2-atk
+      gobject-introspection
+      gdk-pixbuf
+      glib
+      alsa-lib
+      freetype
+      fontconfig
+      dbus
 
       # Code
       git
