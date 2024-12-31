@@ -32,7 +32,7 @@ class NotifiationMap implements Subscribable {
          * note that if the notification has any actions
          * they might not work, since the sender already treats them as resolved
          */
-        // notifd.ignoreTimeout = true
+         //notifd.ignoreTimeout = true
 
         notifd.connect("notified", (_, id) => {
             this.set(id, Notification({
@@ -43,7 +43,7 @@ class NotifiationMap implements Subscribable {
                 // so that it acts as a "popup" and we can still display it
                 // in a notification center like widget
                 // but clicking on the close button will close it
-                onHoverLost: () => this.delete(id),
+                //onHoverLost: () => this.delete(id),
 
                 // notifd by default does not close notifications
                 // until user input or the timeout specified by sender
@@ -53,7 +53,7 @@ class NotifiationMap implements Subscribable {
                      * uncomment this if you want to "hide" the notifications
                      * after TIMEOUT_DELAY
                      */
-                    // this.delete(id)
+                     this.delete(id)
                 })
             }))
         })
