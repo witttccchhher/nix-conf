@@ -48,6 +48,7 @@
       # Utilites
       fastfetch
       dwt1-shell-color-scripts
+      carbon-now-cli
       wl-clipboard
       wirelesstools
       glow
