@@ -5,7 +5,6 @@
     kernelModules = [ "btusb" ];
     extraModulePackages = with config.boot.kernelPackages; [
       amneziawg
-      broadcom_sta
     ];
     loader.grub = {
       enable = true;
