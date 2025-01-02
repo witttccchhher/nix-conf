@@ -86,9 +86,22 @@
       keybindings = let
         mod = config.wayland.windowManager.sway.config.modifier;
         takescreenshot = pkgs.writeShellScriptBin "takescreenshot" ''
-          ${pkgs.grim}/bin/grim -g "$(${pkgs.slurp}/bin/slurp)" - | wl-copy
-          ${pkgs.libnotify}/bin/notify-send 'Screenshot taken' 'Copied to clipboard' -i ${./screenshot.svg}
-          # ags -r "Utils.notify({ summary: 'Screenhot takes', body: 'Copied to clipboard' })"
+          filename="/tmp/screenshots/$(date "+%d.%m.%y_%H:%M:%S_grim.png")"
+          ${pkgs.grim}/bin/grim -g "$(${pkgs.slurp}/bin/slurp)" "$filename"
+
+          if [ -f "$filename" ]; then
+            ${pkgs.wl-clipboard}/bin/wl-copy < "$filename"
+            notifyRes=$(timeout 10s ${pkgs.libnotify}/bin/notify-send -A 'Save' -A 'Open' -a 'Grimblast' 'Screenshot taken' 'Copied to clipboard' -h string:image-path:$filename -i ${./screenshot.svg})
+
+            if [[ "$notifyRes" == 0 ]]; then
+              mv "$filename" ~/Pictures/Screenshots
+            elif [[ "$notifyRes" == 1 ]]; then
+              ${pkgs.eog}/bin/eog "$filename"
+              rm "$filename"
+            else
+              rm "$filename"
+            fi
+          fi
         '';
       in {
         "XF86AudioRaiseVolume" = "exec $raise_vol";
