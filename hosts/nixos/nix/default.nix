@@ -14,8 +14,13 @@
       #  "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
       # ];
       # builders-use-substitutes = true;
-      # auto-optimise-store = true;
-      trusted-users = [ "som" ];
+      auto-optimise-store = true;
+      trusted-users = [
+        "som"
+        "root"
+        "@wheel"
+      ];
+      warn-dirty = false;
       extra-experimental-features = [ "nix-command" "flakes" ];
     };
   };
