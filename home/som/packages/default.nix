@@ -61,7 +61,6 @@
       smassh
       picom-pijulius
       flameshot
-      nix-index
       nix-init
       btop
       lazygit

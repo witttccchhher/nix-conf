@@ -17,6 +17,10 @@
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     dooit.url = "github:dooit-org/dooit";
     dooit-extras.url = "github:dooit-org/dooit-extras";
+    nix-index-database = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     astal = {
       url = "github:aylur/astal";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -60,7 +64,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, flake-parts, home-manager, stylix, nix-flatpak, ... }@inputs: flake-parts.lib.mkFlake { inherit inputs; } {
+  outputs = { self, nixpkgs, flake-parts, home-manager, stylix, nix-flatpak, nix-index-database, ... }@inputs: flake-parts.lib.mkFlake { inherit inputs; } {
     flake = let
       system = "x86_64-linux";
     in {
@@ -78,6 +82,7 @@
         extraSpecialArgs = { inherit inputs; };
         modules = [
           stylix.homeManagerModules.stylix
+          nix-index-database.hmModules.nix-index
           ./home.nix
         ];
       };
