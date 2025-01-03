@@ -126,6 +126,7 @@
             "class<.*Calculator>" = "󰪚";
             "class<eog>" = "󰋩";
             "class<.*Nautilus>" = "󰉋";
+            "class<^$>" = "?";
           };
         };
         "tray" = {
