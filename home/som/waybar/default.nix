@@ -58,7 +58,7 @@
         spacing = 20;
         reload_style_on_change = true;
         modules-left = [ "image#nixos" "sway/window" "custom/files" "custom/edit" "custom/view" "custom/term" "custom/chat" "custom/help" ];
-        modules-center = [ "sway/workspaces" ];
+        modules-center = [ ];
         modules-right = [ "tray" "image#network" "image#battery" "image#toggles" "clock" ];
         "image#nixos" = {
           path = "${./assets/nixos.png}";
@@ -113,22 +113,6 @@
           on-click = "xdg-open 'https://nixos.wiki'";
           tooltip = false;
         };
-        "sway/workspaces" = {
-          format = "{index}  {windows}";
-          format-window-separator = " ";
-          window-rewrite-default = "{class}";
-          window-format = "{class}";
-          window-rewrite = {
-            "class<zen-beta>" = "󰖟";
-            "class<footclient>" = "";
-            "class<.*tdesktop.*>" = "";
-            "class<.*zathura>" = "󰂺";
-            "class<.*Calculator>" = "󰪚";
-            "class<eog>" = "󰋩";
-            "class<.*Nautilus>" = "󰉋";
-            "class<^$>" = "?";
-          };
-        };
         "tray" = {
           tooltip = false;
         };
@@ -178,17 +162,6 @@
 
       #custom-files, #custom-edit, #custom-view, #custom-term, #custom-chat, #custom-help {
         font-weight: 400;
-      }
-
-      #workspaces button.current_output {
-        background-color: ${base01};
-        padding: 0 15px 0 10px;
-        margin: 7px 5px 7px 5px;
-        border-radius: 15px;
-      }
-
-      #workspaces button.visible {
-        background-color: ${base02};
       }
 
       #image.toggles {
