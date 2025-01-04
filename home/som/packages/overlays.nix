@@ -7,7 +7,7 @@
           owner = "nwg-piotr";
           repo = "nwg-drawer";
           rev = "${version}";
-          hash = "";
+          hash = "sha256-TYGDAVKw89rwaXsElUXUskvruWViAbiDI6pwjrbtgjE=";
         };
       });
     })
