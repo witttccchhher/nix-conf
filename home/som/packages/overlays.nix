@@ -6,7 +6,7 @@
         src = pkgs.fetchFromGitHub {
           owner = "nwg-piotr";
           repo = "nwg-drawer";
-          rev = "v${version}";
+          rev = "${version}";
           hash = "";
         };
       });
