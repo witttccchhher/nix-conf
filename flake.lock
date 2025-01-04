@@ -803,11 +803,11 @@
     "wallpapers": {
       "flake": false,
       "locked": {
-        "lastModified": 1735616938,
-        "narHash": "sha256-VsDxWTCq5Dg3XjsiFFNDtQqMi7c1IvQc+67iby1HlN4=",
+        "lastModified": 1735973389,
+        "narHash": "sha256-nHMvfEQ1Irz6gbVdi5Jsc0d/6IEnP3eHJnjTzb9IUlc=",
         "owner": "witttccchhher",
         "repo": "wallpapers",
-        "rev": "d2ef0cda92ece30d3846a048b73aa166d88322a3",
+        "rev": "22e9c0478c1c4ebdfc377a6b445cc6d134d5931c",
         "type": "github"
       },
       "original": {
