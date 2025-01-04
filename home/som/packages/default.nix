@@ -59,6 +59,7 @@
       tree
       nh
       wlr-randr
+      gum
       smassh
       # chess-tui-1_6_0
       stockfish
