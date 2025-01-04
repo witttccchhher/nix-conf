@@ -58,6 +58,7 @@
       xsel
       tree
       nh
+      wlr-randr
       smassh
       # chess-tui-1_6_0
       stockfish
