@@ -9,6 +9,8 @@
           rev = "${version}";
           hash = "sha256-TYGDAVKw89rwaXsElUXUskvruWViAbiDI6pwjrbtgjE=";
         };
+
+        vendorHash = "sha256-Q+2CXpPvfy6QYjP+AZeJL/l00/Z+C56c+FfGcyIdQ4M=";
       });
     })
     # (self: super: {
