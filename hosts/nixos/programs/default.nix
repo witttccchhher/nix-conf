@@ -4,6 +4,9 @@
       enable = true;
       extraPackages = with pkgs; [ foot gtklock autotiling ];
     };
+    labwc = {
+      enable = true;
+    };
     fish.enable = false;
     zsh.enable = true;
     nix-ld.enable = true;
