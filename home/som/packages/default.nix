@@ -120,7 +120,7 @@
       networkmanager-l2tp
       pinta
       obsidian
-      nwg-drawer
+      nwg-drawer-0_6_0
       font-manager
       blueman
     ];
