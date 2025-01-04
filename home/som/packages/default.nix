@@ -59,7 +59,7 @@
       tree
       nh
       smassh
-      chess-tui
+      chess-tui-1_6_0
       stockfish
       picom-pijulius
       flameshot
