@@ -60,6 +60,7 @@
       nh
       smassh
       chess-tui
+      stockfish
       picom-pijulius
       flameshot
       nix-init
