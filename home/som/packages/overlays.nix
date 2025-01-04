@@ -15,7 +15,7 @@
           owner = "thomas-mauran";
           repo = "chess-tui";
           rev = "${version}";
-          hash = "";
+          hash = "sha256-AnlasOlA1KPQh4qCrpauSt71MMAoDBArc8AbUYo5k14=";
         };
 
         cargoHash = "";
