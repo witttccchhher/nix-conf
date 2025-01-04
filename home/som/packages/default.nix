@@ -59,6 +59,7 @@
       tree
       nh
       smassh
+      chess-tui
       picom-pijulius
       flameshot
       nix-init
