@@ -1,0 +1,27 @@
+@use "sass:string";
+
+$fg-color: #{"@theme_fg_color"};
+$bg-color: #{"@theme_bg_color"};
+
+window.Desktop {
+  background-color: transparent;
+  color: $fg-color;
+
+  box.time {
+    font-size: 70px;
+
+    label {
+      background-color: $bg-color;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 15px;
+    }
+  }
+
+  label.date {
+    font-size: 30px;
+    background-color: $bg-color;
+    padding: 20px;
+    border-radius: 15px;
+  }
+}

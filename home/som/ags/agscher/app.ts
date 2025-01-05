@@ -1,9 +1,10 @@
 import { App } from "astal/gtk3"
 import style from "./style.scss"
-import NotificationPopups from "./notifications/NotificationPopups"
+import windows from "./windows";
 
 App.start({
-    instanceName: "notifications",
     css: style,
-    main: () => App.get_monitors().map(NotificationPopups),
+    main() {
+      windows.map((win) => App.get_monitors().map(win));
+    }
 })
