@@ -19,9 +19,9 @@
       shadow_color #${config.lib.stylix.colors.base00}ff
       layer_effects "waybar" shadows enable; corner_radius 0; blur disable
 
-      set $raise_vol amixer sset Master 1%+
-      set $lower_vol amixer sset Master 1%-
-      set $mute amixer sset Master toggle
+      set $raise_vol swayosd-client --output-volume +3
+      set $lower_vol swayosd-client --output-volume -3
+      set $mute swayosd-client --output-volume mute-toggle
     '';
 
     config = {
