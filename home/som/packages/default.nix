@@ -121,6 +121,7 @@
       networkmanagerapplet
       networkmanager-l2tp
       pinta
+      swayimg
       obsidian
       nwg-drawer-0_6_0
       font-manager
