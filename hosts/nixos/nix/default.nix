@@ -21,7 +21,7 @@
         "@wheel"
       ];
       warn-dirty = false;
-      extra-experimental-features = [ "nix-command" "flakes" ];
+      experimental-features = [ "nix-command" "flakes" ];
     };
   };
 }
