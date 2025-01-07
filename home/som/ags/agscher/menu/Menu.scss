@@ -1,0 +1,80 @@
+@use "sass:string";
+
+$fg: #{"@theme_fg_color"};
+$bg: #{"@theme_bg_color"};
+$accent: #e18be1;
+
+@function gtkalpha($c, $a) {
+    @return string.unquote("alpha(#{$c},#{$a})");
+}
+
+window.Menu {
+  background-color: $bg;
+  color: $fg;
+  font-family: "CaskaydiaMono Nerd Font";
+  font-size: 16px;
+  border-radius: 15px;
+
+  box.main {
+    background-color: inherit;
+    border-radius: inherit;
+
+    padding: 20px;
+
+    box.quicks {
+      box.row {
+        button {
+          padding: 10px;
+          margin: 10px;
+          border-radius: 15px;
+          min-width: 170px;
+          background-color: gtkalpha($fg, 0.1);
+
+          icon {
+            padding: 0 10px 0 3px;
+            font-size: 22px;
+          }
+
+          .qslabel {
+            margin: 0 0 3px 0;
+          }
+
+          &.active {
+            background-color: $accent;
+            color: $bg;
+          }
+
+          &:hover {
+            background-color: gtkalpha($fg, 0.2);
+          }
+
+          &.active:hover {
+            background-color: gtkalpha($accent, 0.9);
+          }
+        }
+      }
+    }
+
+    box.volumebox {
+      icon {
+        font-size: 22px;
+      }
+
+      trough {
+        background-color: gtkalpha($fg, 0.1);
+        min-height: 30px;
+        border-radius: 100px;
+      }
+
+      highlight {
+        background-color: $accent;
+        min-height: 30px;
+        border-radius: 100px;
+      }
+
+      slider {
+        all: unset;
+      }
+    }
+  }
+}
