@@ -15,7 +15,7 @@
       blur disable
       corner_radius 15
       shadows enable
-      shadow_blur_radius 10
+      shadow_blur_radius 6
       shadow_color #${config.lib.stylix.colors.base00}ff
       layer_effects "waybar" shadows enable; corner_radius 0; blur disable
 
@@ -46,6 +46,11 @@
       workspaceLayout = "default";
       defaultWorkspace = "workspace number 1";
       focus.followMouse = true;
+      fonts = {
+        names = [ "CaskaydiaMono Nerd Font" ];
+        style = "Regular";
+        size = 12.0;
+      };
       bars = [ 
         { command = "${pkgs.waybar}/bin/waybar"; }
       ];
@@ -53,9 +58,47 @@
         inner = 20;
         outer = 20;
       };
+      colors = with config.lib.stylix.colors.withHashtag; {
+        background = "${base00}";
+        focused = {
+          background = "${base00}";
+          border = "${base02}";
+          childBorder = "${base02}";
+          indicator = "${base02}";
+          text = "${base07}";
+        };
+        focusedInactive = {
+          background = "${base00}";
+          border = "${base02}";
+          childBorder = "${base02}";
+          indicator = "${base02}";
+          text = "${base07}";
+        };
+        unfocused = {
+          background = "${base00}";
+          border = "${base02}";
+          childBorder = "${base02}";
+          indicator = "${base02}";
+          text = "${base07}";
+        };
+        urgent = {
+          background = "${base00}";
+          border = "${base08}";
+          childBorder = "${base08}";
+          indicator = "${base08}";
+          text = "${base07}";
+        };
+        placeholder = {
+          background = "${base00}";
+          border = "${base02}";
+          childBorder = "${base02}";
+          indicator = "${base02}";
+          text = "${base07}";
+        };
+      };
 
       floating = {
-        border = 0;
+        border = 2;
         titlebar = false;
       };
       window = {
@@ -69,7 +112,7 @@
             criteria = { class = "Org.gnome.Solanum"; };
           }
         ];
-        border = 0;
+        border = 2;
         titlebar = false;
       };
 
