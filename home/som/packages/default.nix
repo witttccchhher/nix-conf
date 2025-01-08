@@ -23,6 +23,7 @@
       # Flakes
       inputs.zen-browser.packages.${system}.default
       inputs.astal.packages.${system}.astal3
+      inputs.fabric.packages.${system}.default
       (callPackage ./derivations/ani-cli/ani-cli-ru.nix { })
       (callPackage ./derivations/curd/curd.nix { })
 
