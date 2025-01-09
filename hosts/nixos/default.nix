@@ -1,7 +1,7 @@
 {
   imports = [
     ./boot
-    ./doas
+    ./security
     # ./dooit
     ./hardware
     ./gnome
