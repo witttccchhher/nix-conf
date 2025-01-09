@@ -6,13 +6,13 @@
     extraRules = [
       {
         users = [ "som" ];
-        commands = [
+        commands = with pkgs; [
           {
-            command = "awg-quick";
+            command = "${amneziawg-tools}/bin/awg-quick";
             options = [ "NOPASSWD" ];
           }
           {
-            command = "openvpn";
+            command = "${openvpn}/bin/openvpn";
             options = [ "NOPASSWD" ];
           }
         ];
