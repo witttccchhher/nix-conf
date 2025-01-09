@@ -4,6 +4,10 @@ import Wp from "gi://AstalWp"
 import Network from "gi://AstalNetwork"
 import Notifd from "gi://AstalNotifd"
 
+function User() {
+  const avatar = "../assets/avatar.png"
+}
+
 function Volume() {
   const speaker = Wp.get_default().audio.default_speaker
 

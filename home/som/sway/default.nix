@@ -14,10 +14,11 @@
 
       blur disable
       corner_radius 15
+      default_dim_inactive 0.3
       shadows enable
       shadow_blur_radius 6
       shadow_color #${config.lib.stylix.colors.base00}ff
-      layer_effects "waybar" shadows enable; corner_radius 0; blur disable
+      layer_effects "waybar" shadows disable; corner_radius 0; blur disable
 
       set $raise_vol swayosd-client --output-volume +3
       set $lower_vol swayosd-client --output-volume -3

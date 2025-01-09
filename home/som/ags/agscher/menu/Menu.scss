@@ -8,10 +8,6 @@ $accent: #e18be1;
     @return string.unquote("alpha(#{$c},#{$a})");
 }
 
-* {
-  // all: unset;
-}
-
 window.Menu {
   background-color: $bg;
   color: $fg;
