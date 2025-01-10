@@ -15,6 +15,11 @@
   services.greetd = {
     enable = true;
     package = pkgs.greetd.tuigreet;
+    settings = {
+      default_session = {
+        command = "${pkgs.greet.greetd}/bin/tuigreet --cmd niri-session";
+      };
+    };
     vt = 1;
   };
 
