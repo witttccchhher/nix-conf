@@ -7,6 +7,9 @@
     labwc = {
       enable = true;
     };
+    niri = {
+      enable = true;
+    };
     fish.enable = false;
     zsh.enable = true;
     nix-ld.enable = true;
