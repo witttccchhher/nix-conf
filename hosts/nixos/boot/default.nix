@@ -9,7 +9,7 @@
     loader.grub = {
       enable = true;
       device = "/dev/sda";
-      useOSProber = false;
+      useOSProber = true;
     };
   };
 }
