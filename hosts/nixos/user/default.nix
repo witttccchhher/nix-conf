@@ -12,8 +12,14 @@
     };
   };
 
-  services.getty.autologinUser = "som";
-  environment.loginShellInit = ''
-    [[ "$(tty)" == /dev/tty2 ]] && niri-session
-  '';
+  services.greetd = {
+    enable = true;
+    package = pkgs.greetd.tuigreet;
+    vt = 1;
+  };
+
+  # services.getty.autologinUser = "som";
+  # environment.loginShellInit = ''
+  #   [[ "$(tty)" == /dev/tty1 ]] && niri-session
+  # '';
 }
