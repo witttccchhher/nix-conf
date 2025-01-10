@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   services = {
     swayosd = {
-      enable = true;
+      enable = false;
       package = pkgs.swayosd;
     };
   };
