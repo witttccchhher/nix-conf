@@ -21,6 +21,6 @@
     fish.enable = false;
     zsh.enable = true;
     nix-ld.enable = true;
-    xwayland.enable = lib.mkForce true;
+    xwayland.enable = lib.mkForce false;
   };
 }
