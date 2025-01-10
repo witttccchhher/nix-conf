@@ -1,17 +1,10 @@
-{
-  imports = [
-    ./boot
-    ./security
-    # ./dooit
-    ./hardware
-    ./gnome
-    ./nh
-    ./network
-    ./nixpkgs
-    ./packages
-    ./programs
-    ./services
-    ./stylix
-    ./user
-  ];
+{ inputs, ... }: {
+  imports = inputs.nypkgs.legacyPackages."x86_64-linux".lib.umport {
+    path = ./.;
+
+    exclude = [
+      ./default.nix
+      ./stylix/themes
+    ];
+  };
 }
