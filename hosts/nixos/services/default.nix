@@ -7,7 +7,7 @@
     libinput.enable = true;
     pptpd.enable = false;
     flatpak = {
-      enable = true;
+      enable = false;
       packages = [
         "io.qt.Designer"
       ];
