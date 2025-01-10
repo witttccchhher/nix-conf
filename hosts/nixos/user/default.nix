@@ -14,6 +14,6 @@
 
   services.getty.autologinUser = "som";
   environment.loginShellInit = ''
-    [[ "$(tty)" == /dev/tty1 ]] && niri
+    [[ "$(tty)" == /dev/tty1 ]] && niri-session
   '';
 }
