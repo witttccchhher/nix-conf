@@ -1,9 +1,9 @@
 { lib, config, ... }: {
   hardware = {
-    alsa.enablePersistence = true;
+    alsa.enable = true;
     bluetooth = {
-      enable = true;
-      powerOnBoot = true;
+      enable = false;
+      powerOnBoot = false;
     };
     
     cpu.intel = {
@@ -13,6 +13,6 @@
 
   zramSwap = {
     enable = true;
-    algorithm = "lz4";
+    algorithm = "zstd";
   };
 }
