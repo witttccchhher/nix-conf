@@ -2,17 +2,9 @@
   services = {
     resolved.enable = true;
     openssh.enable = false;
-    printing.enable = true;
+    printing.enable = false;
     upower.enable = true;
-    libinput = {
-      enable = true;
-      touchpad = {
-        tappingButtonMap = "lrm";
-        scrollMethod = "edge";
-        disableWhileTyping = true;
-        accelSpeed = "0.5";
-      };
-    };
+    libinput.enable = true;
     pptpd.enable = false;
     flatpak = {
       enable = true;

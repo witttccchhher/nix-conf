@@ -1,19 +1,26 @@
-{ pkgs, ... }: {
+{ pkgs, lib, ... }: {
   programs = {
     sway = {
       enable = true;
       extraPackages = with pkgs; [ foot gtklock autotiling ];
     };
     labwc = {
-      enable = true;
+      enable = false;
     };
     niri = {
       enable = true;
     };
+    nh = {
+      enable = true;
+      clean = {
+        enable = true;
+        dates = "weekly";
+        extraArgs = "--keep-since 7d";
+      };
+    };
     fish.enable = false;
     zsh.enable = true;
     nix-ld.enable = true;
+    xwayland.enable = lib.mkForce true;
   };
-
-  security.pam.services.gtklock.text = pkgs.lib.readFile "${pkgs.gtklock}/etc/pam.d/gtklock";
 }
