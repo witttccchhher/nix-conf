@@ -14,6 +14,6 @@
 
   services.getty.autologinUser = "som";
   environment.loginShellInit = ''
-    [[ "$(tty)" == /dev/tty1 ]] && sway
+    [[ "$(tty)" == /dev/tty1 ]] && niri
   '';
 }
