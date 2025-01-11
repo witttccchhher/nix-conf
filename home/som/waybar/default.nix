@@ -51,13 +51,13 @@
           fi
         '';
       in {
-        layer = "bottom";
+        layer = "top";
         position = "top";
         height = 52;
         width = 1920;
         spacing = 20;
         reload_style_on_change = true;
-        modules-left = [ "image#nixos" "sway/window" "custom/files" "custom/edit" "custom/view" "custom/term" "custom/chat" "custom/help" ];
+        modules-left = [ "image#nixos" "niri/window" "custom/files" "custom/edit" "custom/view" "custom/term" "custom/chat" "custom/help" ];
         modules-center = [ ];
         modules-right = [ "tray" "image#network" "image#battery" "image#toggles" "clock" ];
         "image#nixos" = {
@@ -65,7 +65,7 @@
           size = 20;
           tooltip = false;
         };
-        "sway/window" = {
+        "niri/window" = {
           format = "{app_id}";
           tooltip = false;
           rewrite = {
@@ -143,7 +143,8 @@
         };
       };
     };
-    style = with config.lib.stylix.colors.withHashtag; ''
+    style = with config.lib.stylix.colors.withHashtag; # css
+    ''
       * {
         all: unset;
         font-family: Inter;
@@ -158,6 +159,7 @@
 
       window#waybar {
         background-color: ${base00};
+        border-bottom: 2px solid ${base03};
       }
 
       #custom-files, #custom-edit, #custom-view, #custom-term, #custom-chat, #custom-help {
