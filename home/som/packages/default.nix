@@ -52,6 +52,7 @@
       wl-clipboard
       wirelesstools
       glow
+      swaybg
       killall
       tdlib
       lsd
