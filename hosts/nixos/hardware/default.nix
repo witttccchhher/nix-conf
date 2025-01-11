@@ -1,6 +1,19 @@
 { lib, config, ... }: {
   hardware = {
-    alsa.enable = true;
+    alsa = {
+      enable = true;
+      config = ''
+        pcm.!default {
+          type hw
+          card 0
+        }
+
+        ctl.!default {
+          type hw
+          card 0
+        }
+      '';
+    };
     bluetooth = {
       enable = false;
       powerOnBoot = false;
