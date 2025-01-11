@@ -27,7 +27,7 @@
       "tte" = "trans ru:en -no-auto -no-theme";
       "ttr" = "trans en:ru -no-auto -no-theme";
 
-      "npshell" = "nix develop --command zsh -c 'poetry shell'";
+      "npshell" = "nix develop --command zsh -c 'eval $(poetry env activate)'";
     };
     syntaxHighlighting = {
       enable = true;
