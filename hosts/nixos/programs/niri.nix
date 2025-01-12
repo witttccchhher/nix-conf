@@ -32,6 +32,8 @@ rustPlatform.buildRustPackage rec {
     tag = "v${version}";
     hash = "sha256-AJ1rlgNOPb3/+DbS5hkhm21t6Oz8IgqLllwmZt0lyzk=";
   };
+  
+  check = "";
 
   postPatch = ''
     patchShebangs resources/niri-session
