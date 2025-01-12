@@ -81,7 +81,7 @@
 
       homeConfigurations.som = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
-        extraSpecialArgs = { inherit inputs; };
+        extraSpecialArgs = { inherit inputs pkgs-master; };
         modules = [
           stylix.homeManagerModules.stylix
           nix-index-database.hmModules.nix-index

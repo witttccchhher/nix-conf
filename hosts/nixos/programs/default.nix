@@ -8,8 +8,8 @@
       enable = false;
     };
     niri = {
-      enable = true;
-      package = pkgs.callPackage ./niri.nix { };
+      enable = false;
+      # package = pkgs.callPackage ./niri.nix { };
     };
     nh = {
       enable = true;
