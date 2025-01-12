@@ -5,6 +5,7 @@
     exclude = [
       ./default.nix
       ./stylix/themes
+      ./programs/niri.nix
     ];
   };
 }
