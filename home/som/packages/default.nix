@@ -24,7 +24,7 @@
       inputs.zen-browser.packages.${system}.default
       inputs.astal.packages.${system}.astal3
       inputs.fabric.packages.${system}.default
-      inputs.nixpkgs-master.${system}.ayugram-desktop
+      inputs.nixpkgs-master.packages.${system}.ayugram-desktop
       (callPackage ./derivations/ani-cli/ani-cli-ru.nix { })
       (callPackage ./derivations/curd/curd.nix { })
 
@@ -95,7 +95,6 @@
 
       # Internet
       qutebrowser
-      _64gram
       wireguard-tools
       amneziawg-go
       amneziawg-tools
