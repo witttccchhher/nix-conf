@@ -9,7 +9,7 @@
     };
     niri = {
       enable = true;
-      package = pkgs.callPackage ./niri.nix { };
+      package = (pkgs.callPackage ./niri.nix { });
     };
     nh = {
       enable = true;
