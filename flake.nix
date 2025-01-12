@@ -65,12 +65,13 @@
     };
   };
 
-  outputs = { self, nixpkgs, flake-parts, home-manager, stylix, nix-flatpak, nix-index-database, ... }@inputs: flake-parts.lib.mkFlake { inherit inputs; } {
+  outputs = { self, nixpkgs, nixpkgs-master, flake-parts, home-manager, stylix, nix-flatpak, nix-index-database, ... }@inputs: flake-parts.lib.mkFlake { inherit inputs; } {
     flake = let
       system = "x86_64-linux";
+      pkgs-master = import nixpkgs-master { inherit system; };
     in {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs system; };
+        specialArgs = { inherit inputs system pkgs-master; };
         modules = [
           stylix.nixosModules.stylix
           nix-flatpak.nixosModules.nix-flatpak
