@@ -30,7 +30,7 @@ rustPlatform.buildRustPackage rec {
     owner = "YaLTeR";
     repo = "niri";
     tag = "v${version}";
-    hash = "";
+    hash = "sha256-AJ1rlgNOPb3/+DbS5hkhm21t6Oz8IgqLllwmZt0lyzk=";
   };
 
   postPatch = ''
