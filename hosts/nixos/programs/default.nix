@@ -8,7 +8,7 @@
       enable = false;
     };
     niri = {
-      enable = true;
+      enable = false;
     };
     nh = {
       enable = true;
