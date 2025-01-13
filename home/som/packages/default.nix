@@ -20,9 +20,6 @@
       "$HOME/.config/emacs/bin"
     ];
     packages = with pkgs; [
-      # From nixpkgs master branch
-      pkgs-master.ayugram-desktop
-
       # Flakes
       inputs.zen-browser.packages.${system}.default
       inputs.astal.packages.${system}.astal3
@@ -100,6 +97,7 @@
       wireguard-tools
       amneziawg-go
       amneziawg-tools
+      ayugram-desktop
 
       # Other
       gtk4

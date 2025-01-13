@@ -65,7 +65,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-master, flake-parts, home-manager, stylix, nix-flatpak, nix-index-database, ... }@inputs: flake-parts.lib.mkFlake { inherit inputs; } {
+  outputs = { nixpkgs, nixpkgs-master, flake-parts, home-manager, stylix, nix-flatpak, nix-index-database, ... }@inputs: flake-parts.lib.mkFlake { inherit inputs; } {
     flake = let
       system = "x86_64-linux";
       pkgs-master = import nixpkgs-master { inherit system; };
