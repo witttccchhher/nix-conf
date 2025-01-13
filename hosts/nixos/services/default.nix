@@ -6,6 +6,11 @@
     upower.enable = true;
     libinput.enable = true;
     pptpd.enable = false;
+    pipewire = {
+      enable = true;
+      alsa.enable = true;
+      audio.enable = false;
+    };
     flatpak = {
       enable = false;
       packages = [
