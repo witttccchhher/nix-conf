@@ -8,7 +8,7 @@
     pptpd.enable = false;
     pipewire = {
       enable = lib.mkForce true;
-      alsa.enable = true;
+      alsa.enable = false;
       audio.enable = false;
     };
     flatpak = {
