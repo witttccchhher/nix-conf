@@ -1,4 +1,4 @@
-{
+{ lib, ... }: {
   services = {
     resolved.enable = true;
     openssh.enable = false;
@@ -7,7 +7,7 @@
     libinput.enable = true;
     pptpd.enable = false;
     pipewire = {
-      enable = true;
+      enable = lib.mkForce true;
       alsa.enable = true;
       audio.enable = false;
     };
