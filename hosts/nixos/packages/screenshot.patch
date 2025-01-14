@@ -7,7 +7,7 @@ index 88dbd0ee..48b2b093 100644
                      scale,
                      Transform::Normal,
 -                    Fourcc::Abgr8888,
-+                    Fourcc::Argb8888,
++                    Fourcc::Xrgb8888,
                      elements,
                  );
                  if let Err(err) = &res {
@@ -20,7 +20,7 @@ index 4f2dba3e..aece1ff2 100644
  
          let mapping = renderer
 -            .copy_texture(&texture, buf_rect, Fourcc::Abgr8888)
-+            .copy_texture(&texture, buf_rect, Fourcc::Argb8888)
++            .copy_texture(&texture, buf_rect, Fourcc::Xrgb8888)
              .context("error copying texture")?;
          let copy = renderer
              .map_texture(&mapping)
