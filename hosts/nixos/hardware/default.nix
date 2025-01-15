@@ -1,7 +1,7 @@
 { lib, config, ... }: {
   hardware = {
     alsa = {
-      enable = true;
+      enable = false;
       config = ''
         pcm.!default {
           type hw
