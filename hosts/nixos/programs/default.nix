@@ -8,8 +8,7 @@
       enable = false;
     };
     niri = {
-      enable = true;
-      package = pkgs.niri_with_screenshots_fixes;
+      enable = false;
     };
     nh = {
       enable = true;
