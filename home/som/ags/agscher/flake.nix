@@ -24,33 +24,17 @@
           astal.packages.${system}.default
           (ags.packages.${system}.default.override {
             extraPackages = with ags.packages.${system}; [
+              apps
+              battery
+              bluetooth
+              network
               notifd
+              powerprofiles
+              wireplumber
             ];
           })
         ];
       };
-    };
-    packages.${system}. default = pkgs.stdenvNoCC.mkDerivation rec {
-      name = "agscher";
-      src = ./.;
-
-      nativeBuildInputs = [
-        ags.packages.${system}.default
-        pkgs.wrapGAppsHook
-        pkgs.gobject-introspection
-      ];
-
-      buildInputs = with astal.packages.${system}; [
-        astal3
-        io
-        notifd
-        apps
-      ];
-
-      installPhase = ''
-        mkdir -p $out/bin
-        ags bundle app.ts $out/bin/${name}
-      '';
     };
   };
 }

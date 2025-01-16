@@ -76,5 +76,18 @@ window.Menu {
         all: unset;
       }
     }
+
+    box.userbox {
+      box.avatar {
+        min-width: 100px;
+        min-height: 100px;
+        background-size: 100px;
+        border-radius: 15px;
+      }
+
+      label.username {
+        font-size: 30px;
+      }
+    }
   }
 }

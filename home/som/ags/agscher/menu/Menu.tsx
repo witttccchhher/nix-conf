@@ -1,11 +1,20 @@
 import { Astal, App, Gdk, Gtk } from "astal/gtk3"
-import { Variable, bind } from "astal"
+import { GLib, Variable, bind } from "astal"
+import { exec } from "astal/process"
 import Wp from "gi://AstalWp"
 import Network from "gi://AstalNetwork"
 import Notifd from "gi://AstalNotifd"
 
 function User() {
-  const avatar = "../assets/avatar.png"
+  const avatar = GLib.getenv("HOME") + "/nix/home/som/ags/agscher/assets/avatar.png"
+  const username = exec(["whoami"])
+  
+  return <box className="userbox">
+    <box className="avatar" css={`background-image: url("${avatar}")`} />
+    <box vertical>
+      <label className="username" label={username} />
+    </box>
+  </box>
 }
 
 function Volume() {
@@ -92,6 +101,7 @@ export default function NotificationPopups(gdkmonitor: Gdk.Monitor) {
     setup={self => App.add_window(self)}
   >
     <box vertical className="main">
+      <User />
       <box vertical className="quicks">
         <box className="row">
           <Wifi />

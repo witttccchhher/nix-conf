@@ -1,6 +1,6 @@
 import { App } from "astal/gtk3"
 import style from "./style.scss"
-import windows from "./windows";
+import windows from "./windows"
 
 App.start({
   css: style,
