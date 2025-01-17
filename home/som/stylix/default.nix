@@ -5,7 +5,7 @@
     autoEnable = false;
 
     image = let
-      input = "${inputs.wallpapers}/girl/girl13.jpg";
+      input = "${inputs.wallpapers}/girl/girl15.png";
       level = 10;
       lum = 1.0;
       preserve = false;
