@@ -56,6 +56,7 @@
       killall
       tdlib
       lsd
+      go-mtpfs
       xclip
       xsel
       tree

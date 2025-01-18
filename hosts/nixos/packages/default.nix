@@ -34,6 +34,7 @@
     bluez-alsa
     broadcom-bt-firmware
     usbutils
+    gvfs
     unzip
     unrar
     fish
