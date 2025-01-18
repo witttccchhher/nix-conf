@@ -46,6 +46,7 @@
       neovim-remote
       emacs
       lapce
+      nixd
       
       # Utilites
       fastfetch
