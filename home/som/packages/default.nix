@@ -45,6 +45,7 @@
       poetry
       neovim-remote
       emacs
+      lapce
       
       # Utilites
       fastfetch
