@@ -23,5 +23,6 @@
     nix-ld.enable = true;
     xwayland.enable = lib.mkForce false;
     nm-applet.enable = false;
+    adb.enable = true;
   };
 }
