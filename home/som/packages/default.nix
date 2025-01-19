@@ -46,7 +46,9 @@
       neovim-remote
       emacs
       lapce
+      vscode
       nil
+      nixd
       
       # Utilites
       fastfetch
