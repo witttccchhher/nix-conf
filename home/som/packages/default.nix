@@ -64,6 +64,7 @@
       xclip
       xsel
       tree
+      croc
       nh
       wlr-randr
       gum
