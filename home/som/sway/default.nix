@@ -99,7 +99,7 @@
       };
 
       floating = {
-        border = 2;
+        border = 0;
         titlebar = false;
       };
       window = {
@@ -113,7 +113,7 @@
             criteria = { class = "Org.gnome.Solanum"; };
           }
         ];
-        border = 2;
+        border = 0;
         titlebar = false;
       };
 
@@ -153,6 +153,7 @@
         "XF86AudioMute" = "exec $mute";
 
         "${mod}+Return" = "exec ${config.wayland.windowManager.sway.config.terminal}";
+        "${mod}+Shift+Return" = "exec neovide";
         "Print" = "exec ${pkgs.lib.getExe takescreenshot}";
         "${mod}+w" = "kill";
         "${mod}+space" = "exec ${config.wayland.windowManager.sway.config.menu}";
