@@ -4,10 +4,10 @@
     package = pkgs.foot;
     settings = {
       main = {
-        font = "Cascadia Code NF:size=12";
-        font-bold = "Cascadia Code NF:size=12:style=Bold";
-        font-italic = "Cascadia Code NF:size=12:style=Italic";
-        font-bold-italic = "Cascadia Code NF:size=12:style=BoldItalic";
+        font = "Cascadia Mono NF:size=14";
+        font-bold = "Cascadia Mono NF:size=14:style=Bold";
+        font-italic = "Cascadia Mono NF:size=14:style=Italic";
+        font-bold-italic = "Cascadia Mono NF:size=14:style=BoldItalic";
         pad = "7x7";
         initial-window-mode = "maximized";
         box-drawings-uses-font-glyphs = "no";
