@@ -4,10 +4,10 @@
     package = pkgs.foot;
     settings = {
       main = {
-        font = "CaskaydiaMono Nerd Font:size=12";
-        font-bold = "CaskaydiaMono Nerd Font:size=12:style=Bold";
-        font-italic = "CaskaydiaMono Nerd Font:size=12:style=Italic";
-        font-bold-italic = "CaskaydiaMono Nerd Font:size=12:style=BoldItalic";
+        font = "Caskaydia Code NF:size=12";
+        font-bold = "Caskaydia Code NF:size=12:style=Bold";
+        font-italic = "Caskaydia Code NF:size=12:style=Italic";
+        font-bold-italic = "Caskaydia Code NF:size=12:style=BoldItalic";
         pad = "7x7";
         initial-window-mode = "maximized";
         box-drawings-uses-font-glyphs = "no";
