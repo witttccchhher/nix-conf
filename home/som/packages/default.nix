@@ -12,6 +12,8 @@
       MICRO_TRUECOLOR = 1;
       FLAKE = "/home/som/nix";
       GOPATH = "$HOME/go";
+      MESA_GL_VERSION_OVERRIDE = "3.3";
+      MESA_GLSL_VERSION_OVERRIDE = "330";
     };
     sessionPath = [
       "$HOME/.local/bin"
@@ -41,13 +43,10 @@
       # Code
       git
       go
-      hut
       poetry
       neovim-remote
-      emacs
-      lapce
+      neovide
       vscode
-      nil
       nixd
       
       # Utilites
