@@ -111,9 +111,9 @@
       setopt nobeep
 
       # PROMPT
-      export nix_shell="%F{${base0D}}$name%f"
-      export user_symbol="%F{${base0C}} 󱄅  %f"
-      export dir_path="%F{${base01}}%K{${base01}}%F{${base07}}%~%{%k%}%F{${base01}}%f"
+      export nix_shell="%F{${base0E}}$name%f"
+      export user_symbol="%F{${base0D}} 󱄅  %f"
+      export dir_path="%F{${base03}}%K{${base03}}%F{${base07}}%~%{%k%}%F{${base03}}%f"
       if [[ -n "$IN_NIX_SHELL" ]]; then
         export PROMPT="
       %B$dir_path $nix_shell $user_symbol%b"
