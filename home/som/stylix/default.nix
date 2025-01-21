@@ -48,8 +48,8 @@
 
     fonts = {
       monospace = {
-        name = "CaskaydiaMono Nerd Font";
-        package = pkgs.nerd-fonts.caskaydia-mono;
+        name = "Cascadia Code";
+        package = pkgs.cascadia-code;
       };
 
       serif = config.stylix.fonts.monospace;
