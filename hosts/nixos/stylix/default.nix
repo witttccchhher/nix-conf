@@ -1,12 +1,12 @@
 { pkgs, inputs, config, ... }: {
-  imports = [ ./themes/jellybeans ];
+  # imports = [ ./themes/jellybeans ];
   stylix = {
     enable = true;
     autoEnable = false;
 
     image = "${config.stylix.image}";
     polarity = "${config.stylix.polarity}";
-    # base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine-dawn.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
 
     targets = {
       console.enable = true;

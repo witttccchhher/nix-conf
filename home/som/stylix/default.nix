@@ -1,11 +1,11 @@
 { pkgs, config, inputs, ... }: {
-  imports = [ ./themes/jellybeans ];
+  # imports = [ ./themes/jellybeans ];
   stylix = {
     enable = true;
     autoEnable = false;
 
     image = let
-      input = "${inputs.wallpapers}/girl/girl15.png";
+      input = "${inputs.wallpapers}/girl/girl12.jpg";
       level = 10;
       lum = 1.0;
       preserve = false;
@@ -34,7 +34,7 @@
       '';
     # image = "${inputs.wallpapers}/solid/solid14_custom.jpg";
     polarity = "dark";
-    # base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine-dawn.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
 
     cursor = with inputs.nix-cursors; {
       name = "Apple-Custom";

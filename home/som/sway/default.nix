@@ -153,7 +153,7 @@
         "XF86AudioMute" = "exec $mute";
 
         "${mod}+Return" = "exec ${config.wayland.windowManager.sway.config.terminal}";
-        "${mod}+Shift+Return" = "exec neovide";
+        "${mod}+Shift+Return" = "exec ${pkgs.neovide}/bin/neovide";
         "Print" = "exec ${pkgs.lib.getExe takescreenshot}";
         "${mod}+w" = "kill";
         "${mod}+space" = "exec ${config.wayland.windowManager.sway.config.menu}";
