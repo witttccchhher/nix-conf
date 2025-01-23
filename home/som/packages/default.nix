@@ -122,6 +122,7 @@
       zathura
       nautilus
       sqlite
+      aseprite
       sqlitestudio
       sqlitebrowser
       networkmanagerapplet
