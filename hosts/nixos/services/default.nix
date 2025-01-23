@@ -1,7 +1,7 @@
 { lib, ... }: {
   services = {
     resolved.enable = true;
-    openssh.enable = false;
+    openssh.enable = true;
     printing.enable = false;
     upower.enable = true;
     libinput.enable = true;
