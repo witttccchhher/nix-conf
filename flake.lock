@@ -960,11 +960,11 @@
     "wallpapers": {
       "flake": false,
       "locked": {
-        "lastModified": 1737134608,
-        "narHash": "sha256-rm2TCHdEB742zsnmX2XBnrUidNGTdvgjrXaQHMCGlaI=",
+        "lastModified": 1737645472,
+        "narHash": "sha256-dZm110zC6LRF+7Rh5QXUsQwrnxj9Kr6asgyePzbl/Tw=",
         "owner": "witttccchhher",
         "repo": "wallpapers",
-        "rev": "ba4c75235b9b5cd60d9092f6fef507e972c82360",
+        "rev": "ca3e9c645c145ba30b81dc574cdf3ccfef058fa2",
         "type": "github"
       },
       "original": {
