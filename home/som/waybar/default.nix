@@ -149,7 +149,7 @@
         font-family: Inter;
         font-size: 16px;
         font-weight: 700;
-        color: ${base07};
+        color: ${base05};
       }
 
       #image.nixos {
