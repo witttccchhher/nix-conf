@@ -3,7 +3,7 @@
     "gtklock/style.css".text = /* css */ ''
       * {
         font-family: Inter;
-        color: ${config.stylix.lib.colors.withHashtag.base00};
+        color: ${config.lib.stylix.colors.withHashtag.base00};
       }
 
       window {
@@ -12,7 +12,7 @@
 
       #window-box {
         margin-bottom: 650px;
-        background-color: ${config.stylix.lib.colors.withHashtag.base05};
+        background-color: ${config.lib.stylix.colors.withHashtag.base05};
         border-radius: 15px;
         padding: 10px 30px;
       }
@@ -22,15 +22,15 @@
       }
 
       #window-box entry {
-        background-color: ${config.stylix.lib.colors.withHashtag.base04};
-        color: ${config.stylix.lib.colors.withHashtag.base05};
+        background-color: ${config.lib.stylix.colors.withHashtag.base04};
+        color: ${config.lib.stylix.colors.withHashtag.base05};
         border: none;
         box-shadow: none;
       }
 
       #window-box button {
-        background-color: ${config.stylix.lib.colors.withHashtag.base04};
-        color: ${config.stylix.lib.colors.withHashtag.base05};
+        background-color: ${config.lib.stylix.colors.withHashtag.base04};
+        color: ${config.lib.stylix.colors.withHashtag.base05};
         border: none;                                                              
         box-shadow: none;
       }
