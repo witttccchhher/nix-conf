@@ -34,7 +34,7 @@
       '';
     # image = "${inputs.wallpapers}/solid/solid14_custom.jpg";
     polarity = "dark";
-    base16Scheme = "${inputs.design}/base16/neo-gen.yaml";
+    base16Scheme = "${inputs.design}/neo-gen.yaml";
 
     cursor = with inputs.nix-cursors; {
       name = "Apple-Custom";
