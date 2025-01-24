@@ -13,16 +13,15 @@
         vendorHash = "sha256-Q+2CXpPvfy6QYjP+AZeJL/l00/Z+C56c+FfGcyIdQ4M=";
       });
     })
-    # (self: super: {
-    #   chess-tui-1_6_0 = super.chess-tui.overrideAttrs (old: rec {
-    #     version = "1.6.0";
-    #     src = pkgs.fetchFromGitHub {
-    #       owner = "thomas-mauran";
-    #       repo = "chess-tui";
-    #       rev = "${version}";
-    #       hash = "sha256-AnlasOlA1KPQh4qCrpauSt71MMAoDBArc8AbUYo5k14=";
-    #     };
-    #   });
-    # })
+    (self: super: {
+      swayfx-unwrapped = super.swayfx-unwrapped.overrideAttrs (old: {
+        patches = (old.patches or []) ++ [
+          (pkgs.fetchpatch2 {
+            url = "https://github.com/swaywm/sway/pull/8470.patch?full_index=1";
+            hash = "sha256-UTZ2DNEsGi5RYrgZThHkYz3AnnIl/KxieinA1WUZRq4=";
+          })
+        ];
+      });
+    })
   ];
 }
