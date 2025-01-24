@@ -187,7 +187,7 @@
         "${mod}+Shift+6" = "move container to workspace number 6";
         "${mod}+Shift+7" = "move container to workspace number 7";
 
-        "${mod}+b" = "exec ${pkgs.gtklock}/bin/gtklock";
+        "${mod}+b" = "exec ${pkgs.gtklock}/bin/gtklock --idle-hide --idle-timeout 2 --start-hidden";
 
         "${mod}+f" = "fullscreen";
         "${mod}+t" = "floating toggle";
