@@ -114,6 +114,7 @@
       libsForQt5.qt5ct
       kdePackages.qt6ct
       hicolor-icon-theme
+      zed-editor.override { withGLES = true; }
 
       # GUI
       waybar
