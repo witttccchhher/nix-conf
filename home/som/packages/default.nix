@@ -130,7 +130,7 @@
       pinta
       swayimg
       obsidian
-      nwg-drawer-0_6_0
+      nwg-drawer
       font-manager
       blueman
       google-chrome
