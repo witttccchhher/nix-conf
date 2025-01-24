@@ -46,6 +46,10 @@
       url = "github:yunfachi/nypkgs";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    design = {
+		  url = "sourcehut:~neverness/design";
+		  flake = false;
+		};
 
     fzf-tab = {
       url = "github:Aloxaf/fzf-tab";

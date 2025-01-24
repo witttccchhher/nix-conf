@@ -6,7 +6,7 @@
 
     image = "${config.stylix.image}";
     polarity = "${config.stylix.polarity}";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+    base16Scheme = "${inputs.design}/base16/neo-gen.yaml";
 
     targets = {
       console.enable = true;
