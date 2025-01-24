@@ -133,6 +133,7 @@
       nwg-drawer-0_6_0
       font-manager
       blueman
+      google-chrome
     ];
   };
 }
