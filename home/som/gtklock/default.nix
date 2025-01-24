@@ -4,6 +4,10 @@
       * {
         font-family: Inter;
       }
+
+      window {
+        background-image: url("${config.stylix.image}");
+      }
     '';
     "gtklock/config.ini".text = ''
       [main]
