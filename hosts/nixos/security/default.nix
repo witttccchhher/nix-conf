@@ -7,13 +7,13 @@
     extraRules = [
       {
         users = [ "som" ];
-        commands = with pkgs; [
+        commands = [
           {
-            command = "${amneziawg-tools}/bin/awg-quick";
+            command = "/home/som/.nix-profile/bin/awg-quick";
             options = [ "NOPASSWD" ];
           }
           {
-            command = "${openvpn}/bin/openvpn";
+            command = "/home/som/.nix-profile/bin/openvpn";
             options = [ "NOPASSWD" ];
           }
         ];
