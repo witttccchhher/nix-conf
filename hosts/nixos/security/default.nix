@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   security.pam.services.gtklock.text = pkgs.lib.readFile "${pkgs.gtklock}/etc/pam.d/gtklock";
-  security.sudo-rs = {
+  security.sudo = {
     enable = true;
     execWheelOnly = true;
     wheelNeedsPassword = true;
