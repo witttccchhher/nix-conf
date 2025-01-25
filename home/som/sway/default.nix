@@ -16,6 +16,7 @@
       corner_radius 15
       default_dim_inactive 0.15
       shadows enable
+      shadows_on_csd enable
       shadow_blur_radius 6
       shadow_color #${config.lib.stylix.colors.base00}ff
       layer_effects "waybar" shadows disable; corner_radius 0; blur disable
@@ -53,7 +54,7 @@
         size = 12.0;
       };
       bars = [ 
-        { command = "${pkgs.waybar}/bin/waybar"; }
+        { command = "${pkgs.waybar}/bin/waybar -c /home/som/.config/waybar/test.jsonc -s /home/som/.config/waybar/test.css"; }
       ];
       gaps = {
         inner = 20;
