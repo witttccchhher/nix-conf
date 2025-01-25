@@ -33,26 +33,26 @@
       enable = true;
       highlighters = [ "main" "brackets" "pattern" "regexp" "root" "line" ];
       styles = with config.lib.stylix.colors; {
-        command = "fg=#${base05},bold";
+        command = "fg=#${base07},bold";
         unknown-token = "fg=#${base08},bold";
-        reserved-word = "fg=#${base05},bold";
-        alias = "fg=#${base05},bold";
-        builtin = "fg=#${base05},bold";
-        function = "fg=#${base05},bold";
-        commandseparator = "fg=#${base0E},bold";
-        path = "fg=#${base0E},bold";
-        path_pathseparator = "fg=#${base0E},bold";
-        globbing = "fg=#${base0E},bold";
-        command-substitution = "fg=#${base0E},bold";
-        single-hyphen-option = "fg=#${base0E},bold";
-        double-hyphen-option = "fg=#${base0E},bold";
-        back-quoted-argument = "fg=#${base0F},bold";
-        single-quoted-argument = "fg=#${base0F},bold";
-        double-quoted-argument = "fg=#${base0F},bold";
-        redirection = "fg=#${base0E},bold";
+        reserved-word = "fg=#${base07},bold";
+        alias = "fg=#${base07},bold";
+        builtin = "fg=#${base07},bold";
+        function = "fg=#${base07},bold";
+        commandseparator = "fg=#${base0D},bold";
+        path = "fg=#${base0D},bold";
+        path_pathseparator = "fg=#${base0D},bold";
+        globbing = "fg=#${base0D},bold";
+        command-substitution = "fg=#${base0D},bold";
+        single-hyphen-option = "fg=#${base0D},bold";
+        double-hyphen-option = "fg=#${base0D},bold";
+        back-quoted-argument = "fg=#${base0A},bold";
+        single-quoted-argument = "fg=#${base0A},bold";
+        double-quoted-argument = "fg=#${base0A},bold";
+        redirection = "fg=#${base0D},bold";
         comment = "fg=#${base04},bold";
-        arg0 = "fg=#${base05},bold";
-        default = "fg=#${base05},bold";
+        arg0 = "fg=#${base07},bold";
+        default = "fg=#${base07},bold";
       };
     };
     plugins = with inputs; [
@@ -111,9 +111,9 @@
       setopt nobeep
 
       # PROMPT
-      export nix_shell="%F{${base0E}}$name%f"
-      export user_symbol="%F{${base0D}} 󱄅  %f"
-      export dir_path="%F{${base02}}%K{${base02}}%F{${base05}}%~%{%k%}%F{${base02}}%f"
+      export nix_shell="%F{${base0D}}$name%f"
+      export user_symbol="%F{${base0C}} 󱄅  %f"
+      export dir_path="%F{${base02}}%K{${base02}}%F{${base07}}%~%{%k%}%F{${base02}}%f"
       if [[ -n "$IN_NIX_SHELL" ]]; then
         export PROMPT="
       %B$dir_path $nix_shell $user_symbol%b"
