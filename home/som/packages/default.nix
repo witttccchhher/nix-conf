@@ -81,6 +81,7 @@
       openvpn
       duf
       fd
+      gh
       tg
       skate
       ripgrep
