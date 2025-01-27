@@ -73,8 +73,6 @@
     };
     history.size = 10000;
     initExtra = with config.lib.stylix.colors.withHashtag; ''
-      ${pkgs.inshellisense}/bin/is init zsh
-
       # ZSH AUTO NOTIFY
       export AUTO_NOTIFY_THRESHOLD=90
       export AUTO_NOTIFY_TITLE=""%command" has just finished"
@@ -118,6 +116,8 @@
         export PROMPT="
       %B$dir_path $user_symbol%b"
       fi
+
+      ${pkgs.inshellisense}/bin/is init zsh
     '';
   };
 }
