@@ -95,7 +95,6 @@
       gping
       bun
       upower
-      inshellisense
       jq
       xdg-user-dirs
 

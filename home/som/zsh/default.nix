@@ -116,8 +116,6 @@
         export PROMPT="
       %B$dir_path $user_symbol%b"
       fi
-
-      ${pkgs.inshellisense}/bin/is init zsh
     '';
   };
 }
