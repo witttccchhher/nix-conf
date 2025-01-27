@@ -95,6 +95,7 @@
       gping
       bun
       upower
+      is
       jq
       xdg-user-dirs
 
