@@ -96,6 +96,7 @@
       bun
       upower
       jq
+      swww
       xdg-user-dirs
 
       # Internet
