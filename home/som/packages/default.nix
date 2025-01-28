@@ -41,6 +41,7 @@
       imagemagick
       mpd
       mpc
+      amberol
 
       # Code
       git
