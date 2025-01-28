@@ -15,8 +15,8 @@
       '';
     };
     bluetooth = {
-      enable = false;
-      powerOnBoot = false;
+      enable = true;
+      powerOnBoot = true;
     };
     
     cpu.intel = {
