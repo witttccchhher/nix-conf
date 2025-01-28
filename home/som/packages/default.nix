@@ -96,6 +96,7 @@
       bun
       upower
       jq
+      gopass
       swww
       xdg-user-dirs
 
