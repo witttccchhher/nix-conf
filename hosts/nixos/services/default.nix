@@ -22,7 +22,6 @@
       musicDirectory = "/home/som/Music";
       user = "som";
       network.listenAddress = "any";
-      startWhenNeeded = true;
     };
   };
   
