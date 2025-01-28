@@ -1,4 +1,4 @@
-{ lib, ... }: {
+{ lib, config, ... }: {
   services = {
     resolved.enable = true;
     openssh.enable = true;
@@ -25,6 +25,6 @@
   };
   
   systemd.services.mpd.environment = {
-    XDG_RUNTIME_DIR = "/run/user/1000";
+    XDG_RUNTIME_DIR = "/run/user/${toString config.users.users.userRunningPipeWire.uid}";
   };
 }
