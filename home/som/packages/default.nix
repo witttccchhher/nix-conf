@@ -39,6 +39,8 @@
       pavucontrol
       eog
       imagemagick
+      mpd
+      mpc
 
       # Code
       git
