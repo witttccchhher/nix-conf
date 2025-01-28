@@ -18,7 +18,7 @@
       ];
     };
     mpd = {
-      enable = false;
+      enable = true;
       musicDirectory = "/home/som/Music";
       user = "som";
       network.listenAddress = "any";
