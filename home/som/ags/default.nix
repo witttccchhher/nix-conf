@@ -2,7 +2,6 @@
   imports = [ inputs.ags.homeManagerModules.default ];
 
   home.packages = with pkgs.astal; [
-    pkgs.ags
     io
     gjs
     auth
@@ -22,7 +21,6 @@
     enable = true;
     configDir = ./agscher;
     extraPackages = with pkgs.astal; [
-      pkgs.ags
       io
       gjs
       auth
