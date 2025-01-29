@@ -157,7 +157,7 @@
         "${mod}+Shift+Return" = "exec ${pkgs.neovide}/bin/neovide";
         "Print" = "exec ${pkgs.lib.getExe takescreenshot}";
         "${mod}+w" = "kill";
-        # "${mod}+space" = "exec ${config.wayland.windowManager.sway.config.menu}";
+        "${mod}+space" = "exec ${config.wayland.windowManager.sway.config.menu}";
         "${mod}+Tab" = "exec ags toggle Menu";
         "${mod}+Shift+r" = "reload";
         "${mod}+Shift+q" = "exec 'swaymsg exit'";
