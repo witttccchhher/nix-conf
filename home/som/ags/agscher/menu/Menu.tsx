@@ -18,14 +18,13 @@ function User() {
   </box>
 }
 
-function Player({ player }: { player: Mpris.Player }) {
+function Player({ player }) {
   function lengthStr(length: number) {
     const min = Math.floor(length / 60)
     const sec = Math.floor(length % 60)
     const sec0 = sec < 10 ? "0" : ""
     return `${min}:${sec0}${sec}`
   }
-
   const { START, END } = Gtk.Align
 
   const title = bind(player, "title").as(title =>
@@ -46,16 +45,47 @@ function Player({ player }: { player: Mpris.Player }) {
       : "media-playback-start-symbolic"
   )
 
-  return <box>
-    <box css={coverArt} />
-    <box vertical>
-      <label truncate hexpand halign={START} label={title} />
-      <label halign={START} valign={START} vexpand wrap label={artist} />
+  return <box className="musicbox">
+    <box className="cover" css={coverArt} />
+    <box vertical className="data">
+      <label className="title" truncate hexpand halign={START} label={title} />
+      <label className="artist" halign={START} valign={START} vexpand wrap label={artist} />
       <slider
-        visible={bind(player, "length").as(len => len > 0)}
+        className="position"
         onDragged={({ value }) => player.position = value * player.length}
         value={position}
       />
+      <centerbox className="actions">
+        <label
+          hexpand
+          className="current"
+          halign={START}
+          label={bind(player, "position").as(lengthStr)}
+        />
+        <box>
+          <button
+            onClicked={() => player.previous()}>
+            <icon icon="media-skip-backward-symbolic" />
+          </button>
+          <button
+            onClicked={() => player.play_pause()}>
+            <icon icon={playIcon} />
+          </button>
+          <button
+            onClicked={() => player.next()}>
+            <icon icon="media-skip-forward-symbolic" />
+          </button>
+          <button>
+            onClicked={() => player.loop()}
+          </button>
+        </box>
+        <label
+          className="length"
+          hexpand
+          halign={END}
+          label={bind(player, "length").as(l => l > 0 ? lengthStr(l) : "0:00")}
+        />
+      </centerbox>
     </box>
   </box>
 }
@@ -127,6 +157,8 @@ function Dnd() {
 }
 
 export default function NotificationPopups(gdkmonitor: Gdk.Monitor) {
+  const mpris = Mpris.get_default()
+
   return <window
     className="Menu"
     name="Menu"
@@ -150,6 +182,9 @@ export default function NotificationPopups(gdkmonitor: Gdk.Monitor) {
           <Dnd />
         </box>
       </box>
+      {bind(mpris, "players").as(arr => arr.map(player => (
+        <Player player={player} />
+      )))}
       <Volume />
     </box>
   </window>

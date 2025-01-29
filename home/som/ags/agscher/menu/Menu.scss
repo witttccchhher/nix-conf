@@ -89,5 +89,14 @@ window.Menu {
         font-size: 30px;
       }
     }
+
+    box.musicbox {
+      box.cover {
+        min-width: 100px;
+        min-height: 100px;
+        background-size: 100px;
+        border-radius: 15px;
+      }
+    }
   }
 }
