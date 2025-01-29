@@ -2,9 +2,9 @@
   imports = [ inputs.ags.homeManagerModules.default ];
 
   home.packages = with pkgs.astal; [
+    pkgs.ags
     io
     gjs
-    tray
     auth
     apps
     mpris
@@ -22,9 +22,9 @@
     enable = true;
     configDir = ./agscher;
     extraPackages = with pkgs.astal; [
+      pkgs.ags
       io
       gjs
-      tray
       auth
       apps
       mpris
