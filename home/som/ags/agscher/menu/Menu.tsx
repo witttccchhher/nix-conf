@@ -17,6 +17,8 @@ function User() {
   </box>
 }
 
+function Player() {}
+
 function Volume() {
   const speaker = Wp.get_default().audio.default_speaker
 
@@ -101,7 +103,6 @@ export default function NotificationPopups(gdkmonitor: Gdk.Monitor) {
     setup={self => App.add_window(self)}
   >
     <box vertical className="main">
-      <User />
       <box vertical className="quicks">
         <box className="row">
           <Wifi />

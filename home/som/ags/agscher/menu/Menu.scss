@@ -2,7 +2,7 @@
 
 $fg: #{"@theme_fg_color"};
 $bg: #{"@theme_bg_color"};
-$accent: #e18be1;
+$accent: #b87aff;
 
 @function gtkalpha($c, $a) {
     @return string.unquote("alpha(#{$c},#{$a})");
@@ -11,7 +11,7 @@ $accent: #e18be1;
 window.Menu {
   background-color: $bg;
   color: $fg;
-  font-family: "CaskaydiaMono Nerd Font";
+  font-family: "Cascadia Code";
   font-size: 16px;
   border-radius: 15px;
 

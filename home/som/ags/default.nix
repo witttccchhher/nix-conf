@@ -12,7 +12,7 @@
       # cava
       # greet
       # hyprland
-      # mpris
+      mpris
       network
       notifd
       powerprofiles
