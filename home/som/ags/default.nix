@@ -19,9 +19,7 @@
   programs.ags = {
     enable = true;
     configDir = ./agscher;
-    extraPackages = with pkgs.astal; [
-      io
-      gjs
+    extraPackages = with inputs.ags.packages.${pkgs.system}; [
       auth
       apps
       mpris

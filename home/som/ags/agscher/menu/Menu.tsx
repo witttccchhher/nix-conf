@@ -4,7 +4,7 @@ import { exec } from "astal/process"
 import Wp from "gi://AstalWp"
 import Network from "gi://AstalNetwork"
 import Notifd from "gi://AstalNotifd"
-import Mpris from "gi://Mpris"
+import Mpris from "gi://AstalMpris"
 
 function User() {
   const avatar = GLib.getenv("HOME") + "/nix/home/som/ags/agscher/assets/avatar.png"
@@ -48,6 +48,15 @@ function Player({ player }: { player: Mpris.Player }) {
 
   return <box>
     <box css={coverArt} />
+    <box vertical>
+      <label truncate hexpand halign={START} label={title} />
+      <label halign={START} valign={START} vexpand wrap label={artist} />
+      <slider
+        visible={bind(player, "length").as(len => len > 0)}
+        onDragged={({ value }) => player.position = value * player.length}
+        value={position}
+      />
+    </box>
   </box>
 }
 
