@@ -21,6 +21,12 @@
       enable = true;
       musicDirectory = "/home/som/Music";
       user = "som";
+      extraConfig = ''
+        audio_output {
+          type "pipewire"
+          name "UGREEN HiTune Max 5c"
+        }
+      '';
     };
   };
   
