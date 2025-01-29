@@ -1,24 +1,41 @@
 { inputs, pkgs, ... }: {
   imports = [ inputs.ags.homeManagerModules.default ];
 
+  home.packages = with pkgs.astal; [
+    io
+    gjs
+    tray
+    auth
+    apps
+    mpris
+    greet
+    notifd
+    astal3
+    wireplumber
+    powerprofiles
+    network
+    bluetooth
+    battery
+  ];
+
   programs.ags = {
     enable = true;
     configDir = ./agscher;
-    extraPackages = with inputs.ags.packages.${pkgs.system}; [
+    extraPackages = with pkgs.astal; [
+      io
+      gjs
+      tray
+      auth
       apps
-      # auth
-      battery
-      bluetooth
-      # cava
-      # greet
-      # hyprland
       mpris
-      network
+      greet
       notifd
-      powerprofiles
-      # river
-      # tray
+      astal3
       wireplumber
+      powerprofiles
+      network
+      bluetooth
+      battery
     ];
   };
 }

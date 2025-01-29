@@ -4,6 +4,7 @@ import { exec } from "astal/process"
 import Wp from "gi://AstalWp"
 import Network from "gi://AstalNetwork"
 import Notifd from "gi://AstalNotifd"
+import Mpris from "gi://Mpris"
 
 function User() {
   const avatar = GLib.getenv("HOME") + "/nix/home/som/ags/agscher/assets/avatar.png"
@@ -17,7 +18,38 @@ function User() {
   </box>
 }
 
-function Player() {}
+function Player({ player }: { player: Mpris.Player }) {
+  function lengthStr(length: number) {
+    const min = Math.floor(length / 60)
+    const sec = Math.floor(length % 60)
+    const sec0 = sec < 10 ? "0" : ""
+    return `${min}:${sec0}${sec}`
+  }
+
+  const { START, END } = Gtk.Align
+
+  const title = bind(player, "title").as(title =>
+    title || "Unknown Track")
+
+  const artist = bind(player, "artist").as(artist =>
+    artist || "Unknown Artist")
+
+  const coverArt = bind(player, "coverArt").as(cover =>
+    `background-image: url('${cover}')`)
+
+  const position = bind(player, "position").as(pos => player.length > 0
+    ? pos / player.length : 0)
+
+  const playIcon = bind(player, "playbackStatus").as(status =>
+    status === Mpris.PlaybackStatus.PLAYING
+      ? "media-playback-pause-symbolic"
+      : "media-playback-start-symbolic"
+  )
+
+  return <box>
+    <box css={coverArt} />
+  </box>
+}
 
 function Volume() {
   const speaker = Wp.get_default().audio.default_speaker
