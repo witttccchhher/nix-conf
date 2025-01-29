@@ -125,6 +125,7 @@
       waybar
       drawing
       transmission_4-gtk
+      gitbutler
       zathura
       nautilus
       sqlite
