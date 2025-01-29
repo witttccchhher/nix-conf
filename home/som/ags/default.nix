@@ -9,7 +9,6 @@
     mpris
     greet
     notifd
-    astal3
     wireplumber
     powerprofiles
     network
@@ -28,7 +27,6 @@
       mpris
       greet
       notifd
-      astal3
       wireplumber
       powerprofiles
       network
