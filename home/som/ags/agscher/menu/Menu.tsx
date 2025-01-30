@@ -5,6 +5,7 @@ import Wp from "gi://AstalWp"
 import Network from "gi://AstalNetwork"
 import Notifd from "gi://AstalNotifd"
 import Mpris from "gi://AstalMpris"
+import Bluetooth from "gi://AstalBluetooth"
 
 function User() {
   const avatar = GLib.getenv("HOME") + "/nix/home/som/ags/agscher/assets/avatar.png"
@@ -74,9 +75,6 @@ function Player({ player }) {
           <button
             onClicked={() => player.next()}>
             <icon icon="media-skip-forward-symbolic" />
-          </button>
-          <button>
-            onClicked={() => player.loop()}
           </button>
         </box>
         <label
@@ -156,6 +154,32 @@ function Dnd() {
   </button>
 }
 
+function BT() {
+  const bluetooth = Bluetooth.get_default()
+  const enabled = Variable<boolean>(bluetooth.get_is_powered())
+
+  function toggleBT() {
+    enabled.set(!enabled.get())
+    bluetooth.toggle()
+  }
+
+  return <button
+    onClicked={toggleBT}
+    className={bind(enabled).as((enabled) => enabled ? "active" : "")}
+  >
+    <box className="qsbox">
+      <icon
+        className="qsicon"
+        icon={bind(enabled).as((enabled) => enabled ? "bluetooth-symbolic" : "bluetooth-disabled-symbolic")}
+      />
+      <box className="qstextbox" vertical>
+        <label className="qslabel" label="Bluetooth" halign={Gtk.Align.START} />
+        <label className="qstext" label={bind(enabled).as((enabled) => enabled ? "On" : "Off")} halign={Gtk.Align.START} />
+      </box>
+    </box>
+  </button>
+}
+
 export default function NotificationPopups(gdkmonitor: Gdk.Monitor) {
   const mpris = Mpris.get_default()
 
@@ -180,6 +204,9 @@ export default function NotificationPopups(gdkmonitor: Gdk.Monitor) {
         <box className="row">
           <Wifi />
           <Dnd />
+        </box>
+        <box className="row">
+          <BT />
         </box>
       </box>
       {bind(mpris, "players").as(arr => arr.map(player => (

@@ -25,7 +25,7 @@ window.Menu {
       box.row {
         button {
           padding: 10px;
-          margin: 10px;
+          margin: 10px 9px;
           border-radius: 15px;
           min-width: 170px;
           background-color: gtkalpha($fg, 0.1);
@@ -91,11 +91,46 @@ window.Menu {
     }
 
     box.musicbox {
+      margin: 10px;
+
       box.cover {
         min-width: 100px;
         min-height: 100px;
         background-size: 100px;
         border-radius: 15px;
+        margin-right: 10px;
+      }
+
+      box.data {
+        label.title {
+          font-size: 20px;
+        }
+
+        label.artist {
+          color: gtkalpha($fg, 0.6);
+        }
+
+        button {
+          margin: 0 5px;
+          border-radius: 100px;
+          padding: 0 7px;
+        }
+
+        trough {
+          background-color: gtkalpha($fg, 0.1);
+          min-height: 10px;
+          border-radius: 100px;
+        }
+
+        highlight {
+          background-color: $accent;
+          min-height: 10px;
+          border-radius: 100px;
+        }
+
+        slider {
+          all: unset;
+        }
       }
     }
   }
