@@ -54,7 +54,7 @@
         size = 12.0;
       };
       bars = [ 
-        { command = "${pkgs.waybar}/bin/waybar -c /home/som/.config/waybar/test.jsonc -s /home/som/.config/waybar/test.css"; }
+        { command = "${pkgs.waybar}/bin/waybar"; }
       ];
       gaps = {
         inner = 20;
