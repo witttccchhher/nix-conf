@@ -9,7 +9,6 @@
       QT_QPA_PLATFORMTHEME = "qt6ct";
       NIXPKGS_ALLOW_INSECURE = 1;
       COLORTERM = "truecolor";
-      MICRO_TRUECOLOR = 1;
       FLAKE = "/home/som/nix";
       GOPATH = "$HOME/go";
       MESA_GL_VERSION_OVERRIDE = "3.3";
@@ -19,19 +18,16 @@
       "$HOME/.local/bin"
       "$HOME/.cargo/bin"
       "$GOPATH/bin"
-      "$HOME/.config/emacs/bin"
     ];
     packages = with pkgs; [
       # Flakes
       inputs.zen-browser.packages.${system}.default
-      inputs.astal.packages.${system}.astal3
-      inputs.fabric.packages.${system}.default
       (callPackage ./derivations/ani-cli/ani-cli-ru.nix { })
-      (callPackage ./derivations/curd/curd.nix { })
 
       # Fonts
-      (google-fonts.override { fonts = [ "Poppins" "Inter" "Roboto Mono" ]; })
+      (google-fonts.override { fonts = [ "Inter" ]; })
       dejavu_fonts
+      commit-mono
 
       # Media
       mpv

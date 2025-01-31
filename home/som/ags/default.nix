@@ -2,6 +2,8 @@
   imports = [ inputs.ags.homeManagerModules.default ];
 
   home.packages = with pkgs.astal; [
+    astal3
+    astal4
     io
     gjs
     auth
@@ -14,6 +16,7 @@
     network
     bluetooth
     battery
+    tray
   ];
 
   programs.ags = {
@@ -30,6 +33,7 @@
       network
       bluetooth
       battery
+      tray
     ];
   };
 }
