@@ -98,6 +98,7 @@
       hicolor-icon-theme
 
       # GUI
+      gzdoom
       waybar
       drawing
       transmission_4-gtk
