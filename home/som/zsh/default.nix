@@ -1,7 +1,9 @@
 { inputs, config, pkgs, ... }: {
   programs.zsh = {
     enable = true;
-    shellAliases = {
+    shellAliases = let
+      nvim = "footclient -o \"font=CommitMono:size=12\" -o \"font-bold=CommitMono:size=12:style=Bold\" -o \"font-italic=CommitMonoV143:size=12:style=Italic\" -o \"font-bold-italic=CommitMonoV143:size=12:style=Bold Italic\" -o \"pad=0x0\" -T Neovim -a neovim -e nvim";
+    in  {
       "x" = "exit";
       "c" = "clear";
 
@@ -22,6 +24,7 @@
       "e" = "nvim";
       "fe" = "nvim $(fzf)";
       "pe" = "nvim ~/nix/home/som/packages/default.nix";
+      "ee" = "${nvim}";
 
       "y" = "yazi";
       "tte" = "trans ru:en -no-auto -no-theme";
