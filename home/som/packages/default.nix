@@ -77,6 +77,7 @@
       jq
       gopass
       xdg-user-dirs
+      ascii-image-converter
 
       # Internet
       qutebrowser
