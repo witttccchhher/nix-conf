@@ -98,7 +98,7 @@
       hicolor-icon-theme
 
       # GUI
-      gzdoom
+      chocolate-doom
       waybar
       drawing
       transmission_4-gtk

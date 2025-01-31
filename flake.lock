@@ -972,11 +972,11 @@
     "wallpapers": {
       "flake": false,
       "locked": {
-        "lastModified": 1737645472,
-        "narHash": "sha256-dZm110zC6LRF+7Rh5QXUsQwrnxj9Kr6asgyePzbl/Tw=",
+        "lastModified": 1738338977,
+        "narHash": "sha256-jNDkL+LGTd7Ofyso37ibyz11CgK95fvfpIYDecoLuV4=",
         "owner": "witttccchhher",
         "repo": "wallpapers",
-        "rev": "ca3e9c645c145ba30b81dc574cdf3ccfef058fa2",
+        "rev": "d4e21e567a95af0938e6e1f1ecbfdf05c552d8c2",
         "type": "github"
       },
       "original": {
