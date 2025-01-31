@@ -16,7 +16,6 @@
     network
     bluetooth
     battery
-    tray
   ];
 
   programs.ags = {
