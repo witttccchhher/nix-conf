@@ -37,51 +37,32 @@
       imagemagick
       mpd
       mpc
-      amberol
 
       # Code
       git
       go
       poetry
       neovim-remote
-      neovide
-      vscode
-      nixd
       
       # Utilites
       fastfetch
-      dwt1-shell-color-scripts
       wl-clipboard
       wirelesstools
-      glow
-      swaybg
       killall
-      tdlib
       lsd
-      go-mtpfs
-      xclip
-      xsel
       tree
-      croc
       nh
-      wlr-randr
       gum
-      smassh
-      # chess-tui-1_6_0
-      stockfish
-      flameshot
       nix-init
       btop
       lazygit
       tgpt
-      tofi
       lutgen
       bat
       openvpn
       duf
       fd
       gh
-      tg
       skate
       ripgrep
       file
@@ -89,14 +70,12 @@
       gperf
       cmake
       pkg-config
-      libappindicator
       libwebp
       gping
       bun
       upower
       jq
       gopass
-      swww
       xdg-user-dirs
 
       # Internet
@@ -121,11 +100,9 @@
       waybar
       drawing
       transmission_4-gtk
-      gitbutler
       zathura
       nautilus
       sqlite
-      aseprite
       sqlitestudio
       sqlitebrowser
       networkmanagerapplet
@@ -136,7 +113,6 @@
       nwg-drawer
       font-manager
       blueman
-      google-chrome
     ];
   };
 }

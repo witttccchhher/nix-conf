@@ -5,7 +5,6 @@
     QT_QPA_PLATFORMTHEME = "qt6ct";
     NIXPKGS_ALLOW_INSECURE = 1;
     COLORTERM = "truecolor";
-    MICRO_TRUECOLOR = 1;
     FLAKE = "/home/som/nix";
     GOPATH = "$HOME/go";
     MESA_GL_VERSION_OVERRIDE = "3.3";
@@ -39,13 +38,11 @@
     gvfs
     unzip
     unrar
-    fish
     iwd
     libnotify
     linux-firmware
     linuxHeaders
     python312Packages.launchpadlib
-    python311Packages.tkinter
     gnupg
     lshw
 
