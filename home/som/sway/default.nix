@@ -21,9 +21,9 @@
       shadow_color #${config.lib.stylix.colors.base00}ff
       layer_effects "waybar" shadows disable; corner_radius 0; blur disable
 
-      set $raise_vol amixer sset Master 1%-
-      set $lower_vol amixer sset Master 1%-
-      set $mute amixer sset Master toggle
+      set $raise_vol wpctl set-volume @DEFAULT_SOURCE@ 1%+
+      set $lower_vol wpctl set-volume @DEFAULT_SOURCE@ 1%-
+      set $mute wpctl set-mute @DEFAULT_SOURCE@ toggle
     '';
 
     config = {
@@ -148,13 +148,14 @@
             fi
           fi
         '';
+        nvim = "footclient -o \"font=CommitMono:size=12\" -o \"font-bold=CommitMono:size=12:style=Bold\" -o \"font-italic=CommitMonoV143:size=12:style=Italic\" -o \"font-bold-italic=CommitMonoV143:size=12:style=Bold Italic\" -o \"pad=0x0\" -T Neovim -a neovim -e nvim";
       in {
         "XF86AudioRaiseVolume" = "exec $raise_vol";
         "XF86AudioLowerVolume" = "exec $lower_vol";
         "XF86AudioMute" = "exec $mute";
 
         "${mod}+Return" = "exec ${config.wayland.windowManager.sway.config.terminal}";
-        "${mod}+Shift+Return" = "exec ${pkgs.neovide}/bin/neovide";
+        "${mod}+Shift+Return" = "exec ${nvim}";
         "Print" = "exec ${pkgs.lib.getExe takescreenshot}";
         "${mod}+w" = "kill";
         "${mod}+space" = "exec ${config.wayland.windowManager.sway.config.menu}";
