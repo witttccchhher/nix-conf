@@ -6,15 +6,40 @@ import Network from "gi://AstalNetwork"
 import Notifd from "gi://AstalNotifd"
 import Mpris from "gi://AstalMpris"
 import Bluetooth from "gi://AstalBluetooth"
+import Battery from "gi://AstalBattery"
 
 function User() {
   const avatar = GLib.getenv("HOME") + "/nix/home/som/ags/agscher/assets/avatar.png"
   const username = exec(["whoami"])
-  
+
+  const battery = Battery.get_default()
+
   return <box className="userbox">
     <box className="avatar" css={`background-image: url("${avatar}")`} />
     <box vertical>
-      <label className="username" label={username} />
+      <box className="userinfo">
+        <label hexpand halign={Gtk.Align.START} className="username" label={username} />
+        <icon className="batteryicon" icon={bind(battery, "icon-name")} />
+        <label className="batterypercentage" label={bind(battery, "percentage").as(bat => (bat * 100).toString())} />
+      </box>
+      <box className="power">
+        <button
+          onClicked={() => exec("poweroff")}>
+          <icon icon="power-poweroff-symbolic" />
+        </button>
+        <button
+          onClicked={() => exec("reboot")}>
+          <icon icon="power-reboot-symbolic" />
+        </button>
+        <button
+          onClicked={() => exec("sleep")}>
+          <icon icon="power-sleep-symbolic" />
+        </button>
+        <button
+          onClicked={() => exec("logout")}>
+          <icon icon="power-logout-symbolic" />
+        </button>
+      </box>
     </box>
   </box>
 }
@@ -180,9 +205,9 @@ function BT() {
   </button>
 }
 
-export default function NotificationPopups(gdkmonitor: Gdk.Monitor) {
+export default function Menu(gdkmonitor: Gdk.Monitor) {
   const mpris = Mpris.get_default()
-
+ 
   return <window
     className="Menu"
     name="Menu"
@@ -200,6 +225,7 @@ export default function NotificationPopups(gdkmonitor: Gdk.Monitor) {
     setup={self => App.add_window(self)}
   >
     <box vertical className="main">
+      <User />
       <box vertical className="quicks">
         <box className="row">
           <Wifi />

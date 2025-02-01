@@ -78,15 +78,36 @@ window.Menu {
     }
 
     box.userbox {
+      margin: 10px;
+
       box.avatar {
         min-width: 100px;
         min-height: 100px;
         background-size: 100px;
-        border-radius: 15px;
+        border-radius: 100px;
+        margin-right: 10px;
       }
 
-      label.username {
+      box.userinfo {
         font-size: 30px;
+
+        icon {
+          font-size: 20px;
+        }
+
+        label.batterypercentage {
+          font-size: 22px;
+        }
+      }
+
+      box.power {
+        margin-top: 10px;
+
+        button {
+          border-radius: 15px;
+          padding: 5px 15px;
+          margin: 10px;
+        }
       }
     }
 
