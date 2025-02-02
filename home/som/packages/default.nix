@@ -83,6 +83,7 @@
 
       # Internet
       qutebrowser
+      python313Packages.requests
       wireguard-tools
       amneziawg-go
       amneziawg-tools
