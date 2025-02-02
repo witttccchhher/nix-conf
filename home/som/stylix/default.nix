@@ -1,11 +1,10 @@
 { pkgs, config, inputs, ... }: {
-  # imports = [ ./themes/jellybeans ];
   stylix = {
     enable = true;
     autoEnable = false;
 
     image = let
-      input = "${inputs.wallpapers}/boy/boy3.jpg";
+      input = "${inputs.wallpapers}/solid/solid12.jpg";
       level = 10;
       lum = 1.0;
       preserve = false;
@@ -32,24 +31,23 @@
           ])
         }
       '';
-    # image = "${inputs.wallpapers}/solid/solid14_custom.jpg";
     polarity = "dark";
-    base16Scheme = "${inputs.design}/neo-gen.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";
 
     cursor = with inputs.nix-cursors; {
       name = "Apple-Custom";
       package = with config.lib.stylix.colors.withHashtag; packages.${pkgs.system}.apple-cursor.override {
         background_color = base00;
-        outline_color = base06;
-        accent_color = base0B;
+        outline_color = base07;
+        accent_color = base0D;
       };
       size = 21;
     };
 
     fonts = {
       monospace = {
-        name = "Cascadia Code";
-        package = pkgs.cascadia-code;
+        name = "CommitMono";
+        package = pkgs.commit-mono;
       };
 
       serif = config.stylix.fonts.monospace;
@@ -57,18 +55,31 @@
       emoji = config.stylix.fonts.monospace;
 
       sizes = {
-        desktop = 13;
-        popups = 13;
-        applications = 13;
-        terminal = 13;
+        desktop = 12;
+        popups = 12;
+        applications = 12;
+        terminal = 12;
       };
     };
 
     targets = {
+      bat.enable = true;
+      cava.enable = true;
+      eog.enable = true;
       btop.enable = true;
-      # firefox.enable = true;
+      foot.enable = true;
+      fzf.enable = true;
+      sway.enable = true;
+      neovim = {
+        enable = true;
+        plugin = "base16-nvim";
+        transparentBackground = {
+          main = true;
+          signColumn = true;
+        };
+      };
       gtk.enable = true;
-      # gnome.enable = true;
+      yazi.enable = true;
       lazygit.enable = true;
       xresources.enable = true;
       zathura.enable = true;

@@ -52,6 +52,7 @@
       killall
       localsearch
       lsd
+      lla
       tree
       nh
       gum
