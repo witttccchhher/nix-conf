@@ -1,4 +1,4 @@
-{ pkgs, config, ... }: {
+{ lib, pkgs, config, ... }: {
   programs.yazi = {
     enable = true;
     package = pkgs.yazi;
@@ -34,12 +34,12 @@
       #   tab_active = { fg = "#${base00}"; bg = "#${base0E}"; };
       #   tab_inactive = { fg = "#${base00}"; bg = "#${base04}"; };
       #
-        border_style = { fg = "#${base00}"; };
+        border_style = { fg = lib.mkForce "#${base00}"; };
       };
       #
       status = {
-        separator_open = " ";
-        separator_close = " ";
+        separator_open = lib.mkForce " ";
+        separator_close = lib.mkForce " ";
       #
       #   mode_normal = { fg = "#${base00}"; bg = "#${base0E}"; bold = true; };
       #   mode_select = { fg = "#${base00}"; bg = "#${base0A}"; bold = true; };
