@@ -7,19 +7,14 @@
       "x" = "exit";
       "c" = "clear";
 
-      ";q" = "exit";
-      ";wq" = "exit";
-
-      "ls" = "lsd -a";
-      "ll" = "lsd -a -l";
-      "tree" = "lsd -a --tree";
+      "ls" = "lla";
+      "ll" = "lla -l";
+      "tree" = "lla -t";
 
        ".." = "cd ..";
        "..." = "cd ../../";
 
-      "ns" = "nix-shell --run zsh";
       "flakeu" = "nix flake update --flake 'path:/home/som/nix/'";
-      "nixgitu" = "cd ~/nix/ && git add * && git commit -m 'Some changes' && cd";
 
       "e" = "nvim";
       "fe" = "nvim $(fzf)";
@@ -29,8 +24,6 @@
       "y" = "yazi";
       "tte" = "trans ru:en -no-auto -no-theme";
       "ttr" = "trans en:ru -no-auto -no-theme";
-
-      "npshell" = "nix develop --command zsh -c 'eval $(poetry env activate)'";
     };
     syntaxHighlighting = {
       enable = true;
