@@ -13,17 +13,17 @@
       output LVDS-1 disable
 
       blur disable
-      corner_radius 15
-      default_dim_inactive 0.15
+      corner_radius 10
+      default_dim_inactive 0.10
       shadows enable
       shadows_on_csd enable
-      shadow_blur_radius 6
-      shadow_color #${config.lib.stylix.colors.base00}ff
+      shadow_blur_radius 20
+      shadow_color #${config.lib.stylix.colors.base00}88
       layer_effects "waybar" shadows disable; corner_radius 0; blur disable
 
-      set $raise_vol wpctl set-volume @DEFAULT_SOURCE@ 1%+
-      set $lower_vol wpctl set-volume @DEFAULT_SOURCE@ 1%-
-      set $mute wpctl set-mute @DEFAULT_SOURCE@ toggle
+      set $raise_vol wpctl set-volume @DEFAULT_SINK@ 1%+
+      set $lower_vol wpctl set-volume @DEFAULT_SINK@ 1%-
+      set $mute wpctl set-mute @DEFAULT_SINK@ toggle
     '';
 
     config = {
@@ -57,8 +57,8 @@
         { command = "${pkgs.waybar}/bin/waybar"; }
       ];
       gaps = {
-        inner = 20;
-        outer = 20;
+        inner = 35;
+        outer = 50;
       };
       # colors = with config.lib.stylix.colors.withHashtag; {
       #   background = "${base00}";
