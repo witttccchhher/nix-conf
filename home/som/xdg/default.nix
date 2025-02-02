@@ -22,7 +22,6 @@
       music = builtins.toPath "${config.home.homeDirectory}/Music";
       pictures = builtins.toPath "${config.home.homeDirectory}/Pictures";
       videos = builtins.toPath "${config.home.homeDirectory}/Videos";
-      publishShare = null;
       publicShare = null;
       templates = null;
 
