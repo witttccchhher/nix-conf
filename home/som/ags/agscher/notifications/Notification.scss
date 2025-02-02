@@ -9,6 +9,10 @@ $fg-color: #{"@theme_fg_color"};
 $bg-color: #{"@theme_bg_color"};
 $error: red;
 
+* {
+  font-family: CommitMono;
+}
+
 window.NotificationPopups {
     all: unset;
 }
@@ -97,9 +101,7 @@ eventbox.Notification {
 
         .image {
             border: 1px solid gtkalpha($fg-color, .02);
-            margin-right: .5rem;
-            border-radius: 9px;
-            min-width: 100px;
+            margin-right: .5rem; border-radius: 9px; min-width: 100px;
             min-height: 100px;
             background-size: cover;
             background-position: center;
