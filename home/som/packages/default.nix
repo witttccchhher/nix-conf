@@ -37,6 +37,7 @@
       imagemagick
       mpd
       mpc
+      gnome-music
 
       # Code
       git
@@ -49,6 +50,7 @@
       wl-clipboard
       wirelesstools
       killall
+      localsearch
       lsd
       tree
       nh

@@ -1,5 +1,5 @@
 import { Astal, App, Gdk, Gtk } from "astal/gtk3"
-import { GLib, Variable, bind } from "astal"
+import { GLib, Variable, bind, timeout } from "astal"
 import { exec } from "astal/process"
 import Wp from "gi://AstalWp"
 import Network from "gi://AstalNetwork"
