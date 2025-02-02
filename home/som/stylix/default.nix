@@ -70,14 +70,6 @@
       foot.enable = true;
       fzf.enable = true;
       sway.enable = true;
-      neovim = {
-        enable = true;
-        plugin = "base16-nvim";
-        transparentBackground = {
-          main = true;
-          signColumn = true;
-        };
-      };
       gtk.enable = true;
       yazi.enable = true;
       lazygit.enable = true;
