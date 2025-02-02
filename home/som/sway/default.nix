@@ -60,44 +60,44 @@
         inner = 20;
         outer = 20;
       };
-      colors = with config.lib.stylix.colors.withHashtag; {
-        background = "${base00}";
-        focused = {
-          background = "${base00}";
-          border = "${base02}";
-          childBorder = "${base02}";
-          indicator = "${base02}";
-          text = "${base07}";
-        };
-        focusedInactive = {
-          background = "${base00}";
-          border = "${base02}";
-          childBorder = "${base02}";
-          indicator = "${base02}";
-          text = "${base07}";
-        };
-        unfocused = {
-          background = "${base00}";
-          border = "${base02}";
-          childBorder = "${base02}";
-          indicator = "${base02}";
-          text = "${base07}";
-        };
-        urgent = {
-          background = "${base00}";
-          border = "${base08}";
-          childBorder = "${base08}";
-          indicator = "${base08}";
-          text = "${base07}";
-        };
-        placeholder = {
-          background = "${base00}";
-          border = "${base02}";
-          childBorder = "${base02}";
-          indicator = "${base02}";
-          text = "${base07}";
-        };
-      };
+      # colors = with config.lib.stylix.colors.withHashtag; {
+      #   background = "${base00}";
+      #   focused = {
+      #     background = "${base00}";
+      #     border = "${base02}";
+      #     childBorder = "${base02}";
+      #     indicator = "${base02}";
+      #     text = "${base07}";
+      #   };
+      #   focusedInactive = {
+      #     background = "${base00}";
+      #     border = "${base02}";
+      #     childBorder = "${base02}";
+      #     indicator = "${base02}";
+      #     text = "${base07}";
+      #   };
+      #   unfocused = {
+      #     background = "${base00}";
+      #     border = "${base02}";
+      #     childBorder = "${base02}";
+      #     indicator = "${base02}";
+      #     text = "${base07}";
+      #   };
+      #   urgent = {
+      #     background = "${base00}";
+      #     border = "${base08}";
+      #     childBorder = "${base08}";
+      #     indicator = "${base08}";
+      #     text = "${base07}";
+      #   };
+      #   placeholder = {
+      #     background = "${base00}";
+      #     border = "${base02}";
+      #     childBorder = "${base02}";
+      #     indicator = "${base02}";
+      #     text = "${base07}";
+      #   };
+      # };
 
       floating = {
         border = 0;

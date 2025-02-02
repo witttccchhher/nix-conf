@@ -3,7 +3,6 @@
     enable = true;
     package = pkgs.btop;
     settings = {
-      # color_theme = "${pkgs.btop}/share/btop/themes/gruvbox_material_dark.theme";
       theme_background = false;
       truecolor = true;
       force_tty = false;

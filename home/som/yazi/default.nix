@@ -35,32 +35,32 @@
       };
     };
     theme = with config.lib.stylix.colors; {
-      manager = {
-        cwd = { fg = "#${base0E}"; bg = "reset"; bold = true; };
-
-        hovered = { fg = "#${base00}"; bg = "#${base0E}"; bold = true; };
-        preview_hovered = { fg = "#${base0E}"; bg = "reset"; };
-
-        find_keyword = { fg = "#${base04}"; underline = true; bold = true; };
-
-        tab_active = { fg = "#${base00}"; bg = "#${base0E}"; };
-        tab_inactive = { fg = "#${base00}"; bg = "#${base04}"; };
-
-        border_style = { fg = "#${base00}"; };
-      };
-
-      status = {
-        separator_open = " ";
-        separator_close = " ";
-
-        mode_normal = { fg = "#${base00}"; bg = "#${base0E}"; bold = true; };
-        mode_select = { fg = "#${base00}"; bg = "#${base0A}"; bold = true; };
-        mode_unset = { fg = "#${base00}"; bg = "#${base09}"; bold = true; };
-
-        Progress_label = { fg = "#${base00}"; bg = "#${base0E}"; bold = true; };
-        Progress_normal = { fg = "#${base00}"; bg = "#${base0E}"; bold = true; };
-        Progress_error = { fg = "#${base00}"; bg = "#${base08}"; bold = true; };
-      };
+      # manager = {
+      #   cwd = { fg = "#${base0E}"; bg = "reset"; bold = true; };
+      #
+      #   hovered = { fg = "#${base00}"; bg = "#${base0E}"; bold = true; };
+      #   preview_hovered = { fg = "#${base0E}"; bg = "reset"; };
+      #
+      #   find_keyword = { fg = "#${base04}"; underline = true; bold = true; };
+      #
+      #   tab_active = { fg = "#${base00}"; bg = "#${base0E}"; };
+      #   tab_inactive = { fg = "#${base00}"; bg = "#${base04}"; };
+      #
+      #   border_style = { fg = "#${base00}"; };
+      # };
+      #
+      # status = {
+      #   separator_open = " ";
+      #   separator_close = " ";
+      #
+      #   mode_normal = { fg = "#${base00}"; bg = "#${base0E}"; bold = true; };
+      #   mode_select = { fg = "#${base00}"; bg = "#${base0A}"; bold = true; };
+      #   mode_unset = { fg = "#${base00}"; bg = "#${base09}"; bold = true; };
+      #
+      #   Progress_label = { fg = "#${base00}"; bg = "#${base0E}"; bold = true; };
+      #   Progress_normal = { fg = "#${base00}"; bg = "#${base0E}"; bold = true; };
+      #   Progress_error = { fg = "#${base00}"; bg = "#${base08}"; bold = true; };
+      # };
 
       filetype = {
         rules = [
