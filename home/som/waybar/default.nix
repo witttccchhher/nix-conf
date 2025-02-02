@@ -108,7 +108,7 @@
           tooltip = false;
         };
         "clock" = {
-          format = "{:%d %b<span foreground=\"#f17ac6\">,</span>  %H<span foreground=\"#f17ac6\">:</span>%M}";
+          format = "{:%d %b<span foreground=\"${config.lib.stylix.colors.withHashtag.base0E}\">,</span>  %H<span foreground=\"${config.lib.stylix.colors.withHashtag.base0E}\">:</span>%M}";
           interval = 60;
           tooltip = false;
         };
@@ -142,7 +142,8 @@
         border-radius: 100px;
       }
       #workspaces button.focused {
-        background: linear-gradient(315deg, ${base0C} 15%, ${base0E} 85%);
+        background-color: ${base0E};
+        color: ${base00};
       }
 
       #image.clock {
