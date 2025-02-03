@@ -14,6 +14,7 @@
         unpackPhase = ''
           runHook preUnpack
           unsquashfs "$src" '/usr/share/spotify' '/usr/bin/spotify' '/meta/snap.yaml'
+          cd squashfs-root
           runHook postUnpack
         '';
       });
