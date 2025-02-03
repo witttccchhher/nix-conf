@@ -37,7 +37,7 @@
       imagemagick
       mpd
       mpc
-      gnome-music
+      spotify
 
       # Code
       git
@@ -89,6 +89,7 @@
       amneziawg-go
       amneziawg-tools
       ayugram-desktop
+      vesktop
 
       # Other
       gtk4
