@@ -90,6 +90,7 @@
       amneziawg-tools
       ayugram-desktop
       vesktop
+      equibop
 
       # Other
       gtk4

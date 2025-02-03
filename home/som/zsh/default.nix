@@ -57,11 +57,6 @@
         file = "fzf-tab.plugin.zsh";
         src = fzf-tab;
       }
-      {
-        name = "zsh-auto-notify";
-        file = "auto-notify.plugin.zsh";
-        src = zsh-auto-notify;
-      }
     ];
     autosuggestion = {
       enable = true;

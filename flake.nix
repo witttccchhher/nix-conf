@@ -17,13 +17,8 @@
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     dooit.url = "github:dooit-org/dooit";
     dooit-extras.url = "github:dooit-org/dooit-extras";
-    fabric.url = "github:Fabric-Development/fabric";
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    astal = {
-      url = "github:aylur/astal";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     ags = {
@@ -34,10 +29,6 @@
       url = "github:LilleAila/nix-cursors";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    anyrun = {
-      url = "github:anyrun-org/anyrun";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     wallpapers = {
       url = "github:witttccchhher/wallpapers";
       flake = false;
@@ -46,25 +37,8 @@
       url = "github:yunfachi/nypkgs";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    design = {
-		  url = "sourcehut:~neverness/design";
-		  flake = false;
-		};
-
     fzf-tab = {
       url = "github:Aloxaf/fzf-tab";
-      flake = false;
-    };
-    zsh-autosuggestions = {
-      url = "github:zsh-users/zsh-autosuggestions";
-      flake = false;
-    };
-    zsh-auto-notify = {
-      url = "github:MichaelAquilina/zsh-auto-notify";
-      flake = false;
-    };
-    zsh-defer = {
-      url = "github:romkatv/zsh-defer";
       flake = false;
     };
   };
