@@ -18,7 +18,7 @@
       ];
     };
     mpd = {
-      enable = true;
+      enable = false;
       musicDirectory = "/home/som/Music";
       user = "som";
       extraConfig = ''
