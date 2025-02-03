@@ -57,11 +57,6 @@
         file = "fzf-tab.plugin.zsh";
         src = fzf-tab;
       }
-      {
-        name = "powerlevel10k";
-        file = "powerlevel9k.zsh-theme";
-        src = powerlevel10k;
-      }
     ];
     autosuggestion = {
       enable = true;
@@ -112,8 +107,6 @@
       #   export PROMPT="
       # %B$dir_path $user_symbol%b"
       # fi
-
-      [[ ! -f /home/som/.p10k.zsh ]] || source /home/som/.p10k.zsh
     '';
   };
 }
