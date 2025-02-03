@@ -57,6 +57,11 @@
         file = "fzf-tab.plugin.zsh";
         src = fzf-tab;
       }
+      {
+        name = "powerlevel10k";
+        file = "powerlevel9k.zsh-theme";
+        src = powerlevel10k;
+      }
     ];
     autosuggestion = {
       enable = true;

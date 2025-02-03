@@ -41,6 +41,10 @@
       url = "github:Aloxaf/fzf-tab";
       flake = false;
     };
+    powerlevel10k = {
+      url = "github:romkatv/powerlevel10k";
+      flake = false;
+    };
   };
 
   outputs = { nixpkgs, nixpkgs-master, flake-parts, home-manager, stylix, nix-flatpak, nix-index-database, ... }@inputs: flake-parts.lib.mkFlake { inherit inputs; } {

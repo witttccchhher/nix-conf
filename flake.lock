@@ -645,6 +645,22 @@
         "type": "github"
       }
     },
+    "powerlevel10k": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1738157299,
+        "narHash": "sha256-isxgLWpbBuNoETXCOlJ4nwGSxMwCjoVF5D0dMZWtM5s=",
+        "owner": "romkatv",
+        "repo": "powerlevel10k",
+        "rev": "8fa10f43a0f65a5e15417128be63e68e1d5b1f66",
+        "type": "github"
+      },
+      "original": {
+        "owner": "romkatv",
+        "repo": "powerlevel10k",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "ags": "ags",
@@ -661,6 +677,7 @@
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur",
         "nypkgs": "nypkgs",
+        "powerlevel10k": "powerlevel10k",
         "stylix": "stylix",
         "wallpapers": "wallpapers",
         "zen-browser": "zen-browser"
