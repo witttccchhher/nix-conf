@@ -28,6 +28,7 @@
       (google-fonts.override { fonts = [ "Inter" ]; })
       dejavu_fonts
       commit-mono
+      nerd-fonts.commit-mono
 
       # Media
       mpv
