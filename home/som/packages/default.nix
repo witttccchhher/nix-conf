@@ -43,6 +43,7 @@
       # Code
       git
       go
+      lua
       poetry
       neovim-remote
       
