@@ -46,13 +46,15 @@
 
     fonts = {
       monospace = {
-        name = "CommitMono";
-        package = pkgs.commit-mono;
+        name = "Cascadia Mono";
+        package = pkgs.cascadia-code;
       };
-
-      serif = config.stylix.fonts.monospace;
-      sansSerif = config.stylix.fonts.monospace;
-      emoji = config.stylix.fonts.monospace;
+      sansSerif = {
+        name = "Inter";
+        package = pkgs.google-fonts.override { fonts = [ "Inter" ]; };
+      };
+      serif = config.stylix.fonts.sansSerif;
+      emoji = config.stylix.fonts.sansSerif;
 
       sizes = {
         desktop = 12;
