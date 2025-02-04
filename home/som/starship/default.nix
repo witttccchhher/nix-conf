@@ -8,8 +8,7 @@
         format = "[via](bold ${config.lib.stylix.colors.withHashtag.base07}) [$symbol(\${version})]($style) ";
         version_format = "v\${raw}";
       };
-    in with config.lib.stylix.colors.withHashtag; {
-      format = lib.concatStrings [
+    in with config.lib.stylix.colors.withHashtag; { format = lib.concatStrings [
         "$directory"
         "$git_branch"
         "$nix_shell"
@@ -17,7 +16,6 @@
         "$golang"
         "$lua"
         "$nodejs"
-        "$character"
       ];
       right_format = lib.concatStrings [
         "$cmd_duration"
@@ -27,7 +25,7 @@
       directory = {
         truncation_length	= 1;
         truncate_to_repo = false;
-        format = "  [$path]($style) ";
+        format = " [$path]($style) ";
         style = "bold fg:${base0E}";
         home_symbol = "som";
       };
@@ -62,9 +60,6 @@
         min_time = 5000;
         format = "[$duration]($style)";
         style = "dimmed bold fg:${base0A}";
-      };
-      character = {
-        format = " ";
       };
     };
   };
