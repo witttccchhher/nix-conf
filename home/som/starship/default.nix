@@ -1,8 +1,9 @@
-{ lib, ... }: {
+{ lib, config, ... }: {
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
-    settings = {
+    enableTransience = true;
+    settings = with config.lib.stylix.colors.withHashtag; {
       format = lib.concatStrings [
         "$directory"
         "$git_branch"
@@ -20,6 +21,10 @@
 
       directory = {
         truncation_length	= 1;
+        truncate_to_repo = false;
+        format = "  [$path]($style)";
+        style = "bold fg:${base0E}";
+        home_symbol = "som";
       };
     };
   };
