@@ -2,7 +2,6 @@
   programs.zsh = {
     enable = true;
     shellAliases = let
-      nvim = "footclient -o \"font=CommitMono:size=12\" -o \"font-bold=CommitMono:size=12:style=Bold\" -o \"font-italic=CommitMonoV143:size=12:style=Italic\" -o \"font-bold-italic=CommitMonoV143:size=12:style=Bold Italic\" -o \"pad=0x0\" -T Neovim -a neovim -e nvim";
     in  {
       "x" = "exit";
       "c" = "clear";
@@ -17,9 +16,9 @@
       "flakeu" = "nix flake update --flake 'path:/home/som/nix/'";
 
       "e" = "nvim";
-      "fe" = "nvim $(fzf)";
+      "fe" = "nvim $(tv files)";
+      "ce" = "nvim $(tv my-dotfiles)";
       "pe" = "nvim ~/nix/home/som/packages/default.nix";
-      "ee" = "${nvim}";
 
       "y" = "yazi";
       "tte" = "trans ru:en -no-auto -no-theme";
