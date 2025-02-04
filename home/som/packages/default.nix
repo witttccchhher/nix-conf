@@ -72,6 +72,7 @@
       ripgrep
       file
       fzf
+      television
       gperf
       cmake
       pkg-config
