@@ -32,7 +32,7 @@
         }
       '';
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";
+    base16Scheme = "${inputs.base16}/colorschemes/oldworld.yaml";
 
     cursor = with inputs.nix-cursors; {
       name = "Apple-Custom";

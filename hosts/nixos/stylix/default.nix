@@ -5,7 +5,7 @@
 
     image = "${config.stylix.image}";
     polarity = "${config.stylix.polarity}";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";
+    base16Scheme = "${inputs.base16}/colorschemes/oldworld.yaml";
 
     targets = {
       console.enable = true;

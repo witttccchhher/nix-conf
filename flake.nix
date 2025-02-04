@@ -44,6 +44,10 @@
       url = "github:romkatv/powerlevel10k";
       flake = false;
     };
+    base16 = {
+      url = "github:witttccchhher/base16";
+      flake = false;
+    };
   };
 
   outputs = { nixpkgs, nixpkgs-master, flake-parts, home-manager, stylix, nix-flatpak, nix-index-database, ... }@inputs: flake-parts.lib.mkFlake { inherit inputs; } {
