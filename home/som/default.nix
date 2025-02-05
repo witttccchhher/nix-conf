@@ -11,6 +11,8 @@
       ./stylix/themes
       ./yazi/yazi.nix
       ./ags/agscher
+
+      ./custom-modules/lla
     ];
   };
 }
