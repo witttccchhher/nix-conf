@@ -1,5 +1,5 @@
 {
-  import = [ ../custom-modules/lla ];
+  imports = [ ../custom-modules/lla ];
 
   programs.lla = {
     default_sort = "name";
