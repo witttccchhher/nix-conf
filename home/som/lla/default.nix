@@ -2,7 +2,7 @@
   imports = [ ../custom-modules/lla ];
 
   programs.lla = {
-    default_sort = "name";
+    # default_sort = "name";
     # default_format = "grid";
     # show_icons = true;
     # include_dirs = false;
