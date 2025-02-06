@@ -4,8 +4,8 @@
     package = pkgs.waybar;
     settings = let
       nix-logo = pkgs.callPackage ./nix-logo-processing.nix {
-        firstColor = "#ff0000";
-        secondColor = "#0000ff";
+        firstColor = "${config.lib.stylix.colors.withHashtag.base0E}";
+        secondColor = "${config.lib.stylix.colors.withHashtag.base0F}";
         sourceDir = ./assets;
         filename = "nix.svg";
       };
