@@ -1,8 +1,15 @@
-{ pkgs, config, ... }: {
+{ pkgs, config, inputs, ... }: {
   programs.waybar = {
     enable = true;
     package = pkgs.waybar;
-    settings = {
+    settings = let
+      nix-logo = import ./nix-logo-processing.nix {
+        firstColor = "#ff0000";
+        secondColor = "#0000ff";
+        sourceDir = ./assets;
+        filename = "nix.svg";
+      };
+    in {
       neo = {
         name = "Test";
         layer = "bottom";
@@ -31,7 +38,7 @@
           "clock"
         ];
         "image#nix" = {
-          path = "${./assets/nix.png}";
+          path = "${nix-logo}";
           size = 23;
           tooltip = false;
         };
