@@ -1,4 +1,4 @@
-{
+{ config, ... }: {
   imports = [ ../custom-modules/lla ];
 
   programs.lla = {
@@ -46,6 +46,34 @@
           ".idea"
           ".vscode"
         ];
+      };
+    };
+
+    theme = with config.lib.stylix.colors.withHashtag; {
+      name = "${config.programs.lla.settings.theme}";
+      author = "dgox16";
+      description = "...";
+
+      colors = {
+        file = "${base07}";
+        directory = "${base09}";
+        symlink = "${base0A}";
+        executable = "${base0B}";
+      };
+
+      special_files = {
+        folders = {
+          ".git" = "${base08}";
+        };
+
+        dotfiles = {
+          ".gitignore" = "${base08}";
+        };
+
+        exact_match = {
+          "flake.nix" = "${base0C}";
+          "shell.nix" = "${base0C}";
+        };
       };
     };
   };

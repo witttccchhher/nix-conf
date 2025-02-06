@@ -15,6 +15,11 @@ in {
         type = tomlFormat.type;
         default = { };
       };
+
+      theme = mkOption {
+        type = tomlFormat.type;
+        default = { };
+      };
     };
   };
 
@@ -23,6 +28,15 @@ in {
 
     xdg.configFile."lla/config.toml" = lib.mkIf (cfg.settings != { }) {
       source = (tomlFormat.generate "config.toml" cfg.settings).overrideAttrs (final: prev: {
+        buildCommand = lib.concatStringsSep "\n" [
+          prev.buildCommand
+          "substituteInPlace $out --replace-quiet '\\\\' '\\'"
+        ];
+      });
+    };
+
+    xdg.configFile."lla/themes/${cfg.theme.name}.toml" = lib.mkIf (cfg.theme != { }) {
+      source = (tomlFormat.generate "${cfg.theme.name}.toml" cfg.theme).overrideAttrs (final: prev: {
         buildCommand = lib.concatStringsSep "\n" [
           prev.buildCommand
           "substituteInPlace $out --replace-quiet '\\\\' '\\'"
