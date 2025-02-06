@@ -3,7 +3,7 @@
     enable = true;
     package = pkgs.waybar;
     settings = let
-      nix-logo = import ./nix-logo-processing.nix {
+      nix-logo = pkgs.callPackage ./nix-logo-processing.nix {
         firstColor = "#ff0000";
         secondColor = "#0000ff";
         sourceDir = ./assets;
