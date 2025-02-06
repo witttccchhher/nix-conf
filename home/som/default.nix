@@ -11,6 +11,7 @@
       ./stylix/themes
       ./yazi/yazi.nix
       ./ags/agscher
+      ./waybar/nix-logo-processing.nix
 
       ./custom-modules/lla
     ];
