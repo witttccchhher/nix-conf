@@ -38,7 +38,7 @@
           "clock"
         ];
         "image#nix" = {
-          path = "${nix-logo}";
+          path = "${nix-logo}/nix.svg";
           size = 23;
           tooltip = false;
         };
