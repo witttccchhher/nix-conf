@@ -1,10 +1,10 @@
 {
+  pkgs,
   name,
   hash,
   style ? "rounded",
   fill ? "fill1_",
   color ? "#000000",
-  pkgs,
   ...
 }: pkgs.stdenv.mkDerivation {
   pname = "google-material-symbol";
