@@ -12,6 +12,7 @@
       ./yazi/yazi.nix
       ./ags/agscher
       ./waybar/nix-logo-processing.nix
+      ./waybar/google-icons.nix
 
       ./custom-modules/lla
     ];

@@ -1,9 +1,9 @@
 {
   name,
   hash,
-  style,
-  fill,
-  color,
+  style ? "rounded",
+  fill ? "fill1_",
+  color ? "#000000",
   pkgs,
   ...
 }: pkgs.stdenv.mkDerivation {

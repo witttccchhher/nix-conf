@@ -11,8 +11,6 @@
       };
       lang-icon = pkgs.callPackage ./google-icons.nix {
         name = "globe";
-        style = "rounded";
-        fill = "fill1_";
         hash = "sha256-GBm08UDDXS6BTdHL3a8//BBU0oDBW09JkWkIbOLUSQ4=";
         color = "${config.lib.stylix.colors.withHashtag.base07}";
       };
