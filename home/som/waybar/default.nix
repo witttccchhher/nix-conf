@@ -11,7 +11,7 @@
       };
       lang-icon = pkgs.callPackage ./google-icons.nix {
         name = "globe";
-        hash = "sha256-GBm08UDDXS6BTdHL3a8//BBU0oDBW09JkWkIbOLUSQ4=";
+        hash = "sha256-nwSvf03ufHQNY/le6Wzo9XXJxzEYhX4Mdq4q9pLtSbE=";
         color = "${config.lib.stylix.colors.withHashtag.base07}";
       };
     in {
