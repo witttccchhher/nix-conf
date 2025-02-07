@@ -50,7 +50,11 @@
           tooltip = false;
         };
         "image#language" = {
-          path = "${./assets/lang.svg}";
+          path = "${pkgs.callPackage ./google-icons.nix {
+            name = "globe";
+            hash = "sha256-GBm08UDDXS6BTdHL3a8//BBU0oDBW09JkWkIbOLUSQ4=";
+            color = "${config.lib.stylix.colors.withHashtag.base07}";
+          }}";
           size = 17;
           tooltip = false;
         };
