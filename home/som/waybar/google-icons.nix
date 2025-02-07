@@ -17,9 +17,10 @@
 
   phases = [ "buildPhase" ];
   buildPhase = ''
-    cp $src $out
-    chmod +rw $out
+    mkdir -p $out
+    cp $src $out/out.svg
+    chmod +rw $out/out.svg
 
-    sed -i -e 's/width="48"/width="48" fill="${color}"/' $out
+    sed -i -e 's/width="48"/width="48" fill="${color}"/' $out/out.svg
   '';
 }
