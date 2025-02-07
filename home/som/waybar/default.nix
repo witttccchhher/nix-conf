@@ -9,11 +9,6 @@
         sourceDir = ./assets;
         filename = "nix.svg";
       };
-      lang-icon = pkgs.callPackage ./google-icons.nix {
-        name = "globe";
-        hash = "sha256-nwSvf03ufHQNY/le6Wzo9XXJxzEYhX4Mdq4q9pLtSbE=";
-        color = "${config.lib.stylix.colors.withHashtag.base07}";
-      };
     in {
       neo = {
         name = "Test";
@@ -55,7 +50,11 @@
           tooltip = false;
         };
         "image#language" = {
-          path = "${lang-icon}/out.svg";
+          path = "${pkgs.callPackage ./google-icons.nix {
+            name = "globe";
+            hash = "sha256-nwSvf03ufHQNY/le6Wzo9XXJxzEYhX4Mdq4q9pLtSbE=";
+            color = "${config.lib.stylix.colors.withHashtag.base07}";
+          }}/out.svg";
           size = 17;
           tooltip = false;
         };
@@ -63,7 +62,11 @@
           tooltip = false;
         };
         "image#network" = {
-          path = "${./assets/net.svg}";
+          path = "${pkgs.callPackage ./google-icons.nix {
+            name = "network_check";
+            hash = "sha256-gDdj7uwccShtPDHFJdO8BOc13TYJxRZ9KBY3CiYAc10=";
+            color = "${config.lib.stylix.colors.withHashtag.base07}";
+          }}/out.svg";
           size = 17;
           tooltip = false;
         };
@@ -96,7 +99,11 @@
           tooltip = false;
         };
         "image#volume" = {
-          path = "${./assets/vol.svg}";
+          path = "${pkgs.callPackage ./google-icons.nix {
+            name = "headphones";
+            hash = "sha256-8awP9n5JUqhnC7TBkQrNlijQZaYEfha6xmOwOJKdB0o=";
+            color = "${config.lib.stylix.colors.withHashtag.base07}";
+          }}/out.svg";
           size = 20;
           tooltip = false;
         };
@@ -106,7 +113,11 @@
           tooltip = false;
         };
         "image#battery" = {
-          path = "${./assets/bat.svg}";
+          path = "${pkgs.callPackage ./google-icons.nix {
+            name = "battery_charging_full";
+            hash = "sha256-V1IZhXPggFuGFqGMs8YDFwsU/Qc7LNSRKQeJ7yZF838=";
+            color = "${config.lib.stylix.colors.withHashtag.base07}";
+          }}/out.svg";
           size = 20;
           tooltip = false;
         };
@@ -115,7 +126,11 @@
           tooltip = false;
         };
         "image#clock" = {
-          path = "${./assets/clock.svg}";
+          path = "${pkgs.callPackage ./google-icons.nix {
+            name = "today";
+            hash = "sha256-0vIMyztadUxVRZ6Yk/E2yKY/r1xluHTsE73AnBiRr1U=";
+            color = "${config.lib.stylix.colors.withHashtag.base07}";
+          }}/out.svg";
           size = 20;
           tooltip = false;
         };
