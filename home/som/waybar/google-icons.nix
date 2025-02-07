@@ -11,7 +11,7 @@
   version = "1.0.0";
 
   src = pkgs.fetchurl {
-    url = "https://github.com/google/material-design-icons/blob/master/symbols/web/${name}/materialsymbols${style}/${name}_${fill}48px.svg";
+    url = "https://raw.githubusercontent.com/google/material-design-icons/refs/heads/master/symbols/web/${name}/materialsymbols${style}/${name}_${fill}48px.svg";
     inherit hash;
   };
 
