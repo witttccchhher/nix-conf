@@ -55,7 +55,7 @@
           tooltip = false;
         };
         "image#language" = {
-          path = "${lang-icon}";
+          path = "${lang-icon}/out.svg";
           size = 17;
           tooltip = false;
         };
