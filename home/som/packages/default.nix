@@ -110,6 +110,8 @@
 
       # GUI
       chocolate-doom
+      marktext
+      joplin-desktop
       waybar
       drawing
       transmission_4-gtk
