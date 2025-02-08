@@ -1,10 +1,10 @@
-{ pkgs, ... }: {
+{ pkgs, config, ... }: {
   programs.zellij = {
     enable = true;
     enableZshIntegration = true;
   };
 
-  xdg.configFile."zellij/config.kdl".text = ''
+  xdg.configFile."zellij/config.kdl".text = with config.lib.stylix.colors.withHashtag; ''
     on_force_close "quit"
     simplified_ui true
     default_shell "zsh"
@@ -31,6 +31,22 @@
     session_serialization true
     pane_viewport_serialization false
     disable_session_metadata false
+
+    themes {
+      default {
+        fg "${base07}"
+        bg "${base00}"
+        black "${base02}"
+        red "${base08}"
+        green "${base0B}"
+        yellow "${base0A}"
+        blue "${base0D}"
+        magenta "${base0E}"
+        cyan "${base0C}"
+        white "${base06}"
+        orange "${base09}"
+      }
+    }
 
     keybinds clear-defaults=true {
       normal {
@@ -62,12 +78,18 @@
 
         bind "Alt f" { ToggleFloatingPanes; }
 
-        bind "Alt s" { SwitchToMode "search"; }
+        bind "Alt s" { SwitchToMode "entersearch"; }
+      }
+
+      entersearch {
+        bind "Enter" { SwitchToMode "search"; }
+        bind Esc" { SwitchToMode "normal"; }
       }
 
       search {
         bind "n" { Search "down"; }
         bind "Shift n" { Search "up"; }
+        bind Esc" { SwitchToMode "normal"; }
       }
     }
   '';
