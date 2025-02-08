@@ -14,6 +14,12 @@
           hide_session_name = true;
         };
       };
+
+      keybinds = {
+        normal = {
+          "Alt Return" = "New Pane";
+        };
+      };
     };
   };
 }
