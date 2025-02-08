@@ -83,13 +83,13 @@
 
       entersearch {
         bind "Enter" { SwitchToMode "search"; }
-        bind Esc" { SwitchToMode "normal"; }
+        bind "Esc" { SwitchToMode "normal"; }
       }
 
       search {
         bind "n" { Search "down"; }
         bind "Shift n" { Search "up"; }
-        bind Esc" { SwitchToMode "normal"; }
+        bind "Esc" { SwitchToMode "normal"; }
       }
     }
   '';
