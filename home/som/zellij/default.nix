@@ -10,7 +10,7 @@
     default_shell "zsh"
     pane_frames false
     theme "default"
-    default_layout "default"
+    default_layout "compact"
     default_mode "normal"
     mouse_mode false
     scroll_buffer_size 2000
