@@ -19,8 +19,6 @@
     copy_on_select false
     scrollback_editor "${pkgs.neovim}/bin/nvim"
     mirror_session false
-    // layout_dir "${./layouts}"
-    // theme_dir "${./themes}"
     env { }
     ui {
       pane_frames {
