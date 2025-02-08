@@ -35,6 +35,25 @@
     keybinds clear-defaults=true {
       normal {
         bind "Alt Enter" { NewPane; }
+        bind "Alt w" { CloseFocus; }
+
+        bind "Alt t" { NewTab; }
+        bind "Alt q" { CloseTab; }
+
+        bind "Alt j" { MoveFocus "Down"; }
+        bind "Alt k" { MoveFocus "Up"; }
+        bind "Alt h" { MoveFocus "Left"; }
+        bing "Alt l" { MoveFocus "Right"; }
+
+        bind "Alt Shift j" { MovePane "Down"; }
+        bind "Alt Shift k" { MovePane "Up"; }
+        bind "Alt Shift h" { MovePane "Left"; }
+        bing "Alt Shift l" { MovePane "Right"; }
+
+        bind "Alt Tab" { GoToNextTab; }
+        bind "Alt Shift Tab" { GoToPreviousTab; }
+
+        bind "Alt Space" { NextSwapLayout; }
       }
     }
   '';
