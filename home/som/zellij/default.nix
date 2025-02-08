@@ -60,7 +60,7 @@
 
         bind "Alt Space" { NextSwapLayout; }
 
-        bind "Alt f" { ToogleFloatingPanes; }
+        bind "Alt f" { ToggleFloatingPanes; }
 
         bind "Alt s" { SwitchToMode "search"; }
       }
