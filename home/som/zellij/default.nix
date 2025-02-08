@@ -17,7 +17,7 @@
 
       keybinds = {
         normal = {
-          "bind \"Alt Enter\"" = [ "NewPane" ];
+          "bind \"Alt Enter\"" = "NewPane;";
         };
       };
     };
