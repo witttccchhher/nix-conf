@@ -59,6 +59,15 @@
         bind "Alt Shift Tab" { GoToPreviousTab; }
 
         bind "Alt Space" { NextSwapLayout; }
+
+        bind "Alt f" { ToogleFloatingPanes; }
+
+        bind "Alt s" { SwitchToMode "search"; }
+      }
+
+      search {
+        bind "n" { Search "down"; }
+        bind "Shift n" { Search "up"; }
       }
     }
   '';
