@@ -48,6 +48,8 @@
       neovim-remote
       
       # Utilites
+      docker
+      docker-compose
       fastfetch
       wl-clipboard
       wirelesstools
