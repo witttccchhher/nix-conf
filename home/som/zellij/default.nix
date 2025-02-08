@@ -8,7 +8,11 @@
       simplified_ui = true;
       default_shell = "zsh";
       copy_on_select = false;
-      ui.pane_frames.rounded_corners = true;
+      ui = {
+        pane_frames = {
+          rounded_corners = true;
+        };
+      };
     };
   };
 }
