@@ -43,12 +43,17 @@
         bind "Alt j" { MoveFocus "Down"; }
         bind "Alt k" { MoveFocus "Up"; }
         bind "Alt h" { MoveFocus "Left"; }
-        bing "Alt l" { MoveFocus "Right"; }
+        bind "Alt l" { MoveFocus "Right"; }
 
         bind "Alt Shift j" { MovePane "Down"; }
         bind "Alt Shift k" { MovePane "Up"; }
         bind "Alt Shift h" { MovePane "Left"; }
-        bing "Alt Shift l" { MovePane "Right"; }
+        bind "Alt Shift l" { MovePane "Right"; }
+
+        bind "Alt Ctrl j" { Resize "Down"; }
+        bind "Alt Ctrl k" { Resize "Up"; }
+        bind "Alt Ctrl h" { Resize "Left"; }
+        bind "Alt Ctrl l" { Resize "Right"; }
 
         bind "Alt Tab" { GoToNextTab; }
         bind "Alt Shift Tab" { GoToPreviousTab; }
