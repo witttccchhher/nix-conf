@@ -22,7 +22,7 @@
     packages = with pkgs; [
       # Flakes
       inputs.zen-browser.packages.${system}.default
-      (callPackage ./derivations/ani-cli/ani-cli-ru.nix { })
+      # (callPackage ./derivations/ani-cli/ani-cli-ru.nix { })
 
       # Fonts
       (google-fonts.override { fonts = [ "Inter" ]; })
