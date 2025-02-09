@@ -607,6 +607,22 @@
     },
     "nixpkgs_7": {
       "locked": {
+        "lastModified": 1739020877,
+        "narHash": "sha256-mIvECo/NNdJJ/bXjNqIh8yeoSjVLAuDuTUzAo7dzs8Y=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "a79cfe0ebd24952b580b1cf08cd906354996d547",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_8": {
+      "locked": {
         "lastModified": 1735471104,
         "narHash": "sha256-0q9NGQySwDQc7RhAV2ukfnu7Gxa5/ybJ2ANT8DQrQrs=",
         "owner": "nixos",
@@ -697,6 +713,7 @@
         "powerlevel10k": "powerlevel10k",
         "stylix": "stylix",
         "wallpapers": "wallpapers",
+        "witpkgs": "witpkgs",
         "zen-browser": "zen-browser"
       }
     },
@@ -851,9 +868,27 @@
         "type": "github"
       }
     },
-    "zen-browser": {
+    "witpkgs": {
       "inputs": {
         "nixpkgs": "nixpkgs_7"
+      },
+      "locked": {
+        "lastModified": 1739096569,
+        "narHash": "sha256-VCSB+JZq0MG5VBaVCqX+vuqnwlrq9/McZTsqlgA5I9A=",
+        "owner": "witttccchhher",
+        "repo": "witpkgs",
+        "rev": "63b8bc0c6c61d6da2c565a1ecfc50c971a751c65",
+        "type": "github"
+      },
+      "original": {
+        "owner": "witttccchhher",
+        "repo": "witpkgs",
+        "type": "github"
+      }
+    },
+    "zen-browser": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_8"
       },
       "locked": {
         "lastModified": 1738530884,

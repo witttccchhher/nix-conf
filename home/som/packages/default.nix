@@ -22,6 +22,8 @@
     packages = with pkgs; [
       # Flakes
       inputs.zen-browser.packages.${system}.default
+      inputs.witpkgs.packages.${system}.canvas
+      inputs.witpkgs.packages.${system}.distrohoop
       # (callPackage ./derivations/ani-cli/ani-cli-ru.nix { })
 
       # Fonts
