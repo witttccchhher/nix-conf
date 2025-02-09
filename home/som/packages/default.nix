@@ -113,6 +113,7 @@
       # GUI
       chocolate-doom
       marktext
+      lutris-free
       joplin-desktop
       waybar
       drawing
