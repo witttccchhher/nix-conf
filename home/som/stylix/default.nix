@@ -7,7 +7,7 @@
       input = "${inputs.wallpapers}/realistic/realistic4.jpg";
       level = 10;
       lum = 1.0;
-      preserve = false;
+      preserve = true;
     in
       pkgs.runCommand "output.png" { } ''
         ${pkgs.lutgen}/bin/lutgen apply ${input} -l ${builtins.toString level} -L ${builtins.toString lum} ${if preserve == true then "-P" else ""} -o $out -- ${
