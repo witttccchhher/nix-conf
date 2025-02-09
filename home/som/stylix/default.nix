@@ -5,9 +5,9 @@
 
     image = let
       input = "${inputs.wallpapers}/pattern/pattern5.jpg";
-      level = 16;
-      lum = 0.9;
-      preserve = true;
+      level = 10;
+      lum = 1.0;
+      preserve = false;
     in
       pkgs.runCommand "output.png" { } ''
         ${pkgs.lutgen}/bin/lutgen apply ${input} -l ${builtins.toString level} -L ${builtins.toString lum} ${if preserve == true then "-P" else ""} -o $out -- ${
