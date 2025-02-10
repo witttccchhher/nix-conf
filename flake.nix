@@ -82,8 +82,12 @@
 
         home = {
           earlyModuleArgs = { inherit inputs; };
-          extraSpecialArgs = { inherit inputs; };
+          extraSpecialArgs = {
+            inherit inputs;
+            w = import ./wlib;
+          };
           users.som = {
+            importDefault = true;
             standalone = {
               enable = true;
               pkgs = import nixpkgs { system = "x86_64-linux"; };
@@ -93,8 +97,14 @@
 
         nixos = {
           earlyModuleArgs = { inherit inputs; };
-          specialArgs = { inherit inputs; system = "x86_64-linux"; };
-          hosts.nixos = { };
+          specialArgs = {
+            inherit inputs;
+            system = "x86_64-linux";
+            w = import ./wlib;
+          };
+          hosts.nixos = {
+            importDefault = true;
+          };
         };
       };
       perSystem = { pkgs, lib, system, ... }: {
