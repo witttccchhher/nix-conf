@@ -111,29 +111,5 @@
         _module.args.pkgs = import inputs.nixpkgs { inherit system; };
         formatter = pkgs.nixfmt-rfc-style;
       };
-      # flake =
-      #   let
-      #     system = "x86_64-linux";
-      #   in
-      #   {
-      #     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      #       specialArgs = { inherit inputs system; };
-      #       modules = [
-      #         stylix.nixosModules.stylix
-      #         nix-flatpak.nixosModules.nix-flatpak
-      #         ./configuration.nix
-      #       ];
-      #     };
-      #
-      #     homeConfigurations.som = home-manager.lib.homeManagerConfiguration {
-      #       pkgs = nixpkgs.legacyPackages.${system};
-      #       extraSpecialArgs = { inherit inputs; };
-      #       modules = [
-      #         stylix.homeManagerModules.stylix
-      #         nix-index-database.hmModules.nix-index
-      #         ./home.nix
-      #       ];
-      #     };
-      #   };
     };
 }
