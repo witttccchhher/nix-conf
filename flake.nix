@@ -77,15 +77,18 @@
       ];
       ezConfigs = {
         root = ./.;
-        earlyModuleArgs = { inherit inputs; };
-        globalArgs = { inherit inputs; };
+        earlyModuleArgs = {
+          inherit inputs;
+          system = "x86_64-linux";
+          w = import ./wlib;
+        };
+        globalArgs = {
+          inherit inputs;
+          system = "x86_64-linux";
+          w = import ./wlib;
+        };
 
         home = {
-          earlyModuleArgs = { inherit inputs; };
-          extraSpecialArgs = {
-            inherit inputs;
-            w = import ./wlib;
-          };
           users.som = {
             importDefault = true;
             standalone = {
@@ -96,12 +99,6 @@
         };
 
         nixos = {
-          earlyModuleArgs = { inherit inputs; };
-          specialArgs = {
-            inherit inputs;
-            system = "x86_64-linux";
-            w = import ./wlib;
-          };
           hosts.nixos = {
             importDefault = true;
           };
