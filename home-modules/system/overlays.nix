@@ -19,11 +19,11 @@
         '';
       });
 
-      basedpyright = super.basedpyright.overrideAttrs (old: {
-        postInstall = old.postInstall ++ ''
-          find -L $out -type l -print -delete
-        '';
-      });
+      # basedpyright = super.basedpyright.overrideAttrs (old: {
+      #   postInstall = old.postInstall ++ ''
+      #     find -L $out -type l -print -delete
+      #   '';
+      # });
     })
   ];
 }
