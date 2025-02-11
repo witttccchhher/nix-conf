@@ -1,7 +1,9 @@
-{ ... }: {
+{
+  imports = [ ./home-modules ];
+  
   home = {
     username = "som";
     homeDirectory = "/home/som";
-    stateVersion = "25.05";
+    stateVersion = "24.05";
   };
 }
