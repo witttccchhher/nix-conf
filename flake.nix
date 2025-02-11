@@ -80,12 +80,12 @@
         earlyModuleArgs = {
           inherit inputs;
           system = "x86_64-linux";
-          w = import ./wlib { inherit inputs; };
+          w = import ./wlib { inherit inputs; pkgs = import nixpkgs { system = "x86_64-linux"; }; };
         };
         globalArgs = {
           inherit inputs;
           system = "x86_64-linux";
-          w = import ./wlib { inherit inputs; };
+          w = import ./wlib { inherit inputs; pkgs = import nixpkgs { system = "x86_64-linux"; }; };
         };
 
         home = {
