@@ -1,6 +1,6 @@
 {
   inputs,
-  config,
+  config ? inputs.nixpkgs.legacyPackages."x86_64-linux".config,
   ...
 }: {
   umport = inputs.nypkgs.legacyPackages."x86_64-linux".lib.umport;
