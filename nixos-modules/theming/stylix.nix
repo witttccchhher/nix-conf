@@ -1,4 +1,4 @@
-{ inputs, config, ... }: {
+{ w, inputs, config, ... }: {
   imports = [
     inputs.stylix.nixosModules.stylix
   ];
@@ -8,8 +8,8 @@
     autoEnable = false;
 
     image = "${config.stylix.image}";
-    polarity = "${config.stylix.polarity}";
-    base16Scheme = "${inputs.base16}/colorschemes/oldworld.yaml";
+    polarity = w.polarity;
+    base16Scheme = "${inputs.base16}/colorschemes/${w.colorscheme}.yaml";
 
     targets = {
       console.enable = true;

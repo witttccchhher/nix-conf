@@ -1,4 +1,4 @@
-{ pkgs, config, inputs, ... }: {
+{ w, pkgs, config, inputs, ... }: {
   imports = [
     inputs.stylix.homeManagerModules.stylix
   ];
@@ -8,12 +8,12 @@
     autoEnable = false;
 
     image = let
-      input = "${inputs.wallpapers}/realistic/realistic4.jpg";
-      level = 10;
-      lum = 1.0;
-      preserve = true;
+      input = "${inputs.wallpapers}/${w.wallpaperCategory}/${w.wallpaperCategory}${w.wallpaperIndex}.png";
+      level = w.wallpaperProcessing.level;
+      lum = w.wallpaperProcessing.lum;
+      preserve = w.wallpaperProcessing.preserve;
     in
-      pkgs.runCommand "output.png" { } ''
+      pkgs.runCommand "wallpaper.png" { } ''
         ${pkgs.lutgen}/bin/lutgen apply ${input} -l ${builtins.toString level} -L ${builtins.toString lum} ${if preserve == true then "-P" else ""} -o $out -- ${
           builtins.concatStringsSep " " (with config.lib.stylix.colors; [
             base00
@@ -35,8 +35,8 @@
           ])
         }
       '';
-    polarity = "dark";
-    base16Scheme = "${inputs.base16}/colorschemes/oldworld.yaml";
+    polarity = w.polarity;
+    base16Scheme = "${inputs.base16}/colorschemes/${w.colorscheme}.yaml";
 
     cursor = with inputs.nix-cursors; {
       name = "Apple-Custom";
