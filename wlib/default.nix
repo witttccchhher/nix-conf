@@ -1,11 +1,11 @@
 {
   inputs,
-  config ? inputs.nixpkgs.legacyPackages."x86_64-linux".config,
+  pkgs,
   ...
 }: {
   umport = inputs.nypkgs.legacyPackages."x86_64-linux".lib.umport;
 
-  colors = with config.lib.stylix.colors.withHashtag; {
+  colors = with pkgs.config.lib.stylix.colors.withHashtag; {
     base00 = base00;
     base01 = base01;
     base02 = base02;
