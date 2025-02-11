@@ -9,7 +9,9 @@
 
   wallpaperCategory = "realistic";
   wallpaperIndex = "4";
-  level = 10;
-  lum = 1.0;
-  preserve = true;
+  wallpaperProcessing = {
+    level = 10;
+    lum = 1.0;
+    preserve = true;
+  };
 }
