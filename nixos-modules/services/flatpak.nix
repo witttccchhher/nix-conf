@@ -1,6 +1,6 @@
 { inputs, ... }: {
   imports = [
-    inputs.nix-flatpack.nixosModules.nix-flatpack
+    inputs.nix-flatpak.nixosModules.nix-flatpak
   ];
 
   services = {
