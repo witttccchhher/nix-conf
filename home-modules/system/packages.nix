@@ -52,6 +52,7 @@
       # Utilites
       docker
       docker-compose
+      gowall
       fastfetch
       wl-clipboard
       wirelesstools
