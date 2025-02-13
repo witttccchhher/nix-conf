@@ -6,8 +6,8 @@
       main = {
         font = lib.mkForce "Cascadia Mono NF:size=12";
         font-bold = lib.mkForce "Cascadia Mono NF:size=12:style=Bold";
-        font-italic = lib.mkForce "Cascadia Mono NF:size=12:style=Italic";
-        font-bold-italic = lib.mkForce "Cascadia Mono NF:size=12:style=Bold Italic";
+        font-italic = lib.mkForce "Cascadia Mono NF:size=12:style=Italic:fontfeatures=ss01";
+        font-bold-italic = lib.mkForce "Cascadia Mono NF:size=12:style=Bold Italic:fontfeatures=ss01";
         pad = "7x7";
         initial-window-mode = "maximized";
         box-drawings-uses-font-glyphs = "no";
