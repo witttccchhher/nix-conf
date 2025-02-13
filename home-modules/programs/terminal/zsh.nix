@@ -6,8 +6,8 @@
       "x" = "exit";
       "c" = "clear";
 
-      "ls" = "lla";
-      "ll" = "lla -l";
+      "ls" = "lla -l";
+      "ll" = "lla";
       "tree" = "lla -t";
 
        ".." = "cd ..";
@@ -16,8 +16,7 @@
       "flakeu" = "nix flake update --flake 'path:/home/som/nix/'";
 
       "e" = "nvim";
-      "fe" = "nvim $(tv files)";
-      "ce" = "nvim $(tv my-dotfiles)";
+      "fe" = "nvim $(fzf)";
       "pe" = "nvim ~/nix/home/som/packages/default.nix";
 
       "y" = "yazi";
