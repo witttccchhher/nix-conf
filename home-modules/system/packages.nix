@@ -25,6 +25,7 @@
       inputs.zen-browser.packages.${system}.default
       inputs.witpkgs.packages.${system}.canvas
       inputs.witpkgs.packages.${system}.distrohoop
+      inputs.witpkgs.packages.${system}.minbrowser
 
       # Fonts
       (google-fonts.override { fonts = [ "Inter" ]; })
