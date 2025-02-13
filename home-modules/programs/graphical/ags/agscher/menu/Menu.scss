@@ -2,7 +2,7 @@
 
 $fg: #{"@theme_fg_color"};
 $bg: #{"@theme_bg_color"};
-$accent: #7daea3;
+$accent: #aca1cf;
 
 @function gtkalpha($c, $a) {
     @return string.unquote("alpha(#{$c},#{$a})");
@@ -11,9 +11,9 @@ $accent: #7daea3;
 window.Menu {
   background-color: $bg;
   color: $fg;
-  font-family: "CommitMono";
+  font-family: "Cascadia Code";
   font-size: 16px;
-  border-radius: 15px;
+  border-radius: 10px;
 
   box.main {
     background-color: inherit;
@@ -26,7 +26,7 @@ window.Menu {
         button {
           padding: 10px;
           margin: 10px 9px;
-          border-radius: 15px;
+          border-radius: 10px;
           min-width: 170px;
           background-color: gtkalpha($fg, 0.1);
 
@@ -104,7 +104,7 @@ window.Menu {
         margin-top: 10px;
 
         button {
-          border-radius: 15px;
+          border-radius: 10px;
           padding: 5px 15px;
           margin: 10px;
         }
@@ -118,7 +118,7 @@ window.Menu {
         min-width: 100px;
         min-height: 100px;
         background-size: 100px;
-        border-radius: 15px;
+        border-radius: 10px;
         margin-right: 10px;
       }
 

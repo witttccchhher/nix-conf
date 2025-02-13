@@ -9,7 +9,7 @@ import Bluetooth from "gi://AstalBluetooth"
 import Battery from "gi://AstalBattery"
 
 function User() {
-  const avatar = GLib.getenv("HOME") + "/nix/home/som/ags/agscher/assets/avatar.png"
+  const avatar = GLib.getenv("HOME") + "/nix/home-modules/programs/graphical/ags/agscher/assets/avatar.png"
   const username = exec(["whoami"])
 
   const battery = Battery.get_default()

@@ -7,10 +7,10 @@
 // https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/theme/Adwaita/_colors-public.scss
 $fg-color: #{"@theme_fg_color"};
 $bg-color: #{"@theme_bg_color"};
-$error: red;
+$error: #ea83a5;
 
 * {
-  font-family: CommitMono;
+  font-family: "Cascadia Code";
 }
 
 window.NotificationPopups {
