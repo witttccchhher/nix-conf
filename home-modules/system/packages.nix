@@ -26,6 +26,7 @@
       inputs.witpkgs.packages.${system}.canvas
       inputs.witpkgs.packages.${system}.distrohoop
       inputs.witpkgs.packages.${system}.minbrowser
+      inputs.witpkgs.packages.${system}.goto
 
       # Fonts
       (google-fonts.override { fonts = [ "Inter" ]; })
