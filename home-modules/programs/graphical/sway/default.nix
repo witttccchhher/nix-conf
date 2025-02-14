@@ -155,7 +155,7 @@
         "XF86AudioMute" = "exec $mute";
 
         "${mod}+Return" = "exec ${config.wayland.windowManager.sway.config.terminal}";
-        "${mod}+Shift+Return" = "exec ${nvim}";
+        "${mod}+Shift+Return" = "exec ${inputs.witpkgs.packages.${pkgs.system}.minbrowser}/bin/minbrowser";
         "Print" = "exec ${pkgs.lib.getExe takescreenshot}";
         "${mod}+w" = "kill";
         "${mod}+space" = "exec ${config.wayland.windowManager.sway.config.menu}";
