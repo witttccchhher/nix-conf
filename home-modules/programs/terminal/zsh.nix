@@ -62,6 +62,9 @@
     };
     history.size = 10000;
     initExtra = with config.lib.stylix.colors.withHashtag; ''
+      # DISABLING BUILTINS
+      disable hash
+
       # ZSH AUTO NOTIFY
       export AUTO_NOTIFY_THRESHOLD=90
       export AUTO_NOTIFY_TITLE=""%command" has just finished"
