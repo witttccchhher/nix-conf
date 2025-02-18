@@ -117,6 +117,7 @@
 
       # GUI
       chocolate-doom
+      anydesk
       marktext
       lutris-free
       joplin-desktop
