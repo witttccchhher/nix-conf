@@ -23,10 +23,12 @@
     packages = with pkgs; [
       # Flakes
       inputs.zen-browser.packages.${system}.default
+      inputs.witpkgs.packages.${system}.anicli-ru
       inputs.witpkgs.packages.${system}.canvas
       inputs.witpkgs.packages.${system}.distrohoop
       inputs.witpkgs.packages.${system}.minbrowser
       inputs.witpkgs.packages.${system}.goto
+      inputs.witpkgs.packages.${system}.hash
 
       # Fonts
       (google-fonts.override { fonts = [ "Inter" ]; })
