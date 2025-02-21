@@ -81,7 +81,8 @@
       ripgrep
       file
       fzf
-      television
+      uv
+      bluetuith
       gperf
       cmake
       pkg-config
@@ -116,11 +117,7 @@
       hicolor-icon-theme
 
       # GUI
-      chocolate-doom
-      anydesk
-      marktext
-      lutris-free
-      joplin-desktop
+      nekoray
       waybar
       drawing
       transmission_4-gtk
