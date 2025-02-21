@@ -28,7 +28,6 @@
       inputs.witpkgs.packages.${system}.distrohoop
       inputs.witpkgs.packages.${system}.minbrowser
       inputs.witpkgs.packages.${system}.goto
-      inputs.witpkgs.packages.${system}.hash
 
       # Fonts
       (google-fonts.override { fonts = [ "Inter" ]; })
