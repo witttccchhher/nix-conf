@@ -41,7 +41,7 @@
         heuristic = true;
       };
       python = language // {
-      format = "[via](bold ${config.lib.stylix.colors.withHashtag.base07}) [$symbol(\${version}) (\($virtualenv\))]($style) ";
+      format = "[via](bold ${config.lib.stylix.colors.withHashtag.base07}) [$symbol(\${version})(\($virtualenv\))]($style) ";
         symbol = " ";
         style = "bold fg:${base0A}";
       };
