@@ -17,6 +17,7 @@
     dooit.url = "github:dooit-org/dooit";
     dooit-extras.url = "github:dooit-org/dooit-extras";
     witpkgs.url = "github:witttccchhher/witpkgs";
+    niri.url = "github:sodiboo/niri-flake";
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
