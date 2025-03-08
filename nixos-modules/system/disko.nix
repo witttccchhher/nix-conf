@@ -12,36 +12,36 @@
           partitions = {
             ESP = {
               name = "boot";
-	      size = "1024M";
+	            size = "1024M";
               type = "EF00";
               content = {
                 type = "filesystem";
                 format = "vfat";
                 mountpoint = "/boot";
                 mountOptions = [
-		  "defaults"
-		  "umask=0077"
-		];
+                  "defaults"
+                  "umask=0077"
+                ];
               };
             };
             root = {
-              size = "100%";
+              size = "300G";
               content = {
                 type = "btrfs";
                 extraArgs = [ "-f" ];
                 subvolumes = {
                   "/root" = {
                     mountpoint = "/";
-		    mountOptions = [
-		      "compress=zstd"
-		    ];
+                    mountOptions = [
+                      "compress=zstd"
+                    ];
                   };
                   "/nix" = {
-		    mountpoint = "/nix";
+                    mountpoint = "/nix";
                     mountOptions = [
                       "compress=zstd"
                       "noatime"
-		      "noacl"
+                      "noacl"
                     ];
                   };
                   "/swap" = {
