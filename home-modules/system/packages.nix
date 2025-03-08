@@ -124,6 +124,7 @@
       nwg-drawer
       font-manager
       blueman
+      lutris
     ];
   };
 }

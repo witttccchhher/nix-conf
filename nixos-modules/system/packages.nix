@@ -42,5 +42,8 @@
     qadwaitadecorations
     qadwaitadecorations-qt6
     networkmanager-l2tp
+    wineWowPackages.full
+    wineWowPackages.waylandFull
+    winetricks
   ];
 }
