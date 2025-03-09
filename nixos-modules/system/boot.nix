@@ -13,9 +13,14 @@
       amneziawg
     ];
     loader = {
-      systemd-boot = {
+      # systemd-boot = {
+      #   enable = true;
+      #   configurationLimit = 5;
+      # };
+      grub = {
         enable = true;
-        configurationLimit = 5;
+        device = "nodev";
+        efiSupport = true;
       };
       timeout = 5;
       efi.canTouchEfiVariables = true;
