@@ -125,6 +125,7 @@
       font-manager
       blueman
       lutris
+      nuclear
     ];
   };
 }
