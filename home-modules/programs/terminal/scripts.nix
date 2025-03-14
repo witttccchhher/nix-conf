@@ -36,8 +36,13 @@
         ;;
     esac
   '';
+
+  yp = pkgs.writeShellScriptBin "yp" /* bash */ ''
+    cat ~/.password | ${lib.getExe' pkgs.wl-clipboard "wl-copy"}
+  '';
 in {
   home.packages = [
     nx
+    yp
   ];
 }

@@ -15,7 +15,6 @@
       "--no-scrollbar"
       "--prompt='󰱼 '"
       "--pointer=''"
-      "--preview='preview.sh {}'"
     ];
   };
 }
