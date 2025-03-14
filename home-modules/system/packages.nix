@@ -126,6 +126,7 @@
       blueman
       lutris
       nuclear
+      memos
     ];
   };
 }
