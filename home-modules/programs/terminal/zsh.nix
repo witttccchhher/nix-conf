@@ -13,7 +13,7 @@
        ".." = "cd ..";
        "..." = "cd ../../";
 
-      "flakeu" = "nix flake update --flake 'path:/home/som/nix/'";
+      "flakeu" = "nix flake update --flake 'path:/home/witcher/nix'";
 
       "e" = "nvim";
       "fe" = "nvim $(fzf)";

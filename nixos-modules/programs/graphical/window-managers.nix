@@ -1,7 +1,4 @@
-{ inputs, pkgs, ... }: {
-  nixpkgs.overlays = [
-    inputs.niri.overlays.niri
-  ];
+{ pkgs, ... }: {
   programs = {
     sway = {
       enable = true;
