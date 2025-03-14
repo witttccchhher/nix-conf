@@ -9,6 +9,45 @@
 
     firewall.checkReversePath = false;
 
+    wg-quick.interfaces."WARP" = {
+      privateKey = "QIIanOffAUuvpPBNIq8gkzwBDlrYcJV9s0ejbjZVUXw=";
+      extraOptions = {
+        S1 = 0;
+        S2 = 0;
+        Jc = 120;
+        Jmin = 23;
+        Jmax = 911;
+        H1 = 1;
+        H2 = 2;
+        H3 = 3;
+        H4 = 4;
+      };
+      mtu = 1280;
+      address = [
+        "172.16.0.2"
+        "2606:4700:110:839a:44dc:c36a:235:baf0"
+      ];
+      dns = [
+        "1.1.1.1"
+        "2606:4700:4700::1111"
+        "1.0.0.1"
+        "2606:4700:4700::1001"
+      ];
+
+      peers = [
+        {
+          publicKey = "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=";
+          allowedIPs = [
+            "0.0.0.0/0"
+            "::/0"
+          ];
+          endpoint = [
+            "188.114.97.66:3138"
+          ];
+        }
+      ];
+    };
+
     hosts = {
       "127.0.0.1" = [ "localhost" ];
       "::1" = [ "localhost" ];
