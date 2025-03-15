@@ -12,7 +12,7 @@
       package = pkgs.niri-unstable;
     };
     hyprland = {
-      enable = false;
+      enable = true;
     };
   };
 }
