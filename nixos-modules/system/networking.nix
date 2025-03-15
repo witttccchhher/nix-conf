@@ -10,6 +10,9 @@
     firewall.checkReversePath = false;
 
     wg-quick.interfaces."WARP" = {
+      type = "amneziawg";
+      autostart = false;
+
       privateKey = "QIIanOffAUuvpPBNIq8gkzwBDlrYcJV9s0ejbjZVUXw=";
       extraOptions = {
         S1 = 0;
