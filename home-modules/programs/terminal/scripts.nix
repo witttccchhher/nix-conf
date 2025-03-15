@@ -40,9 +40,23 @@
   yp = pkgs.writeShellScriptBin "yp" /* bash */ ''
     cat ~/.password | ${lib.getExe' pkgs.wl-clipboard "wl-copy"}
   '';
+
+  vpn = pkgs.writeShellScriptBin "vpn" /* bash */ ''
+    INTERFACE="WARP"
+
+    status=$(systemctl is-active wg-quick-$INTERFACE.service)
+    if [[ $status == "inactive" ]]; then
+      echo "Starting VPN ($INTERFACE)..."
+      systemctl start wg-quick-$INTERFACE.service
+    else
+      echo "Turning VPN off ($INTERFACE)..."
+      systemctl stop wg-quick-$INTERFACE.service
+    fi
+  '';
 in {
   home.packages = [
     nx
     yp
+    vpn
   ];
 }
