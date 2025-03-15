@@ -74,7 +74,7 @@
       spawn-at-startup "nwg-drawer" "-c=7" "-nocats" "-fm=nautilus" "-r"
       // spawn-at-startup "ags" "run"
       spawn-at-startup "waybar"
-      spawn-at-startup "swaybg" "-i" "/home/witcher/Pictures/Wallpapers/solid/solid23.png"
+      spawn-at-startup "swaybg" "-i" "${config.stylix.image}"
 
       prefer-no-csd
 
