@@ -12,6 +12,6 @@
   wallpaperProcessing = {
     level = 10;
     lum = 1.0;
-    preserve = true;
+    preserve = false;
   };
 }

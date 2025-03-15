@@ -35,7 +35,7 @@
       }
 
       layout {
-        gaps 80
+        gaps 20
         center-focused-column "never"
         always-center-single-column
 
