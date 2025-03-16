@@ -1,12 +1,11 @@
 { pkgs, ... }: {
   wayland.windowManager.hyprland = {
     enable = true;
-    plugins = [
+    plugins = [ ] ++
       (with pkgs.hyprlandPlugins; [
         hyprscroller
-        hyprspace
-      ])
-    ];
+          hyprspace
+      ]);
 
     extraConfig = /* toml */ ''
       monitor=,preferred,auto,auto
