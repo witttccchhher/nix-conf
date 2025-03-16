@@ -2,10 +2,13 @@
   wayland.windowManager.hyprland = {
     enable = true;
     plugins = [
-      pkgs.hyprlandPlugins.hyprscroller
+      (with pkgs.hyprlandPlugins; [
+        hyprscroller
+        hyprspace
+      ])
     ];
 
-    extraConfig = ''
+    extraConfig = /* toml */ ''
       monitor=,preferred,auto,auto
 
       $terminal = kitty
