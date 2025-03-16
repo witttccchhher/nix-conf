@@ -49,8 +49,8 @@
         inactive_opacity = 0.8
 
         shadow {
-          enabled = true
-          range = 20
+          enabled = false
+          range = 4
           render_power = 3
           color = rgba(${base00}33)
         }
@@ -68,7 +68,7 @@
       }
 
       animations {
-        enabled = yes, please :)
+        enabled = true
 
         bezier = easeOutQuint,0.23,1,0.32,1
         bezier = easeInOutCubic,0.65,0.05,0.36,1
@@ -104,33 +104,22 @@
       }
 
       misc {
-        force_default_wallpaper = 0 # Set to 0 or 1 to disable the anime mascot wallpapers
-        disable_hyprland_logo = true # If true disables the random hyprland logo / anime girl background. :(
+        force_default_wallpaper = 0
+        disable_hyprland_logo = true
+        font_family = Cascadia Mono NF
+        focus_on_activate = true
+        middle_click_paste = false
       }
 
       input {
         kb_layout = us,ru
-        kb_variant =
-        kb_model =
         kb_options = grp:caps_toggle
-        kb_rules =
 
         follow_mouse = 1
-
-        sensitivity = 0
-
-        touchpad {
-          natural_scroll = false
-        }
       }
 
-      gestures {
-        workspace_swipe = false
-      }
-
-      device {
-        name = epic-mouse-v1
-        sensitivity = -0.5
+      ecosystem {
+        no_donation_nag = true
       }
 
       $mod = SUPER # Sets "Windows" key as main modifier
