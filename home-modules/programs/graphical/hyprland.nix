@@ -89,9 +89,9 @@
         animation = layersOut, 1, 1.5, linear, fade
         animation = fadeLayersIn, 1, 1.79, almostLinear
         animation = fadeLayersOut, 1, 1.39, almostLinear
-        animation = workspaces, 1, 1.94, almostLinear, fade
-        animation = workspacesIn, 1, 1.21, almostLinear, fade
-        animation = workspacesOut, 1, 1.94, almostLinear, fade
+        animation = workspaces, 1, 1.94, almostLinear
+        animation = workspacesIn, 1, 1.21, almostLinear
+        animation = workspacesOut, 1, 1.94, almostLinear
       }
 
       dwindle {
@@ -141,8 +141,8 @@
 
       bind = $mod SHIFT, L, scroller:movewindow, r
       bind = $mod SHIFT, H, scroller:movewindow, l
-      bind = $mod SHIFT, K, scroller:movewindow, u
-      bind = $mod SHIFT, J, scroller:movewindow, d
+      bind = $mod SHIFT, K, movetoworkspace, -1
+      bind = $mod SHIFT, J, movetoworkspace, +1
 
       bind = $mod, 1, workspace, 1
       bind = $mod, 2, workspace, 2
