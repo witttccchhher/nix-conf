@@ -122,21 +122,22 @@
         no_donation_nag = true
       }
 
-      $mod = SUPER # Sets "Windows" key as main modifier
+      exec-once = nwg-drawer -c=7 -nocats -fm=nautilus -r
+
+      $mod = SUPER
 
       bind = $mod, Return, exec, $terminal
       bind = $mod, W, killactive,
       bind = $mod SHIFT, Q, exit,
       bind = $mod, T, togglefloating,
+      bind = $mod, F, fullscreen
       bind = $mod, Space, exec, $menu
-      bind = $mod, P, pseudo, # dwindle
-      bind = $mod, R, togglesplit, # dwindle
-      bind = $mod, O, overview:toggle
+      bind = $mod, Tab, overview:toggle
 
       bind = $mod, L, scroller:movefocus, r
       bind = $mod, H, scroller:movefocus, l
-      bind = $mod, K, scroller:movefocus, u
-      bind = $mod, J, scroller:movefocus, d
+      bind = $mod, K, workspace, -1
+      bind = $mod, J, workspace, +1
 
       bind = $mod SHIFT, L, scroller:movewindow, r
       bind = $mod SHIFT, H, scroller:movewindow, l
@@ -173,7 +174,6 @@
       bindel = ,XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 
       windowrulev2 = suppressevent maximize, class:.*
-
       windowrulev2 = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0
     '';
   };
