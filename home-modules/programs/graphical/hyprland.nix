@@ -89,9 +89,9 @@
         animation = layersOut, 1, 1.5, linear, fade
         animation = fadeLayersIn, 1, 1.79, almostLinear
         animation = fadeLayersOut, 1, 1.39, almostLinear
-        animation = workspaces, 1, 1.94, almostLinear
-        animation = workspacesIn, 1, 1.21, almostLinear
-        animation = workspacesOut, 1, 1.94, almostLinear
+        animation = workspaces, 1, 1.94, almostLinear, slidevert
+        animation = workspacesIn, 1, 1.21, almostLinear, slidevert
+        animation = workspacesOut, 1, 1.94, almostLinear, slidevert
       }
 
       dwindle {
