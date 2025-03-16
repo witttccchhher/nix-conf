@@ -11,9 +11,9 @@ $bg-color: #{"@theme_bg_color"};
 window#Launcher {
     all: unset;
 
-    box.Applauncher {
+    box.Launcher {
         background-color: $bg-color;
-        border-radius: 11px;
+        border-radius: 20px;
         margin: 1rem;
         padding: .8rem;
         box-shadow: 2px 3px 8px 0 gtkalpha(black, .4);

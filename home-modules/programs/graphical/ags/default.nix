@@ -33,6 +33,7 @@
       bluetooth
       battery
       tray
+      hyprland
     ];
   };
 }

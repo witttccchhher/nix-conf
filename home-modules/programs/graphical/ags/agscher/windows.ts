@@ -1,9 +1,9 @@
 import NotificationPopups from "./notifications/NotificationPopups"
-import Menu from "./menu/Menu.tsx"
-import Applauncher from "./applauncher/Applauncher.tsx"
+import Launcher from "./launcher/Launcher.tsx"
+import Bar from "./bar/Bar.tsx"
 
 export default [
   NotificationPopups,
-  Menu,
-  Applauncher
+  Launcher,
+  Bar
 ]

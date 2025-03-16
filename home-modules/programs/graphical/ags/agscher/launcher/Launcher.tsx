@@ -2,10 +2,10 @@ import Apps from "gi://AstalApps"
 import { App, Astal, Gdk, Gtk } from "astal/gtk3"
 import { Variable } from "astal"
 
-const MAX_ITEMS = 8
+const MAX_ITEMS = 5
 
 function hide() {
-    App.get_window("launcher")!.hide()
+    App.get_window("Launcher")!.hide()
 }
 
 function AppButton({ app }: { app: Apps.Application }) {
@@ -21,9 +21,7 @@ function AppButton({ app }: { app: Apps.Application }) {
                     xalign={0}
                     label={app.name}
                 />
-                {app.description && <label
-                    className="description"
-                    wrap
+                {app.description && <label className="description" wrap
                     xalign={0}
                     label={app.description}
                 />}
@@ -32,10 +30,10 @@ function AppButton({ app }: { app: Apps.Application }) {
     </button>
 }
 
-export default function Applauncher() {
+export default function Launcher() {
     const { CENTER } = Gtk.Align
     const apps = new Apps.Apps()
-    const width = Variable(1920)
+    const width = Variable(1000)
 
     const text = Variable("")
     const list = text(text => apps.fuzzy_query(text).slice(0, MAX_ITEMS))
@@ -45,10 +43,8 @@ export default function Applauncher() {
     }
 
     return <window
-        className="Launcher"
         name="Launcher"
-        visible={false}
-        anchor={Astal.WindowAnchor.TOP | Astal.WindowAnchor.BOTTOM | Astal.WindowAnchor.RIGHT | Astal.WindowAnchor.LEFT}
+        anchor={Astal.WindowAnchor.TOP | Astal.WindowAnchor.BOTTOM}
         exclusivity={Astal.Exclusivity.IGNORE}
         keymode={Astal.Keymode.ON_DEMAND}
         application={App}
@@ -59,12 +55,13 @@ export default function Applauncher() {
         onKeyPressEvent={function (self, event: Gdk.Event) {
             if (event.get_keyval()[1] === Gdk.KEY_Escape)
                 self.hide()
-        }}>
+        }}
+        visible={false}>
         <box>
             <eventbox widthRequest={width(w => w / 2)} expand onClick={hide} />
             <box hexpand={false} vertical>
                 <eventbox heightRequest={100} onClick={hide} />
-                <box widthRequest={500} className="Applauncher" vertical>
+                <box widthRequest={500} className="Launcher" vertical>
                     <entry
                         placeholderText="Search"
                         text={text()}
