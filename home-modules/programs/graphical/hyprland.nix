@@ -50,9 +50,9 @@
 
         shadow {
           enabled = true
-          range = 4
+          range = 20
           render_power = 3
-          color = rgba(1a1a1aee)
+          color = rgba(${base00}33)
         }
 
         blur {
@@ -60,6 +60,9 @@
           size = 10
           passes = 1
 
+          noise = 0.0117
+          contrast = 0.8916
+          brightness = 0.8172
           vibrancy = 0.1696
         }
       }
