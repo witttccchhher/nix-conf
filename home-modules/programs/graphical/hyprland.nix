@@ -1,4 +1,15 @@
-{ pkgs, ... }: {
+{ pkgs, config, ... }: {
+  services.hyprpaper = {
+    enable = true;
+    settings = {
+      ipc = "on";
+    
+      preload = [ "${config.stylix.image}" ];
+    
+      wallpaper = [ "monitor, ${config.stylix.image}" ];
+    }
+    ;
+  };
   wayland.windowManager.hyprland = {
     enable = true;
     plugins = [ ] ++
@@ -132,8 +143,7 @@
       bind = $mod, R, togglesplit, # dwindle
       bind = $mod, O, overview:toggle
 
-      bind = $mod, L, movefocus, l
-      bind = $mod, H, movefocus, r
+      bind = $mod, L, movefocus, l bind = $mod, H, movefocus, r
       bind = $mod, K, movefocus, u
       bind = $mod, J, movefocus, d
 
