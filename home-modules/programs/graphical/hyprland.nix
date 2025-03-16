@@ -143,8 +143,8 @@
       bind = $mod, R, togglesplit, # dwindle
       bind = $mod, O, overview:toggle
 
-      bind = $mod, L, scroller:movefocus, l
-      bind = $mod, H, scroller:movefocus, r
+      bind = $mod, L, scroller:movefocus, r
+      bind = $mod, H, scroller:movefocus, l
       bind = $mod, K, scroller:movefocus, u
       bind = $mod, J, scroller:movefocus, d
 
