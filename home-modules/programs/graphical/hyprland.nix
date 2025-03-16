@@ -78,9 +78,9 @@
 
         animation = global, 1, 10, default
         animation = border, 1, 5.39, easeOutQuint
-        animation = windows, 1, 4.79, easeInOutCubic, slide left
-        animation = windowsIn, 1, 4.1, easeInOutCubic, popin 87%, slide left
-        animation = windowsOut, 1, 1.49, easeInOutCubic, popin 87%, slide left
+        animation = windows, 1, 4.79, easeInOutCubic
+        animation = windowsIn, 1, 4.1, easeInOutCubic, popin 87%
+        animation = windowsOut, 1, 1.49, easeInOutCubic, popin 87%
         animation = fadeIn, 1, 1.73, almostLinear
         animation = fadeOut, 1, 1.46, almostLinear
         animation = fade, 1, 3.03, quick
