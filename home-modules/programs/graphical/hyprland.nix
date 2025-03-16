@@ -130,6 +130,7 @@
       bind = $mod, Space, exec, $menu
       bind = $mod, P, pseudo, # dwindle
       bind = $mod, R, togglesplit, # dwindle
+      bind = $mod, O, overview:toggle
 
       bind = $mod, L, movefocus, l
       bind = $mod, H, movefocus, r
