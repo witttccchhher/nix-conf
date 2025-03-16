@@ -113,6 +113,15 @@
         no_donation_nag = true
       }
 
+      plugin {
+        scroller {
+          column_widths = onehalf, one
+          window_heights = one
+          column_default_width = one
+          window_default_height = one
+        }
+      }
+
       exec-once = nwg-drawer -c=7 -nocats -fm=nautilus -r
 
       $mod = SUPER
@@ -125,6 +134,7 @@
       bind = $mod, Space, exec, $menu
       # bind = $mod, Tab, overview:toggle
       bind = $mod, Tab, scroller:toggleoverview
+      bind = $mod, Q, scroller:cyclewidth
 
       bind = $mod, L, scroller:movefocus, r
       bind = $mod, H, scroller:movefocus, l
