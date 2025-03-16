@@ -6,7 +6,7 @@
     
       preload = [ "${config.stylix.image}" ];
     
-      wallpaper = [ "monitor, ${config.stylix.image}" ];
+      wallpaper = [ ", ${config.stylix.image}" ];
     }
     ;
   };
