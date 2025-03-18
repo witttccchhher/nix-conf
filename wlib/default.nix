@@ -7,8 +7,8 @@
   colorscheme = "oldworld";
   polarity = "dark";
 
-  wallpaperCategory = "solid";
-  wallpaperIndex = "21";
+  wallpaperCategory = "boy";
+  wallpaperIndex = "3";
   wallpaperProcessing = {
     level = 10;
     lum = 1.0;
