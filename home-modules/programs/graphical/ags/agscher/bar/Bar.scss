@@ -1,0 +1,23 @@
+@use "sass:string";
+
+$fg: #{"@theme_fg_color"};
+$bg: #{"@theme_bg_color"};
+$accent: #aca1cf;
+
+@function gtkalpha($c, $a) {
+    @return string.unquote("alpha(#{$c},#{$a})");
+}
+
+window.Bar {
+  background-color: $bg;
+  color: $fg;
+  font-family: "Inter";
+  font-size: 16px;
+
+  centerbox box.start box.workspaces {
+    box {
+      background-color: #f00;
+      margin: 2px;
+    }
+  }
+}
