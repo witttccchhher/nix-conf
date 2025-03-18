@@ -1,7 +1,7 @@
 { ... }: {
   dconf.settings = {
     "org/gnome/desktop/interface" = {
-      icon-theme = "Mountain";
+      icon-theme = "Colloid";
     };
   };
 }
