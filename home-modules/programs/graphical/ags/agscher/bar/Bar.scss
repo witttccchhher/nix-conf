@@ -11,7 +11,7 @@ $accent: #aca1cf;
 * { all: unset; }
 
 window.Bar {
-  background-color: #00000033;
+  background-color: #00000099;
   color: $fg;
   font-family: "Inter";
   font-weight: 700;
@@ -23,7 +23,7 @@ window.Bar {
 
     box {
       border-radius: 8px;
-      background-color: #2a2a2c;
+      background-color: #00000044;
       margin: 0 5px;
       padding: 0;
 
@@ -50,7 +50,7 @@ window.Bar {
       }
 
       &.focused {
-        background-color: #6c6874;
+        background-color: #c9c7cd33;
       }
     }
   }
