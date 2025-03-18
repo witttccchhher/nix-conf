@@ -1,7 +1,7 @@
 @use "sass:string";
 
-$fg: #{"@theme_fg_color"};
-$bg: #{"@theme_bg_color"};
+$fg: #c9c7cd;
+$bg: #000000;
 $accent: #aca1cf;
 
 @function gtkalpha($c, $a) {
@@ -11,16 +11,47 @@ $accent: #aca1cf;
 * { all: unset; }
 
 window.Bar {
-  background-color: $bg;
+  background-color: #00000033;
   color: $fg;
   font-family: "Inter";
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 14px;
 
   centerbox box.start box.workspaces {
+    margin: 10px 0;
+    margin-left: 20px;
+
     box {
-      background-color: #f00;
-      margin: 2px;
-      padding: 1px;
+      border-radius: 8px;
+      background-color: #2a2a2c;
+      margin: 0 5px;
+      padding: 0;
+
+      label.workspace {
+        margin: 0 10px;
+      }
+
+      box.clients {
+        margin: 0;
+        padding: 3px 5px;
+        background-color: transparent;
+
+        box.client {
+          background-color: transparent;
+
+          label.class {
+            margin-left: 5px;
+          }
+
+          icon {
+            font-size: 20px;
+          }
+        }
+      }
+
+      &.focused {
+        background-color: #6c6874;
+      }
     }
   }
 }

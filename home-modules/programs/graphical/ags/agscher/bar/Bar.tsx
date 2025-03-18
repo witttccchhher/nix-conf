@@ -11,15 +11,17 @@ function Workspaces() {
       .filter(ws => !(ws.id >= -99 && ws.id <= -2))
       .sort((a, b) => a.id - b.id)
       .map(ws => (
-        <box
-          className={bind(hypr, "focusedWorkspace").as(fw => ws === fw ? "focused" : "")}>
-          <label label={ws.id.toString()} />
-          <box>
+        <box className={bind(hypr, "focusedWorkspace").as(fw => ws === fw ? "focused" : "")}>
+          <box className="clients">
+            <label className="workspace" label={ws.id.toString()} />
             {bind(ws, "clients").as(clients => clients
               .map(client => (
-                <box>
+                <box className="client">
                   <icon icon={bind(client, "class")} />
-                  <label visible={bind(hypr, "focusedClient").as(f => f === client)} label={bind(client, "class")} />
+                  <label
+                    className="class"
+                    visible={bind(hypr, "focusedClient").as(f => f === client)}
+                    label={bind(client, "class").as(c => String(c).charAt(0).toUpperCase() + String(c).slice(1))} />
                 </box>
               ))
             )}
