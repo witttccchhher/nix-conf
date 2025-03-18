@@ -35,9 +35,6 @@ function Workspaces() {
 export default function Bar(monitor: Dgk.Monitor) {
   const { TOP, LEFT, RIGHT } = Astal.WindowAnchor
 
-  const hypr = Hyprland.get_default()
-  print(hypr.binds)
-
   return <window
     className="Bar"
     gdkmonitor={monitor}
