@@ -11,19 +11,19 @@ $accent: #aca1cf;
 * { all: unset; }
 
 window.Bar {
-  background-color: #00000099;
+  background-color: #000000cc;
   color: $fg;
   font-family: "Inter";
   font-weight: 700;
   font-size: 14px;
 
-  centerbox box.start box.workspaces {
+  box.main box.start box.workspaces {
     margin: 10px 0;
     margin-left: 20px;
 
     box {
       border-radius: 8px;
-      background-color: #00000044;
+      background-color: #c9c7cd33;
       margin: 0 5px;
       padding: 0;
 
@@ -33,7 +33,7 @@ window.Bar {
 
       box.clients {
         margin: 0;
-        padding: 3px 5px;
+        padding: 5px;
         background-color: transparent;
 
         box.client {
@@ -50,7 +50,24 @@ window.Bar {
       }
 
       &.focused {
-        background-color: #c9c7cd33;
+        background-color: #c9c7cd55;
+      }
+    }
+  }
+
+  box.main box.end {
+    icon.bt, icon.wifi, icon.volume {
+      font-size: 20px;
+      margin: 5px;
+    }
+
+    box.separator-wrapper {
+      box.separator {
+        all: unset;
+        min-width: 2px;
+        min-height: 20px;
+        margin: 0 10px;
+        background-color: $fg;
       }
     }
   }

@@ -2,6 +2,10 @@ import { App } from "astal/gtk3"
 import { Variable, GLib, bind } from "astal"
 import { Astal, Gtk, Gdk } from "astal/gtk3"
 import Hyprland from "gi://AstalHyprland"
+import Network from "gi://AstalNetwork"
+import Bluetooth from "gi://AstalBluetooth"
+import Wp from "gi://AstalWp"
+import Tray from "gi://AstalTray"
 
 function Workspaces() {
   const hypr = Hyprland.get_default()
@@ -32,7 +36,59 @@ function Workspaces() {
   </box>
 }
 
-export default function Bar(monitor: Dgk.Monitor) {
+function WiFi() {
+  const { wifi } = Network.get_default()
+
+  return <icon className="wifi stateicon" icon={bind(wifi, "iconName")} />
+}
+
+function BlueTooth() {
+  const bluetooth = Bluetooth.get_default()
+  const enabled = Variable<boolean>(bluetooth.get_is_powered())
+
+  return <icon className="bt stateicon" icon={bind(enabled).as((enabled) => enabled ? "bluetooth-symbolic" : "bluetooth-disabled-symbolic")} />
+}
+
+function Volume() {
+  const speaker = Wp.get_default().audio.default_speaker
+
+  return <icon className="volume stateicon" icon={bind(speaker, "mute").as((muted) => muted ? "audio-volume-muted-symbolic" : "audio-volume-symbolic")} />
+}
+
+function Separator() {
+  return <box vertical className="separator-wrapper">
+    <box vexpand />
+    <box className="separator" />
+    <box vexpand />
+  </box>
+}
+
+function DateTime() {
+  const time = Variable<string>("").poll(1000, () => GLib.DateTime.new_now_local().format("%a %d, %H:%M")!)
+
+  return <label
+    className="datetime"
+    onDestroy={() => time.drop()}
+    label={time()}
+  />
+}
+
+function SysTray() {
+  const tray = Tray.get_default()
+
+  return <box className="tray">
+    {bind(tray, "items").as(items => items.map(item => (
+      <menubutton
+        usePopover={false}
+        actionGroup={bind(item, "actionGroup").as(ag => ["dbusmenu", ag])}
+        menuModel={bind(item, "menuModel")}>
+        <icon gicon={bind(item, "gicon")} />
+      </menubutton>
+    )))}
+  </box>
+}
+
+export default function Bar(monitor: Gdk.Monitor) {
   const { TOP, LEFT, RIGHT } = Astal.WindowAnchor
 
   return <window
@@ -40,12 +96,18 @@ export default function Bar(monitor: Dgk.Monitor) {
     gdkmonitor={monitor}
     exclusivity={Astal.Exclusivity.EXCLUSIVE}
     anchor={TOP | LEFT | RIGHT}>
-    <centerbox>
+    <box className="main">
       <box className="start" hexpand halign={Gtk.Align.START}>
         <Workspaces />
       </box>
       <box className="end" hexpand halign={Gtk.Align.END}>
+        <SysTray />
+        <WiFi />
+        <BlueTooth />
+        <Volume />
+        <Separator />
+        <DateTime />
       </box>
-    </centerbox>
+    </box>
   </window>
 }
