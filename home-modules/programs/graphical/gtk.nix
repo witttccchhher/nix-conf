@@ -2,10 +2,10 @@
   gtk = {
     enable = true;
     theme = {
-      package = lib.mkForce pkgs.colloid-gtk-theme.overrideAttrs {
+      package = lib.mkForce (pkgs.colloid-gtk-theme.overrideAttrs {
         themeVariants = [ "all" ];
         tweaks = [ "black" "rimless" ];
-      };
+      });
       name = lib.mkForce "Colloid";
     };
     iconTheme = {
