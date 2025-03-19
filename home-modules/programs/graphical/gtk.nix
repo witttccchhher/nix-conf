@@ -1,9 +1,9 @@
-{ pkgs, ... }: {
+{ pkgs, lib, ... }: {
   gtk = {
     enable = true;
     theme = {
-      package = pkgs.colloid-gtk-theme;
-      name = "Colloid";
+      package = lib.mkForce pkgs.colloid-gtk-theme;
+      name = lib.mkForce "Colloid";
     };
     iconTheme = {
       package = pkgs.colloid-icon-theme;
