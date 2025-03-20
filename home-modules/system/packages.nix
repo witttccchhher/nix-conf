@@ -127,6 +127,7 @@
       lutris
       nuclear
       memos
+      youtube-music
     ];
   };
 }

@@ -5,8 +5,8 @@
 }
 
 // https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/theme/Adwaita/_colors-public.scss
-$fg-color: #{"@theme_fg_color"};
-$bg-color: #{"@theme_bg_color"};
+$fg: #{"@theme_fg_color"};
+$bg: #{"@theme_bg_color"};
 
 window#Launcher {
     all: unset;
@@ -15,15 +15,13 @@ window#Launcher {
     font-size: 14px;
 
     box.Launcher {
-        background-color: $bg-color;
+        background-color: $bg;
         border-radius: 20px;
         margin: 1rem;
         padding: .8rem;
-        box-shadow: 2px 3px 8px 0 gtkalpha(black, .4);
 
         entry {
-            margin-bottom: .8rem;
-            padding: 5px;
+            padding: .5rem;
         }
 
         button {
@@ -42,7 +40,7 @@ window#Launcher {
             }
 
             label.description {
-                color: gtkalpha($fg-color, .8);
+                color: gtkalpha($fg, .8);
             }
         }
 
@@ -51,11 +49,11 @@ window#Launcher {
 
             icon {
                 font-size: 6em;
-                color: gtkalpha($fg-color, .7);
+                color: gtkalpha($fg, .7);
             }
 
             label {
-                color: gtkalpha($fg-color, .9);
+                color: gtkalpha($fg, .9);
                 font-size: 1.2em;
             }
         }

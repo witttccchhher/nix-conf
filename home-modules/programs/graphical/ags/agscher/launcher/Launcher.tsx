@@ -2,7 +2,7 @@ import Apps from "gi://AstalApps"
 import { App, Astal, Gdk, Gtk } from "astal/gtk3"
 import { Variable } from "astal"
 
-const MAX_ITEMS = 5
+const MAX_ITEMS = 8
 
 function hide() {
     App.get_window("Launcher")!.hide()
@@ -33,7 +33,7 @@ function AppButton({ app }: { app: Apps.Application }) {
 export default function Launcher() {
     const { CENTER } = Gtk.Align
     const apps = new Apps.Apps()
-    const width = Variable(1000)
+    const width = Variable(1920)
 
     const text = Variable("")
     const list = text(text => apps.fuzzy_query(text).slice(0, MAX_ITEMS))
@@ -44,7 +44,7 @@ export default function Launcher() {
 
     return <window
         name="Launcher"
-        anchor={Astal.WindowAnchor.TOP | Astal.WindowAnchor.BOTTOM}
+        anchor={Astal.WindowAnchor.TOP | Astal.WindowAnchor.RIGHT}
         exclusivity={Astal.Exclusivity.IGNORE}
         keymode={Astal.Keymode.ON_DEMAND}
         application={App}
