@@ -4,11 +4,12 @@ import Notification from "./Notification"
 import { type Subscribable } from "astal/binding"
 import { Variable, bind, timeout } from "astal"
 
-const TIMEOUT_DELAY = 10000
+const TIMEOUT_DELAY = 10000000
 
 class NotifiationMap implements Subscribable {
     private map: Map<number, Gtk.Widget> = new Map()
     private var: Variable<Array<Gtk.Widget>> = Variable([])
+
     private notifiy() {
         this.var.set([...this.map.values()].reverse())
     }
@@ -21,19 +22,22 @@ class NotifiationMap implements Subscribable {
                 notification: notifd.get_notification(id)!,
 
                 setup: () => timeout(TIMEOUT_DELAY, () => {
-                     this.delete(id)
+                    this.delete(id)
                 })
             }))
         })
+
         notifd.connect("resolved", (_, id) => {
             this.delete(id)
-        }) }
+        })
+    }
 
     private set(key: number, value: Gtk.Widget) {
         this.map.get(key)?.destroy()
         this.map.set(key, value)
         this.notifiy()
     }
+
     private delete(key: number) {
         this.map.get(key)?.destroy()
         this.map.delete(key)
@@ -43,6 +47,7 @@ class NotifiationMap implements Subscribable {
     get() {
         return this.var.get()
     }
+
     subscribe(callback: (list: Array<Gtk.Widget>) => void) {
         return this.var.subscribe(callback)
     }
@@ -57,7 +62,7 @@ export default function NotificationPopups(gdkmonitor: Gdk.Monitor) {
         gdkmonitor={gdkmonitor}
         exclusivity={Astal.Exclusivity.EXCLUSIVE}
         anchor={TOP | RIGHT}>
-        <box vertical>
+        <box vertical noImplicitDestroy>
             {bind(notifs)}
         </box>
     </window>

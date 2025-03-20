@@ -4,7 +4,7 @@ import Variable from "astal/variable"
 import Wp from "gi://AstalWp"
 
 function OnScreenProgress({ visible }: { visible: Variable<boolean> }) {
-    const speaker = Wp.get_default()!.get_default_speaker()
+    const speaker = Wp.get_default().audio.default_speaker
 
     const iconName = Variable("")
     const value = Variable(0)
