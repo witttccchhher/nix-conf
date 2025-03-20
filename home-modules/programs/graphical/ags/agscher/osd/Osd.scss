@@ -1,5 +1,6 @@
-$fg: #{"@theme_fg_color"};
-$bg: #{"@theme_bg_color"};
+$fg: #c9c7cd;
+$bg: #000000;
+$accent: #aca1cf;
 
 window.OSD {
     font-family: "Inter";
@@ -11,7 +12,7 @@ window.OSD {
         background-color: $bg;
         padding: 20px 20px;
         margin: 15px;
-        border: 2px solid $fg;
+        border: 1pt solid #c9c7cd33;
     }
 
     icon {

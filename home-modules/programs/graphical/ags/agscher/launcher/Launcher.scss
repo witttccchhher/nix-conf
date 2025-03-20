@@ -4,24 +4,27 @@
     @return string.unquote("alpha(#{$c},#{$a})");
 }
 
-// https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/theme/Adwaita/_colors-public.scss
-$fg: #{"@theme_fg_color"};
-$bg: #{"@theme_bg_color"};
+$fg: #c9c7cd;
+$bg: #000000;
+$accent: #aca1cf;
 
 window#Launcher {
     all: unset;
     font-family: "Inter";
     font-weight: 700;
     font-size: 14px;
+    background-color: #00000001;
 
     box.Launcher {
         background-color: $bg;
         border-radius: 20px;
-        margin: 1rem;
+        border: 1pt solid #c9c7cd33;
+        margin: 1px;
         padding: .8rem;
 
         entry {
             padding: .5rem;
+            border-bottom: 1pt solid #c9c7cd33;
         }
 
         button {

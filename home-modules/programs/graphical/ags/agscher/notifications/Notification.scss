@@ -4,10 +4,9 @@
     @return string.unquote("alpha(#{$c},#{$a})");
 }
 
-// https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/theme/Adwaita/_colors-public.scss
-$fg: #{"@theme_fg_color"};
-$bg: #{"@theme_bg_color"};
-$error: #ea83a5;
+$fg: #c9c7cd;
+$bg: #000000;
+$accent: #aca1cf;
 
 * {
   font-family: "Inter";
@@ -21,30 +20,30 @@ window.NotificationPopups {
 
 eventbox.Notification {
     &:first-child>box {
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     >box {
+        border: 1pt solid #c9c7cd33;
         min-width: 400px;
         border-radius: 20px;
         background-color: #000000cc;
-        margin: 10px 20px;
+        margin: 7px 15px;
         box-shadow: none;
-        border: 1pt solid gtkalpha($fg, .03);
     }
 
     &.critical>box {
-        border: 1pt solid gtkalpha($error, .4);
+        border: 1pt solid gtkalpha($accent, .4);
 
         .header {
 
             .app-name {
-                color: gtkalpha($error, .8);
+                color: gtkalpha($accent, .8);
 
             }
 
             .app-icon {
-                color: gtkalpha($error, .6);
+                color: gtkalpha($accent, .6);
             }
         }
     }

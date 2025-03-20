@@ -57,8 +57,8 @@
 
         blur {
           enabled = true
-          size = 10
-          passes = 1
+          size = 5
+          passes = 2
 
           noise = 0.0117
           contrast = 0.8916

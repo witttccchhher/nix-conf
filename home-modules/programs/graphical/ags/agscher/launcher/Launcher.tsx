@@ -45,7 +45,7 @@ export default function Launcher() {
     return <window
         name="Launcher"
         anchor={Astal.WindowAnchor.TOP | Astal.WindowAnchor.BOTTOM}
-        exclusivity={Astal.Exclusivity.IGNORE}
+        exclusivity={Astal.Exclusivity.EXCLUSIVE}
         keymode={Astal.Keymode.ON_DEMAND}
         application={App}
         onShow={(self) => {
@@ -61,7 +61,7 @@ export default function Launcher() {
             <eventbox widthRequest={width(w => w / 2)} expand onClick={hide} />
             <box hexpand={false} vertical>
                 <eventbox heightRequest={100} onClick={hide} />
-                <box widthRequest={500} className="Launcher" vertical>
+                <box widthRequest={800} className="Launcher" vertical>
                     <entry
                         placeholderText="Search"
                         text={text()}
