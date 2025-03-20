@@ -1,0 +1,38 @@
+$fg: #{"@theme_fg_color"};
+$bg: #{"@theme_bg_color"};
+
+window.OSD {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 14px;
+
+    box.OSD {
+        border-radius: 20px;
+        background-color: $bg;
+        padding: 20px 20px;
+        margin: 15px;
+        border: 2px solid $fg;
+    }
+
+    icon {
+        font-size: 24px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    levelbar {
+        trough {
+            margin: 1 .6rem;
+            background-color: #c9c7cd55;
+            border-radius: 100px;
+        }
+
+        block.filled {
+            background-color: #c9c7cd;
+            min-height: 10px;
+            border-radius: 100px;
+        }
+    }
+}

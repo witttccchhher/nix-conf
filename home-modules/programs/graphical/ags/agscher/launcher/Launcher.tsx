@@ -44,7 +44,7 @@ export default function Launcher() {
 
     return <window
         name="Launcher"
-        anchor={Astal.WindowAnchor.TOP | Astal.WindowAnchor.RIGHT}
+        anchor={Astal.WindowAnchor.TOP | Astal.WindowAnchor.BOTTOM}
         exclusivity={Astal.Exclusivity.IGNORE}
         keymode={Astal.Keymode.ON_DEMAND}
         application={App}
