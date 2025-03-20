@@ -11,6 +11,7 @@ $accent: #aca1cf;
 * { all: unset; }
 
 window.Bar {
+  min-height: 64px;
   background-color: #00000088;
   color: $fg;
   font-family: "Inter";
