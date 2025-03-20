@@ -11,12 +11,15 @@ $accent: #aca1cf;
 * { all: unset; }
 
 window.Bar {
-  min-height: 100px;
   background-color: #00000088;
   color: $fg;
   font-family: "Inter";
   font-weight: 700;
   font-size: 14px;
+
+  box.main {
+    min-height: 64px;
+  }
 
   box.main box.start box.workspaces {
     margin: 17px 0;
