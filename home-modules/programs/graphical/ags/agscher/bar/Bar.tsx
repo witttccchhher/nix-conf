@@ -70,6 +70,19 @@ function DateTime() {
     className="datetime"
     onDestroy={() => time.drop()}
     label={time()}
+    halign={Gtk.Align.END}
+  />
+}
+
+function Holiday() {
+  const holiday = Variable<string>('').poll(3600000, ["bash", "-c", "curl -G -d country='RU' -d year='2024' -d month='3' -d day='19' -d upcoming='true' -d key='d4fca1d1-50e0-4d92-bde8-de413a30ed58' 'https://holidayapi.com/v1/holidays' | jq -r '.holidays[].name'"])
+
+  return <label
+    className="holiday"
+    onDestroy={() => holiday.drop()}
+    label={holiday()}
+    maxWidthChars={20}
+    halign={Gtk.Align.END}
   />
 }
 
@@ -80,6 +93,7 @@ function SysTray() {
     {bind(tray, "items").as(items => items.map(item => (
       <menubutton
         usePopover={false}
+        direction={Gtk.ArrowType.DOWN}
         actionGroup={bind(item, "actionGroup").as(ag => ["dbusmenu", ag])}
         menuModel={bind(item, "menuModel")}>
         <icon gicon={bind(item, "gicon")} />
@@ -106,7 +120,10 @@ export default function Bar(monitor: Gdk.Monitor) {
         <BlueTooth />
         <Volume />
         <Separator />
-        <DateTime />
+        <box className="timegroup" vertical vexpand valign={Gtk.Align.CENTER}>
+          <DateTime />
+          <Holiday />
+        </box>
       </box>
     </box>
   </window>

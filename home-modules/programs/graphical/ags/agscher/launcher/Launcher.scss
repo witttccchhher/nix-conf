@@ -10,6 +10,9 @@ $bg-color: #{"@theme_bg_color"};
 
 window#Launcher {
     all: unset;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 14px;
 
     box.Launcher {
         background-color: $bg-color;
@@ -20,6 +23,7 @@ window#Launcher {
 
         entry {
             margin-bottom: .8rem;
+            padding: 5px;
         }
 
         button {

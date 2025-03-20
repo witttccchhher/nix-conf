@@ -157,6 +157,7 @@
       windowrulev2 = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0
 
       layerrule = blur, gtk-layer-shell
+      layerrule = ignorezero, gtk-layer-shell
     '';
   };
 }

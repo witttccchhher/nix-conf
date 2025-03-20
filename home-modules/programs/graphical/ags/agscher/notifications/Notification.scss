@@ -10,30 +10,30 @@ $bg-color: #{"@theme_bg_color"};
 $error: #ea83a5;
 
 * {
-  font-family: "Cascadia Code";
+  font-family: "Inter";
+  font-size: 14px;
 }
 
 window.NotificationPopups {
     all: unset;
+    font-weight: 700;
 }
 
 eventbox.Notification {
-
     &:first-child>box {
-        margin-top: 1rem;
+        margin-top: 0;
     }
 
     &:last-child>box {
-        margin-bottom: 1rem;
+        margin-bottom: 0;
     }
 
-    // eventboxes can not take margins so we style its inner box instead
     >box {
         min-width: 400px;
-        border-radius: 13px;
+        border-radius: 20px;
         background-color: $bg-color;
-        margin: .5rem 1rem .5rem 1rem;
-        box-shadow: 2px 3px 8px 0 gtkalpha(black, .4);
+        margin: 0;
+        box-shadow: none;
         border: 1pt solid gtkalpha($fg-color, .03);
     }
 

@@ -11,14 +11,14 @@ $accent: #aca1cf;
 * { all: unset; }
 
 window.Bar {
-  background-color: #000000cc;
+  background-color: #00000088;
   color: $fg;
   font-family: "Inter";
   font-weight: 700;
   font-size: 14px;
 
   box.main box.start box.workspaces {
-    margin: 10px 0;
+    margin: 17px 0;
     margin-left: 20px;
 
     box {
@@ -50,15 +50,34 @@ window.Bar {
       }
 
       &.focused {
-        background-color: #c9c7cd55;
+        background-color: #c9c7cd66;
       }
     }
   }
 
   box.main box.end {
+    margin-right: 25px;
+
+    box.tray {
+      margin: 7px;
+      icon { font-size: 20px; }
+
+      button {
+        menu {
+          background-color: #000000;
+          border-radius: 20px;
+          padding: 20px;
+
+          * {
+            padding: 2px;
+          }
+        }
+      }
+    }
+
     icon.bt, icon.wifi, icon.volume {
       font-size: 20px;
-      margin: 5px;
+      margin: 3px;
     }
 
     box.separator-wrapper {
@@ -66,8 +85,16 @@ window.Bar {
         all: unset;
         min-width: 2px;
         min-height: 20px;
-        margin: 0 10px;
+        margin: 0 15px;
         background-color: $fg;
+      }
+    }
+
+    box.timegroup {
+      margin-left: 5px;
+
+      label.holiday {
+        color: #c9c7cd88;
       }
     }
   }
