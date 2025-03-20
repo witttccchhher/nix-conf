@@ -22,7 +22,7 @@
       monitor=,preferred,auto,auto
 
       $terminal = kitty
-      $menu = nwg-drawer
+      $menu = ags toggle Launcher
 
       env = XCURSOR_SIZE,24
       env = HYPRCURSOR_SIZE,24
@@ -123,6 +123,7 @@
       }
 
       exec-once = nwg-drawer -c=7 -nocats -fm=nautilus -r
+      exec-once = ags run
 
       $mod = SUPER
 
