@@ -9,6 +9,12 @@
 
     firewall.checkReversePath = false;
 
+    nat = {
+      enable = true;
+      internalInterfaces = ["ve-+"];
+      externalInterface = "ens3";
+    };
+
     wg-quick.interfaces."WARP" = {
       type = "amneziawg";
       autostart = false;
