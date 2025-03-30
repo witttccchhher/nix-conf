@@ -64,7 +64,7 @@ function Separator() {
 }
 
 function DateTime() {
-  const time = Variable<string>("").poll(1000, () => GLib.DateTime.new_now_local().format("%a %d, %H:%M")!)
+  const time = Variable<string>("").poll(1000, () => GLib.DateTime.new_now_local().format("%B, %A %d, %H:%M")!)
 
   return <label
     className="datetime"
@@ -75,7 +75,8 @@ function DateTime() {
 }
 
 function Holiday() {
-  const holiday = Variable<string>('').poll(3600000, ["bash", "-c", "curl -G -d country='RU' -d year='2024' -d month='3' -d day='19' -d upcoming='true' -d key='d4fca1d1-50e0-4d92-bde8-de413a30ed58' 'https://holidayapi.com/v1/holidays' | jq -r '.holidays[].name'"])
+  const getHolidayBin = GLib.get_current_dir() + "/bar/scripts/bin/getHoliday"
+  const holiday = Variable<string>('').poll(3600000, ["bash", "-c", getHolidayBin])
 
   return <label
     className="holiday"
