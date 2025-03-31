@@ -7,7 +7,11 @@
       localAddress = "192.168.100.11";
 
       config = { pkgs, lib, ... }: {
-        environment.systemPackages = with pkgs; [ neovim wireguard-go ];
+        environment.systemPackages = with pkgs; [
+          neovim
+          wireguard-go
+          wireguard-tools
+        ];
 
         system.stateVersion = "25.05";
 
