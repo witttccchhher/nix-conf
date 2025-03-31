@@ -76,7 +76,8 @@ function DateTime() {
 
 function Holiday() {
   const getHolidayBin = GLib.get_current_dir() + "/bar/scripts/bin/getHoliday"
-  const holiday = Variable<string>('').poll(3600000, ["bash", "-c", getHolidayBin])
+  // const holiday = Variable<string>("").poll(3600000, ["bash", "-c", getHolidayBin])
+  const holiday = Variable<string>("Spring and Labor Day")
 
   return <label
     className="holiday"
