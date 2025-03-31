@@ -20,6 +20,7 @@
           firewall = {
             enable = true;
             allowedTCPPorts = [ 80 ];
+            allowedUDPPorts = [ 51820 ];
           };
           useHostResolvConf = lib.mkForce false;
         };
