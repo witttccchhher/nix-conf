@@ -7,11 +7,12 @@
       localAddress = "192.168.100.11";
 
       config = { pkgs, lib, ... }: {
-        environment.systemPackages = with pkgs; [ neovim wireguard-go wiregard-tools ];
+        environment.systemPackages = with pkgs; [ neovim wireguard-go ];
 
         system.stateVersion = "25.05";
 
         networking = {
+          wireless.enable = true;
           firewall = {
             enable = true;
             allowedTCPPorts = [ 80 ];
