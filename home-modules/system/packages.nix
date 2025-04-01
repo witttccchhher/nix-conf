@@ -128,6 +128,7 @@
       nuclear
       memos
       youtube-music
+      tmux
     ];
   };
 }
