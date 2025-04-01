@@ -128,7 +128,6 @@
       nuclear
       memos
       youtube-music
-      sish
     ];
   };
 }
