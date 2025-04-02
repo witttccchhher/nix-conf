@@ -82,6 +82,7 @@
       pass
       pinentry
       silicon
+      wf-recorder
 
       # Internet
       python313Packages.requests

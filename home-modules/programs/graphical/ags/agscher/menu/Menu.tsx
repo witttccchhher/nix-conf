@@ -5,6 +5,7 @@ import { subprocess, exec, execAsync } from "astal/process"
 import { interval, timeout, idle } from "astal/time"
 import Network from "gi://AstalNetwork"
 import Bluetooth from "gi://AstalBluetooth"
+import Notifd from "gi://AstalNotifd"
 
 function Toggles() {
   const { wifi } = Network.get_default()
@@ -60,14 +61,31 @@ function Toggles() {
   </box>
 }
 
+function Dnd() {
+  const notifd = Notifd.get_default()
+  const enabled = Variable<boolean>(notifd.get_dont_disturb())
+
+  function toggleDnd() {
+    enabled.set(!enabled.get())
+    notifd.set_dont_disturb(enabled.get())
+  }
+
+  return <box className="dnd">
+    <button className={bind(enabled).as((enabled) => enabled ? "active" : "")}>
+      <icon icon={bind(enabled).as((enabled) => enabled ? "dnd-symbolic" : "dnd-disabled-symbolic")} />
+    </button>
+    <label label="Focus" halign={Gtk.Align.START} />
+  </box>
+}
+
 export default function Menu(monitor: Gdk.Monitor) {
-  const { TOP, BOTTOM, RIGHT } = Astal.WindowAnchor
+  const { RIGHT } = Astal.WindowAnchor
 
   return <window
     className="Menu"
     name="Menu"
     gdkmonitor={monitor}
-    exclusivity={Astal.Exclusivity.EXCLUSIVE}
+    exclusivity={Astal.Exclusivity.IGNORE}
     keymode={Astal.Keymode.ON_DEMAND}
     onKeyPressEvent={(self, event: Gdk.Event) => {
         if (event.get_keyval()[1] === Gdk.KEY_Escape) {
@@ -76,13 +94,16 @@ export default function Menu(monitor: Gdk.Monitor) {
     }}
     layer={Astal.Layer.TOP}
     setup={self => App.add_window(self)}
-    anchor={TOP | RIGHT}>
+    anchor={RIGHT}>
     <revealer
       setup={(self) => timeout(500, () => self.revealChild = true)}
       transitionType={Gtk.RevealerTransitionType.SLIDE_LEFT}
     >
     <box>
       <Toggles />
+      <box vertical>
+        <Dnd />
+      </box>
     </box>
     </revealer>
   </window>
