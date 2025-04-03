@@ -32,7 +32,7 @@ function Toggles() {
 
   return <box vertical className="toggles">
     <box className="wifi">
-      <button className={bind(wifiEnabled).as((enabled) => enabled ? "active" : "")}>
+      <button className={bind(wifiEnabled).as((enabled) => enabled ? "active" : "")} onClicked={() => toggleWifi()}>
         <icon icon={bind(wifi, "iconName")} />
       </button>
       <box vertical className="inner">
@@ -41,7 +41,7 @@ function Toggles() {
       </box>
     </box>
     <box className="bluetooth">
-      <button className={bind(btEnabled).as((enabled) => enabled ? "active" : "")}>
+      <button className={bind(btEnabled).as((enabled) => enabled ? "active" : "")} onClicked={() => toggleBT()}>
         <icon icon={bind(btEnabled).as((enabled) => enabled ? "bluetooth-symbolic" : "bluetooth-disabled-symbolic")} />
       </button>
       <box vertical className="inner">
@@ -50,7 +50,7 @@ function Toggles() {
       </box>
     </box>
     <box className="vpn">
-      <button className={bind(vpnEnabled).as((enabled) => enabled ? "active" : "")}>
+      <button className={bind(vpnEnabled).as((enabled) => enabled ? "active" : "")}  onClicked={() => toggleVpn()}>
         <icon icon={bind(vpnEnabled).as((enabled) => enabled ? "vpn-symbolic" : "vpn-disabled-symbolic")} />
       </button>
       <box vertical className="inner">
@@ -71,30 +71,30 @@ function Dnd() {
   }
 
   return <box className="dnd">
-    <button className={bind(enabled).as((enabled) => enabled ? "active" : "")}>
+    <button className={bind(enabled).as((enabled) => enabled ? "active" : "")} onClicked={() => toggleDnd()}>
       <icon icon={bind(enabled).as((enabled) => enabled ? "dnd-symbolic" : "dnd-disabled-symbolic")} />
     </button>
     <label label="Focus" halign={Gtk.Align.START} />
   </box>
 }
 
-export default function Menu(monitor: Gdk.Monitor) {
-  const { RIGHT } = Astal.WindowAnchor
+function Recorder() {
+  return <button onClicked={() => App.toggle_window("ScreenRecorder")}><box vertical>
+    <icon />
+    <label label="Record screen" maxWidthChars={0} wrap />
+  </box></button>
+}
 
+export default function Menu(monitor: Gdk.Monitor) {
   return <window
     className="Menu"
     name="Menu"
     gdkmonitor={monitor}
     exclusivity={Astal.Exclusivity.IGNORE}
     keymode={Astal.Keymode.ON_DEMAND}
-    onKeyPressEvent={(self, event: Gdk.Event) => {
-        if (event.get_keyval()[1] === Gdk.KEY_Escape) {
-            self.hide()
-        }
-    }}
     layer={Astal.Layer.TOP}
     setup={self => App.add_window(self)}
-    anchor={RIGHT}>
+    anchor={Astal.WindowAnchor.RIGHT}>
     <revealer
       setup={(self) => timeout(500, () => self.revealChild = true)}
       transitionType={Gtk.RevealerTransitionType.SLIDE_LEFT}
@@ -103,6 +103,9 @@ export default function Menu(monitor: Gdk.Monitor) {
       <Toggles />
       <box vertical>
         <Dnd />
+        <box>
+          <Recorder />
+        </box>
       </box>
     </box>
     </revealer>

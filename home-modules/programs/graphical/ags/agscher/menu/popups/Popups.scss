@@ -1,0 +1,60 @@
+@use "sass:string";
+
+$fg: #c9c7cd;
+$bg: #000000;
+$accent: #aca1cf;
+
+@function gtkalpha($c, $a) {
+    @return string.unquote("alpha(#{$c},#{$a})");
+}
+
+* { all: unset; }
+
+window.ScreenRecorder {
+  background-color: transparent;
+  color: $fg;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 14px;
+  
+  box.main {
+    background-color: $bg;
+    border-radius: 20px;
+    border: 1pt solid #c9c7cd33;
+    padding: 20px;
+
+    box.settings {
+      margin-bottom: 5px;
+
+      label {
+        margin: 0 5px;
+      }
+
+      entry {
+        background-color: #c9c7cd22;
+        border-radius: 5px;
+        padding: 5px;
+        margin-right: 10px;
+      }
+
+      switch {
+        border-radius: 20px;
+        background-color: #c9c7cd22;
+        color: transparent;
+
+        slider {
+          background-color: $accent;
+          border-radius: 20px;
+          margin: 5px;
+        }
+      }
+    }
+
+    button {
+      background-color: $accent;
+      color: $bg;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  }
+}
