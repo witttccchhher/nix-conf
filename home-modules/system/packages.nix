@@ -83,6 +83,7 @@
       pinentry
       silicon
       wf-recorder
+      hyprshot
 
       # Internet
       python313Packages.requests

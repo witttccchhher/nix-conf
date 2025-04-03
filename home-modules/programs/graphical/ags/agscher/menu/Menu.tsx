@@ -80,7 +80,7 @@ function Dnd() {
 
 function Recorder() {
   return <button onClicked={() => App.toggle_window("ScreenRecorder")}><box vertical>
-    <icon />
+    <icon icon="screenrecord-symbolic" />
     <label label="Record screen" maxWidthChars={0} wrap />
   </box></button>
 }
