@@ -58,3 +58,36 @@ window.ScreenRecorder {
     }
   }
 }
+
+window.ScreenShoter {
+  background-color: transparent;
+  color: $fg;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 14px;
+  
+  box.main {
+    background-color: $bg;
+    border-radius: 20px;
+    border: 1pt solid #c9c7cd33;
+    padding: 10px;
+
+    label.header {
+      font-size: 20px;
+      margin: 5px;
+    }
+
+    button {
+      icon { font-size: 25px; }
+      padding: 10px;
+      margin: 5px;
+      border: 1pt solid #c9c7cd33;
+      min-width: 90px;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: #c9c7cd11;
+      }
+    }
+  }
+}

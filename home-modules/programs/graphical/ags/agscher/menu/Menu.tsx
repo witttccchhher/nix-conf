@@ -85,6 +85,13 @@ function Recorder() {
   </box></button>
 }
 
+function Shoter() {
+  return <button onClicked={() => App.toggle_window("ScreenShoter")}><box vertical>
+    <icon icon="screenshot-symbolic" />
+    <label label="Screenshot" />
+  </box></button>
+}
+
 export default function Menu(monitor: Gdk.Monitor) {
   return <window
     className="Menu"
@@ -105,6 +112,7 @@ export default function Menu(monitor: Gdk.Monitor) {
         <Dnd />
         <box>
           <Recorder />
+          <Shoter />
         </box>
       </box>
     </box>
