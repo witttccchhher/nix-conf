@@ -49,8 +49,8 @@
       flake =
         let
           system = "x86_64-linux";
-          pkgs-master = import inputs.nixpkgs-master { inherit system; };
-          w = import ./wlib { inherit inputs; };
+          pkgs = inputs.nixpkgs.legacyPackages.${system};
+          w = import ./wlib { inherit pkgs inputs; };
         in
         {
           nixosConfigurations.ms7996 = inputs.nixpkgs.lib.nixosSystem {
