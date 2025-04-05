@@ -17,16 +17,16 @@
     wayland = true;
   };
 
-  services.greetd = {
-    enable = false;
-    package = pkgs.greetd.tuigreet;
-    settings = {
-      default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --cmd Hyprland";
-      };
-    };
-    vt = 1;
-  };
+  # services.greetd = {
+  #   enable = false;
+  #   package = pkgs.greetd.tuigreet;
+  #   settings = {
+  #     default_session = {
+  #       command = "${pkgs.greetd.tuigreet}/bin/tuigreet --cmd Hyprland";
+  #     };
+  #   };
+  #   vt = 1;
+  # };
 
   # services.getty.autologinUser = "witcher";
   # environment.loginShellInit = ''

@@ -17,14 +17,8 @@
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     elyprism.url = "github:ElyPrismLauncher/ElyPrismLauncher";
     witpkgs.url = "github:witttccchhher/witpkgs";
-    niri.url = "github:sodiboo/niri-flake";
-    tgt.url = "github:FedericoBruzzone/tgt";
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    ags = {
-      url = "github:aylur/ags";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-cursors = {

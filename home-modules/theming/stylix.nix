@@ -69,19 +69,22 @@
     };
 
     targets = {
-      bat.enable = true;
+      vesktop.enable = true;
+      glance.enable = true;
       cava.enable = true;
       eog.enable = true;
       btop.enable = true;
       foot.enable = true;
       kitty.enable = true;
       fzf.enable = true;
-      sway.enable = true;
       gtk.enable = true;
+      qt.enable = true;
+      gnome.enable = true;
       yazi.enable = true;
       lazygit.enable = true;
       xresources.enable = true;
       zathura.enable = true;
+      zed.enable = true;
     };
   };
 }

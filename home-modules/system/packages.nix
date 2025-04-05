@@ -25,7 +25,6 @@
       inputs.zen-browser.packages.${system}.default
       inputs.witpkgs.packages.${system}.anicli-ru
       inputs.elyprism.packages.${system}.default
-      inputs.tgt.packages.${system}.default
 
       # Fonts
       (google-fonts.override { fonts = [ "Inter" ]; })
@@ -34,13 +33,9 @@
 
       # Media
       mpv
-      grim slurp
       pavucontrol
       eog
       imagemagick
-      mpd
-      mpc
-      spotify
 
       # Code
       git
@@ -55,7 +50,6 @@
       killall
       localsearch
       lla
-      swaybg
       nh
       gum
       nix-init
@@ -75,15 +69,11 @@
       pkg-config
       libwebp
       gping
-      bun
       upower
       jq
       xdg-user-dirs
-      pass
       pinentry
       silicon
-      wf-recorder
-      hyprshot
 
       # Internet
       python313Packages.requests
@@ -92,7 +82,6 @@
       amneziawg-tools
       ayugram-desktop
       vesktop
-      zoom-us
 
       # Other
       gtk4
@@ -107,10 +96,8 @@
 
       # GUI
       foot
-      gtklock
       kitty
       nekoray
-      waybar
       drawing
       transmission_4-gtk
       zathura
@@ -118,18 +105,12 @@
       sqlite
       sqlitestudio
       sqlitebrowser
-      networkmanagerapplet
       networkmanager-l2tp
       pinta
-      swayimg
       obsidian
-      nwg-drawer
       font-manager
       blueman
       lutris
-      nuclear
-      memos
-      youtube-music
     ];
   };
 }

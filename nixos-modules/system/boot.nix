@@ -17,7 +17,7 @@
         enable = true;
         configurationLimit = 5;
       };
-      timeout = 30;
+      timeout = 5;
       efi.canTouchEfiVariables = true;
     };
     initrd = {

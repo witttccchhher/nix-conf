@@ -16,7 +16,7 @@
       builders-use-substitutes = true;
       auto-optimise-store = true;
       trusted-users = [
-        "som"
+        "witcher"
         "root"
         "@wheel"
       ];
