@@ -16,7 +16,7 @@
     preserve = true;
   };
 
-  wallpaper = let
+  wallpaper = { colors }: let
     input = "${inputs.wallpapers}/${wallpaperCategory}/${wallpaperCategory}${wallpaperIndex}.png";
     level = wallpaperProcessing.level;
     lum = wallpaperProcessing.lum;
@@ -24,7 +24,7 @@
   in
     pkgs.runCommand "wallpaper.png" { } ''
       ${pkgs.lutgen}/bin/lutgen apply ${input} -l ${builtins.toString level} -L ${builtins.toString lum} ${if preserve == true then "-P" else ""} -o $out -- ${
-        builtins.concatStringsSep " " (with pkgs.config.lib.stylix.colors; [
+        builtins.concatStringsSep " " (with colors; [
           base00
           base01
           base02
