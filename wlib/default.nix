@@ -1,7 +1,6 @@
 {
   pkgs,
   inputs,
-  config,
   ...
 }: rec {
   umport = inputs.nypkgs.legacyPackages."x86_64-linux".lib.umport;
