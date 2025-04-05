@@ -1,11 +1,13 @@
 { config, ... }: {
-  xdg = {
+  xdg = let
+    hm = config.home.homeDirectory;
+  in {
     enable = true;
 
-    cacheHome = builtins.toPath "${config.home.homeDirectory}/.cache";
-    configHome = builtins.toPath "${config.home.homeDirectory}/.config";
-    dataHome = builtins.toPath "${config.home.homeDirectory}/.local/share";
-    stateHome = builtins.toPath "${config.home.homeDirectory}/.local/state";
+    cacheHome = builtins.toPath "${hm}/.cache";
+    configHome = builtins.toPath "${hm}/.config";
+    dataHome = builtins.toPath "${hm}/.local/share";
+    stateHome = builtins.toPath "${hm}/.local/state";
 
     systemDirs = {
       config = [ "/etc/xdg" ];
@@ -16,17 +18,18 @@
       enable = true;
       createDirectories = true;
 
-      desktop = builtins.toPath "${config.home.homeDirectory}/Desktop";
-      documents = builtins.toPath "${config.home.homeDirectory}/Documents";
-      download = builtins.toPath "${config.home.homeDirectory}/Downloads";
-      music = builtins.toPath "${config.home.homeDirectory}/Music";
-      pictures = builtins.toPath "${config.home.homeDirectory}/Pictures";
-      videos = builtins.toPath "${config.home.homeDirectory}/Videos";
+      desktop = builtins.toPath "${hm}/Desktop";
+      documents = builtins.toPath "${hm}/Documents";
+      download = builtins.toPath "${hm}/Downloads";
+      music = builtins.toPath "${hm}/Music";
+      pictures = builtins.toPath "${hm}/Pictures";
+      videos = builtins.toPath "${hm}/Videos";
       publicShare = null;
       templates = null;
 
       extraConfig = {
-        XDG_GIT_DIR = "${config.home.homeDirectory}/Repositories";
+        XDG_GIT_DIR = "${hm}/Repositories";
+        XDG_PROJECTS_DIR = "${hm}/Projects";
       };
     };
   };
