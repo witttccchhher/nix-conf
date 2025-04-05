@@ -4,11 +4,11 @@
 }: {
   umport = inputs.nypkgs.legacyPackages."x86_64-linux".lib.umport;
 
-  colorscheme = "oldworld";
+  colorscheme = "kanagwa-dragon";
   polarity = "dark";
 
-  wallpaperCategory = "other";
-  wallpaperIndex = "8";
+  wallpaperCategory = "realistic";
+  wallpaperIndex = "5";
   wallpaperProcessing = {
     level = 10;
     lum = 1.0;
