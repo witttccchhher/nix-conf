@@ -1,18 +1,18 @@
 { pkgs, ... }: {
   programs = {
     sway = {
-      enable = true;
+      enable = false;
       extraPackages = with pkgs; [ autotiling ];
     };
     labwc = {
       enable = false;
     };
     niri = {
-      enable = true;
+      enable = false;
       package = pkgs.niri-unstable;
     };
     hyprland = {
-      enable = true;
+      enable = false;
     };
   };
 }

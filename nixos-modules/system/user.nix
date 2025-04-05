@@ -12,8 +12,13 @@
     };
   };
 
-  services.greetd = {
+  services.xserver.desktopManager.gdm = {
     enable = true;
+    wayland = true;
+  };
+
+  services.greetd = {
+    enable = false;
     package = pkgs.greetd.tuigreet;
     settings = {
       default_session = {
