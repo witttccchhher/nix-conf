@@ -7,7 +7,7 @@
     enable = true;
     autoEnable = false;
 
-    image = "${config.stylix.image}";
+    image = w.wallpaper;
     polarity = w.polarity;
     base16Scheme = "${inputs.base16}/colorschemes/${w.colorscheme}.yaml";
 

@@ -7,34 +7,7 @@
     enable = true;
     autoEnable = false;
 
-    image = let
-      input = "${inputs.wallpapers}/${w.wallpaperCategory}/${w.wallpaperCategory}${w.wallpaperIndex}.png";
-      level = w.wallpaperProcessing.level;
-      lum = w.wallpaperProcessing.lum;
-      preserve = w.wallpaperProcessing.preserve;
-    in
-      pkgs.runCommand "wallpaper.png" { } ''
-        ${pkgs.lutgen}/bin/lutgen apply ${input} -l ${builtins.toString level} -L ${builtins.toString lum} ${if preserve == true then "-P" else ""} -o $out -- ${
-          builtins.concatStringsSep " " (with config.lib.stylix.colors; [
-            base00
-            base01
-            base02
-            base03
-            base04
-            base05
-            base06
-            base07
-            base08
-            base09
-            base0A
-            base0B
-            base0C
-            base0D
-            base0E
-            base0F
-          ])
-        }
-      '';
+    image = w.wallpaper;
     polarity = w.polarity;
     base16Scheme = "${inputs.base16}/colorschemes/${w.colorscheme}.yaml";
 
