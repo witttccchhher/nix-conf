@@ -5,7 +5,7 @@
     extensions = [
       "make"
       "nix"
-      "material_icon_theme"
+      "material-icon-theme"
     ];
     extraPackages = with pkgs; [
       nixd
