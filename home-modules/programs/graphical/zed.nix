@@ -12,7 +12,7 @@
     ];
 
     userSettings = {
-      buffer_font_family = lib.mkForce "Cascadia Mono NF";
+      buffer_font_family = lib.mkForce "CascadiaMonoNF-Regular";
     };
   };
 }
