@@ -43,6 +43,21 @@
           home-manager.expr = "(builtins.getFlake \"/home/witcher/nix\").homeConfigurations.witcher.options";
         };
       };
+
+      diagnostics = {
+        inline.enabled = true;
+      };
+
+      inlay_hints.enabled = true;
+
+      languages = {
+        Nix = {
+          formatter.external = {
+            command = "nixfmt";
+            arguments = [ "--quiet" "--" ];
+          };
+        };
+      };
       ui_font_family = lib.mkForce "Inter";
     };
   };

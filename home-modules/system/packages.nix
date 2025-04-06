@@ -36,6 +36,7 @@
       go
       lua
       uv
+      nixfmt-rfc-style
       
       # Utilites
       fastfetch
