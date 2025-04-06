@@ -8,5 +8,9 @@
       gopls
       basedpyright
     ];
+
+    userSettings = {
+      buffer_font_family = "${pkgs.cascadia-code}/share/fonts/truetype/CascadiaMono-Regular.ttf";
+    };
   };
 }
