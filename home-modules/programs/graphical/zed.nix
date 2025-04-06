@@ -7,10 +7,12 @@
       nixd
       gopls
       basedpyright
+
+      cascadia-code
     ];
 
     userSettings = {
-      buffer_font_family = lib.mkForce "${pkgs.cascadia-code}/share/fonts/truetype/CascadiaMono-Regular.ttf";
+      buffer_font_family = lib.mkForce "Cascadia Mono";
     };
   };
 }
