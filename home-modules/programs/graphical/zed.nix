@@ -1,7 +1,12 @@
-{ pkgs, lib, ... }: {
+{ pkgs, lib, ... }:
+{
   programs.zed-editor = {
     enable = true;
-    extensions = [ "make" "nix" ];
+    extensions = [
+      "make"
+      "nix"
+      "material_icon_theme"
+    ];
     extraPackages = with pkgs; [
       nixd
       nil
@@ -17,6 +22,11 @@
       autosave.after_delay.milliseconds = 60000;
       restore_on_startup = "last_session";
       auto_update = false;
+      icon_theme = {
+        mode = "system";
+        light = "Material Icon Theme";
+        dark = "Material Icon Theme";
+      };
 
       buffer_font_family = lib.mkForce "Cascadia Mono";
       buffer_font_features = {
@@ -54,11 +64,43 @@
         Nix = {
           formatter.external = {
             command = "nixfmt";
-            arguments = [ "--quiet" "--" ];
+            arguments = [
+              "--quiet"
+              "--"
+            ];
           };
         };
       };
+
+      completions = {
+        words = "disabled";
+        lsp_insert_mode = "replace";
+      };
+
+      soft_wrap = "bounded";
+
+      telemetry = {
+        diagnostics = false;
+        metrics = false;
+      };
+
+      terminal = {
+        font_family = lib.mkForce "Cascadia Mono NF";
+        font_size = lib.mkForce 14;
+        font_features = {
+          calt = true;
+          ss01 = true;
+          ss19 = true;
+          ss20 = true;
+        };
+      };
+
+      vim_mode = true;
+
+      assistant.enabled = false;
+
       ui_font_family = lib.mkForce "Inter";
+      ui_font_size = lib.mkForce 16;
     };
   };
 }
