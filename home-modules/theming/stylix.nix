@@ -57,6 +57,7 @@
       lazygit.enable = true;
       xresources.enable = true;
       zathura.enable = true;
+      zed.enable = true;
     };
   };
 }

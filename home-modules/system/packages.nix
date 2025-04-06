@@ -25,11 +25,6 @@
       inputs.witpkgs.packages.${system}.anicli-ru
       inputs.elyprism.packages.${system}.default
 
-      # Fonts
-      (google-fonts.override { fonts = [ "Inter" ]; })
-      dejavu_fonts
-      cascadia-code
-
       # Media
       mpv
       pavucontrol
