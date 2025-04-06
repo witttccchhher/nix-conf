@@ -77,7 +77,7 @@
         lsp_insert_mode = "replace";
       };
 
-      soft_wrap = "bounded";
+      soft_wrap = "editor_width";
 
       telemetry = {
         diagnostics = false;
