@@ -49,6 +49,7 @@
         cv11 = true;
       };
       buffer_font_size = lib.mkForce 16;
+      buffer_line_height.custom = 1.05;
 
       tab_bar = {
         show_nav_history_buttons = false;
