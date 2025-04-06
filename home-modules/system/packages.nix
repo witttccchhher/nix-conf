@@ -112,6 +112,7 @@
       lutris
       gnome-tweaks
       zed-editor
+      dconf-editor
     ];
   };
 }
