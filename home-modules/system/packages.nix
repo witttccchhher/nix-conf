@@ -111,7 +111,6 @@
       blueman
       lutris
       gnome-tweaks
-      zed-editor
       dconf-editor
     ];
   };
