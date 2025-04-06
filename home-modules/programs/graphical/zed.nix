@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, lib, ... }: {
   programs.zed-editor = {
     enable = true;
     extensions = [ "make" "nix" ];
@@ -10,8 +10,8 @@
 
     userSettings = {
       auto_update = false;
-      buffer_font_family = "Cascadia Mono";
-      ui_font_family = "Cascadia Mono";
+      buffer_font_family = lib.mkForce "Cascadia Mono";
+      ui_font_family = lib.mkForce "Cascadia Mono";
     };
   };
 }
