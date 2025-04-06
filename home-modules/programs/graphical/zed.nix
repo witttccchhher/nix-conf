@@ -2,6 +2,16 @@
 {
   programs.zed-editor = {
     enable = true;
+    package = pkgs.zed-editor.overrideAttrs rec {
+      version = "0.180.2";
+
+      src = pkgs.fetchFromGitHub {
+        owner = "zed-industries";
+        repo = "zed";
+        tag = "v${version}";
+        hash = "";
+      };
+    };
     extensions = [
       "make"
       "nix"
