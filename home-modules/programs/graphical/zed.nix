@@ -25,7 +25,7 @@
         ss19 = true;
         ss20 = true;
       };
-      buffer_font_size = 16;
+      buffer_font_size = lib.mkForce 16;
 
       tab_bar = {
         show_nav_history_buttons = false;
