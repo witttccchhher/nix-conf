@@ -4,10 +4,13 @@
     extensions = [ "make" "nix" ];
     extraPackages = with pkgs; [
       nixd
+      nil
       gopls
       basedpyright
 
       direnv
+
+      nixfmt-rfc-style
     ];
 
     userSettings = {
@@ -26,6 +29,19 @@
 
       tab_bar = {
         show_nav_history_buttons = false;
+      };
+      tabs = {
+        file_icons = true;
+        git_status = true;
+      };
+
+      enable_language_server = true;
+      lsp.nixd.settings = {
+        nixpkgs.expr = "import <nixpkgs> { }";
+        options = {
+          nixos.expr = "(builtins.getFlake \"/home/witcher/nix\").nixosConfigurations.ms7996.options";
+          home-manager.expr = "(builtins.getFlake \"/home/witcher/nix\").homeConfigurations.witcher.options";
+        };
       };
       ui_font_family = lib.mkForce "Inter";
     };
