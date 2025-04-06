@@ -31,6 +31,12 @@
       eog
       imagemagick
 
+      # Fonts
+      cascadia-code
+      commit-mono
+      dejavu_fonts
+      (google-fonts.override { fonts = [ "Inter" ]; })
+
       # Code
       git
       go
