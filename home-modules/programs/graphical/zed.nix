@@ -11,6 +11,7 @@
         tag = "v${version}";
         hash = "sha256-4FwQxg3UUE0vFLsy+88Naal+YTCGfNMOtNhnG+W2HiU=";
       };
+      cargoHash = "";
     };
     extensions = [
       "make"
