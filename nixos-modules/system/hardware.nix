@@ -5,6 +5,7 @@
       powerOnBoot = false;
       settings = {
         General = {
+          Name = "ms7996";
           Experimental = true;
           Enable = "Source,Sink,Media,Socket";
         };
