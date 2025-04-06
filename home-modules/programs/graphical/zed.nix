@@ -1,12 +1,17 @@
-{ pkgs, lib, ... }: {
+{ pkgs, ... }: {
   programs.zed-editor = {
     enable = true;
-    package = pkgs.zed-editor;
     extensions = [ "make" "nix" ];
     extraPackages = with pkgs; [
       nixd
       gopls
       basedpyright
     ];
+
+    userSettings = {
+      auto_update = false;
+      buffer_font_family = "Cascadia Mono";
+      ui_font_family = "Cascadia Mono";
+    };
   };
 }
