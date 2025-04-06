@@ -47,5 +47,6 @@
     winetricks
 
     cascadia-code
+    zed-editor-fhs
   ];
 }
