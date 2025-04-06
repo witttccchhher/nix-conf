@@ -58,6 +58,7 @@
       window_resize_step_cells 1
       window_resize_step_lines 1
       confirm_os_window_close 0
+      hide_window_decorations yes
 
       tab_bar_edge top
       tab_bar_margin_width 0.0
