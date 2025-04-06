@@ -1,6 +1,5 @@
 { pkgs, inputs, lib, ... }: {
-  imports = [
-    inputs.nix-index-database.hmModules.nix-index
+  imports = [ inputs.nix-index-database.hmModules.nix-index
   ];
 
   home = {
@@ -111,6 +110,8 @@
       font-manager
       blueman
       lutris
+      gnome-tweaks
+      zed-editor
     ];
   };
 }
