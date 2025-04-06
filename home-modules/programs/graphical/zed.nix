@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, lib, ... }: {
   programs.zed-editor = {
     enable = true;
     package = pkgs.zed-editor-fhs;
@@ -10,7 +10,7 @@
     ];
 
     userSettings = {
-      buffer_font_family = "${pkgs.cascadia-code}/share/fonts/truetype/CascadiaMono-Regular.ttf";
+      buffer_font_family = lib.mkForce "${pkgs.cascadia-code}/share/fonts/truetype/CascadiaMono-Regular.ttf";
     };
   };
 }
