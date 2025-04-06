@@ -45,5 +45,7 @@
     wineWowPackages.full
     wineWowPackages.waylandFull
     winetricks
+
+    cascadia-code
   ];
 }
