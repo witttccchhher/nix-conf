@@ -95,7 +95,7 @@
         };
       };
 
-      vim_mode = true;
+      vim_mode = false;
 
       assistant.enabled = false;
 
