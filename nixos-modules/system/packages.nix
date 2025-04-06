@@ -45,8 +45,5 @@
     wineWowPackages.full
     wineWowPackages.waylandFull
     winetricks
-
-    cascadia-code
-    zed-editor-fhs
   ];
 }
