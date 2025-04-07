@@ -2,7 +2,7 @@
 {
   nixpkgs.overlays = [
     (self: super: {
-      zed-editor = super.zed-editor.overrideAttrs (prev: rec {
+      zed-editor = super.zed-editor.override { buildRemoteServer = false; }.overrideAttrs (prev: rec {
         version = "0.180.2";
 
         src = prev.src // {
