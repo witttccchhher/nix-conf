@@ -2,7 +2,6 @@
 {
   programs.zed-editor = {
     enable = true;
-    package = pkgs.zed-editor.override { buildRemoteServer = false; };
     extensions = [
       "make"
       "nix"
