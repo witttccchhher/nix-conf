@@ -29,7 +29,7 @@
         dark = "Material Icon Theme";
       };
 
-      buffer_font_family = lib.mkForce "CommitMono";
+      buffer_font_family = lib.mkForce "Cascadia Mono";
       # buffer_font_features = {
       #   calt = true;
       #   ss01 = true;
