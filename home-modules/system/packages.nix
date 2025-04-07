@@ -83,7 +83,7 @@
       amneziawg-tools
       ayugram-desktop
       vesktop
-      element
+      element-desktop
 
       # Other
       gtk4
