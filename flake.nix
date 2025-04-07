@@ -15,8 +15,11 @@
     stylix.url = "github:danth/stylix";
     nix-flatpak.url = "github:gmodena/nix-flatpak";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
-    elyprism.url = "github:ElyPrismLauncher/ElyPrismLauncher";
     witpkgs.url = "github:witttccchhher/witpkgs";
+    elyprism = {
+      url = "github:ElyPrismLauncher/ElyPrismLauncher";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
