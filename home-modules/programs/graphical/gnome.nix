@@ -6,7 +6,8 @@
       { package = pkgs.gnomeExtensions.just-perfection; }
       { package = pkgs.gnomeExtensions.quick-settings-tweaker; }
       { package = pkgs.gnomeExtensions.rounded-window-corners-reborn; }
-      { package = pkgs.gnomeExtensions.tray-icons-reloaded; }
+      { package = pkgs.gnomeExtensions.appindicator; }
+      { package = pkgs.gnomeExtensions.blur-my-shell; }
     ];
   };
 }
