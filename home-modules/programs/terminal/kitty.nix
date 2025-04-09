@@ -2,18 +2,18 @@
   programs.kitty = {
     enable = true;
     extraConfig = with config.lib.stylix.colors.withHashtag; ''
-      font_family      Cascadia Mono NF
+      font_family      CommitMono
       bold_font        auto
-      italic_font      auto
+      italic_font      CommitMonoV143
       bold_italic_font auto
 
       font_size 12.0
       disable_ligatures always
 
-      font_features CascadiaMonoNF-Regular +ss19 +ss20
-      font_features CascadiaMonoNF-SemiBold +ss19 +ss20
-      font_features CascadiaMonoNF-Italic +calt +ss01 +ss19 +ss20
-      font_features CascadiaMonoNF-SemiBoldItalic +calt +ss01 +ss19 +ss20
+      font_features CommitMono-Regular +calt +ss01 +ss02 +ss03 +ss04 +ss05 +cv01 +cv02 +cv03 +cv04 +cv05 +cv06 +cv08 +cv09 +cv10 +cv11
+      font_features CommitMono-Bold +calt +ss01 +ss02 +ss03 +ss04 +ss05 +cv01 +cv02 +cv03 +cv04 +cv05 +cv06 +cv08 +cv09 +cv10 +cv11
+      font_features CommitMonoV143-Italic +calt +ss01 +ss02 +ss03 +ss04 +ss05 +cv01 +cv02 +cv03 +cv04 +cv05 +cv06 +cv08 +cv09 +cv10 +cv11
+      font_features CommitMonoV143-BoldItalic +calt +ss01 +ss02 +ss03 +ss04 +ss05 +cv01 +cv02 +cv03 +cv04 +cv05 +cv06 +cv08 +cv09 +cv10 +cv11
 
       undercurl_style thick-sparse
 
