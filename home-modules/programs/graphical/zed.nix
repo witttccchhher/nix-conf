@@ -28,7 +28,7 @@
         dark = "Material Icon Theme";
       };
 
-      buffer_font_family = lib.mkForce "Cascadia Mono";
+      buffer_font_family = lib.mkForce "CommitMono";
       # buffer_font_features = {
       #   calt = true;
       #   ss01 = true;
@@ -98,7 +98,7 @@
       };
 
       terminal = {
-        font_family = lib.mkForce "Cascadia Mono";
+        font_family = lib.mkForce "CommitMono";
         font_size = lib.mkForce 14;
         # font_features = {
         #   calt = true;
