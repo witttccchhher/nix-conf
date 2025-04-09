@@ -29,25 +29,25 @@
       };
 
       buffer_font_family = lib.mkForce "CommitMono";
-      # buffer_font_features = {
-      #   calt = true;
-      #   ss01 = true;
-      #   ss02 = true;
-      #   ss03 = true;
-      #   ss04 = true;
-      #   ss05 = true;
-      #   cv01 = true;
-      #   cv02 = true;
-      #   cv03 = true;
-      #   cv04 = true;
-      #   cv05 = true;
-      #   cv06 = true;
-      #   cv07 = true;
-      #   cv08 = true;
-      #   cv09 = true;
-      #   cv10 = true;
-      #   cv11 = true;
-      # };
+      buffer_font_features = {
+        calt = true;
+        ss01 = true;
+        ss02 = true;
+        ss03 = true;
+        ss04 = true;
+        ss05 = true;
+        cv01 = true;
+        cv02 = true;
+        cv03 = true;
+        cv04 = true;
+        cv05 = true;
+        cv06 = true;
+        cv07 = true;
+        cv08 = true;
+        cv09 = true;
+        cv10 = true;
+        cv11 = true;
+      };
       buffer_font_size = lib.mkForce 16;
 
       tab_bar = {
@@ -100,25 +100,25 @@
       terminal = {
         font_family = lib.mkForce "CommitMono";
         font_size = lib.mkForce 14;
-        # font_features = {
-        #   calt = true;
-        #   ss01 = true;
-        #   ss02 = true;
-        #   ss03 = true;
-        #   ss04 = true;
-        #   ss05 = true;
-        #   cv01 = true;
-        #   cv02 = true;
-        #   cv03 = true;
-        #   cv04 = true;
-        #   cv05 = true;
-        #   cv06 = true;
-        #   cv07 = true;
-        #   cv08 = true;
-        #   cv09 = true;
-        #   cv10 = true;
-        #   cv11 = true;
-        # };
+        font_features = {
+          calt = true;
+          ss01 = true;
+          ss02 = true;
+          ss03 = true;
+          ss04 = true;
+          ss05 = true;
+          cv01 = true;
+          cv02 = true;
+          cv03 = true;
+          cv04 = true;
+          cv05 = true;
+          cv06 = true;
+          cv07 = true;
+          cv08 = true;
+          cv09 = true;
+          cv10 = true;
+          cv11 = true;
+        };
       };
 
       vim_mode = false;
