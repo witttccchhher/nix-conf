@@ -129,5 +129,13 @@
       ui_font_family = lib.mkForce "Inter";
       ui_font_size = lib.mkForce 16;
     };
+    userKeymaps = [
+      {
+        bindings = {
+          alt-t = "task::Spawn";
+          alt-w = "pane::CloseActiveItem";
+        };
+      }
+    ];
   };
 }
