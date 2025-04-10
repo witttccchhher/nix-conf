@@ -4,8 +4,13 @@
     enable = true;
     extensions = [
       "make"
-      "nix"
       "material-icon-theme"
+      "dockerfile"
+      "docker-compose"
+      "sql"
+      "csv"
+      "env"
+      "nginx"
     ];
     extraPackages = with pkgs; [
       nixd
@@ -60,11 +65,33 @@
       };
 
       enable_language_server = true;
-      lsp.nixd.settings = {
-        nixpkgs.expr = "import <nixpkgs> { }";
-        options = {
-          nixos.expr = "(builtins.getFlake \"/home/witcher/nix\").nixosConfigurations.ms7996.options";
-          home-manager.expr = "(builtins.getFlake \"/home/witcher/nix\").homeConfigurations.witcher.options";
+      lsp = {
+        basedpyright.settings = {
+          analysis = {
+            typeCheckingMode = "basic";
+            autoSearchPaths = true;
+            logLevel = "Warning";
+            autoImportCompletions = false;
+            diagnosticMode = "workspace";
+            useLibraryCodeForTypes = true;
+            diagnosticSeverityOverrides = {
+              reportUnusedClass = false;
+              reportUnusedFunction = false;
+              reportUnusedVariable = false;
+              reportUnusedCallResult = false;
+              reportUnusedCoroutine = false;
+              reportUnusedExcept = false;
+              reportUnusedExpression = false;
+              reportUnusedParameter = false;
+            };
+          };
+        };
+        nixd.settings = {
+          nixpkgs.expr = "import <nixpkgs> { }";
+          options = {
+            nixos.expr = "(builtins.getFlake \"/home/witcher/nix\").nixosConfigurations.ms7996.options";
+            home-manager.expr = "(builtins.getFlake \"/home/witcher/nix\").homeConfigurations.witcher.options";
+          };
         };
       };
 
@@ -75,7 +102,16 @@
       inlay_hints.enabled = true;
 
       languages = {
+        Python = {
+          language_servers = [
+            "basedpyright"
+          ];
+        };
         Nix = {
+          language_servers = [
+            "nixd"
+            "nil"
+          ];
           formatter.external = {
             command = "nixfmt";
             arguments = [
