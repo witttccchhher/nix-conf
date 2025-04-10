@@ -67,7 +67,7 @@
       enable_language_server = true;
       lsp = {
         basedpyright.settings = {
-          analysis = {
+          basedpyright.analysis = {
             typeCheckingMode = "basic";
             autoSearchPaths = true;
             logLevel = "Warning";
@@ -105,6 +105,8 @@
         Python = {
           language_servers = [
             "basedpyright"
+            "!pyright"
+            "!pylsp"
           ];
         };
         Nix = {
@@ -150,7 +152,6 @@
           cv04 = true;
           cv05 = true;
           cv06 = true;
-          cv07 = true;
           cv08 = true;
           cv09 = true;
           cv10 = true;
