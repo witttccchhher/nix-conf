@@ -27,6 +27,9 @@
       autosave.after_delay.milliseconds = 60000;
       restore_on_startup = "last_session";
       auto_update = false;
+      features = {
+        edit_prediction_provider = "none";
+      };
       icon_theme = {
         mode = "system";
         light = "Material Icon Theme";
