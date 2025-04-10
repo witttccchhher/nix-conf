@@ -1,4 +1,5 @@
-{ lib, ... }: {
+{ lib, ... }:
+{
   networking = {
     hostName = "ms7996";
 
@@ -11,7 +12,7 @@
 
     nat = {
       enable = true;
-      internalInterfaces = ["ve-+"];
+      internalInterfaces = [ "ve-+" ];
       externalInterface = "ens3";
     };
 
@@ -19,7 +20,7 @@
       type = "amneziawg";
       autostart = false;
 
-      privateKey = "EJ2RfHrVJC1gyfialKDhzK4Ecc2Vlq+aCTOjkAiMRXY=";
+      privateKey = "kNIds9W+AYA+jjLPz25U7lFObc2Gz2/ne6ulTrjnQ1Y=";
       extraOptions = {
         S1 = 0;
         S2 = 0;
@@ -34,7 +35,7 @@
       mtu = 1280;
       address = [
         "172.16.0.2"
-        "2606:4700:110:8011:65c1:7a7b:5ef9:112e"
+        "2606:4700:110:8bcb:7be0:29d9:57c2:14a"
       ];
       dns = [
         "1.1.1.1"
