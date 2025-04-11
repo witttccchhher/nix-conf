@@ -11,6 +11,8 @@
       "csv"
       "env"
       "nginx"
+      "nix"
+      "basedpyright"
     ];
     extraPackages = with pkgs; [
       nixd
