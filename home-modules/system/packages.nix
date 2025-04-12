@@ -115,6 +115,8 @@
       lutris
       gnome-tweaks
       dconf-editor
+      keypunch
+      gnome-solanum
     ];
   };
 }
