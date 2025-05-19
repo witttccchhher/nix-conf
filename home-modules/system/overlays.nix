@@ -1,0 +1,4 @@
+{ pkgs, ... }:
+{
+  nixpkgs.overlays = [ ];
+}

@@ -1,0 +1,17 @@
+[Icon Theme]
+Name=icons
+Inherits=Colloid
+Directories=symbolic,apps/scalable
+
+[symbolic]
+Size=16
+MinSize=16
+MaxSize=512
+Type=Scalable
+
+[apps/scalable]
+Size=64
+Context=Applications
+MinSize=16
+MaxSize=512
+Type=Scalable

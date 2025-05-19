@@ -1,0 +1,28 @@
+{ pkgs, lib, ... }: {
+  security.pam.services.gtklock.text = pkgs.lib.readFile "${pkgs.gtklock}/etc/pam.d/gtklock";
+  security.sudo = {
+    enable = true;
+    execWheelOnly = true;
+    wheelNeedsPassword = false;
+    # extraRules = [
+    #   {
+    #     users = [ "witcher" ];
+    #     groups = [ "wheel" ];
+    #     commands = [
+    #       {
+    #         command = "${lib.getExe' pkgs.amneziawg-tools "awg-quick"}";
+    #         options = [ "NOPASSWD" ];
+    #       }
+    #       {
+    #         command = "${lib.getExe' pkgs.amneziawg-tools "awg"}";
+    #         options = [ "NOPASSWD" ];
+    #       }
+    #     ];
+    #   }
+    # ];
+  };
+
+  security.polkit = {
+    enable = true;
+  };
+}
