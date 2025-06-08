@@ -8,7 +8,7 @@
 {
   imports = [
     inputs.stylix.homeManagerModules.stylix
-    inputs.niri.homeNodules.stylix
+    inputs.niri.homeModules.stylix
   ];
 
   stylix = {
