@@ -10,14 +10,6 @@
 
     firewall = {
       checkReversePath = false;
-      allowedTCPPorts = [
-        443
-        80
-      ];
-      allowedUDPPorts = [
-        41641
-        3478
-      ];
     };
 
     nat = {

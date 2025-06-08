@@ -1,7 +1,6 @@
 { pkgs, ... }: {
   fonts = {
     packages = with pkgs; [
-      cascadia-code
       commit-mono
       dejavu_fonts
       (google-fonts.override { fonts = [ "Inter" ]; })

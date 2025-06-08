@@ -4,7 +4,6 @@
 
     exclude = [
       ./default.nix
-      ./services/xinetd.nix
     ];
   };
 }

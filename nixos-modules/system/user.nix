@@ -20,17 +20,12 @@
     };
   };
 
-  # services.xserver.displayManager.gdm = {
-  #   enable = true;
-  #   wayland = true;
-  # };
-
   services.greetd = {
     enable = true;
     package = pkgs.greetd.tuigreet;
     settings = {
       default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --cmd Hyprland";
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --cmd niri-session";
       };
     };
     vt = 1;

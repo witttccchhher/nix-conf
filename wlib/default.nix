@@ -5,11 +5,11 @@
 }: rec {
   umport = inputs.nypkgs.legacyPackages."x86_64-linux".lib.umport;
 
-  colorscheme = "kanagwa-dragon";
+  colorscheme = "nightlamp";
   polarity = "dark";
 
-  wallpaperCategory = "solid";
-  wallpaperIndex = "25";
+  wallpaperCategory = "pixel";
+  wallpaperIndex = "10";
   wallpaperProcessing = {
     level = 10;
     lum = 1.0;

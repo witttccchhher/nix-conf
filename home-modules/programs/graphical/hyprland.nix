@@ -5,7 +5,7 @@
 }:
 {
   services.hyprpaper = {
-    enable = true;
+    enable = false;
     settings = {
       ipc = "on";
       preload = [ "${config.stylix.image}" ];
@@ -13,7 +13,7 @@
     };
   };
   wayland.windowManager.hyprland = {
-    enable = true;
+    enable = false;
 
     extraConfig =
       with config.lib.stylix.colors; # hyprlang

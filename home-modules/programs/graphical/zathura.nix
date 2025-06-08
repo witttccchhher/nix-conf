@@ -3,7 +3,7 @@
     zathura = {
       enable = true;
       extraConfig = ''
-        set font "Cascadia Mono 12"
+        set font "Commit Mono 12"
       '';
     };
   };

@@ -38,21 +38,19 @@
       eog
       imagemagick
       wf-recorder
-      hyprshot
       silicon
       zathura
       drawing
       pinta
 
       # Fonts
-      cascadia-code
       commit-mono
       dejavu_fonts
       (google-fonts.override { fonts = [ "Inter" ]; })
       font-manager
 
       # Terminal utilities
-      fastfetch
+      pfetch
       btop
       lazygit
       bat
@@ -88,6 +86,7 @@
       # Development
       git
       go
+      python314Full
       lua
       uv
       gperf
@@ -117,11 +116,9 @@
       hicolor-icon-theme
 
       # Messengers
-      ayugram-desktop
-      materialgram
+      telegram-desktop
       vesktop
       element-desktop
-      nekoray
 
       # VPN & Security
       wireguard-tools

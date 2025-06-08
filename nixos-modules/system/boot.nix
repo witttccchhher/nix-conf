@@ -1,8 +1,9 @@
 { pkgs, config, ... }: {
   boot = {
-    kernelPackages = pkgs.linuxPackages_zen;
+    kernelPackages = pkgs.linuxPackages_latest;
     kernelModules = [
       "btusb"
+      "kvm-intel"
     ];
     kernelParams = [
       "i915.enable_guc=2"
@@ -13,12 +14,22 @@
       amneziawg
     ];
     loader = {
-      systemd-boot = {
+      grub = {
+        devices = [ "nodev" ];
+        efiSupport = true;
+        efiInstallAsRemovable = true;
         enable = true;
-        configurationLimit = 5;
+        extraEntries = ''
+          menuentry "Windows" {
+            insmod part_gpt
+            insmod fat
+            insmod search_fs_uuid
+            insmod chain
+            search --fs-uuid --set=root E517-9C2E
+            chainloader /EFI/Microsoft/Boot/bootmgfw.efi
+          }
+        '';
       };
-      timeout = 5;
-      efi.canTouchEfiVariables = true;
     };
     initrd = {
       compressor = "zstd";

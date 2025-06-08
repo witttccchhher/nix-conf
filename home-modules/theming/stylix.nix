@@ -32,7 +32,7 @@
 
     fonts = {
       monospace = {
-        name = "Cascadia Mono";
+        name = "Commit Mono";
         package = pkgs.cascadia-code;
       };
       sansSerif = {

@@ -6,9 +6,7 @@
   services = {
     flatpak = {
       enable = false;
-      packages = [
-        "io.qt.Designer"
-      ];
+      packages = [ ];
     };
   };
 }
