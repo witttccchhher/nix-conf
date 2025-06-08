@@ -8,6 +8,7 @@
 {
   imports = [
     inputs.stylix.homeManagerModules.stylix
+    inputs.niri.homeNodules.stylix
   ];
 
   stylix = {
@@ -66,6 +67,7 @@
       xresources.enable = true;
       zathura.enable = true;
       zed.enable = true;
+      niri.enable = true;
     };
   };
 }

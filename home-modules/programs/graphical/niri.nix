@@ -1,5 +1,5 @@
 { pkgs, inputs, ... }: {
-  imports = [ inputs.niri.nixosModules.niri ];
+  imports = [ inputs.niri.homeModules.niri ];
 
   programs.niri = {
     enable = true;

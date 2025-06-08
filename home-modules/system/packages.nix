@@ -15,7 +15,7 @@
       QT_WAYLAND_DECORATION = "adwaita";
       QT_QPA_PLATFORMTHEME = lib.mkForce "gtk3";
       COLORTERM = "truecolor";
-      FLAKE = "/home/witcher/nix";
+      NH_FLAKE = "/home/witcher/nix";
       NIXOS_OZONE_WL = 1;
       QT_QPA_PLATFORM = "wayland";
       GDK_BACKEND = "wayland";
