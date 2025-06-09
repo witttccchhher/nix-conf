@@ -1,4 +1,5 @@
 @use "sass:string";
+@use "/home/witcher/.config/stylix/palette";
 
 @function gtkalpha($c, $a) {
     @return string.unquote("alpha(#{$c},#{$a})");
@@ -20,30 +21,30 @@ window#Launcher {
         border-radius: 20px;
         border: 1pt solid #c9c7cd33;
         margin: 1px;
-        padding: .8rem;
+        padding: 0.8rem;
 
         entry {
-            padding: .5rem;
+            padding: 0.5rem;
             border-bottom: 1pt solid #c9c7cd33;
         }
 
         button {
             min-width: 0;
             min-height: 0;
-            padding: .5rem;
+            padding: 0.5rem;
 
             icon {
                 font-size: 3em;
-                margin-right: .3rem;
+                margin-right: 0.3rem;
             }
 
             label.name {
                 font-weight: bold;
-                font-size: 1.1em
+                font-size: 1.1em;
             }
 
             label.description {
-                color: gtkalpha($fg, .8);
+                color: gtkalpha($fg, 0.8);
             }
         }
 
@@ -52,11 +53,11 @@ window#Launcher {
 
             icon {
                 font-size: 6em;
-                color: gtkalpha($fg, .7);
+                color: gtkalpha($fg, 0.7);
             }
 
             label {
-                color: gtkalpha($fg, .9);
+                color: gtkalpha($fg, 0.9);
                 font-size: 1.2em;
             }
         }
