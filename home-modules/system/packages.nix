@@ -61,6 +61,7 @@
       gping
       killall
       gum
+      libnotify
 
       # System utilities
       wl-clipboard
