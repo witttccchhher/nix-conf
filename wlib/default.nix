@@ -5,7 +5,7 @@
 }: rec {
   umport = inputs.nypkgs.legacyPackages."x86_64-linux".lib.umport;
 
-  colorscheme = "nightlamp";
+  colorscheme = "next";
   polarity = "dark";
 
   wallpaperCategory = "pixel";

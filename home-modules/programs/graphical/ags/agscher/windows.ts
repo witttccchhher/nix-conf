@@ -11,8 +11,4 @@ export default [
   Launcher,
 
   Bar,
-
-  Menu,
-  ScreenRecorder,
-  ScreenShoter,
 ];

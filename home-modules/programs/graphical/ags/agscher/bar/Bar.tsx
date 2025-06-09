@@ -162,7 +162,7 @@ export default function Bar(monitor: Gdk.Monitor) {
     >
       <box className="main">
         <box className="start" hexpand halign={Gtk.Align.START}>
-          <Workspaces />
+	{/*<Workspaces />*/}
         </box>
         <box className="end" hexpand halign={Gtk.Align.END}>
           <SysTray />
