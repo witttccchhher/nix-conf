@@ -1,5 +1,5 @@
 { config, ... }: {
-  home.file.".config/stylix/palette.scss" = with config.lib.stylix.colors.withHashtag; ''
+  xdg.configFile."stylix/palette.scss".text = with config.lib.stylix.colors.withHashtag; ''
     $base00: ${base00};
     $base01: ${base01};
     $base02: ${base02};
