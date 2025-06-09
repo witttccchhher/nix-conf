@@ -1,31 +1,23 @@
 @use "sass:string";
-@use "/home/witcher/.config/stylix/palette";
-
-@function gtkalpha($c, $a) {
-    @return string.unquote("alpha(#{$c},#{$a})");
-}
-
-$fg: #c9c7cd;
-$bg: #000000;
-$accent: #aca1cf;
+@use "../palette";
 
 window#Launcher {
     all: unset;
     font-family: "Inter";
     font-weight: 700;
     font-size: 14px;
-    background-color: #00000001;
+    background-color: transparent;
 
     box.Launcher {
-        background-color: $bg;
+        background-color: palette.$base00;
         border-radius: 20px;
-        border: 1pt solid #c9c7cd33;
+        border: 1pt solid palette.$base02;
         margin: 1px;
         padding: 0.8rem;
 
         entry {
             padding: 0.5rem;
-            border-bottom: 1pt solid #c9c7cd33;
+            border-bottom: 1pt solid palette.$base02;
         }
 
         button {
@@ -44,7 +36,7 @@ window#Launcher {
             }
 
             label.description {
-                color: gtkalpha($fg, 0.8);
+                color: palette.$base04;
             }
         }
 
@@ -53,11 +45,11 @@ window#Launcher {
 
             icon {
                 font-size: 6em;
-                color: gtkalpha($fg, 0.7);
+                color: palette.$base05;
             }
 
             label {
-                color: gtkalpha($fg, 0.9);
+                color: palette.$base05;
                 font-size: 1.2em;
             }
         }

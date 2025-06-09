@@ -109,7 +109,7 @@
 
       binds {
           Mod+Return           { spawn "kitty"; }
-          Mod+Space            { spawn "ags toggle Launcher"; }
+          Mod+Space            { spawn "ags" "toggle" "Launcher"; }
           Mod+W                { close-window; }
           Mod+Tab repeat=false { toggle-overview; }
 
