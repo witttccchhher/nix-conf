@@ -108,8 +108,9 @@
       }
 
       binds {
-          Mod+Return { spawn "kitty"; }
-          Mod+W { close-window; }
+          Mod+Return           { spawn "kitty"; }
+          Mod+Space            { spawn "ags toggle Launcher"; }
+          Mod+W                { close-window; }
           Mod+Tab repeat=false { toggle-overview; }
 
           XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+"; }
@@ -129,10 +130,10 @@
           Mod+BracketLeft  { consume-or-expel-window-left; }
           Mod+BracketRight { consume-or-expel-window-right; }
 
-          Mod+R { switch-preset-column-width; }
+          Mod+R       { switch-preset-column-width; }
           Mod+Shift+R { switch-preset-window-height; }
-          Mod+Ctrl+R { reset-window-height; }
-          Mod+F { maximize-column; }
+          Mod+Ctrl+R  { reset-window-height; }
+          Mod+F       { maximize-column; }
           Mod+Shift+F { fullscreen-window; }
 
           Mod+Minus { set-column-width "-10%"; }
@@ -144,7 +145,7 @@
           Mod+T       { toggle-window-floating; }
           Mod+Shift+T { switch-focus-between-floating-and-tiling; }
 
-          Print { screenshot; }
+          Print     { screenshot; }
           Alt+Print { screenshot-screen; }
 
           Mod+Shift+Q { quit; }
