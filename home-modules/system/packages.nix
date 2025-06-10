@@ -126,6 +126,8 @@
       amneziawg-go
       amneziawg-tools
       xray
+      v2ray
+      v2rayn
 
       # Terminals
       foot
