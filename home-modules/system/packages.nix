@@ -125,6 +125,7 @@
       wireguard-tools
       amneziawg-go
       amneziawg-tools
+      hiddify-app
 
       # Terminals
       foot
