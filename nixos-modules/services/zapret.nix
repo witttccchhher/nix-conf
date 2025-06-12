@@ -50,7 +50,8 @@
       "7tv.io"
     ];
     params = [
-      "--dpi-desync=fake,disorder2"
+      "--dpi-desync=multisplit"
+      "--dpi-desync-split-pos=method+2"
       "--dpi-desync-ttl=1"
       "--dpi-desync-autottl=2"
     ];
