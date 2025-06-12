@@ -2,7 +2,6 @@
   services.zapret = {
     enable = true;
     whitelist = [
-      "music.youtube.com"
       "search.nixos.org"
       "curseforge.com"
       "cloudflare-ech.com"
@@ -51,8 +50,7 @@
       "7tv.io"
     ];
     params = [
-      "--dpi-desync=multisplit"
-      "--dpi-desync-split-pos=method+2"
+      "--dpi-desync=fake,disorder2"
       "--dpi-desync-ttl=1"
       "--dpi-desync-autottl=2"
     ];
