@@ -128,6 +128,8 @@
       xray
       v2ray
       v2rayn
+      protonvpn-gui
+      warp-plus
 
       # Terminals
       foot
