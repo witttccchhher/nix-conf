@@ -2,6 +2,7 @@
   services.zapret = {
     enable = true;
     whitelist = [
+      "search.nixos.org"
       "curseforge.com"
       "cloudflare-ech.com"
       "dis.gd"
