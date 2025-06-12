@@ -1,6 +1,6 @@
 { ... }: {
   services.zapret = {
-    enable = true;
+    enable = false;
     whitelist = [
       "search.nixos.org"
       "curseforge.com"
