@@ -1,6 +1,6 @@
 { ... }: {
   services.zapret = {
-    enable = false;
+    enable = true;
     whitelist = [
       "curseforge.com"
       "cloudflare-ech.com"
