@@ -20,9 +20,9 @@
 
     wg-quick.interfaces."WARP" = {
       type = "amneziawg";
-      autostart = false;
+      autostart = true;
 
-      privateKey = "kNIds9W+AYA+jjLPz25U7lFObc2Gz2/ne6ulTrjnQ1Y=";
+      privateKey = "qPTlW9XpVgIcs7uWoSyzL/rn3zP9vmsE3KIpowA+X3w=";
       extraOptions = {
         S1 = 0;
         S2 = 0;
@@ -37,7 +37,7 @@
       mtu = 1280;
       address = [
         "172.16.0.2"
-        "2606:4700:110:8bcb:7be0:29d9:57c2:14a"
+        "2606:4700:110:8936:bd62:1290:8b1f:404f"
       ];
       dns = [
         "1.1.1.1"
@@ -53,7 +53,7 @@
             "0.0.0.0/0"
             "::/0"
           ];
-          endpoint = "188.114.97.66:3138";
+          endpoint = "188.114.99.224:1002";
         }
       ];
     };
