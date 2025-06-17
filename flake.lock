@@ -969,11 +969,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1750149026,
-        "narHash": "sha256-89un55U8dDRVCF1TYqHSxOUJa5TFimO51RaRaeRkqDY=",
+        "lastModified": 1750150573,
+        "narHash": "sha256-cPz+oKxbYAz0O2eWPRYPLHzdBU76vTPUgThzOd96PHE=",
         "owner": "witttccchhher",
         "repo": "witpkgs",
-        "rev": "74cb6edf9410d53f7ad5bbc59a784081b47e97ea",
+        "rev": "ee6b62bf5c1c41ca6f4c1c31e644245b4ea8a4b9",
         "type": "github"
       },
       "original": {
