@@ -137,6 +137,7 @@
       obsidian
       keypunch
       zenity
+      waydroid
     ];
   };
 }
