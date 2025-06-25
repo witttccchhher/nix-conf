@@ -19,14 +19,8 @@
       };
     };
 
-    gnome = {
-      enable = true;
-      gnome-settings-daemon.enable = true;
-      gnome-keyring.enable = true;
-      core-shell.enable = true;
-      core-os-services.enable = true;
-      core-developer-tools.enable = true;
-      core-apps.enable = true;
-    };
+    udev.packages = with pkgs; [
+      gnome-settings-daemon
+    ];
   };
 }
