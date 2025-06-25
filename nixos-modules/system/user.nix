@@ -21,7 +21,7 @@
   };
 
   services.greetd = {
-    enable = true;
+    enable = false;
     package = pkgs.greetd.tuigreet;
     settings = {
       default_session = {
