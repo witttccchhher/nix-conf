@@ -52,6 +52,7 @@
     };
 
     targets = {
+      gnome.enable = true;
       vesktop.enable = true;
       glance.enable = true;
       cava.enable = true;
