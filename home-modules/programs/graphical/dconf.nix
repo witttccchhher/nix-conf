@@ -1,8 +1,8 @@
 { ... }:
 {
-  dconf.settings = {
-    "org/gnome/desktop/interface" = {
+  # dconf.settings = {
+    # "org/gnome/desktop/interface" = {
       # icon-theme = "Colloid";
-    };
-  };
+    # };
+  # };
 }

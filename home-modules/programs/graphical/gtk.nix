@@ -2,9 +2,9 @@
 {
   gtk = {
     enable = true;
-    iconTheme = {
+    # iconTheme = {
       # package = pkgs.colloid-icon-theme;
       # name = "Colloid";
-    };
+    # };
   };
 }
