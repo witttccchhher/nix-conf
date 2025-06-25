@@ -5,6 +5,9 @@
       { package = blur-my-shell; }
       { package = appindicator; }
       { package = just-perfection; }
+      { package = rounded-window-corners-reborn; }
+      { package = panel-corners; }
+      { package = useless-gaps; }
     ];
   };
 
