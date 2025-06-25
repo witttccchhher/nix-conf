@@ -8,12 +8,12 @@
   colorscheme = "next";
   polarity = "dark";
 
-  wallpaperCategory = "pixel";
-  wallpaperIndex = "10";
+  wallpaperCategory = "solid";
+  wallpaperIndex = "22";
   wallpaperProcessing = {
     level = 10;
     lum = 1.0;
-    preserve = false;
+    preserve = true;
   };
 
   wallpaper = { colors }: let
