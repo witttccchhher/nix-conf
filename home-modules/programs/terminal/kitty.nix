@@ -80,6 +80,8 @@
       background ${base00}
 
       dim_opacity 0.5
+      background_opacity 0.5
+      background_blur 1
 
       selection_foreground ${base00}
       selection_background ${base07}
