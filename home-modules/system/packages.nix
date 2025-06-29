@@ -30,7 +30,6 @@
       # Flakes
       inputs.zen-browser.packages.${system}.default
       inputs.witpkgs.packages.${system}.anicli-ru
-      inputs.elyprism.packages.${system}.default
 
       # Media
       mpv
@@ -42,6 +41,8 @@
       zathura
       drawing
       pinta
+      foliate
+      monophony
 
       # Fonts
       commit-mono
@@ -78,7 +79,6 @@
       nixfmt-rfc-style
       blueman
       bluetuith
-      lutris
       networkmanager-l2tp
       transmission_4-gtk
       nautilus
@@ -137,6 +137,7 @@
       obsidian
       keypunch
       zenity
+      packet
     ];
   };
 }

@@ -11,12 +11,6 @@
     displayManager.gdm = {
       enable = true;
       autoSuspend = false;
-      settings = {
-        daemon = {
-          AutomaticLoginEnable = true;
-          AutomaticLogin = "witcher";
-        };
-      };
     };
 
     udev.packages = with pkgs; [
