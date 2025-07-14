@@ -56,7 +56,7 @@
           format = "{volume}";
           format-muted = "M";
           tooltip = false;
-        }
+        };
       };
     };
     style = with config.lib.stylix.colors.withHashtag; ''
