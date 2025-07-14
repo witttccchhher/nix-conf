@@ -27,7 +27,7 @@
       anchor = "top";
 
       width = "100%";
-      height = 30;
+      height = 40;
       outline-width = 0;
       border-width = 0;
       
