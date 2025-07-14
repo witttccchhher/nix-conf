@@ -83,7 +83,7 @@
           }
       }
 
-      // spawn-at-startup "ags run"
+      spawn-at-startup "waybar"
 
       screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
 
