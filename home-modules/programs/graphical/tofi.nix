@@ -27,11 +27,11 @@
       anchor = "top";
 
       width = "100%";
-      height = 40;
+      height = 35;
       outline-width = 0;
       border-width = 0;
       
-      padding-top = 8;
+      padding-top = 0;
       padding-bottom = 0;
       padding-left = 0;
       padding-right = 0;
