@@ -2,7 +2,7 @@
   imports = [ inputs.niri.homeModules.niri ];
 
   programs.niri = {
-    enable = false;
+    enable = true;
     package = inputs.niri.packages.${pkgs.system}.niri-unstable;
 
     config = ''

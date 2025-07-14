@@ -2,7 +2,7 @@
   imports = [ inputs.niri.nixosModules.niri ];
 
   programs.niri = {
-    enable = false;
+    enable = true;
     package = inputs.niri.packages.${pkgs.system}.niri-unstable;
   };
 
