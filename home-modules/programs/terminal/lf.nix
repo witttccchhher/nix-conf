@@ -6,7 +6,6 @@
       anchorfind = false;
       globsearch = true;
       hidden = true;
-      number = true;
     };
   };
 }
