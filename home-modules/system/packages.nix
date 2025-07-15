@@ -64,6 +64,9 @@
       killall
       gum
       libnotify
+      lazysql
+      lazydocker
+      posting
 
       # System utilities
       wl-clipboard

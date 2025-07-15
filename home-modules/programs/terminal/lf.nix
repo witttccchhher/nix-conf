@@ -4,7 +4,6 @@
 
     settings = {
       anchorfind = false;
-      drawbox = true;
     };
   };
 }
