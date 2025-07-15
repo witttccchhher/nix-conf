@@ -32,8 +32,8 @@
       "x" = "cut";
     };
 
-    commands = {
-      extract = pkgs.writeShellScript "lf-extract.sh" ''
+    extraConfig = ''
+      cmd extract $\{{
         set -f
         case $f in
           *.tar.bz|*.tar.bz2|*.tbz|*.tbz2) tar xjvf $f;;
@@ -43,7 +43,7 @@
           *.rar) unrar x $f;;
           *.7z) 7z x $f;;
         esac
-      '';
-    };
+      }}
+    '';
   };
 }
