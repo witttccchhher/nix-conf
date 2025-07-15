@@ -7,6 +7,7 @@
       globsearch = true;
       hidden = true;
       scrolloff = 5;
+      sixel = true;
     };
   };
 }
