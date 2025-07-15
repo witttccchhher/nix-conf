@@ -67,6 +67,11 @@
       lazysql
       lazydocker
       posting
+      highlight
+      poppler-utils
+      p7zip
+      unzip
+      unrar
 
       # System utilities
       wl-clipboard
