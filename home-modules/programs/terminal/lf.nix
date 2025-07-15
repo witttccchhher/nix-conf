@@ -8,6 +8,7 @@
       hidden = true;
       scrolloff = 5;
       sixel = true;
+      tabstop = 2;
     };
   };
 }
