@@ -72,6 +72,7 @@
       p7zip
       unzip
       unrar
+      libsixel
 
       # System utilities
       wl-clipboard
