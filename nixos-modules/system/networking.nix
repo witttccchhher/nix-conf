@@ -22,7 +22,7 @@
       type = "amneziawg";
       autostart = true;
 
-      privateKey = "qPTlW9XpVgIcs7uWoSyzL/rn3zP9vmsE3KIpowA+X3w=";
+      privateKey = "oKO3Egk/J13z48MnzIPDjv/EsjpORYFjzRlUJODNjm0=";
       extraOptions = {
         S1 = 0;
         S2 = 0;
@@ -37,7 +37,7 @@
       mtu = 1280;
       address = [
         "172.16.0.2"
-        "2606:4700:110:8936:bd62:1290:8b1f:404f"
+        "2606:4700:110:8bd3:c31:f935:67ba:25bc"
       ];
       dns = [
         "1.1.1.1"
