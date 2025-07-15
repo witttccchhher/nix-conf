@@ -722,6 +722,26 @@
         "type": "github"
       }
     },
+    "nur-vizqq": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1748638972,
+        "narHash": "sha256-6pxvbJubsQv5N1qOmPheKzy9eRQi6r4AADm31a0Lj7A=",
+        "owner": "ViZiD",
+        "repo": "nur-vizqq",
+        "rev": "520f40a58faea0040e1169a7de08696e7b78a291",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ViZiD",
+        "repo": "nur-vizqq",
+        "type": "github"
+      }
+    },
     "nur_2": {
       "inputs": {
         "flake-parts": [
@@ -783,6 +803,7 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-master": "nixpkgs-master",
         "nur": "nur",
+        "nur-vizqq": "nur-vizqq",
         "nypkgs": "nypkgs",
         "stylix": "stylix",
         "wallpapers": "wallpapers",

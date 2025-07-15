@@ -30,6 +30,7 @@
       # Flakes
       inputs.zen-browser.packages.${system}.default
       inputs.witpkgs.packages.${system}.anicli-ru
+      inputs.nur-vizqq.packages.${system}.pa
 
       # Media
       mpv

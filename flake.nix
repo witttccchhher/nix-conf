@@ -9,7 +9,6 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
     flake-parts.url = "github:hercules-ci/flake-parts";
     stylix.url = "github:danth/stylix";
     nix-flatpak.url = "github:gmodena/nix-flatpak";
@@ -49,6 +48,10 @@
     };
     niri = {
       url = "github:sodiboo/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    nur-vizqq = {
+      url = "github:ViZiD/nur-vizqq";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
