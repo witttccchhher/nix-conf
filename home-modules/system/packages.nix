@@ -73,6 +73,7 @@
       unzip
       unrar
       libsixel
+      chafa
 
       # System utilities
       wl-clipboard
