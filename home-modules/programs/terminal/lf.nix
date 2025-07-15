@@ -28,12 +28,12 @@
 
     keybindings = {
       "<enter>" = "&$OPENER \"$f\"";
-      "d" = "trash";
+      "d" = "delete";
       "x" = "cut";
     };
 
     commands = {
-      extract = ''
+      extract = pkgs.writeShellScript "lf-extract.sh" ''
         set -f
         case $f in
           *.tar.bz|*.tar.bz2|*.tbz|*.tbz2) tar xjvf $f;;
