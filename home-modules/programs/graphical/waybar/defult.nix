@@ -72,10 +72,6 @@
         color: ${base07};
       }
 
-      #workspaces {
-        margin-left: 1px;
-      }
-
       #workspaces button {
         padding: 0 12px;
       }
