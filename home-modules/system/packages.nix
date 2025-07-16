@@ -74,6 +74,7 @@
       unrar
       libsixel
       chafa
+      gnumake
 
       # System utilities
       wl-clipboard
