@@ -114,6 +114,7 @@
           Mod+Space            { spawn "tofi-drun"; }
           Mod+W                { close-window; }
           Mod+Tab repeat=false { toggle-overview; }
+          Mod+N                { spawn "io.github.alainm23.planify.quick-add"; }
 
           XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+"; }
           XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-"; }
