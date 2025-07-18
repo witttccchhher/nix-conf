@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   programs.neovim = {
     enable = true;
-    defaultEditor = true;
+    defaultEditor = false;
     extraPackages = with pkgs; [
       nodejs_20
       git
