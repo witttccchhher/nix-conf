@@ -1,4 +1,5 @@
-{ pkgs, inputs, ... }: {
+{ pkgs, inputs, ... }:
+{
   imports = [ inputs.niri.homeModules.niri ];
 
   programs.niri = {
@@ -50,7 +51,7 @@
 
           preset-window-heights {
               proportion 0.5
-        proportion 1.0
+              proportion 1.0
           }
 
           default-column-width { proportion 1.0; }

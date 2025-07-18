@@ -44,6 +44,7 @@
       pinta
       foliate
       monophony
+      swaybg
 
       # Fonts
       commit-mono

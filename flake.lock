@@ -988,11 +988,11 @@
     "wallpapers": {
       "flake": false,
       "locked": {
-        "lastModified": 1751135134,
-        "narHash": "sha256-Ct5wtZ2HzTKrRHop84/bBZBPU5mZgQPS13Vd4J+ZMWI=",
+        "lastModified": 1752730685,
+        "narHash": "sha256-trgsgrAsRPX6zb7NhQJppB2w5hJXcrj/NYU3eE6qiaA=",
         "owner": "witttccchhher",
         "repo": "wallpapers",
-        "rev": "bb7c048ad937b63b0ff24b29464db67fc3244abf",
+        "rev": "3907aa374573a73f5a18785dba2f428cec9aad5f",
         "type": "github"
       },
       "original": {
