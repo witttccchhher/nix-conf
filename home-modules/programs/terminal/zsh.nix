@@ -3,9 +3,6 @@
     enable = true;
     shellAliases = let
     in  {
-      "x" = "exit";
-      "c" = "clear";
-
       "ls" = "lla -l";
       "ll" = "lla";
       "tree" = "lla -t";
@@ -13,14 +10,8 @@
        ".." = "cd ..";
        "..." = "cd ../../";
 
-      "flakeu" = "nix flake update --flake 'path:/home/witcher/nix'";
-
-      "e" = "nvim";
-      "fe" = "nvim $(fzf)";
-
-      "y" = "yazi";
-      "tte" = "trans ru:en -no-auto -no-theme";
-      "ttr" = "trans en:ru -no-auto -no-theme";
+      "e" = "hx";
+      "fe" = "hx $(fzf)";
     };
     syntaxHighlighting = {
       enable = true;
