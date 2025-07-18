@@ -8,8 +8,8 @@
   colorscheme = "next";
   polarity = "dark";
 
-  wallpaperCategory = "solid";
-  wallpaperIndex = "22";
+  wallpaperCategory = "girl";
+  wallpaperIndex = "30";
   wallpaperProcessing = {
     level = 10;
     lum = 1.0;
