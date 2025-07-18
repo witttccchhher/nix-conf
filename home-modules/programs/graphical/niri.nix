@@ -85,7 +85,7 @@
       }
 
       spawn-at-startup "waybar"
-      spawn-at-startup "swaybg -i ${w.wallpaper}"
+      spawn-at-startup "swaybg" "-i" "${w.wallpaper}"
 
       screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
 
