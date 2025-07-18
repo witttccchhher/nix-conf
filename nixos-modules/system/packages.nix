@@ -1,6 +1,5 @@
 { pkgs, ... }: {
   environment.sessionVariables = {
-    EDITOR = "nvim";
     QT_WAYLAND_DECORATION = "adwaita";
     QT_QPA_PLATFORMTHEME = "gtk3";
     COLORTERM = "truecolor";

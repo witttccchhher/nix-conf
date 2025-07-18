@@ -11,7 +11,6 @@
 
   home = {
     sessionVariables = {
-      EDITOR = "nvim";
       QT_WAYLAND_DECORATION = "adwaita";
       QT_QPA_PLATFORMTHEME = lib.mkForce "gtk3";
       COLORTERM = "truecolor";
