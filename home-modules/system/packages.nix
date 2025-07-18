@@ -151,6 +151,7 @@
       keypunch
       zenity
       packet
+      planify
     ];
   };
 }
