@@ -2,9 +2,7 @@
   programs.bat = {
     enable = true;
     themes = {
-      next = {
-        file = ./next.tmTheme;
-      };
+      next = builtins.readFile ./next.tmTheme;
     };
   };
 }
