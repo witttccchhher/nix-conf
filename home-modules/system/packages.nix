@@ -89,6 +89,7 @@
       localsearch
       lla
       nixfmt-rfc-style
+      python3Packages.autopep8
       blueman
       bluetuith
       networkmanager-l2tp
