@@ -8,6 +8,7 @@
       nixd
       gopls
       ty
+      basedpyright
       bash-language-server
 
       nixfmt-rfc-style
