@@ -16,12 +16,21 @@
       "html"
       "scss"
       "git-firefly"
+      "ty"
+      "toml"
+      "python-requirements-and-constraints"
+      "json5"
+      "postgres-context-server"
+      "github-mcp-server"
+      "python-snippets"
+      "fastapi-snippets"
     ];
     extraPackages = with pkgs; [
       nixd
       nil
       gopls
       basedpyright
+      ty
 
       direnv
 
@@ -107,12 +116,13 @@
         inline.enabled = true;
       };
 
-      inlay_hints.enabled = true;
+      inlay_hints.enabled = false;
 
       languages = {
         Python = {
           language_servers = [
             "basedpyright"
+            "ty"
             "!pyright"
             "!pylsp"
           ];
