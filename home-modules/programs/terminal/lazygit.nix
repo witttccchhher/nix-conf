@@ -1,4 +1,5 @@
-{ ... }: {
+{ ... }:
+{
   programs = {
     lazygit = {
       enable = true;
@@ -6,7 +7,10 @@
         gui = {
           mouseEvents = false;
           theme = {
-            activeBorderColor = [ "magenta" "bold" ];
+            activeBorderColor = [
+              "magenta"
+              "bold"
+            ];
             inactiveBorderColor = [ "default" ];
           };
         };

@@ -2,7 +2,8 @@
   pkgs,
   inputs,
   ...
-}: rec {
+}:
+rec {
   umport = inputs.nypkgs.legacyPackages."x86_64-linux".lib.umport;
 
   colorscheme = "next";

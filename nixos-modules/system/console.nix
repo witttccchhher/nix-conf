@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   console = {
     enable = true;
     font = with pkgs; "${terminus_font}/share/consolefonts/ter-v16n.psf.gz";

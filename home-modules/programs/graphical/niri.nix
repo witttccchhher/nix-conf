@@ -1,4 +1,9 @@
-{ w, pkgs, inputs, ... }:
+{
+  w,
+  pkgs,
+  inputs,
+  ...
+}:
 {
   imports = [ inputs.niri.homeModules.niri ];
 

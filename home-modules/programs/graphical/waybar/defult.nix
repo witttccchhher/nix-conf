@@ -1,8 +1,9 @@
-{ config, ... }: {
+{ config, ... }:
+{
   programs.waybar = {
     enable = true;
     settings = {
-      dwm = {  
+      dwm = {
         layer = "top";
         position = "top";
         height = 35;

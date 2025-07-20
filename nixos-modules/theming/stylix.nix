@@ -1,4 +1,10 @@
-{ w, inputs, config, ... }: {
+{
+  w,
+  inputs,
+  config,
+  ...
+}:
+{
   imports = [
     inputs.stylix.nixosModules.stylix
   ];

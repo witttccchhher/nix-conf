@@ -1,4 +1,5 @@
-{ pkgs, config, ... }: {
+{ pkgs, config, ... }:
+{
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
     kernelModules = [
@@ -35,7 +36,13 @@
       compressor = "zstd";
       compressorArgs = [ "-16" ];
       verbose = false;
-      availableKernelModules = [ "xhci_pci" "ahci" "usb_storage" "usbhid" "sd_mod" ];
+      availableKernelModules = [
+        "xhci_pci"
+        "ahci"
+        "usb_storage"
+        "usbhid"
+        "sd_mod"
+      ];
       kernelModules = [ ];
     };
   };

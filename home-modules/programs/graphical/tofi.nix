@@ -1,4 +1,5 @@
-{ config, ... }: {
+{ config, ... }:
+{
   programs.tofi = {
     enable = true;
     settings = with config.lib.stylix.colors.withHashtag; {
@@ -30,7 +31,7 @@
       height = 35;
       outline-width = 0;
       border-width = 0;
-      
+
       padding-top = 8;
       padding-bottom = 0;
       padding-left = 0;

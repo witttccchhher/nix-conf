@@ -1,4 +1,5 @@
-{ config, ... }: {
+{ config, ... }:
+{
   imports = [ ../../custom/lla.nix ];
 
   programs.lla = {

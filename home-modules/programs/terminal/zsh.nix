@@ -1,21 +1,36 @@
-{ inputs, config, pkgs, ... }: {
+{
+  inputs,
+  config,
+  pkgs,
+  ...
+}:
+{
   programs.zsh = {
     enable = true;
-    shellAliases = let
-    in  {
-      "ls" = "lla -l";
-      "ll" = "lla";
-      "tree" = "lla -t";
+    shellAliases =
+      let
+      in
+      {
+        "ls" = "lla -l";
+        "ll" = "lla";
+        "tree" = "lla -t";
 
-       ".." = "cd ..";
-       "..." = "cd ../../";
+        ".." = "cd ..";
+        "..." = "cd ../../";
 
-      "e" = "hx";
-      "fe" = "hx $(fzf)";
-    };
+        "e" = "hx";
+        "fe" = "hx $(fzf)";
+      };
     syntaxHighlighting = {
       enable = true;
-      highlighters = [ "main" "brackets" "pattern" "regexp" "root" "line" ];
+      highlighters = [
+        "main"
+        "brackets"
+        "pattern"
+        "regexp"
+        "root"
+        "line"
+      ];
       styles = with config.lib.stylix.colors; {
         command = "fg=#${base07},bold";
         unknown-token = "fg=#${base08},bold";

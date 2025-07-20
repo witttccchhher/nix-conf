@@ -1,4 +1,5 @@
-{ w, ... }: {
+{ w, ... }:
+{
   imports = w.umport {
     path = ./.;
 

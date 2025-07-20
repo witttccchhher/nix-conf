@@ -1,4 +1,5 @@
-{ lib, config, ... }: {
+{ lib, config, ... }:
+{
   hardware = {
     bluetooth = {
       enable = true;
@@ -11,7 +12,7 @@
         };
       };
     };
-    
+
     cpu.intel = {
       updateMicrocode = lib.mkForce config.hardware.enableRedistributableFirmware;
     };
@@ -32,7 +33,10 @@
     "/boot" = {
       device = "/dev/disk/by-uuid/2982-825A";
       fsType = "vfat";
-      options = [ "fmask=0077" "dmask=0077" ];
+      options = [
+        "fmask=0077"
+        "dmask=0077"
+      ];
     };
   };
 }

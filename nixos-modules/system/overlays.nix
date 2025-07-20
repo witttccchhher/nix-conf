@@ -1,3 +1,4 @@
-{ inputs, pkgs, ... }: {
+{ inputs, pkgs, ... }:
+{
   nixpkgs.overlays = [ ];
 }

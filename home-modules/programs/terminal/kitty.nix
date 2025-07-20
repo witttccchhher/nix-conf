@@ -1,4 +1,5 @@
-{ config, ... }: {
+{ config, ... }:
+{
   programs.kitty = {
     enable = true;
     extraConfig = with config.lib.stylix.colors.withHashtag; ''

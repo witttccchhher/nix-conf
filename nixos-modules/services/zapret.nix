@@ -1,4 +1,5 @@
-{ ... }: {
+{ ... }:
+{
   services.zapret = {
     enable = false;
     whitelist = [
