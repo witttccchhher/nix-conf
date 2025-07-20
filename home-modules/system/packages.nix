@@ -6,7 +6,7 @@
 }:
 {
   imports = [
-    inputs.nix-index-database.hmModules.nix-index
+    inputs.nix-index-database.homeModules.nix-index
   ];
 
   home = {
@@ -66,7 +66,6 @@
       libnotify
       lazysql
       lazydocker
-      posting
       highlight
       poppler-utils
       p7zip
