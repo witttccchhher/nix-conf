@@ -142,6 +142,12 @@
           Mod+Shift+K     { move-window-up-or-to-workspace-up; }
           Mod+Shift+L     { move-column-right; }
 
+          Mod+Ctrl+H    { focus-monitor-left; }
+          Mod+Ctrl+L    { focus-monitor-right; }
+
+          Mod+Ctrl+Shift+H    { move-window-to-monitor-left; }
+          Mod+Ctrl+Shift+L    { move-window-to-monitor-right; }
+
           Mod+BracketLeft  { consume-or-expel-window-left; }
           Mod+BracketRight { consume-or-expel-window-right; }
 
