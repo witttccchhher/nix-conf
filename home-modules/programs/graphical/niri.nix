@@ -35,11 +35,18 @@
           focus-follows-mouse max-scroll-amount="0%"
       }
 
-      output "HDMI-A-1" {
+      output "HDMI-A-4" {
           mode "1920x1080@74.973"
           scale 1
           transform "normal"
           position x=0 y=0
+      }
+
+      output "DP-2" {
+          mode "1920x1080@74.973"
+          scale 1
+          transform "normal"
+          position x=1920 y=0
       }
 
       layout {
