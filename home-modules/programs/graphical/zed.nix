@@ -26,12 +26,6 @@
       "fastapi-snippets"
     ];
     extraPackages = with pkgs; [
-      nixd
-      nil
-      gopls
-      basedpyright
-      ty
-
       direnv
 
       nixfmt-rfc-style

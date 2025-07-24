@@ -116,6 +116,8 @@
       sqlitebrowser
       docker
       docker-compose
+      ty
+      basedpyright
 
       # GUI
       gtk4
