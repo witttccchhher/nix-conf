@@ -173,7 +173,7 @@
 
       vim_mode = false;
 
-      assistant.enabled = false;
+      agent.enabled = false;
 
       ui_font_family = lib.mkForce "Inter";
       ui_font_size = lib.mkForce 16;
