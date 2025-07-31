@@ -77,6 +77,12 @@
 
       enable_language_server = true;
       lsp = {
+        ty.settings = {
+          ty.binary = {
+            path = "/home/witcher/.nix-profile/bin/ty";
+            arguments = [ "server" ];
+          };
+        };
         basedpyright.settings = {
           basedpyright.analysis = {
             typeCheckingMode = "basic";
@@ -115,8 +121,8 @@
       languages = {
         Python = {
           language_servers = [
-            "basedpyright"
             "ty"
+            "basedpyright"
             "!pyright"
             "!pylsp"
           ];
