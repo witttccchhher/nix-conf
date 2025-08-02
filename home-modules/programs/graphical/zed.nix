@@ -77,11 +77,9 @@
 
       enable_language_server = true;
       lsp = {
-        ty.settings = {
-          ty.binary = {
-            path = "/home/witcher/.nix-profile/bin/ty";
-            arguments = [ "server" ];
-          };
+        ty.binary = {
+          path = "/home/witcher/.nix-profile/bin/ty";
+          arguments = [ "server" ];
         };
         basedpyright.settings = {
           basedpyright.analysis = {
