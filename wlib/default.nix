@@ -9,8 +9,8 @@ rec {
   colorscheme = "next";
   polarity = "dark";
 
-  wallpaperCategory = "girl";
-  wallpaperIndex = "30";
+  wallpaperCategory = "realistic";
+  wallpaperIndex = "4";
   wallpaperProcessing = {
     level = 10;
     lum = 1.0;

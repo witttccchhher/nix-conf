@@ -10,9 +10,6 @@
       "i915.enable_guc=2"
       "i915.enable_fbc=1"
       "i915.enable_psr=2"
-      "radeon.modeset=0"
-      "radeon.si_support=0"
-      "amdgpu.si_support=1"
     ];
     extraModulePackages = with config.boot.kernelPackages; [
       amneziawg
