@@ -6,7 +6,6 @@
     exclude = [
       ./default.nix
       ./custom
-      ./programs/graphical/ags/agscher
     ];
   };
 }
