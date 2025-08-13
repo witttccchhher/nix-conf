@@ -22,7 +22,7 @@
       type = "amneziawg";
       autostart = true;
 
-      privateKey = "oBzbonLudufiIUgDXUPOuzWtervXzOpUJTwDLZtLj2A=";
+      privateKey = "GDBtmngzvHxHdNL+AkbRTz86TIkN6uCqAAzZgAawuVw=";
       extraOptions = {
         S1 = 0;
         S2 = 0;
@@ -37,7 +37,7 @@
       mtu = 1280;
       address = [
         "172.16.0.2"
-        "2606:4700:110:8398:d6f9:2554:87e1:c393"
+        "2606:4700:110:841a:8e2c:bb9c:ec4b:4ec"
       ];
       dns = [
         "1.1.1.1"
@@ -53,7 +53,7 @@
             "0.0.0.0/0"
             "::/0"
           ];
-          endpoint = "188.114.99.224:1002";
+          endpoint = "engage.cloudflareclient.com:2408";
         }
       ];
     };
