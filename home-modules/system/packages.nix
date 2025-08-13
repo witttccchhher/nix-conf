@@ -118,6 +118,8 @@
       docker-compose
       ty
       basedpyright
+      jetbrains-toolbox
+      vscode
 
       # GUI
       gtk4
